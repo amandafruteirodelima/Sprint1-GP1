@@ -1,0 +1,143 @@
+  .ativo{
+    color: #FFE57E;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #AA9FE7;
+  }
+  
+  .header {
+    background-color: #6253BA;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .caixa {
+    max-width: 1100px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li:hover {
+    color: #FFE57E;
+  }
+  
+  ul li {
+    display: inline;
+    margin-left: 22px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    
+    color: #fffff0;
+    font-family: PT Sans, sans-serif, Impact;
+    font-size: larger;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .contact-view {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+
+    background-image: url('./../imgs/Contato2.png');
+    background-size: cover;
+  }
+
+  .contact-form {
+    background-color: #8375d2;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: white;
+  }
+
+  .inpt-form {
+    width: 255px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.2s;
+  }
+  .inpt-form:hover {
+    background-color: #b0a2ffb0;
+  }
+
+  .txta-form {
+    width: 255px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    resize: none;
+    transition: 0.2s;
+  }
+
+  .txta-form:hover {
+    background-color: #b0a2ffb0;
+  }
+
+  @media only screen and (max-width: 565px) {
+    .caixa {
+      max-width: 510px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  ul li {
+    display: inline;
+    margin-left: 22px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    color: #fffff0;
+    font-family: PT Sans, sans-serif, Impact;
+    font-size: medium;
+  }
+  .contact-form {
+    background-color: #8375d2;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+  }
+  .inpt-form {
+    width: 215px;
+    height: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  .txta-form {
+    width: 215px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    resize: none;
+  }
+}
