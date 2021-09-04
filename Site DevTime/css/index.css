@@ -27,7 +27,6 @@ body {
   background-color: #8375D2;
   width: 100%;
   height: 120px;
-  position: fixed;
 }
 
 .caixa {
@@ -73,9 +72,8 @@ a {
 
 /* Content */
 .caixaPai {
-  max-width: 90%;
-  height: 70%;
-  padding-top: 220px;
+  width: 90%;
+  height: 860px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -130,13 +128,92 @@ a {
   opacity: 1;
 }
 
+.boxOrganizadora {
+  display: flex;
+  align-items: center;
+}
+
+.boxQuadrado1 {
+  margin-top: 5%;
+  padding-bottom: 10%;
+  width: 40%;
+  height: 240px;
+  background-color: #AA9FE7;
+  margin-left: 7%;
+  margin-right: 3%;
+  font-size: 180%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fffff0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.boxQuadrado2 {
+  margin-top: 5%;
+  padding-bottom: 10%;
+  width: 40%;
+  height: 240px;
+  background-color: #AA9FE7;
+  margin-left: 2%;
+  font-size: 180%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fffff0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #8375D2;
+  width: 100%;
+  height: 300px;
+}
+
+.footer b {
+  font-family: PT Sans, sans-serif, Impact;
+  color: #fffff0;
+  font-size: larger;
+}
+
+
+.caixaFooter {
+  max-width: 90%;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-default {
+  background-color: #4837A4;
+  color: #fffff0;
+  border: 0;
+  height: 45px;
+  width: 200px;
+  border-radius: 70px;
+  font-size: 22px;
+  margin: 15px;
+
+}
+
+.btn-default:hover {
+  color: #4837A4;
+  background-color: #FFE57E;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 
 
 /* Configurações da barra de rolagem */
 ::-webkit-scrollbar {
   height: 20px;
   background-color: #AA9FE7;
- 
+
 }
 
 ::-webkit-scrollbar-thumb {
