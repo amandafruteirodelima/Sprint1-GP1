@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #AC9FE9;    
+}
+
+.div_perfil_icones {
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #4837a4;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.div_lado_lado {
+    display: flex;
+}
+
+.div_perfil {
+    background-color: #8474D1;
+    height: 110px;
+    width: 500px;
+    border-radius: 10px;
+    margin: 10px 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div_img_perfil {
+    background-color: white;
+    height: 100px;
+    width: 110px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.img_perfil {
+    background-image: url(../imgs/user-silhouette.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85px;
+    margin: 2px auto;
+}
+
+.div_img_banner_perfil {
+    background-image: url(../imgs/gato-arcoiris.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 355px;
+    margin-top: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.div_level_perfil {
+    width: 355px;
+    height: 20px;
+    background-color: white;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: #6353BA;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.div_nome_perfil {
+    height: 20px;
+    margin-top: 5px;
+    width: 250px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.div_online_offiline {
+    border-radius: 10px;
+    width: 95px;
+    margin-left: 10px;
+    color: #00c52b;
+    background-color: white;
+}
+
+.div_icone_status {
+    width: 350px;
+    background-color: #8474d1;
+    border-radius: 10px;
+    display: block;
+}
+
+.div_geral_icones {
+    height: 65px;
+    width: 350px;
+    border-bottom: 5px solid #4837a4;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div_icones {
+    background-color: white;
+    height: 55px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 55px;
+    align-items: center;
+    text-align: center;
+}
+
+.img_icones {
+    height: 40px;
+    margin-top: 5px;
+}
+
+.div_status_coin {
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    /* color: #8474d1; */
+    /* background-color: white; */
+    width: 325px;
+    margin: 8px auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 20px;
+}
+
+.div_conquista {
+    height: 70px;
+    background-color: #4837a4;
+    display: flex;
+}
+
+.div_escudos {
+    width: 60px;
+    background: white;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.img_icones_escudos {
+    height: 55px;
+    margin: 2.5px;
+}
+
+.div_txt_conquista {
+    width: 100px;
+    background-color: black;
+    color: white;
+}
