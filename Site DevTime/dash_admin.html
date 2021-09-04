@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+        integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+        crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="header">
+
+    </div>
+    <main>
+        <div class="titulo">
+            <p>Dashboard</p>
+        </div>
+
+        <div class="tabela_box">
+            <p>Escolha quem você deseja monitorar</p>
+            <table id="tabela">
+                <tr>
+                    <th>Nome</th>
+                    <th>Status</th>
+                    <th>Equipe</th>
+                </tr>
+                <tr>
+                    <td>Liany Veleda Bezerra</td>
+                    <td>Ativo</td>
+                    <td>Securitização</td>
+                </tr>
+                <tr>
+                    <td>Mercês Igrejas Mateus</td>
+                    <td>Ativo</td>
+                    <td>Securitização</td>
+                </tr>
+                <tr>
+                    <td>Thiago Diegues Varão</td>
+                    <td>Ativo</td>
+                    <td>Securitização</td>
+                </tr>
+                <tr>
+                    <td>Estefany Regodeiro Brasil</td>
+                    <td>Inativo</td>
+                    <td>Crédito</td>
+                </tr>
+                <tr>
+                    <td>Félix Urias Nunes</td>
+                    <td>Ativo</td>
+                    <td>Crédito</td>
+                </tr>
+                <tr>
+                    <td>Elói Monte Dourado</td>
+                    <td>Ativo</td>
+                    <td>Crédito</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="usuario">
+                <h1 id="h1_nome">Thiago Diegues Varão</h1>
+                <h1 id="h1_equipe">Securitização</h1>
+            </div>
+            <div id="div_cpu" class="grafico-box">
+
+                <div class="card_box">
+
+                    <div class="card">
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Intel(R) Core(TM) i3-3220</p>
+                        </div>
+
+                        <div class="medida_box">
+                            <p class="medida">3.30GHz</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Utilização</p>
+                        </div>
+                        <div class="medida_box">
+                            <p class="medida">63%</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grafico">
+
+                    <canvas id="cpu"></canvas>
+
+                </div>
+
+                <div class="card_box">
+
+                    <div class="card">
+
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Tempo de atividade</p>
+                        </div>
+                        <div class="medida_box">
+                            <p class="medida">05:17:23</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Velocidade</p>
+                        </div>
+                        <div class="medida_box">
+                            <p class="medida">1,03 GHz</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="div_ram" class="grafico-box">
+
+                <div class="card_box">
+                    <div class="card">
+
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Utilização (GB)</p>
+                        </div>
+
+                        <div class="medida_box">
+                            <p class="medida">3,1</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Utilização</p>
+                        </div>
+
+                        <div class="medida_box">
+                            <p class="medida">27%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grafico">
+
+                    <canvas id="ram"></canvas>
+
+                </div>
+                <div class="card_box">
+                    <div class="card">
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Total (GB)</p>
+                        </div>
+                        <div class="medida_box">
+                            <p class="medida">7,9</p>
+                        </div>
+
+
+                    </div>
+                    <div class="card">
+
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Disponivel (GB)</p>
+                        </div>
+
+                        <div class="medida_box">
+                            <p class="medida">4,8</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="div_disco" class="grafico-box">
+
+                <div class="card_box">
+                    <div class="card">
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Disco 0</p>
+                        </div>
+                        <div class="medida_box">
+                            <p class="medida">224 GB</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Utilização</p>
+                        </div>
+                        <div class="medida_box">
+                            <p class="medida">25%</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="grafico">
+
+                    <canvas id="disco"></canvas>
+
+                </div>
+                <div class="card_box">
+                    <div class="card">
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Velocidade de gravação</p>
+                        </div>
+
+                        <div class="medida_box">
+                            <p class="medida">1 MB/s</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_titulo_box">
+                            <p class="card_titulo">Velocidade de leitura</p>
+                        </div>
+
+                        <div class="medida_box">
+                            <p class="medida">500 KB/s</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+<script>
+    const datacpu = {
+        labels: ['0','5', '10','15', '20','25', '30','35', '40','45', '50','55', '60'],
+        datasets: [{
+            label: "CPU",
+            data: [0, 10, 24, 42, 35, 50, 51, 73, 80, 90, 100, 65, 50],
+            fill: false,
+            borderColor: 'rgb(72, 55, 164)',
+            backgroundColor: 'rgb(237, 200, 57)',
+            tension: 0.1
+        }]
+    };
+    const configcpu = {
+        type: 'line',
+        data: datacpu,
+        
+    };
+    var myChart = new Chart(
+        document.getElementById('cpu'),
+        configcpu
+    );
+
+    const dataram = {
+        labels: ['0','5', '10','15', '20','25', '30','35', '40','45', '50','55', '60'],
+        datasets: [{
+            label: 'RAM',
+            data: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+            fill: false,
+            borderColor: 'rgb(72, 55, 164)',
+            backgroundColor: 'rgb(237, 200, 57)',
+            tension: 0.1
+        }]
+        
+    };
+    const configram = {
+        type: 'line',
+        data: dataram,
+    };
+    var myChart = new Chart(
+        document.getElementById('ram'),
+        configram
+    );
+
+    const datadisc = {
+        labels: ['0','5', '10','15', '20','25', '30','35', '40','45', '50','55', '60'],
+        datasets: [{
+            label: 'Disco',
+            data: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+            fill: false,
+            borderColor: 'rgb(72, 55, 164)',
+            backgroundColor: 'rgb(237, 200, 57)',
+            tension: 0.1
+        }]
+    };
+    const configdisc = {
+        type: 'line',
+        data: datadisc,
+    };
+    var myChart = new Chart(
+        document.getElementById('disco'),
+        configdisc
+    );
+
+</script>

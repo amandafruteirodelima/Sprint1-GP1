@@ -1,0 +1,111 @@
+body{
+    background-color: #AC9FE9;
+    font-family: Impact, fantasy;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo{
+    background-color: #8474D1;
+    width: 90%;
+    height: 60px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin: 1%;
+}
+.titulo p{
+    margin: 0;
+    padding: 0 2%;
+}
+.grafico{
+    min-width: 50%;
+    background-color: #d5cff7;
+}
+.container{
+    width: 90%;
+    background-color: #8474D1;
+    border-radius: 20px;
+    margin: 1% 0;
+}
+.usuario{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: #D5CFF7;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 2%;
+}
+.grafico-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1% 0;
+}
+.card{
+    background-color: #D5CFF7;
+    width: 200px;
+    height: 100px;
+    margin: 5% 0;
+}
+.card_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.card_titulo{
+    margin: 0;
+}
+.card_titulo_box{
+    background-color: #695DA6;
+    padding: 5%;
+}
+.medida{
+    margin: 0;
+    font-size: 40px;
+    padding-left: 25px;
+}
+.medida_box{
+    padding-top: 3%;
+}
+
+#tabela {
+    border-collapse: collapse;
+    width: 80%;
+}  
+#tabela td, #tabela th {
+    border: 1px solid #ddd;
+    padding: 8px;
+} 
+#tabela tr{
+    background-color: #D5CFF7;
+} 
+#tabela tr:hover {
+    background-color: #695DA6;
+} 
+#tabela th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #695DA6;
+}
+.tabela_box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8474D1;
+    border-radius: 20px;
+    margin: 1% 0;
+    padding: 1% 0;
+}
+.tabela_box p{
+    font-size: 25px;
+    margin: 0 0 1% 0;
+}
