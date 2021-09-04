@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/preLogin.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="caixa">
+            <a href="index.html"><img class="logo" src="imgs/Logo-Branco.png"></a>
+            <nav>
+                <b>
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+
+                        <a href="sobrepage.html">
+                            <li>Sobre</li>
+                        </a>
+
+                        <a href="contato.html">
+                            <li>Contato</li>
+                        </a>
+
+                        <a href="preLogin.html">
+                            <li class="ativo">Entrar</li>
+                        </a>
+
+
+                    </ul>
+                </b>
+            </nav>
+        </div>
+    </div>
+
+    <!--Fim Header -->
+
+    <div class="caixa-conteudo-login">
+
+        <div class="container-login">
+
+            <div class="conteudo-container-login">
+
+                <img class="img-default" id="imagem-1-gestao" src="./imgs/imagem-1.png" alt="">
+
+                <img class="img-default" id="imagem-2-gestao" src="./imgs/Baconha.png" alt="">
+
+                <h1 id="titulo-container"><b>ESCOLHA UMA DAS OPÇÕES<br> DE LOGIN:</b></h1>
+
+                <div id="container-btns">
+                    <button onclick="mudarLoginAdm()" class="btn-default" id="btn-administrador"><b><a
+                                href="login.html">Administrador</a></b></button>
+                    <button onclick="mudarLoginFunc()" class="btn-default" id="btn-funcionario"><b><a>Funcionário</a></b></button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
