@@ -136,32 +136,49 @@ a {
 .boxQuadrado1 {
   margin-top: 5%;
   padding-bottom: 10%;
+  padding-top: 10%;
   width: 40%;
-  height: 240px;
+  height: 164px;
   background-color: #AA9FE7;
   margin-left: 7%;
   margin-right: 3%;
   font-size: 180%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fffff0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  text-align: center;
 }
 
 .boxQuadrado2 {
   margin-top: 5%;
   padding-bottom: 10%;
+  padding-top: 10%;
   width: 40%;
-  height: 240px;
+  height: 164px;
   background-color: #AA9FE7;
   margin-left: 2%;
   font-size: 180%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fffff0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  text-align: center;
+}
+
+.btn-default-Home {
+  background-color: #4837A4;
+  color: #fffff0;
+  border: 0;
+  height: 45px;
+  width: 80%;
+  border-radius: 70px;
+  font-size: 22px;
+  margin-top: 20%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-default-Home:hover {
+  color: #4837A4;
+  background-color: #FFE57E;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 
@@ -197,7 +214,7 @@ a {
   border-radius: 70px;
   font-size: 22px;
   margin: 15px;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btn-default:hover {
