@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/login.css">
+
     <title>Login</title>
 </head>
 
@@ -18,6 +20,11 @@
             <nav>
                 <b>
                     <ul>
+
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+
                         <a href="sobrepage.html">
                             <li>Sobre</li>
                         </a>
@@ -40,22 +47,99 @@
     <!--Fim Header -->
 
     <!-- Início Content -->
+    <div id="divLoginAdm" style="display: block;">
 
-    <div class="caixa-conteudo-login">
+        <div class="caixa-conteudo-login">
 
-        <div class="container-login">
+            <div class="container-login">
 
-            <div class="container-parte-movel"></div>
-            <div>
-                <!-- <input type="text">
-               <input type="text">
-               <button></button> -->
+
+                <div class="container-parte-movel">
+                    <p class="txt-adm">Não é um administrador? <br> Acesse o painel de funcionários!</p>
+                    <button class="btn-default" onclick="trocarLogin(1)">Funcionários</button>
+                </div>
+
+                <div class="div-inpts">
+
+                    <img class="imagem-3" src="./imgs/imagem-3.png" alt="">
+
+                    <form action="">
+
+                        <p class="txt-email txt-padrao">Email:</p>
+                        <input class="inpt-padrao" type="email" placeholder="User@example.com.br" required autofocus>
+
+                        <p class="txt-padrao">Senha:</p>
+                        <input class="inpt-padrao" type="password" placeholder="Senha:"required>
+
+                        <br>
+                        <button class="btn-default btn-entrar-adm"><a href="cadastro.html"><b>Entrar</b></a></button>
+
+                    </form>
+
+                </div>
+            
             </div>
-        </div>
 
+        </div>
     </div>
-    
+
+
+    <!--INICIO LOGIN FUNCIONARIO-->
+
+    <div id="divLoginFunc" style="display: none;">
+
+        <div class="caixa-conteudo-login">
+            
+            <div class="container-login container-login-func">
+                
+                
+                <div class="container-parte-movel container-parte-movel-fun">
+                    <p class="txt-adm txt-func">Não é um funcionário?<br>Acesse o painel de administradores!</p>
+                    <button class="btn-default btn-adm-fun" onclick="trocarLogin(2)">Administradores</button>
+                </div>
+                
+                <div class="div-inpts div-inpts-func">
+                    <img class="imagem-6" src="./imgs/img-6.png" alt="">
+
+                    <form action="">
+
+                        <p class="txt-padrao  txt-padrao-func">Email:</p>
+                        <input class="inpt-padrao" type="email" placeholder="User@example.com.br" required autofocus>
+
+                        <p class="txt-padrao txt-padrao-func">Senha:</p>
+                        <input class="inpt-padrao" type="password" placeholder="Senha:" required>
+
+                        <br>
+
+                        <button class="btn-default btn-entrar-func"><a class="a-func" href=""><b>Entrar</b></a></button>
+                        
+                    </form>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
 
 </body>
 
 </html>
+
+<script>
+
+
+    function trocarLogin(valor) {
+        if(valor == 1){
+            divLoginAdm.style.display = 'none';
+            divLoginFunc.style.display = 'block';
+        }
+        else{
+            divLoginFunc.style.display = 'none';
+            divLoginAdm.style.display = 'block';
+        }
+
+    }
+
+</script>

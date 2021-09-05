@@ -9,6 +9,19 @@
    padding-top: 35px;
 }
 
+.conteudo-container-preLogin{
+    margin-top: 80px;
+}
+
+.container-preLogin {
+    background-color: #8375D2;
+    width: 600px;
+    height: 350px;
+    border-radius: 15px;
+    margin-top: 100px;
+  
+}
+
 a {
     color: white;
 }
@@ -35,7 +48,6 @@ a {
 
 
 
-
 .img-default{
     width: 300px;
     position: fixed;
@@ -50,6 +62,6 @@ a {
 }
 
 #imagem-2-gestao {
-    bottom: 20px;
-    left: 194px;
+    bottom: 90px;
+    left: 220px;
 }

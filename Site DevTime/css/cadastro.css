@@ -1,0 +1,38 @@
+.caixa-conteudo-login {
+    height: 90vh;
+    
+}
+
+.container-login{
+    width: 700px;
+    height: 600px;
+    display: block;
+    text-align: center;
+    margin-top: 200px;
+    
+
+   
+}
+
+.div-inpts{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+.txt-padrao{
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   
+}
+
+.btn-cadastrar{
+    text-align: center;
+}
+
+.imagem-cadastro {
+    width: 250px;
+}
