@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- Inicio Seção do perfil do usuário e os icones -->
     <div class="div_perfil_icones div_lado_lado">
         <div class="div_perfil">
             <div class="div_img_perfil">
@@ -61,6 +62,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Inicio Seção da faixa onde tem os 4 escudos e a conquista -->
     <div class="div_conquista div_perfil_icones">
         <div class="div_lado_lado div_geral_escudos">
             <div class="div_escudos">
@@ -82,6 +85,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Inicio Seção da Faixa onde tem o Desafio e o botão de clicar -->
     <div class="div_desafios div_conquista div_perfil_icones">
         <div class="div_txt_conquista div_txt_desafios">
             <div class="txt_conquista txt_desafios">
@@ -92,6 +97,8 @@
             <img class="img_seta img_icones" onclick="aparecer_desafio()" src="imgs/seta-direita.png" alt="">
         </div>
     </div>
+
+    <!-- Inicio da Seção onde mostra as caixas com a desc dos desafios -->
     <div id="secao_desafio" class="div_perfil_icones div_geral_desc_desafios">
         <div class="div_desafios_desc">
             <div class="div_desc_titulo">
@@ -99,10 +106,13 @@
                 <img class="img_icones" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
             </div>
             <div class="div_desc_txt">
-                <span class="txt_desc">
+                <span>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
                 </span>
+            </div>
+            <div class="barra_desafio barra_bloqueado"> 
+                <b> Bloqueado </b>
             </div>
         </div>
         <div class="div_desafios_desc">
@@ -111,10 +121,13 @@
                 <img class="img_icones" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
             </div>
             <div class="div_desc_txt">
-                <span class="txt_desc">
+                <span>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
                 </span>
+            </div>
+            <div class="barra_desafio barra_bloqueado"> 
+                <b> Bloqueado </b>
             </div>
         </div>
         <div class="div_desafios_desc">
@@ -123,10 +136,13 @@
                 <img class="img_icones" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
             </div>
             <div class="div_desc_txt">
-                <span class="txt_desc">
+                <span>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
                 </span>
+            </div>
+            <div class="barra_desafio barra_receber"> 
+                <b> Receber </b>
             </div>
         </div>
         <div class="div_desafios_desc">
@@ -135,10 +151,13 @@
                 <img class="img_icones" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
             </div>
             <div class="div_desc_txt">
-                <span class="txt_desc">
+                <span>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
                 </span>
+            </div>
+            <div class="barra_desafio barra_bloqueado"> 
+                <b> Bloqueado </b>
             </div>
         </div>
         <div class="div_desafios_desc">
@@ -147,13 +166,18 @@
                 <img class="img_icones" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
             </div>
             <div class="div_desc_txt">
-                <span class="txt_desc">
+                <span>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
                 </span>
+            </div>
+            <div class="barra_desafio barra_recebido"> 
+                <b> Já Coletou </b>
             </div>
         </div>
     </div>
+
+    <!-- Inicio da faixa onde tem o Gerenciamento de Tempo e o botão de clicar -->
     <div class="div_desafios div_conquista div_perfil_icones">
         <div class="div_txt_gerenciamento div_txt_desafios div_txt_conquista">
             <div class="txt_conquista txt_desafios">
@@ -164,22 +188,194 @@
             <img class="img_seta img_icones" onclick="aparecer_gerenciamento()" src="imgs/seta-direita.png" alt="">
         </div>
     </div>
+
+    <!-- Inicio das caixas onde mostra o tempo usado dos aplicativos -->
+    <div id="secao_gerenciamento">
+        <div class="div_gerenciamento_geral">
+            <div class="div_gerenciamento div_desafios_desc">
+                <div class="div_desc_gerenciamento">
+                    <div class="div_gerenciamento_titulo_img div_desc_titulo">
+                        <div class="div_img_logo_app">
+                            <img class="img_icones_app" src="imgs/youtube.png" alt="">
+                        </div>
+                        <div class="div_geral_txt_tempo_hora">
+                            <div>
+                                <span>Tempo Utilizado</span>
+                            </div>
+                            <div class="div_hora">
+                                <span>1 Hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_gerenciamento_titulo_img div_desc_titulo">
+                        <div class="div_img_logo_app">
+                            <img class="img_icones_app" src="imgs/valorant-logo.svg" alt="">
+                        </div>
+                        <div class="div_geral_txt_tempo_hora">
+                            <div>
+                                <span>Tempo Utilizado</span>
+                            </div>
+                            <div class="div_hora">
+                                <span>5 Hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_txt_desc div_gerenciamento_titulo_img">
+                        <div class="txt_desc_gerenciamento">
+                            <b>Tempo de utilização baseado no total de horas que se descansa.</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="div_geral_app div_gerenciamento_titulo_img">
+                    <div class="img_titulo">
+                        <img class="img_icones_app" src="imgs/cadeira-de-praia.png" alt="">
+                    </div>
+                    <div class="txt_horas_usadas">
+                        <b>4 Horas p/ dia</b>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                    </div>
+                    <div class="txt_horas_usadas_recentemente txt_horas_usadas">
+                        <b>Usados Recentemente</b>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados">
+                            <div class="div_img_logo_app_usados div_img_logo_app">
+                                <img class="img_icones_app_usados" src="imgs/youtube.png" alt="">
+                            </div>
+                        </div>
+                        <div class="div_app_usados">
+                            <div class="div_img_logo_app_usados div_img_logo_app">
+                                <img class="img_icones_app_usados" src="imgs/valorant-logo.svg" alt="">
+                            </div>
+                        </div>                        
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>                        
+                    </div>
+                    <div class="txt_horas_usadas_recentemente">
+                        <b>4 Horas</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_gerenciamento div_desafios_desc">
+                <div class="div_desc_gerenciamento">
+                    <div class="div_gerenciamento_titulo_img div_desc_titulo">
+                        <div class="div_img_logo_app">
+                            <img class="img_icones_app" src="imgs/vs-code.png" alt="">
+                        </div>
+                        <div class="div_geral_txt_tempo_hora">
+                            <div>
+                                <span>Tempo Utilizado</span>
+                            </div>
+                            <div class="div_hora">
+                                <span>6 Hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_gerenciamento_titulo_img div_desc_titulo">
+                        <div class="div_img_logo_app">
+                            <img class="img_icones_app" src="imgs/w3-school.png" alt="">
+                        </div>
+                        <div class="div_geral_txt_tempo_hora">
+                            <div>
+                                <span>Tempo Utilizado</span>
+                            </div>
+                            <div class="div_hora">
+                                <span>2 Hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_txt_desc div_gerenciamento_titulo_img">
+                        <div class="txt_desc_gerenciamento">
+                            <b>Tempo de utilização baseado no total de horas que se descansa.</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="div_geral_app div_gerenciamento_titulo_img">
+                    <div class="img_titulo">
+                        <img class="img_icones_app" src="imgs/escritorio.png" alt="">
+                    </div>
+                    <div class="txt_horas_usadas">
+                        <b>8 Horas p/ dia</b>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                    </div>
+                    <div class="txt_horas_usadas_recentemente txt_horas_usadas">
+                        <b>Usados Recentemente</b>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados">
+                            <div class="div_img_logo_app_usados div_img_logo_app">
+                                <img class="img_icones_app_usados" src="imgs/vs-code.png" alt="">
+                            </div>
+                        </div>
+                        <div class="div_app_usados">
+                            <div class="div_img_logo_app_usados div_img_logo_app">
+                                <img class="img_icones_app_usados" src="imgs/w3-school.png" alt="">
+                            </div>
+                        </div>                        
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>                        
+                    </div>
+                    <div class="txt_horas_usadas_recentemente">
+                        <b>8 Horas</b>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
 </body>
 
 </html>
 
 <script>
-    var contadorClique = 0;
+    var contadorCliqueDesafio = 0;
+    var contadorCliqueGerenciamento = 0;
 
     function aparecer_desafio() {
-        if (contadorClique % 2 == 0) {
+        if (contadorCliqueDesafio % 2 == 0) {
             secao_desafio.style.display = "block";
             secao_desafio.style.display = "flex";
-            contadorClique++;
+            contadorCliqueDesafio++;
         }
         else {
             secao_desafio.style.display = "none";
-            contadorClique++;
+            contadorCliqueDesafio++;
+        }
+    }
+
+    function aparecer_gerenciamento() {
+        if (contadorCliqueGerenciamento % 2 == 0) {
+            secao_gerenciamento.style.display = "block";
+            secao_gerenciamento.style.display = "flex";
+            contadorCliqueGerenciamento++;
+        }
+        else {
+            secao_gerenciamento.style.display = "none";
+            contadorCliqueGerenciamento++;
         }
     }
 </script>

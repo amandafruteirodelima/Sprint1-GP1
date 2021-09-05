@@ -5,6 +5,18 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #8474D1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4837a4; 
+}
+
 body {
     background-color: #AC9FE9;    
 }
@@ -133,43 +145,42 @@ body {
 }
 
 .div_conquista {
-    height: 80px;
+    height: 50px;
     background-color: #4837a4;
     display: flex;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .div_geral_escudos {
     justify-content: space-around;
+    width: 160px;
 }
 
 .div_escudos {
-    width: 60px;
-    /* background: white; */
-    height: 60px;
+    width: 35px;
+    height: 35px;
     border-radius: 5px;
-    margin-left: 15px;
     margin-top: 10px;
 }
 
 .img_icones_escudos {
-    height: 55px;
-    margin: 2.5px;
+    height: 30px;
+    margin-left: 10px;
 }
 
 .div_txt_conquista {
-    width: 190px;
-    height: 60px;
-    background-color: #8474d1;
+    width: 195px;
+    height: 30px;
     color: white;
     margin-top: 10px;
     margin-right: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .txt_conquista {
-    margin: 15px;
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: 2px;
+    float: right;
 }
 
 .div_geral_desafio {
@@ -184,28 +195,30 @@ body {
 }
 
 .div_desafios {
-    height: 55px;
+    height: 40px;
     display: flex;
 }
 
 .div_txt_desafios {
-    margin-left: 10px;
-    height: 35px;
+    margin-left: 5px;
+    height: 30px;
+    margin-top: 5px;
 }
 
 .txt_desafios {
     margin: 5px;
     font-size: 20px;
-    text-align: center;
+    float: left;
 }
 
 .img_seta {
     cursor: pointer;
-    height: 40px;
+    height: 30px;
+    margin-top: 3.5px;
 }
 
 .img_seta:hover {
-    height: 45px;
+    height: 34px;
 }
 
 .div_geral_desc_desafios {
@@ -215,11 +228,11 @@ body {
 }
 
 #secao_desafio {
-    display: none;
+    /* display: none; */
 }
 
 .div_desafios_desc {
-    height:250px;
+    height: 260px;
     width: 210px;
     background-color: #4837a4;
     border-radius: 10px;
@@ -247,6 +260,168 @@ body {
     color: white;
 }
 
+#secao_gerenciamento {
+    /* display: none; */
+}
+
 .div_txt_gerenciamento {
     width: 300px;
+}
+
+.div_gerenciamento_geral {
+    width: 95%;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-around;
+}
+
+.div_gerenciamento {
+    width: 550px;
+    height: 330px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.div_desc_gerenciamento {
+    width: 50%;
+    height: 100%;
+    border-right: 5px solid #ac9fe9;
+    padding-top: 1px;
+}
+
+.div_gerenciamento_titulo_img {
+    height: 60px;
+    width: 98%;
+    margin: 5px auto;
+    background-color: #8474d1;
+    border-radius: 10px;
+}
+
+.div_img_logo_app {
+    background-color: white;
+    border-radius: 10px;
+    width: 60px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+.img_icones_app {
+    width: 45px;
+    margin-top: 3px;
+}
+
+.div_geral_txt_tempo_hora {
+    width: 65%;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.div_txt_desc {
+    height: 40px;
+    margin-top: 150px;
+    background-color: #ac9fe9;
+    padding-top: 5px;
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+.barra_desafio {
+    height: 20px;
+    width: 165px;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.barra_bloqueado {
+    background: #c29448;
+    color: white;
+}
+
+.barra_receber {
+    background: #00c52b;
+    color: white;
+}
+
+.barra_recebido {
+    background: #8474d1;
+    color: white;
+}
+
+.txt_desc_gerenciamento {
+    font-size: 13px;
+    text-align: center;
+    color: #4837a4;
+    text-shadow: 0px 1px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.div_hora {
+    width: 100%;
+    background: #c29448;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.div_geral_app {
+    width: 40%;
+    background-color: none;
+    height: 97%;
+    margin: 4px auto;
+    background-color: #4837a4;
+    border-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img_titulo {
+    background-color: #ac9fe9;
+    width: 60px;
+    margin: 5px auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.txt_horas_usadas {
+    text-align: center;
+    color: white;
+}
+
+.div_apps {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.div_app_usados {
+    width: 50px;
+    height: 50px;
+    background-color: #ac9fe9;
+    border-radius: 5px;
+}
+
+.txt_horas_usadas_recentemente {
+    margin-top: 15px;
+    background-color: #ac9fe9;
+    border-radius: 5px;
+    color: #4837a4;
+    text-align: center;
+}
+
+.div_img_logo_app_usados {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.img_icones_app_usados {
+    width: 40px;
+    margin-top: 5px;
 }
