@@ -86,12 +86,14 @@ a {
   background-color: #8375D2;
   margin-right: 10%;
   align-items: center;
+  text-align: center;
 }
 
 .caixaFilho2 {
   width: 45%;
   height: 700px;
   background-color: #8375D2;
+  text-align: center;
 }
 
 .boxFaixa {
@@ -111,7 +113,6 @@ a {
 .imgMulher {
   margin-top: 4%;
   height: 40%;
-  margin-left: 20%;
 }
 
 .imgSeta {
