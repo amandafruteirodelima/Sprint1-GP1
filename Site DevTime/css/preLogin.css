@@ -1,3 +1,4 @@
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 #titulo-container {
     color: white;
     text-align: center;
@@ -43,6 +44,7 @@ a {
     width: 210px;
     transition: 0.5s;
     cursor: pointer;
+    color: #FFE57E;
 }
 
 

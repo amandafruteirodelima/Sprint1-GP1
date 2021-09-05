@@ -3,6 +3,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
