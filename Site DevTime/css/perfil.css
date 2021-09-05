@@ -5,8 +5,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    background-color: #AC9FE9;    
+}
+
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -17,8 +21,8 @@
     background: #4837a4; 
 }
 
-body {
-    background-color: #AC9FE9;    
+.icones_link:hover {
+    height: 45px;
 }
 
 .div_perfil_icones {
