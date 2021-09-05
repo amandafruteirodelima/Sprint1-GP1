@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/Yin-Yang-DevTime.png">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/perfil.css">
 
@@ -32,17 +33,16 @@
                 </div>
             </div>
         </div>
-
         <div class="div_perfil div_icone_status">
             <div class="div_geral_icones">
                 <div class="div_icones">
-                    <img class="img_icones" src="imgs/home.png" alt="">
+                    <a href=""><img class="img_icones" src="imgs/home.png" alt=""></a>
                 </div>
                 <div class="div_icones">
-                    <img class="img_icones" src="imgs/standard.png" alt="">
+                    <a href=""><img class="img_icones" src="imgs/standard.png" alt=""></a>
                 </div>
                 <div class="div_icones">
-                    <img class="img_icones" src="imgs/ranking.png" alt="">
+                    <a href=""><img class="img_icones" src="imgs/ranking.png" alt=""></a>
                 </div>
                 <div class="div_icones">
                     <img class="img_icones" src="imgs/shop.png" alt="">
@@ -62,13 +62,124 @@
         </div>
     </div>
     <div class="div_conquista div_perfil_icones">
-        <div class="div_escudos">
-            <img class="img_icones_escudos" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
+        <div class="div_lado_lado div_geral_escudos">
+            <div class="div_escudos">
+                <img class="img_icones_escudos" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_escudos">
+                <img class="img_icones_escudos" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_escudos">
+                <img class="img_icones_escudos" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_escudos">
+                <img class="img_icones_escudos" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
         </div>
         <div class="div_txt_conquista">
-            <b> Conquistas </b>
+            <div class="txt_conquista">
+                <b> Conquistas </b>
+            </div>
+        </div>
+    </div>
+    <div class="div_desafios div_conquista div_perfil_icones">
+        <div class="div_txt_conquista div_txt_desafios">
+            <div class="txt_conquista txt_desafios">
+                <b> Desafios </b>
+            </div>
+        </div>
+        <div>
+            <img class="img_seta img_icones" onclick="aparecer_desafio()" src="imgs/seta-direita.png" alt="">
+        </div>
+    </div>
+    <div id="secao_desafio" class="div_perfil_icones div_geral_desc_desafios">
+        <div class="div_desafios_desc">
+            <div class="div_desc_titulo">
+                <span class="txt_titulo"> Desafio: </span>
+                <img class="img_icones" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_desc_txt">
+                <span class="txt_desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
+                </span>
+            </div>
+        </div>
+        <div class="div_desafios_desc">
+            <div class="div_desc_titulo">
+                <span class="txt_titulo"> Desafio: </span>
+                <img class="img_icones" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_desc_txt">
+                <span class="txt_desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
+                </span>
+            </div>
+        </div>
+        <div class="div_desafios_desc">
+            <div class="div_desc_titulo">
+                <span class="txt_titulo"> Desafio: </span>
+                <img class="img_icones" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_desc_txt">
+                <span class="txt_desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
+                </span>
+            </div>
+        </div>
+        <div class="div_desafios_desc">
+            <div class="div_desc_titulo">
+                <span class="txt_titulo"> Desafio: </span>
+                <img class="img_icones" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_desc_txt">
+                <span class="txt_desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
+                </span>
+            </div>
+        </div>
+        <div class="div_desafios_desc">
+            <div class="div_desc_titulo">
+                <span class="txt_titulo"> Desafio: </span>
+                <img class="img_icones" src="imgs/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_desc_txt">
+                <span class="txt_desc">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="div_desafios div_conquista div_perfil_icones">
+        <div class="div_txt_gerenciamento div_txt_desafios div_txt_conquista">
+            <div class="txt_conquista txt_desafios">
+                <b> Gerenciamento de Tempo </b>
+            </div>
+        </div>
+        <div>
+            <img class="img_seta img_icones" onclick="aparecer_gerenciamento()" src="imgs/seta-direita.png" alt="">
         </div>
     </div>
 </body>
 
 </html>
+
+<script>
+    var contadorClique = 0;
+
+    function aparecer_desafio() {
+        if (contadorClique % 2 == 0) {
+            secao_desafio.style.display = "block";
+            secao_desafio.style.display = "flex";
+            contadorClique++;
+        }
+        else {
+            secao_desafio.style.display = "none";
+            contadorClique++;
+        }
+    }
+</script>

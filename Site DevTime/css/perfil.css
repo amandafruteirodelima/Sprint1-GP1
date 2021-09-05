@@ -11,7 +11,7 @@ body {
 
 .div_perfil_icones {
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     background-color: #4837a4;
     margin-top: 10px;
@@ -133,17 +133,23 @@ body {
 }
 
 .div_conquista {
-    height: 70px;
+    height: 80px;
     background-color: #4837a4;
     display: flex;
+    margin-top: 50px;
+}
+
+.div_geral_escudos {
+    justify-content: space-around;
 }
 
 .div_escudos {
     width: 60px;
-    background: white;
+    /* background: white; */
     height: 60px;
-    margin: 5px;
     border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
 }
 
 .img_icones_escudos {
@@ -152,7 +158,95 @@ body {
 }
 
 .div_txt_conquista {
-    width: 100px;
-    background-color: black;
+    width: 190px;
+    height: 60px;
+    background-color: #8474d1;
     color: white;
+    margin-top: 10px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.txt_conquista {
+    margin: 15px;
+    font-size: 25px;
+}
+
+.div_geral_desafio {
+    justify-content: space-between;
+    width: 95%;
+    margin: 0px auto;
+    background-color: #4837a4;
+    margin-top: 30px;
+    border-radius: 10px;
+    height: 55px;
+    padding-top: 10px;
+}
+
+.div_desafios {
+    height: 55px;
+    display: flex;
+}
+
+.div_txt_desafios {
+    margin-left: 10px;
+    height: 35px;
+}
+
+.txt_desafios {
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.img_seta {
+    cursor: pointer;
+    height: 40px;
+}
+
+.img_seta:hover {
+    height: 45px;
+}
+
+.div_geral_desc_desafios {
+    background-color: #AC9FE9;
+    display: flex;
+    justify-content: space-around;
+}
+
+#secao_desafio {
+    display: none;
+}
+
+.div_desafios_desc {
+    height:250px;
+    width: 210px;
+    background-color: #4837a4;
+    border-radius: 10px;
+}
+
+.div_desc_titulo {
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.txt_titulo {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.div_desc_txt {
+    font-size: 15px;
+    margin-top: 5px;
+    width: 165px;
+    margin: 15px auto;
+    color: white;
+}
+
+.div_txt_gerenciamento {
+    width: 300px;
 }
