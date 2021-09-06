@@ -232,7 +232,7 @@ body {
 }
 
 #secao_desafio {
-    /* display: none; */
+    display: none;
 }
 
 .div_desafios_desc {
