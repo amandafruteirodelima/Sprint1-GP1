@@ -38,6 +38,7 @@ body {
   
   ul li:hover {
     color: #FFE57E;
+    font-size: 22px;
   }
   
   ul li {
@@ -68,16 +69,16 @@ body {
 .caixa_fundo {
     margin: 2% auto;
     background-color: #8375D2;
-    border: 1px solid #FFE57E;
     height: 540px;
     width: 450px;
-    box-shadow: -0 0 0.5em #FFE57E;
+   
     transition-duration: 00.4s;
     margin-top: 30px;
     float: left;
     margin-left: 80px;
     padding-right: 50px;
     padding-left: 25px;
+    border-radius: 10px;
     
     
 }
@@ -103,16 +104,17 @@ body {
 }
 .caixa_fundo2 {
     background-color: #8375D2;
-    border: 1px solid #FFE57E;
+   
     height: 260px;
     width: 430px;
-    box-shadow: -0 0 0.5em #FFE57E;
+    
     transition-duration: 00.4s;
     margin-top: -572px;
     float: right;
     margin-right: 80px;
     padding-right: 35px;
     padding-left: 25px;
+    border-radius: 10px;
     
     
 }
@@ -136,7 +138,7 @@ body {
 
 }
 .hover_aqui :hover {
-    color: #FFE57E;
+    color: #4837A4;
     cursor: pointer;
     
 }
