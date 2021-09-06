@@ -12,17 +12,16 @@ body {
     width: 100%;
     height: 120px;
     position: fixed;
-    margin-top: -20px;
   }
   
-  .caixa {
+  /* .caixa {
     max-width: 80%;
     height: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+  } */
   
   .logo {
     height: 80px;

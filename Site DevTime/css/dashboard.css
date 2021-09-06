@@ -1,6 +1,7 @@
 body{
     background-color: #AC9FE9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* color: white; */
 }
 main{
     display: flex;
@@ -16,6 +17,7 @@ main{
     align-items: center;
     border-radius: 20px;
     margin: 1%;
+    color: white;
 }
 .titulo p{
     margin: 0;
@@ -50,6 +52,7 @@ main{
     width: 200px;
     height: 100px;
     margin: 5% 0;
+    border-radius: 5px;
 }
 .card_box{
     width: 100%;
@@ -61,18 +64,26 @@ main{
 }
 .card_titulo{
     margin: 0;
+    color: white;
 }
 .card_titulo_box{
     background-color: #695DA6;
     padding: 5%;
+    height: 23%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
 }
 .medida{
     margin: 0;
-    font-size: 40px;
+    font-size: 180%;
     padding-left: 25px;
 }
 .medida_box{
     padding-top: 3%;
+    height: 57%;
+    display: flex;
+    align-items: center;
 }
 
 #tabela {
@@ -85,6 +96,7 @@ main{
 } 
 #tabela tr{
     background-color: #D5CFF7;
+    cursor: default;
 } 
 #tabela tr:hover {
     background-color: #695DA6;

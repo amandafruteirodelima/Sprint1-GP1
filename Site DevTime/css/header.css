@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+}
+.header {
+    height: 80px;
+    padding: 5px 0px;
+    background-color: #8375D2;
+    width: 100%;
+}
+
+.header nav {
+    float: right;
+}
+
+.ativo {
+    color: #FFE57E;
+}
+
+.caixa {
+    max-width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+}
+
+ul {
+    list-style-type: disc;
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+    margin-left: 22px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    color: #fffff0;
+    font-family: PT Sans, sans-serif, Impact;
+    font-size: larger;
+}
+
+.header li:hover {
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+ul li:hover {
+    color: #FFE57E;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Configurações da barra de rolagem */
+::-webkit-scrollbar {
+    height: 20px;
+    background-color: #AA9FE7;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #8375D2;
+    border-radius: 10px;
+  }

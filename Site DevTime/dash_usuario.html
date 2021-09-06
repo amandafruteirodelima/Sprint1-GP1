@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="icon" href="imgs/Yin-Yang-DevTime.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
         integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
@@ -14,9 +15,38 @@
 </head>
 
 <body>
+    <!-- Header -->
     <div class="header">
+        <div class="caixa">
+            <a href="index.html"><img class="logo" src="imgs/Logo-Branco.png"></a>
+            <nav>
+                <b>
+                    <ul>
 
+                        <a href="perfil.html">
+                            <li>Perfil</li>
+                        </a>
+
+                        <a href="cadastro.html">
+                            <li>Cadastro</li>
+                        </a>
+
+                        <a href="dash_usuario.html">
+                            <li class="ativo">Dashboard</li>
+                        </a>
+
+                        <a href="preLogin.html">
+                            <li>Sair</li>
+                        </a>
+
+
+                    </ul>
+                </b>
+            </nav>
+        </div>
     </div>
+
+    <!--Fim Header -->
     <main>
         <div class="titulo">
             <p>Dashboard</p>
@@ -192,7 +222,7 @@
 </html>
 <script>
     const datacpu = {
-        labels: ['0', '5', '10', '15', '20', '25', '30', '35', '40', '45', '50', '55', '60'],
+        labels: ['0s', '5s', '10s', '15s', '20s', '25s', '30s', '35s', '40s', '45s', '50s', '55s', '60s'],
         datasets: [{
             label: "CPU",
             data: [0, 10, 24, 42, 35, 50, 51, 73, 80, 90, 100, 65, 50],
@@ -213,10 +243,10 @@
     );
 
     const dataram = {
-        labels: ['0', '5', '10', '15', '20', '25', '30', '35', '40', '45', '50', '55', '60'],
+        labels: ['0s', '5s', '10s', '15s', '20s', '25s', '30s', '35s', '40s', '45s', '50s', '55s', '60s'],
         datasets: [{
             label: 'RAM',
-            data: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+            data: [80, 95, 100, 70, 40, 40, 40, 55, 50, 47, 30, 20, 0],
             fill: false,
             borderColor: 'rgb(72, 55, 164)',
             backgroundColor: 'rgb(237, 200, 57)',
@@ -234,10 +264,10 @@
     );
 
     const datadisc = {
-        labels: ['0', '5', '10', '15', '20', '25', '30', '35', '40', '45', '50', '55', '60'],
+        labels: ['0s', '5s', '10s', '15s', '20s', '25s', '30s', '35s', '40s', '45s', '50s', '55s', '60s'],
         datasets: [{
             label: 'Disco',
-            data: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+            data: [0, 10, 30, 50, 80, 100, 100, 73, 60, 40, 30, 20, 0],
             fill: false,
             borderColor: 'rgb(72, 55, 164)',
             backgroundColor: 'rgb(237, 200, 57)',
