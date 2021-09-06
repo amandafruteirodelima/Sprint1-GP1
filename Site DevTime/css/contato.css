@@ -1,7 +1,8 @@
   body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  .ativo{
+
+  .ativo {
     color: #FFE57E;
   }
 
@@ -11,49 +12,47 @@
     border: 0;
     background-color: #AA9FE7;
   }
-  
+
   .header {
     background-color: #8375D2;
     width: 100%;
     padding: 5px;
   }
-  
+
   .caixa {
     max-width: 1100px;
     margin: 0 auto;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .logo {
     height: 50px;
   }
-  
+
   ul {
     list-style: none;
   }
-  
+
   ul li:hover {
     color: #FFE57E;
-    font-size: 22px;
   }
-  
+
   ul li {
     display: inline;
     margin-left: 22px;
     cursor: pointer;
     transition-duration: 0.3s;
-    
     color: #fffff0;
     font-family: PT Sans, sans-serif, Impact;
     font-size: larger;
   }
-  
+
   a {
     text-decoration: none;
   }
+
   .container {
     display: flex;
     justify-content: center;
@@ -68,7 +67,6 @@
     height: 400px;
     width: 300px;
     border-radius: 10px 0 0 10px;
-
     background-image: url('./../imgs/Contato.png');
     background-size: cover;
   }
@@ -87,18 +85,19 @@
   .inpt-form {
     width: 255px;
     height: 20px;
-    border: none;
+    border: 1px white solid;
     border-radius: 5px;
     padding: 5px;
     transition: 0.2s;
   }
+
   .inpt-form:hover {
     background-color: #b0a2ffb0;
   }
 
   .txta-form {
     width: 255px;
-    border: none;
+    border: 1px white solid;
     border-radius: 5px;
     padding: 5px;
     resize: none;
@@ -109,39 +108,109 @@
     background-color: #b0a2ffb0;
   }
 
+  .form-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .form-btn button {
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .form-btn button:hover {
+    border-radius: 20px;
+    background-color: #AA9FE7;
+  }
+
+  .btn-concluir {
+    background-color: #0a991c;
+  }
+
+  .btn-alerta {
+    background-color: rgb(202, 202, 38);
+  }
+
+  .footer {
+    background-color: #8375D2;
+    width: 100%;
+    height: 300px;
+  }
+
+  .footer {
+    background-color: #8375D2;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .caixaFooter {
+    max-width: 90%;
+    height: 75px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .btn-default {
+    background-color: #4837A4;
+    color: #fffff0;
+    border: 0;
+    height: 42px;
+    width: 200px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 0px;
+  }
+
+  .btn-default:hover {
+    color: #4837A4;
+    background-color: #FFE57E;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
   @media only screen and (max-width: 565px) {
     .caixa {
       max-width: 510px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    ul li {
+      display: inline;
+      margin-left: 22px;
+      cursor: pointer;
+      transition-duration: 0.3s;
+      color: #fffff0;
+      font-family: PT Sans, sans-serif, Impact;
+      font-size: medium;
+    }
+    .contact-form {
+      background-color: #8375d2;
+      padding: 5px;
+      border-radius: 0 10px 10px 0;
+    }
+    .inpt-form {
+      width: 215px;
+      height: 15px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    .txta-form {
+      width: 215px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      resize: none;
+    }
   }
-  ul li {
-    display: inline;
-    margin-left: 22px;
-    cursor: pointer;
-    transition-duration: 0.3s;
-    color: #fffff0;
-    font-family: PT Sans, sans-serif, Impact;
-    font-size: medium;
-  }
-  .contact-form {
-    background-color: #8375d2;
-    padding: 5px;
-    border-radius: 0 10px 10px 0;
-  }
-  .inpt-form {
-    width: 215px;
-    height: 15px;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  .txta-form {
-    width: 215px;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    resize: none;
-  }
-}
