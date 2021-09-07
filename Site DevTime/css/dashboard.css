@@ -121,3 +121,46 @@ main{
     font-size: 25px;
     margin: 0 0 1% 0;
 }
+/* Footer */
+.footer {
+    background-color: #8375D2;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .footer b {
+    font-family: PT Sans, sans-serif, Impact;
+    color: #fffff0;
+    font-size: larger;
+  }
+  
+  
+  .caixaFooter {
+    max-width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+  }
+
+  .logo {
+      height: 60px;
+  }
+
+  .header{
+    height: 80px;
+}
+
+.btn-default {
+    background-color: #4837A4;
+    color: white;
+    border: 0;
+    height: 35px;
+    width: 164px;
+    border-radius: 70px;
+    font-size: 18px;
+    margin: 15px;
+    text-align: center;
+}
