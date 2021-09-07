@@ -73,3 +73,17 @@ body {
   .header{
     height: 80px;
 }
+
+.sel-padrao {
+    width: 280px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.container-login {
+    height: 690px;
+}
+
+.btn-default{
+    margin-top: 0px;
+}
