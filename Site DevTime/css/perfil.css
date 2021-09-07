@@ -105,7 +105,7 @@ body {
 }
 
 .div_icone_status {
-    width: 350px;
+    width: 380px;
     background-color: #8474d1;
     border-radius: 10px;
     display: block;
@@ -113,7 +113,7 @@ body {
 
 .div_geral_icones {
     height: 65px;
-    width: 350px;
+    width: 100%;
     border-bottom: 5px solid #4837a4;
     display: flex;
     justify-content: space-evenly;
@@ -137,11 +137,11 @@ body {
 .div_status_coin {
     height: 25px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     color: white;
     /* color: #8474d1; */
     /* background-color: white; */
-    width: 325px;
+    width: 365px;
     margin: 8px auto;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
