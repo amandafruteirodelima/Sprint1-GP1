@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="./css/cadastro.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="icon" href="imgs/Yin-Yang-DevTime.png">
+    <link rel="stylesheet" href="./css/preLogin.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <title>DevTime</title>
 </head>
@@ -36,7 +37,7 @@
                             <li>Contato</li>
                         </a>
 
-                        <a href="preLogin.html">
+                        <a href="login.html">
                             <li class="nav_titulo_sobre ativo">Entrar</li>
                         </a>
                     </ul>
@@ -47,8 +48,38 @@
 
     <!--Fim Header -->
 
+    <!--Início préLogin-->
+
+<div id="div_preLogin" style="display: block;">
+      <div class="caixa-conteudo-login">
+
+        <div class="container-preLogin">
+
+            <div class="conteudo-container-login conteudo-container-preLogin ">
+
+                <img class="img-default" id="imagem-1-gestao" src="./imgs/imagem-1.png" alt="">
+
+                <img class="img-default" id="imagem-2-gestao" src="./imgs/Baconha.png" alt="">
+
+                <h1 id="titulo-container"><b>ESCOLHA UMA DAS OPÇÕES<br> DE LOGIN:</b></h1>
+
+                <div id="container-btns">
+                    <button onclick="trocarLogin(2)" class="btn-default" id="btn-administrador"><b><a
+                                >Administrador</a></b></button>
+                    <button onclick="trocarLogin(1)" class="btn-default"
+                        id="btn-funcionario"><b><a>Funcionário</a></b></button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+        <!--Fim do préLogin -->
+
     <!-- Início Content -->
-    <div id="divLoginAdm" style="display: block;">
+    <div id="divLoginAdm" style="display: none;">
 
         <div class="caixa-conteudo-login">
 
@@ -166,10 +197,12 @@
         if(valor == 1){
             divLoginAdm.style.display = 'none';
             divLoginFunc.style.display = 'block';
+            div_preLogin.style.display = 'none';
         }
         else{
             divLoginFunc.style.display = 'none';
             divLoginAdm.style.display = 'block';
+            div_preLogin.style.display = 'none';
         }
 
     }
