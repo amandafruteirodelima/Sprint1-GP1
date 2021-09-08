@@ -194,3 +194,22 @@ body {
   .header{
     height: 80px;
 }
+
+.btn-preLogin {
+    background-color: #4837A4;
+    color: white;
+    border: 0;
+    height: 45px;
+    width: 200px;
+    border-radius: 70px;
+    font-size: 22px;
+    margin: 15px;
+}
+
+.btn-preLogin:hover{
+    height: 50px;
+    width: 210px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #FFE57E;
+}
