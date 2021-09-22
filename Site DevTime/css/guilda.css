@@ -194,37 +194,21 @@ h4, h2 {
         background-color: #D1A300;
         border: 1px #FAFF14 solid;
     }
-    15% {
-        background-color: #D1A300;
-        border: 1px #FAFF14 solid;
-        box-shadow: 0px 0px 5px 0px #D1A300;
-    }
     30% {
         background-color: #D1A300;
         border: 1px #FAFF14 solid;
         box-shadow: 0px 0px 10px 0px #D1A300;
-    }
-    40% {
-        background-color: #D1A300;
-        border: 1px #FAFF14 solid;
-        box-shadow: 0px 0px 15px 0px #D1A300;
     }
     50% {
         background-color: #e7b80d;
         border: 1px #fbff00 solid;
         box-shadow: 0px 0px 20px 0px #e7b80d;
     }
-    60% {
-        background-color: #D1A300;
-        border: 1px #FAFF14 solid;
-        box-shadow: 0px 0px 15px 0px #D1A300;
-    }
     70% {
         background-color: #D1A300;
         border: 1px #FAFF14 solid;
         box-shadow: 0px 0px 10px 0px #D1A300;
     }
-    
     100% {
         background-color: #D1A300;
         border: 1px #FAFF14 solid;
@@ -331,7 +315,7 @@ h4, h2 {
 
 .geralRank-card {
     height: 430px;
-    width: 95%;
+    width: 500px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -368,7 +352,7 @@ h4, h2 {
 @media only screen and (max-width: 922px) {
     .perfil {
         background-color: #AA9FE7;
-        width: 400px;
+        width: 500px;
         height: 90px;
         padding-right: 5px;
         border-radius: 20px 10px 20px 20px;
