@@ -1,0 +1,210 @@
+/*INÍCIO HEADER*/
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(./fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background-color: #0C0C0C;
+}
+
+.divHeader {
+    font-family: 'Poppins-Bold';
+    text-transform: uppercase;
+   
+    height: 70px;
+    width: 100%;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding-top: 15px;
+}
+
+.divImagem {
+    float: left;
+    padding-right: 50px ;
+    
+}
+
+.divImagem img {
+    cursor: pointer;
+    width: 132px;
+}
+
+.divLista ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.divLista li {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding: 0px 70px 0px 0px;
+    cursor: pointer;
+    
+}
+
+
+.divLista li:hover {
+    font-size: 22px;
+    transition: 0.5s;
+    color: rgb(98, 83, 186);
+    
+}
+
+.li-select {
+    text-decoration: none;
+    color: rgb(98, 83, 186); ;
+}
+.divButton {
+    padding-top: 15px;
+    width: 104px;
+    height: 15px;
+
+    
+    
+}
+.divButton button{
+    text-transform: uppercase;
+    border: solid 1px rgb(98, 83, 186);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    width: 104px;
+    height: 35px;
+    font-family: 'Poppins-Bold';
+    font-size: 20px;
+
+}
+
+.divButton button:hover{
+  
+background-color: rgba(255, 255, 255, 0.137);
+font-size: 22px;
+transition: 0.5s;
+cursor: pointer;
+
+}
+
+
+
+
+/*FIM HEADER*/
+
+.content{
+    font-family: 'Poppins-Regular';
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    
+
+    width: 70%;
+    height: 90%;
+    
+    
+    background: #4E4389;
+    border-radius: 10px;
+
+}
+
+.content-escrito{
+    width: 400px;
+}
+
+.content h1{
+    color: white;
+   text-align: center;
+}
+
+.content form {
+    width: 400px;
+}
+
+.div-inpts{
+    padding: 20px 30px 30px 30px;
+}
+
+.inptSmall {
+    width: 175px;
+    margin: 0;
+    padding: 0;
+}
+
+.inptLarge {
+    width: 350px;
+}
+
+.inptPadrao{
+background-color: white;
+height: 35px;
+border-radius: 5px;
+border: none;
+margin-bottom: 30px;
+}
+
+.sel-padrao{
+background-color: white;
+height: 35px;
+border-radius: 5px;
+border: none;
+margin-bottom: 30px;
+width: 350px;
+}
+
+.txt-padrao{
+    margin: 0;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-default{
+    border: solid 1px #D5CFF7;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    width: 150px;
+    height: 35px;
+    font-family: 'Poppins-Bold';
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 25%;
+}
+
+.btn-default:hover{
+    
+background-color: rgba(255, 255, 255, 0.075);
+font-size: 18px;
+transition: 0.5s;
+cursor: pointer;
+}
+
+.imagem-cadastro{
+    width: 512px;
+    position: absolute;
+    bottom: 150px;
+    left: 400px;
+
+}
+
+/*INICIO FOOTER*/
+
+.footer{
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: #d5cff7ce;
+    position: absolute;
+    bottom: -240px;
+}
