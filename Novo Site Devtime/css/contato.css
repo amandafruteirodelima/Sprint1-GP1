@@ -39,7 +39,7 @@ body{
     vertical-align: -webkit-baseline-middle;
 }
 .navbar a:hover {
-    color: rgb(158, 158, 158);
+    color: #6253BA;
 }
 .navbar button {
     height: 30px;
@@ -54,7 +54,7 @@ body{
     transition: 0.2s ease-in-out;
 }
 .navbar button:hover {
-    background-color: #5250589a;
+    background-color: black;
     border: 1px solid #4e34dd;
 }
 /* Fim Header */
