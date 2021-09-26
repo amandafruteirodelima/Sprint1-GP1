@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="css/contato.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <!-- Header -->
 
     <div class="divheader">
@@ -37,6 +39,32 @@
                     </li>
                 </ul>
             </nav>
+            <nav class="mobileNav">
+                <div id="myLinks">
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Entrar</a>
+                </div>
+                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                            <g fill="#ffffff">
+                                <path
+                                    d="M21.5,35.83333c-2.58456,-0.03655 -4.98858,1.32136 -6.29153,3.55376c-1.30295,2.2324 -1.30295,4.99342 0,7.22582c1.30295,2.2324 3.70697,3.59031 6.29153,3.55376h129c2.58456,0.03655 4.98858,-1.32136 6.29153,-3.55376c1.30295,-2.2324 1.30295,-4.99342 0,-7.22582c-1.30295,-2.2324 -3.70697,-3.59031 -6.29153,-3.55376zM21.5,78.83333c-2.58456,-0.03655 -4.98858,1.32136 -6.29153,3.55376c-1.30295,2.2324 -1.30295,4.99342 0,7.22582c1.30295,2.2324 3.70697,3.59031 6.29153,3.55376h129c2.58456,0.03655 4.98858,-1.32136 6.29153,-3.55376c1.30295,-2.2324 1.30295,-4.99342 0,-7.22582c-1.30295,-2.2324 -3.70697,-3.59031 -6.29153,-3.55376zM21.5,121.83333c-2.58456,-0.03655 -4.98858,1.32136 -6.29153,3.55376c-1.30295,2.2324 -1.30295,4.99342 0,7.22582c1.30295,2.2324 3.70697,3.59031 6.29153,3.55376h129c2.58456,0.03655 4.98858,-1.32136 6.29153,-3.55376c1.30295,-2.2324 1.30295,-4.99342 0,-7.22582c-1.30295,-2.2324 -3.70697,-3.59031 -6.29153,-3.55376z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </nav>
+            
 
         </div>
 
@@ -44,62 +72,89 @@
 
     <!-- Fim Header -->
 
-   <div class="content">
+    <div class="content">
 
-    <div class="containerBox">
+        <div class="containerBox">
 
-        <div class="divForm">
+            <div class="divForm">
 
-            <h2>Contate-nos</h2>
+                <h2>Contate-nos</h2>
 
-            <form action="">
+                <form action="">
 
-                <label for="name">Seu nome:</label>
-                <input type="text">
-                
-                <label for="email">Email:</label>
-                <input type="text">
+                    <label for="name">Seu nome:</label>
+                    <input type="text">
 
-                <label for="typeOfMessage">Tipo de mensagem:</label>
-                <select name="" id="">
-                    <option value="">Erros ou Bugs</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
+                    <label for="email">Email:</label>
+                    <input type="text">
 
-                <label for="message">Mensagem:</label> 
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="typeOfMessage">Tipo de mensagem:</label>
+                    <select name="" id="">
+                        <option value="">Erros ou Bugs</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
 
-            </form>
+                    <label for="message">Mensagem:</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
 
-            <div class="formButton">
-                <button>Enviar</button>
+                </form>
+
+                <div class="formButton">
+                    <button>Enviar</button>
+                </div>
+
             </div>
 
-        </div>
+            <div class="moreInfo">
 
-        <div class="moreInfo">
+                <h2 class="infoTitle">Outro meio de comunicação</h2>
 
-            <h2 class="infoTitle">Outro meio de comunicação</h2>
+                <a href="">
+                    <div class="card">
+                        <h2 class="title">Fale conosco pelo freshdesk</h2>
 
-            <a href="">
-                <div class="card">
-                    <h2 class="title">Fale conosco pelo freshdesk</h2>
-                    
-                    <div class="divInline">
-                        <img src="img/freshdesk.png" alt="">
-                        <p>O freshdesk é um software de suporte ao cliente</p>
+                        <div class="divInline">
+                            <img src="img/freshdesk.png" alt="">
+                            <p>O freshdesk é um software de suporte ao cliente</p>
+                        </div>
+
                     </div>
+                </a>
 
-                </div>
-            </a>
+            </div>
 
         </div>
 
     </div>
 
-   </div>
+    <div class="footer">
+        <div class="container">
+            <div class="responsiveFooter">
+                <div class="company">
+                    <a href="#"><img src="Logo-Branco.png" alt="Logo da DevTime"></a>
+                    |
+                    <a href="#"><img src="img/logo_bandtec.png" alt="Logo da Faculdade BandTec"></a>
+                </div>
+    
+                <div>
+                    <h3>Copyright © 2021 - Todos os direitos reservados - DevTime</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
+
 </html>
