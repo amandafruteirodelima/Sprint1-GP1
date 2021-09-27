@@ -144,3 +144,35 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: medium;
 }
+.karoll{
+    width: 150px;
+    height: 150px;
+    margin-right: 600px;
+    margin-top: 20px;
+}
+.karoll_nome{
+    color:violet;
+}
+.amanda{
+    width: 150px;
+    height: 150px;
+    margin-top: -00px;
+    margin-right: 400px;
+}
+
+.guilherme {
+    width: 150px;
+    height: 150px;
+}
+.matheus {
+    width: 150px;
+    height: 150px;
+}
+.rony{
+    width: 150px;
+    height: 150px;
+}
+.danilo {
+    width: 150px;
+    height: 150px;
+}
