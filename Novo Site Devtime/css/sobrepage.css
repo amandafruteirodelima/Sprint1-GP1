@@ -1,12 +1,8 @@
-@font-face {
-    font-family: 'Poppins-Regular';
-    src: url(./fonts/Poppins-Regular.ttf);
-    font-family: 'Poppins-Bold';
-    src: url(fonts/Poppins-Bold);
-}
+
 body{
 background: linear-gradient(180deg, #431197 0%,  rgba(61, 1, 95) 100%), #0000;
 background-repeat: no-repeat;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 .divheader{
@@ -16,6 +12,7 @@ background-repeat: no-repeat;
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     display: flex;
     justify-content: space-between;
@@ -35,14 +32,18 @@ background-repeat: no-repeat;
     text-decoration: none;
     font-size: 1.1rem;
     vertical-align: -webkit-baseline-middle;
+    
 }
 .navbar a:hover {
     color: #6253BA;
+    font-size: 22px;
+    transition-duration: 0.4s;
 }
 .navbar button {
     height: 30px;
     width: 100px;
     cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     color: white;
     font-family: 'Poppins-Bold';
@@ -54,20 +55,77 @@ background-repeat: no-repeat;
 .navbar button:hover {
     background-color: black;
     border: 1px solid #4e34dd;
+    font-size: 15px;
+    transition-duration: 0.4s;
 }
 .img_corrida{
     width: 60px;
     height: 60px;
-    margin-left: 200px;
-    margin-top: 85px;
+    margin-left: 160px;
+    margin-top: 95px;
+}
+.img_corrida:hover{
+    width: 80px;
+    height: 80px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 .box_pergunta1{
     float: right;
     margin-left: 300px;
     color: white;
-    margin-top: -130px;
+    margin-top: -145px;
     margin-bottom: 50px;
     text-align: justify;
     margin-right: 100px;
+    font-size: small;
 
+}
+.img_acreditamos{
+    width: 60px;
+    height: 60px;
+    margin-left: 160px;
+    margin-top: 50px;
+}
+
+
+.img_acreditamos:hover{
+    width: 80px;
+    height: 80px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.box_pergunta2{
+    float: right;
+    margin-left: 300px;
+    color: white;
+    margin-top: -128px;
+    margin-bottom: 50px;
+    text-align: justify;
+    margin-right: 100px;
+    font-size: small;
+}
+.img_dev{
+    width: 60px;
+    height: 60px;
+    margin-left: 160px;
+    margin-top: 50px;
+}
+
+
+.img_dev:hover{
+    width: 80px;
+    height: 80px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.box_pergunta3{
+    float: right;
+    margin-left: 300px;
+    color: white;
+    margin-top: -128px;
+    margin-bottom: 50px;
+    text-align: justify;
+    margin-right: 100px;
+    font-size: small;
 }

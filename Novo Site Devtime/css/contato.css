@@ -40,6 +40,8 @@ body{
 }
 .navbar a:hover {
     color: #6253BA;
+    font-size: 22px;
+    transition-duration: 0.4s;
 }
 .navbar button {
     height: 30px;
@@ -56,6 +58,8 @@ body{
 .navbar button:hover {
     background-color: black;
     border: 1px solid #4e34dd;
+    font-size: 15px;
+    transition-duration: 0.4s;
 }
 /* Fim Header */
 .divForm {
