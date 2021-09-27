@@ -38,7 +38,7 @@ body {
 
 .divImagem img {
     cursor: pointer;
-    width: 132px;
+    width: 120px;
 }
 
 .divLista ul {
@@ -49,16 +49,16 @@ body {
 
 .divLista li {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1em;
     color: white;
-    padding: 0px 70px 0px 0px;
+    padding: 8px 70px 0px 0px;
     cursor: pointer;
     
 }
 
 
 .divLista li:hover {
-    font-size: 22px;
+    font-size: 1.15em;
     transition: 0.5s;
     color: rgb(98, 83, 186);
     
@@ -85,19 +85,23 @@ body {
     width: 104px;
     height: 35px;
     font-family: 'Poppins-Bold';
-    font-size: 20px;
+    font-size: 1em;
 
 }
 
 .divButton button:hover{
   
 background-color: rgba(255, 255, 255, 0.137);
-font-size: 22px;
+font-size: 1.15em;
 transition: 0.5s;
 cursor: pointer;
 
 }
 
+.li-comum{
+    color: white;
+    text-decoration: none;
+}
 
 
 
@@ -108,6 +112,7 @@ cursor: pointer;
     position: absolute;
     left: 15%;
     top: 20%;
+ 
     
 
     width: 70%;
@@ -148,11 +153,45 @@ cursor: pointer;
 
 .inptPadrao{
 background-color: white;
-height: 35px;
+height: 40px;
 border-radius: 5px;
 border: none;
 margin-bottom: 30px;
+justify-content: center;
+
 }
+
+
+.inptPadrao:focus + label, .inptPadrao:not(:placeholder-shown)+label{
+    transform: translate(-0.2em) translateY(-0.6em) scale(0.8);
+}
+
+
+label {
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    color: #686868;
+    transform-origin: 0 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.label-email {
+    left: 5px;
+    top: 281px;
+}
+
+
+.label-senha {
+    left: 5px;
+    top: 354px;
+}
+
+form{
+    position: relative;
+}
+
 
 .sel-padrao{
 background-color: white;
