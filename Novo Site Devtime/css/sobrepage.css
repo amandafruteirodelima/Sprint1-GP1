@@ -1,6 +1,6 @@
 
 body{
-background: linear-gradient(180deg, #431197 0%,  rgba(61, 1, 95) 100%), #0000;
+background: linear-gradient(180deg, #4813a3 0%,  rgba(61, 1, 95) 70%), #0000 0%;
 background-repeat: no-repeat;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -58,11 +58,14 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     transition-duration: 0.4s;
 }
+/* fim da header */
+
+/* conteudo sobrepag */
 .img_corrida{
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     margin-left: 160px;
-    margin-top: 95px;
+    margin-top: 70px;
 }
 .img_corrida:hover{
     width: 80px;
@@ -74,7 +77,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: right;
     margin-left: 300px;
     color: white;
-    margin-top: -145px;
+    margin-top: -120px;
     margin-bottom: 50px;
     text-align: justify;
     margin-right: 100px;
@@ -99,7 +102,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: right;
     margin-left: 300px;
     color: white;
-    margin-top: -128px;
+    margin-top: -113px;
     margin-bottom: 50px;
     text-align: justify;
     margin-right: 100px;
@@ -123,9 +126,21 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: right;
     margin-left: 300px;
     color: white;
-    margin-top: -128px;
+    margin-top: -100px;
     margin-bottom: 50px;
     text-align: justify;
     margin-right: 100px;
     font-size: small;
+}
+.linha_divisoria {
+    margin-top: 90px;
+    height: 15px;
+    width: 990px;
+    border-top: 2px solid #ffff;
+    margin-left: 160px;
+}
+.equipe {
+    color: white;
+    text-align: center;
+    font-size: medium;
 }
