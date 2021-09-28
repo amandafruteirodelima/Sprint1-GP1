@@ -143,6 +143,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
     font-size: 25px;
+    margin-top: 100px;
 }
 .karoll{
     width: 135px;
@@ -151,10 +152,11 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 50px;
     cursor: pointer;
 }
-.container {
+.container_equipe {
     position: relative;
-    width: 50%;
+    width: 40%;
     float: right;
+    margin-top: 40px;
 
   }
   
@@ -162,6 +164,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: block;
     width: 100%;
     height: auto;
+    margin-bottom: 15px;
   }
   
   .overlay {
@@ -170,15 +173,15 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    width: 22%;
+    height: 90%;
+    width: 27%;
     opacity: 0;
     transition: .3s ease-in-out;
     background-color: #ffff;
     border-radius: 50%;
   }
   
-  .container:hover .overlay {
+  .container_equipe:hover .overlay {
     opacity: 2;
     cursor: pointer;
   }
