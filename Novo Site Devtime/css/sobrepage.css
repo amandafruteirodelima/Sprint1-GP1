@@ -145,32 +145,81 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
 }
 .karoll{
-    width: 120px;
-    height: 120px;
+    width: 135px;
+    height: 135px;
     margin-right: 600px;
     margin-top: 50px;
+    cursor: pointer;
 }
-.amanda{
-    width: 120px;
-    height: 120px;
-    margin-top: -260px;
+.container {
+    position: relative;
+    width: 50%;
+    float: right;
+
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 22%;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    background-color: #ffff;
+    border-radius: 50%;
+  }
+  
+  .container:hover .overlay {
+    opacity: 2;
+    cursor: pointer;
+  }
+  
+  .text {
+    color: #4813a3;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .amanda{
+    width: 135px;
+    height: 135px;
+    margin-top: -180px;
+    float:right;
     
 }
 
 .guilherme {
-    width: 150px;
-    height: 150px;
-    margin-top: -380px;
+    width: 135px;
+    height: 135px;
+    margin-top: -150px;
+    float: right;
+    margin-right: 480px;
 }
 .matheus {
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 135px;
 }
 .rony{
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 135px;
 }
+
 .danilo {
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 135px;
 }
+
