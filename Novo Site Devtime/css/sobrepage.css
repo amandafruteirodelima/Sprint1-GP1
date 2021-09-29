@@ -1,6 +1,6 @@
 
 body{
-background: linear-gradient(180deg, #4813a3 0%,  rgba(61, 1, 95) 70%), #0000 0%;
+background: linear-gradient(140deg, #a27ce6 0%,  rgb(40, 1, 63) 70%), #0000 0%;
 background-repeat: no-repeat;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -28,14 +28,14 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 20px;
 }
 .navbar a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.1rem;
     vertical-align: -webkit-baseline-middle;
     
 }
 .navbar a:hover {
-    color: #6253BA;
+    color: white;
     font-size: 22px;
     transition-duration: 0.4s;
 }
@@ -141,9 +141,9 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .equipe {
     color: white;
-    text-align: center;
     font-size: 25px;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-left: 170px;
 }
 .karoll{
     width: 135px;
@@ -165,6 +165,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+    margin-left: 60px;
   }
   
   .overlay {
@@ -179,6 +180,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: .3s ease-in-out;
     background-color: #ffff;
     border-radius: 50%;
+    margin-left: 60px;
   }
   
   .container_equipe:hover .overlay {
@@ -225,4 +227,10 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 135px;
     height: 135px;
 }
-
+.linha_divisoria2 {
+    margin-top: 640px;
+    height: 15px;
+    width: 990px;
+    border-top: 2px solid #ffff;
+    margin-left: 160px;
+}
