@@ -146,8 +146,10 @@ a{
     height: 15px;
     width: 990px;
     border-top: 2px solid #9a6de7;
-    margin-left: 160px;
+    margin-left: 130px;
 }
+
+/* equipe */
 .equipe {
     color: white;
     font-size: 25px;
@@ -241,8 +243,10 @@ a{
     height: 15px;
     width: 990px;
     border-top: 2px solid #9a6de7;
-    margin-left: 160px;
+    margin-left: 130px;
 }
+
+/* planos */
 .planos {
     color: white;
     font-size: 25px;
@@ -253,7 +257,7 @@ a{
     float: right;
     margin-bottom: 200px;
     margin-top: 70px;
-    margin-right:100px;
+    margin-right:120px;
 }
 .plano_premiun:hover{
     cursor: pointer;
@@ -269,12 +273,53 @@ a{
     margin-bottom: 200px;
     margin-top: 70px;
     margin-right:100px;
-    margin-left: 150px;
+    margin-left: 130px;
 }
 .plano_premiun{
     margin-bottom: 200px;
     margin-top: 30px;
     margin-right:100px;
-    margin-left: 540px;
+    margin-left: 515px;
   
+}
+
+/* footer */
+.responsiveFooter {
+    display: flex;
+    flex-direction: column;
+}
+.responsiveFooter h3 {
+    text-align: center;
+}
+.company {
+    text-align: center;
+}
+@media only screen and (max-width: 375px) {
+
+    .container {
+        max-width: 360px;
+    }
+    .containerBox {
+        max-width: 375px;
+    }
+    .divForm {
+        padding: 10px 50px 10px 50px;
+    }
+
+}
+.footer {
+    background: linear-gradient(140deg, #a27ce6 0%,  rgb(49, 2, 77) 70%), #0000 0%;
+    color: white;
+}
+.responsiveFooter{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.company img {
+    height: 30px;
+    margin-top: 15px;
+}
+.copyright{
+    font-size: small;
 }

@@ -344,3 +344,6 @@ body{
         max-width: 280px;
     }
 }
+.copyright{
+    font-size: small;
+}
