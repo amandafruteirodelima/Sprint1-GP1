@@ -3,7 +3,6 @@ body{
 background: linear-gradient(140deg, #a27ce6 0%,  rgb(49, 2, 77) 70%), #0000 0%;
 background-repeat: no-repeat;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 .divheader{
     padding: 10px 0 10px 0;
@@ -126,14 +125,24 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: right;
     margin-left: 300px;
     color: white;
-    margin-top: -100px;
-    margin-bottom: 50px;
+    margin-top: -110px;
+    margin-bottom: 100px;
     text-align: justify;
     margin-right: 100px;
     font-size: small;
 }
+.clique{
+    color:white;
+}
+.clique:hover{
+color: rgb(40, 1, 63);
+cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
 .linha_divisoria {
-    margin-top: 90px;
+    margin-top: 130px;
     height: 15px;
     width: 990px;
     border-top: 2px solid #ffff;
@@ -239,4 +248,15 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     margin-top: 20px;
     margin-left: 170px;
+}
+.plano_premium{
+    float: right;
+    margin-bottom: 200px;
+    margin-top: 50px;
+}
+.plano_premium:hover{
+    width: 350px;
+    cursor: pointer;
+    height: 450px;
+
 }
