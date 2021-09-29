@@ -145,7 +145,7 @@ a{
     margin-top: 130px;
     height: 15px;
     width: 990px;
-    border-top: 2px solid #ffff;
+    border-top: 2px solid #9a6de7;
     margin-left: 160px;
 }
 .equipe {
@@ -240,7 +240,7 @@ a{
     margin-top: 640px;
     height: 15px;
     width: 990px;
-    border-top: 2px solid #ffff;
+    border-top: 2px solid #9a6de7;
     margin-left: 160px;
 }
 .planos {
@@ -249,14 +249,32 @@ a{
     margin-top: 20px;
     margin-left: 170px;
 }
-.plano_premium{
+.plano_basic{
     float: right;
     margin-bottom: 200px;
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-right:100px;
 }
-.plano_premium:hover{
-    width: 350px;
+.plano_premiun:hover{
     cursor: pointer;
-    height: 450px;
-
+}
+.plano_basic:hover{
+    cursor: pointer;
+}
+.plano_standard:hover{
+    cursor: pointer;
+}
+.plano_standard{
+    float: left;
+    margin-bottom: 200px;
+    margin-top: 70px;
+    margin-right:100px;
+    margin-left: 150px;
+}
+.plano_premiun{
+    margin-bottom: 200px;
+    margin-top: 30px;
+    margin-right:100px;
+    margin-left: 540px;
+  
 }
