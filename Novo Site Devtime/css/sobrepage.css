@@ -1,6 +1,6 @@
 
 body{
-background: linear-gradient(140deg, #a27ce6 0%,  rgb(40, 1, 63) 70%), #0000 0%;
+background: linear-gradient(140deg, #a27ce6 0%,  rgb(49, 2, 77) 70%), #0000 0%;
 background-repeat: no-repeat;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -142,7 +142,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .equipe {
     color: white;
     font-size: 25px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 170px;
 }
 .karoll{
@@ -233,4 +233,10 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 990px;
     border-top: 2px solid #ffff;
     margin-left: 160px;
+}
+.planos {
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 170px;
 }
