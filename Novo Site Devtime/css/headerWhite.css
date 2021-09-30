@@ -1,0 +1,105 @@
+/*INÍCIO HEADER*/
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(./fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background-image:  linear-gradient(to padding-right,#27063A 0%, #3B025C 49% , #431092 100%);
+    
+    
+}
+.divHeader {
+    font-family: 'Poppins-Bold';
+    text-transform: uppercase;
+   
+    height: 70px;
+    width: 100%;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding-top: 15px;
+}
+
+.divImagem {
+    float: left;
+    padding-right: 50px ;
+    
+}
+
+.divImagem img {
+    cursor: pointer;
+    width: 120px;
+}
+
+.divLista ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.divLista li {
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    padding: 8px 70px 0px 0px;
+    cursor: pointer;
+    
+}
+
+
+.divLista li:hover {
+    font-size: 1.15em;
+    transition: 0.5s;
+    color: rgb(98, 83, 186);
+    
+}
+
+.li-select {
+    text-decoration: none;
+    color: rgb(98, 83, 186); ;
+}
+.divButton {
+    padding-top: 15px;
+    width: 104px;
+    height: 15px;
+
+    
+    
+}
+.divButton button{
+    text-transform: uppercase;
+    border: solid 1px rgb(98, 83, 186);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    width: 104px;
+    height: 35px;
+    font-family: 'Poppins-Bold';
+    font-size: 1em;
+
+}
+
+.divButton button:hover{
+  
+background-color: rgba(255, 255, 255, 0.137);
+font-size: 1.15em;
+transition: 0.5s;
+cursor: pointer;
+
+}
+
+.li-comum{
+    color: white;
+    text-decoration: none;
+}
