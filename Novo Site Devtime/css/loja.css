@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    color: white;
+    background-color: #1E1B2E;
+}
+.header {
+    padding: 25px 0 25px 0;
+    width: 100%;
+    background-color: #443980;
+    border-radius: 0 0 50px 50px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.boxPerfil {
+    display: flex;
+    justify-content: space-between;
+}
+.perfil {
+    display: flex;
+}
+.btnPerfil {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: #6353BA;
+    margin: auto 0;
+    margin-right: 20px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.btnPerfil img {
+    height: 45px;
+}
+.btnPerfil:hover {
+    background-color: #8876eb;
+}
+.imgPerfil {
+    height: 90px;
+    width: 90px;
+    border-radius: 5px;
+    background-color: beige;
+}
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.nomeUsuario {
+    background-color: #545454a2;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    border: 1px rgba(0, 0, 0, 0.466) solid;
+}
+.barraNivel {
+    height: 15px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: black;
+}
+.barraCrescente {
+    height: 15px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: #239EF7;
+}
+.infoNivel {
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 0 0 2px 2px;
+    background-color: rgba(0, 0, 0, 0.425);
+    color: white;
+    text-align: center;
+}
+.infoPerfil {
+    min-width: 170px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #6253ba91;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pontuacao {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.moeda {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.imgInfo {
+    height: 35px;
+}
+.infoTexto {
+    align-self: center;
+}
+.boxNavbar {
+    background: linear-gradient(90deg, rgba(99, 83, 186, 0.4) 0%, #6353BA 51.43%, rgba(99, 83, 186, 0.4) 100%);
+    padding: 12px 0px 12px 0px;
+    max-width: 1200px;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ativo {
+    background-color: #ffffff;
+}
+.destivo {
+    background-color: #443980;
+}
+.navBtn {
+    
+    border: none;
+    border-radius: 5px;
+}
+
+.navImg {
+    height: 50px;
+}

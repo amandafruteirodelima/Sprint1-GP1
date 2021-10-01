@@ -7,17 +7,17 @@
 body{
     margin: 0;
     box-sizing: border-box;
-    background-color: #000;
+    background: linear-gradient(140deg, #a27ce6 0%,  rgb(49, 2, 77) 70%), #0000 0%;
 }
 /* Inicio header */
 .divheader{
-    background-color: #0C0C0C;
     padding: 10px 0 10px 0;
     font-family: 'Poppins-Bold';
 }
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     display: flex;
     justify-content: space-between;
@@ -47,6 +47,7 @@ body{
     height: 30px;
     width: 100px;
     cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     color: white;
     font-family: 'Poppins-Bold';
