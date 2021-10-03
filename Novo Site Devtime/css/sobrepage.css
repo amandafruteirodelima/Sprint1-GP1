@@ -1,7 +1,14 @@
+@font-face{
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
 body{
-background: linear-gradient(120deg, #987fc4 0%,  rgb(49, 2, 77) 70%), #0000 0%;
+/* background: linear-gradient(120deg, #987fc4 0%,  rgb(49, 2, 77) 70%), #0000 0%; */
+    background: linear-gradient(100deg, #987fc4 0%, #7647c7 0%, #987fc4 0.01%, rgb(81, 10, 122) 48.54%, #4b11a1 100%);
 background-repeat: no-repeat;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-family:'Poppins-Bold';
 }
 .divheader{
     padding: 10px 0 10px 0;
