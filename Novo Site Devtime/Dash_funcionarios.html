@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/headerDark.css">
+    <link rel="stylesheet" href="css/Dash_funcionario.css">
+    <link rel="icon" href="imgs/Yin-Yang-DevTime.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+        integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+        crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!--Início Header-->
+    <div class="divHeader">
+
+        <div class="container-header">
+
+            <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
+
+            <nav class="divLista">
+                <ul>
+                    <li>Dashboard</li>
+                    <li>Guildas</li>
+                    <li><a class="li-select" href="Cadastro.html">Cadastro</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="divButton"><button>Sair</button></div>
+
+        </div>
+    </div>
+    <!--Fim Header-->
+    <main>
+        <div class="cards_box">
+            <div class="card_cpu card">
+                <div class="card_titulo_box">
+                    <p class="card_titulo">CPU</p>
+                </div>
+
+                <div class="medida_box">
+                    <p style="color: yellow;" class="medida">55%</p>
+                </div>
+            </div>
+
+            <div class="card_memoria card">
+                <div class="card_titulo_box">
+                    <p class="card_titulo">Memoria</p>
+                </div>
+
+                <div class="medida_box">
+                    <p style="color: green;" class="medida">26%</p>
+                </div>
+            </div>
+
+            <div class="card_disco card">
+                <div class="card_titulo_box">
+                    <p class="card_titulo">Disco</p>
+                </div>
+
+                <div class="medida_box">
+                    <p style="color: red;" class="medida">85%</p>
+                </div>
+            </div>
+        </div>
+        <div class="software_box">
+            <div class="softwares_utilizados estatisticas_software">
+
+                <div class="card_titulo_box">
+                    <p class="card_titulo">Softwares mais utilizados</p>
+                </div>
+                <div class="softwares">
+                    <div class="software">
+                        <img src="img/chrome.png" alt="App Image">
+                        <p>Chrome<br>
+                            CPU: 10%<br>
+                            Memoria: 10%
+                        </p>
+                    </div>
+                    <div class="software">
+                        <img src="img/Apache_NetBeans.png" alt="App Image">
+                        <p>Apache NetBeans<br>
+                            CPU: 10%<br>
+                            Memoria: 10%
+                        </p>
+                    </div>
+                    <div class="software">
+                        <img src="img/Microsoft_Office_Teams.png" alt="App Image">
+                        <p>Microsoft Teams<br>
+                            CPU: 10%<br>
+                            Memoria: 10%
+                        </p>
+                    </div>
+                    <div class="software">
+                        <img src="img/Discord.png" alt="App Image">
+                        <p>Discord<br>
+                            CPU: 10%<br>
+                            Memoria: 10%
+                        </p>
+                    </div>
+                    <div class="software">
+                        <img src="img/vs-code.png" alt="App Image">
+                        <p>Visual Studio Code<br>
+                            CPU: 10%<br>
+                            Memoria: 10%
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="estatisticas_software">
+                <div class="card_titulo_box">
+                    <p class="card_titulo">Estatisticas</p>
+                </div>
+                <div class="grafico_estatisticas">
+                    <canvas id="pizza_process"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="grafico_box">
+            <div class="card_titulo_box">
+                <p class="card_titulo">CPU</p>
+            </div>
+
+            <div class="grafico">
+                <canvas id="cpu"></canvas>
+            </div>
+        </div>
+        <div class="grafico_box">
+            <div class="card_titulo_box">
+                <p class="card_titulo">Memoria</p>
+            </div>
+
+            <div class="grafico">
+                <canvas id="memoria"></canvas>
+            </div>
+        </div>
+        <div class="grafico_box">
+            <div class="card_titulo_box">
+                <p class="card_titulo">Armazenamento</p>
+            </div>
+
+            <div class="grafico">
+                <canvas id="disco"></canvas>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
+<script>
+    
+    const data = {
+        labels: [
+            'Chrome',
+            'Apache NetBeans',
+            'Discord'
+        ],
+        datasets: [{
+            label: 'Softwares',
+            data: [300, 50, 100],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+            ],
+            hoverOffset: 4
+        }]
+    };
+    const config = {
+        type: 'doughnut',
+        data: data,
+        options: {
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'white'
+                }
+            }
+        }
+    }
+    };
+    var myChart = new Chart(
+        document.getElementById('pizza_process'),
+        config
+    );
+    ///////////////////////////////////////////////////////
+    const databars = {
+        labels: ['disc 1', 'disc 2', 'disc 3'],
+        datasets: [{
+            label: 'Armazenamento',
+            data: [65, 59, 85, 81],
+            backgroundColor: [
+                'red',
+                'green',
+                'blue',
+                'yellow'
+            ],
+            borderColor: [
+                'black',
+                'black',
+                'black',
+                'black'
+            ],
+            borderWidth: 1
+        }]
+    };
+    const configbars = {
+        type: 'bar',
+        data: databars,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        },
+    };
+    var myChart = new Chart(
+        document.getElementById('disco'),
+        configbars
+    );
+    ///////////////////////////////////////////////////////
+    const dataram = {
+        labels: ['0s', '5s', '10s', '15s', '20s', '25s', '30s', '35s', '40s', '45s', '50s', '55s', '60s'],
+        datasets: [{
+            label: 'Memoria',
+            data: [80, 95, 100, 70, 40, 40, 40, 55, 50, 47, 30, 20, 0],
+            fill: false,
+            borderColor: '#4A024D',
+            backgroundColor: 'white',
+            tension: 0.1
+        }]
+
+    };
+    const configram = {
+        type: 'line',
+        data: dataram,
+    };
+    var myChart = new Chart(
+        document.getElementById('memoria'),
+        configram
+    );
+    ///////////////////////////////////////////////////////
+    const datacpu = {
+        labels: ['0s', '5s', '10s', '15s', '20s', '25s', '30s', '35s', '40s', '45s', '50s', '55s', '60s'],
+        datasets: [{
+            label: "Intel(R) Core(TM) i3-3220 CPU @3.30 GHz",
+            data: [0, 10, 24, 42, 35, 50, 51, 73, 80, 90, 100, 65, 50],
+            fill: false,
+            borderColor: '#4A024D',
+            backgroundColor: 'white',
+            tension: 0.1
+        }]
+    };
+    const configcpu = {
+        type: 'line',
+        data: datacpu,
+
+    };
+    var myChart = new Chart(
+        document.getElementById('cpu'),
+        configcpu
+    );
+</script>
