@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="icon" href="img/Yin-Yang-DevTime.png">
     <title>DevTime</title>
 </head>
+
 <body>
     <!-- header -->
     <div class="divheader">
@@ -25,7 +27,7 @@
                         <a style="color: white;" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a  href="sobrepage.html">Sobre</a>
+                        <a href="sobrepage.html">Sobre</a>
                     </li>
                     <li>
                         <a href="contato.html">Contato</a>
@@ -37,46 +39,60 @@
             </nav>
         </div>
     </div>
-
-    <div class="w3-content w3-display-container" style="max-width:800px">
-        <img class="mySlides" src="img/zyro-image (2)_auto_x2.jpg" style="width:167%; height: 35%;">
-        <img class="mySlides" src="img/foto2 banner index.jpg" style="width:167%; height: 35%;"
-        <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
-          <div class="seta_esquerda" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="seta_direita" onclick="plusDivs(1)">&#10095;</div>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-        </div>
-      </div>
     
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img class="imagens" src="img/zyro-image (2)_auto_x2.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img class="imagens"  src="img/foto2 banner index.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+          </div>
+
 </body>
+
 </html>
 <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-    
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = x.length} ;
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-         dots[i].className = dots[i].className.replace(" w3-white", "");
-      }
-      x[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " w3-white";
-    }
-    </script>
+   var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
