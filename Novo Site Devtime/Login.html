@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/headerDark.css">
-    <link rel="stylesheet" href="./css/headerWhite.css">
+    <link rel="stylesheet" href="./css/headerLight.css">
+    <link rel="stylesheet" href="./css/Login.css">
+
     <title>Login</title>
 </head>
+
 <body>
     <!--Início Header-->
 
@@ -19,19 +22,45 @@
 
             <nav class="divLista">
                 <ul>
-                    <li>Dashboard</li>
-                    <li>Guildas</li>
-                    <li><a class="li-select" href="Cadastro.html">Cadastro</a></li>
-                    <li><a class="li-comum" href="Cadastro_Maquinas.html">Máquinas</a></li>
+                    <li><a class="li-comum" href="">Home</a></li>
+                    <li><a class="li-comum" href="sobrepage.html">Sobre</a></li>
+                    <li><a class="li-select" href="contato.html">Contato</a></li>
                 </ul>
 
             </nav>
 
-            <div class="divButton"><button>Sair</button></div>
+            <div class="divButton"><button>Entrar!</button></div>
 
         </div>
+
     </div>
 
     <!--Fim Header-->
+
+
+    <div class="content">
+
+        <img class="img_login" src="./img/user-login-branco.png" alt="">
+
+        <div class="div-inpts">
+
+
+            <form action="Cadastro.html">
+
+                <input class="inptLarge inptPadrao" type="email" placeholder=" " required>
+                <label class="label-email" for="email">Email</label>
+
+                <input class="inptLarge inptPadrao" type="password" placeholder=" " required>
+                <label class="label-senha" for="senha">Senha</label>
+
+
+                <button class="btn-default"><a  href="Cadastro.html" class="link-comum"><b>Entrar</b></a></button>
+            </form>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>

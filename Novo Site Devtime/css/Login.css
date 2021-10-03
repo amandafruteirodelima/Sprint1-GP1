@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
     font-family: 'Poppins-Regular';
     src: url(../fonts/Poppins-Regular.ttf);
     font-family: 'Poppins-Bold';
@@ -8,7 +8,10 @@
 body {
     display: flex;
     margin: 0;
-    background-color: #0C0C0C;
+    background: linear-gradient(90deg, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
+    background-size: cover;
+    font-family: 'Poppins-Bold';
+
 
     flex-direction: column;
     gap: 50px;
@@ -17,51 +20,55 @@ body {
 }
 
 
+
+/*Conteúdo*/
+
+
 .content {
     font-family: 'Poppins-Regular';
     font-size: 1rem;
 
-    background: #4E4389;
+    background-color: #dcd2ea5b;
+    
     border-radius: 10px;
 
-    width: 140vh;
-    height: 90vh;
+    width: 85vh;
+    height: 65vh;
 
-}
-
-.content-escrito {
     display: flex;
-    flex-direction: row;
-}
-
-.content h1 {
-    color: white;
-    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content form {
     width: 60vh;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.img_login{
+    width: 15vh;
+    padding: 0vh 5vh 5vh 5vh;
+    margin: 0;
+}
+
 
 .div-inpts {
-    padding: 3vh 4vh;
+   text-align: center;
+   justify-content: center;
 }
 
-.inptSmall {
-    width: 26.8vh;
-}
-
-.inptLarge {
-    width: 55vh;
-}
 
 .inptPadrao {
     background-color: white;
     border-radius: 5px;
     border: none;
+    padding-top: 7px;
     
-    padding: 0.3vh;
-    height: 5.5vh;
+    height: 5vh;
+    width: 55vh;
 
     justify-content: center;
     margin-bottom: 4vh;
@@ -90,50 +97,21 @@ label {
     transition: transform 0.2s ease-in-out;
 }
 
-.label-nascimento {
-    left: 1vh;
-    top: 11.45vh;
-}
-
-.label-cargahoraria {
-    left: 29vh;
-    top: 11.45vh;
-}
 
 .label-email {
-    left: 1vh;
-    top: 41.6vh;
+    left: 3vh;
+    top: 1.7vh;
 }
 
 
 .label-senha {
-    left: 1vh;
-    top: 51.6vh;
+    left: 3vh;
+    top: 12vh;
 }
 
 
+/*Button*/
 
-/*Selects*/
-
-
-.sel-padrao {
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-
-    width: 55vh;
-    height: 6vh;
-    margin-bottom: 4vh;
-}
-
-/*Imagem*/
-
-.imagem-cadastro {
-    padding-top: 10vh;
-    width: 65vh;
-}
-
-/*Botão Cadastro*/
 
 .btn-default {
     font-family: 'Poppins-Bold';
@@ -144,9 +122,9 @@ label {
     border: solid 1px #D5CFF7;
     border-radius: 5px;
 
-    width: 25vh;
+    width: 20vh;
     height: 5vh;
-    margin-left: 15vh;
+   
 }
 
 .btn-default:hover {
@@ -158,13 +136,7 @@ label {
     cursor: pointer;
 }
 
-
-
-/*INICIO FOOTER*/
-
-.footer {
-    background-color: #d5cff7ce;
-    margin-top: 8vh;
-    width: 199vh;
-    height: 14vh;
+.link-comum{
+    color: white;
+    text-decoration: none;
 }

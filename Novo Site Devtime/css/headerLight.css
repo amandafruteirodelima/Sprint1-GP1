@@ -20,7 +20,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0 80px;
+    gap: 0 150px;
 
 }
 
@@ -29,7 +29,7 @@
 .divImagem img {
     cursor: pointer;
     width: 20vh; 
-    padding-bottom: 7%;
+
 }
 
 
@@ -39,7 +39,7 @@
 .divLista ul {
     list-style: none;
     margin: 0;
-    padding: 3% 0;
+    padding: 6.5% 0;
     
 
     display: flex;
@@ -64,13 +64,13 @@
 .divLista li:hover {
     font-size: 1.1em;
     transition: 0.5s;
-    color: rgb(98, 83, 186);
+    color: #ec9fffef; 
     
 }
 
 .li-select {
     text-decoration: none;
-    color: rgb(98, 83, 186); 
+    color: #ec9fffef; 
 }
 
 .li-comum{
@@ -80,7 +80,7 @@
 
 
 .li-comum:hover{
-    color: rgb(98, 83, 186);
+    color: #ec9fffef; 
 }
 
 
@@ -97,7 +97,7 @@
     border-radius: 5px;
     text-align: center;
 
-    margin-top: 14%;
+    margin-top: 18%;
     width: 15vh;
     height: 5vh;
     font-family: 'Poppins-Bold';
