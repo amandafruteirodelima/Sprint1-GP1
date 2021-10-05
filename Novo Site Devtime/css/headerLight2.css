@@ -64,13 +64,13 @@
 .divLista li:hover {
     font-size: 1.1em;
     transition: 0.5s;
-    color: #ec9fffef; 
+    color: rgb(98, 83, 186); 
     
 }
 
 .li-select {
     text-decoration: none;
-    color: #ec9fffef; 
+    color: #1B0140;
 }
 
 .li-comum{
@@ -80,20 +80,18 @@
 
 
 .li-comum:hover{
-    color: #ec9fffef; 
+    color: #1B0140
 }
 
 
 /*Button*/
 
 
-
-
-.divButton button{
+.divButtonHeader button{
     text-transform: uppercase;
     color: white;
     background-color: rgba(255, 255, 255, 0);
-    border: solid 1px rgb(98, 83, 186);
+    border: solid 1px white;;
     border-radius: 5px;
     text-align: center;
 
@@ -104,7 +102,7 @@
     font-size: 1rem;
 }
 
-.divButton button:hover{
+.divButtonHeader button:hover{
   
 background-color: rgba(255, 255, 255, 0.137);
 font-size: 1.1rem;
@@ -115,4 +113,3 @@ cursor: pointer;
 
 
 /*FIM HEADER*/
-

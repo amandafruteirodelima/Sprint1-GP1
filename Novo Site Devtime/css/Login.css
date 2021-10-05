@@ -8,7 +8,7 @@
 body {
     display: flex;
     margin: 0;
-    background: linear-gradient(90deg, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
+    background: linear-gradient(90deg, #3B025C 48.54%,#431092 100%, #7647c7 0% );
     background-size: cover;
     font-family: 'Poppins-Bold';
 
@@ -117,7 +117,7 @@ label {
     font-family: 'Poppins-Bold';
     font-size: 1rem;
     text-transform: uppercase;
-    color: white;
+    color: #3B025C;
     background-color: rgba(255, 255, 255, 0);
     border: solid 1px #D5CFF7;
     border-radius: 5px;
