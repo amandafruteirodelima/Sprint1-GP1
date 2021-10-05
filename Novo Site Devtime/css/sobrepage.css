@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
     font-family: 'Poppins-Regular';
     src: url(../fonts/Poppins-Regular.ttf);
     font-family: 'Poppins-Bold';
@@ -9,12 +9,13 @@ body {
     /* background: linear-gradient(120deg, #987fc4 0%,  rgb(49, 2, 77) 70%), #0000 0%; */
     background: linear-gradient(100deg, #987fc4 0%, #7647c7 0%, #987fc4 0.01%, rgb(81, 10, 122) 48.54%, #4b11a1 100%);
     background-repeat: no-repeat;
-    font-family: 'Poppins-Regular';
+    font-family: 'Poppins-Bold';
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-size: small;
 }
 
 
@@ -38,8 +39,9 @@ body {
 
 .box_pergunta1 {
     background-color: #5d04d99a;
-    font-size: 1rem;
+    font-size: small;
     padding: 10px 10px 20px 10px;
+    
 
     border-radius: 10px;
 
@@ -57,6 +59,7 @@ body {
 .box_pergunta1:hover {
     background-color: #5d04d9dc;
     transform: 0.5s;
+    cursor: pointer;
 
 
 }
@@ -78,7 +81,7 @@ body {
 
 .box_pergunta2 {
     background-color: #002c4d94;
-    font-size: 1rem;
+    font-size: small;
 
     padding: 10px;
     border-radius: 10px;
@@ -96,6 +99,7 @@ body {
 
 .box_pergunta2:hover {
     background-color: #002c4de3;
+    cursor: pointer;
    
 }
 
@@ -115,8 +119,8 @@ body {
 }
 
 .box_pergunta3 {
-    background-color: #ea004a83;
-    font-size: 1rem;
+    background-color: #b68bff;
+    font-size: small;
 
 
     padding: 10px 10px 20px 10px;
@@ -136,7 +140,9 @@ body {
 }
 
 .box_pergunta3:hover {
-    background-color: #ea004ada;
+    background-color: #a26cff;
+    cursor: pointer;
+
 }
 
 
@@ -316,7 +322,7 @@ a {
 }
 
 .txt-plano3 {
-    color: #ea0049;
+    color: #b68bff;
 
     text-align: center;
 }
@@ -358,6 +364,7 @@ a {
 .button-padrao:hover {
     width: 125px;
     height: 40px;
+    background-color:#5d04d9dc ;
 
     transition: 0.5s;
 }
