@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.cards_box{
+    width: 80%;
+    height: 150px;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin: 4% auto;
+    justify-content: space-between;;
+}
+.card{
+    width: 25%;
+    color: white;
+}
+.card_titulo_box{
+    background: #4A024D;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+}
+.card_titulo{
+    font-size: 20px;
+    margin: 0;
+}
+.medida_box{
+    background: #363636;
+    height: 74%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 5px 5px;
+}
+.medida{
+    font-size: 55px;
+    margin: 0;
+}
+.software_box{
+    width: 80%;
+    color: white;
+    display: flex;
+    margin: 0 auto 2%;
+    justify-content: space-between;
+}
+.softwares{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 95%;
+    align-content: space-around;
+}
+.software{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 140px;
+}
+.software img{
+    height: inherit;
+}
+.estatisticas_software{
+    width: 40%;
+    background: #363636;
+    border-radius: 5px;
+}
+.softwares_utilizados{
+    width: 55%;
+}
+.grafico_estatisticas{
+    height: 600px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.grafico_box{
+    background: #363636;
+    color: white;
+    width: 80%;
+    margin: 0 auto 2%;
+    border-radius: 5px;
+}
+.grafico{
+    width: 90%;
+    margin: 2% auto;
+    background: #ffffffb8;
+    border-radius: 5px;
+}

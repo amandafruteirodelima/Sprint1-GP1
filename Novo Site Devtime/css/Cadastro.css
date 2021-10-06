@@ -1,249 +1,170 @@
-/*INÍCIO HEADER*/
-
 @font-face {
     font-family: 'Poppins-Regular';
-    src: url(./fonts/Poppins-Regular.ttf);
+    src: url(../fonts/Poppins-Regular.ttf);
     font-family: 'Poppins-Bold';
-    src: url(./fonts/Poppins-Bold.ttf);
+    src: url(../fonts/Poppins-Bold.ttf);
 }
 
 body {
     display: flex;
     margin: 0;
     background-color: #0C0C0C;
-}
 
-.divHeader {
-    font-family: 'Poppins-Bold';
-    text-transform: uppercase;
-   
-    height: 70px;
-    width: 100%;
-}
-
-.container-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    padding-top: 15px;
-}
-
-.divImagem {
-    float: left;
-    padding-right: 50px ;
-    
-}
-
-.divImagem img {
-    cursor: pointer;
-    width: 120px;
-}
-
-.divLista ul {
-    list-style: none;
-    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
 
 }
 
-.divLista li {
-    text-decoration: none;
-    font-size: 1em;
-    color: white;
-    padding: 8px 70px 0px 0px;
-    cursor: pointer;
-    
-}
 
-
-.divLista li:hover {
-    font-size: 1.15em;
-    transition: 0.5s;
-    color: rgb(98, 83, 186);
-    
-}
-
-.li-select {
-    text-decoration: none;
-    color: rgb(98, 83, 186); ;
-}
-.divButton {
-    padding-top: 15px;
-    width: 104px;
-    height: 15px;
-
-    
-    
-}
-.divButton button{
-    text-transform: uppercase;
-    border: solid 1px rgb(98, 83, 186);
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-    width: 104px;
-    height: 35px;
-    font-family: 'Poppins-Bold';
-    font-size: 1em;
-
-}
-
-.divButton button:hover{
-  
-background-color: rgba(255, 255, 255, 0.137);
-font-size: 1.15em;
-transition: 0.5s;
-cursor: pointer;
-
-}
-
-.li-comum{
-    color: white;
-    text-decoration: none;
-}
-
-
-
-/*FIM HEADER*/
-
-.content{
+.content {
     font-family: 'Poppins-Regular';
-    position: absolute;
-    left: 15%;
-    top: 20%;
- 
-    
+    font-size: 1rem;
 
-    width: 70%;
-    height: 90%;
-    
-    
     background: #4E4389;
     border-radius: 10px;
 
+    width: 140vh;
+    height: 90vh;
+
 }
 
-.content-escrito{
-    width: 400px;
+.content-escrito {
+    display: flex;
+    flex-direction: row;
 }
 
-.content h1{
+.content h1 {
     color: white;
-   text-align: center;
+    text-align: center;
 }
 
 .content form {
-    width: 400px;
+    width: 60vh;
 }
 
-.div-inpts{
-    padding: 20px 30px 30px 30px;
+.div-inpts {
+    padding: 3vh 4vh;
 }
 
 .inptSmall {
-    width: 175px;
-    margin: 0;
-    padding: 0;
+    width: 26.8vh;
 }
 
 .inptLarge {
-    width: 350px;
+    width: 55vh;
 }
 
-.inptPadrao{
-background-color: white;
-height: 40px;
-border-radius: 5px;
-border: none;
-margin-bottom: 30px;
-justify-content: center;
+.inptPadrao {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    
+    padding: 0.3vh;
+    height: 5.5vh;
+
+    justify-content: center;
+    margin-bottom: 4vh;
 
 }
 
 
-.inptPadrao:focus + label, .inptPadrao:not(:placeholder-shown)+label{
+.inptPadrao:focus+label,
+.inptPadrao:not(:placeholder-shown)+label {
     transform: translate(-0.2em) translateY(-0.6em) scale(0.8);
 }
 
 
+/*Labels*/
+
+form {
+    position: relative;
+}
+
 label {
     position: absolute;
-    left: 5px;
-    top: 9px;
+    left: 1vh;
+    top: 1.5vh;
     color: #686868;
     transform-origin: 0 0;
     transition: transform 0.2s ease-in-out;
 }
 
+.label-nascimento {
+    left: 1vh;
+    top: 11.45vh;
+}
+
+.label-cargahoraria {
+    left: 29vh;
+    top: 11.45vh;
+}
 
 .label-email {
-    left: 5px;
-    top: 281px;
+    left: 1vh;
+    top: 41.6vh;
 }
 
 
 .label-senha {
-    left: 5px;
-    top: 354px;
-}
-
-form{
-    position: relative;
+    left: 1vh;
+    top: 51.6vh;
 }
 
 
-.sel-padrao{
-background-color: white;
-height: 35px;
-border-radius: 5px;
-border: none;
-margin-bottom: 30px;
-width: 350px;
+
+/*Selects*/
+
+
+.sel-padrao {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+
+    width: 55vh;
+    height: 6vh;
+    margin-bottom: 4vh;
 }
 
-.txt-padrao{
-    margin: 0;
+/*Imagem*/
+
+.imagem-cadastro {
+    padding-top: 10vh;
+    width: 65vh;
+}
+
+/*Botão Cadastro*/
+
+.btn-default {
+    font-family: 'Poppins-Bold';
+    font-size: 1rem;
+    text-transform: uppercase;
     color: white;
-    font-size: 18px;
-}
-
-.btn-default{
+    background-color: rgba(255, 255, 255, 0);
     border: solid 1px #D5CFF7;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-    width: 150px;
-    height: 35px;
-    font-family: 'Poppins-Bold';
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-left: 25%;
+
+    width: 25vh;
+    height: 5vh;
+    margin-left: 15vh;
 }
 
-.btn-default:hover{
-    
-background-color: rgba(255, 255, 255, 0.075);
-font-size: 18px;
-transition: 0.5s;
-cursor: pointer;
+.btn-default:hover {
+
+    background-color: rgba(255, 255, 255, 0.075);
+
+    font-size: 1.15rem;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.imagem-cadastro{
-    width: 512px;
-    position: absolute;
-    bottom: 150px;
-    left: 400px;
 
-}
 
 /*INICIO FOOTER*/
 
-.footer{
-    width: 100%;
-    height: 100px;
-    margin-top: 100px;
+.footer {
     background-color: #d5cff7ce;
-    position: absolute;
-    bottom: -240px;
+    margin-top: 8vh;
+    width: 199vh;
+    height: 14vh;
 }

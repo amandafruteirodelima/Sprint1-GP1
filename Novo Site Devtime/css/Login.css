@@ -1,0 +1,142 @@
+@font-face{
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background: linear-gradient(90deg, #3B025C 48.54%,#431092 100%, #7647c7 0% );
+    background-size: cover;
+    font-family: 'Poppins-Bold';
+
+
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+
+}
+
+
+
+/*Conteúdo*/
+
+
+.content {
+    font-family: 'Poppins-Regular';
+    font-size: 1rem;
+
+    background-color: #dcd2ea5b;
+    
+    border-radius: 10px;
+
+    width: 85vh;
+    height: 65vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content form {
+    width: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img_login{
+    width: 15vh;
+    padding: 0vh 5vh 5vh 5vh;
+    margin: 0;
+}
+
+
+.div-inpts {
+   text-align: center;
+   justify-content: center;
+}
+
+
+.inptPadrao {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    padding-top: 7px;
+    
+    height: 5vh;
+    width: 55vh;
+
+    justify-content: center;
+    margin-bottom: 4vh;
+
+}
+
+
+.inptPadrao:focus+label,
+.inptPadrao:not(:placeholder-shown)+label {
+    transform: translate(-0.2em) translateY(-0.6em) scale(0.8);
+}
+
+
+/*Labels*/
+
+form {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    left: 1vh;
+    top: 1.5vh;
+    color: #686868;
+    transform-origin: 0 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.label-email {
+    left: 3vh;
+    top: 1.7vh;
+}
+
+
+.label-senha {
+    left: 3vh;
+    top: 12vh;
+}
+
+
+/*Button*/
+
+
+.btn-default {
+    font-family: 'Poppins-Bold';
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #3B025C;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 1px #D5CFF7;
+    border-radius: 5px;
+
+    width: 20vh;
+    height: 5vh;
+   
+}
+
+.btn-default:hover {
+
+    background-color: rgba(255, 255, 255, 0.075);
+
+    font-size: 1.15rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.link-comum{
+    color: white;
+    text-decoration: none;
+}

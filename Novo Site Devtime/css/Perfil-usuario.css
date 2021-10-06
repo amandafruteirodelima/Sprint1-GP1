@@ -1,0 +1,171 @@
+body {
+    background-color: #181818;
+    margin: 0;
+}
+.body {
+    max-width: 1000px;
+    background-color: #443980;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    max-width: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+.opcoes img {
+    height: 50px;
+    cursor: pointer;
+}
+.opcoes img:hover {
+    filter: brightness(80%);
+}
+.wallpaper {
+    background-color: antiquewhite;
+    background-image: url('../img/nowallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 5px 0 0;
+    width: 1000px;
+    height: 400px;
+    padding-top: 10px;
+}
+.perfil {
+    height: 70px;
+    background: linear-gradient(179.83deg, #4324E4 0.15%, #4324E4 0.16%, #443980 98.53%, #443B77 98.54%, #443980 98.54%);
+}
+.imgPerfil {
+    position: absolute;
+    width: 1000px;
+    top: 275px;
+    display: flex;
+    justify-content: center;
+}
+.chapeu {
+    position: absolute;
+    height: 150px;
+    top: -80px;
+    left: 540px;
+    transform: rotate(45deg);
+}
+.imgUsuario {
+    height: 215px;
+    background-color: #6E6E6E;
+    border-radius: 10px;
+}
+.container {
+    background-color: #443980;
+    max-width: 700px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+.infoUsuario {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.infoLevel {
+    width: 500px;
+    margin: 0 auto;
+}
+.displayInline {
+    justify-content: space-between;
+    width: 90%;
+}
+.displayInline, h3 {
+    display: inline-flex;
+    margin: 0;
+}
+.displayInline h3 {
+    margin-right: 5px;
+}
+.barraNivel {
+    height: 15px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: black;
+}
+.barraCrescente {
+    height: 15px;
+    width: 31.8%;
+    border-radius: 5px;
+    background-color: #239EF7;
+}
+.infoNav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: white;
+    font-size: larger;
+}
+.pontuacao {
+    background-color: #5840df;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;
+}
+.moeda {
+    background-color: #5840df;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5px;   
+}
+.imgInfo {
+    height: 40px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.infoPerfil{
+    background-color: #4e43a8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.perfilNav {
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(180deg, #6353BA 0%, rgba(99, 83, 186, 0.7) 100%);
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn {
+    height: 100%;
+    width: 50%;
+    border: none;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: larger;
+}
+.btnBorderLeft {
+    border-radius: 5px 0 0 0;
+}
+.btnBorderRight {
+    border-radius: 0 5px 0 0;
+}
+.ativo {
+    background-color: #4C3BA8;
+}
+.desativo {
+    background-color: #5E4FB2;
+}
+.desativo:hover {
+    background-color: #4C3BA8;
+}
+.grid-conquistas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+.cardConquista {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #adaabd;
+}

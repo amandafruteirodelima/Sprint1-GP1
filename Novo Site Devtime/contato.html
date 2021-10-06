@@ -7,40 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/headerLight2.css">
     <link rel="icon" href="img/Yin-Yang-DevTime.png">
     <title>DevTime</title>
-    
+
 </head>
 
 <body>
 
     <!-- Header -->
 
-    <div class="divheader">
+    <div class="divHeader">
 
-        <div class="container">
+        <div class="container-header">
 
-            <div class="logo">
-                <a href="#">
-                    <img src="img/Logo-Branco.png" alt="" class="">
-                </a>
-            </div>
-            <nav class="navbar">
+            <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
+
+            <nav class="divLista">
                 <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="sobrepage.html">Sobre</a>
-                    </li>
-                    <li>
-                        <a style="color: #6253BA;" href="">Contato</a>
-                    </li>
-                    <li>
-                        <button>Entrar</button>
-                    </li>
+                    <li><a class="li-comum" href="index.html">Home</a></li>
+                    <li><a class="li-comum" href="sobrepage.html">Sobre</a></li>
+                    <li><a class="li-select" href="contato.html">Contato</a></li>
                 </ul>
+
             </nav>
+
+            <div class="divButtonHeader"><button><a class="li-comum" href="Login.html">Entrar</a></button></div>
+
+        </div>
+
+    </div>
             <nav class="mobileNav">
                 <div id="myLinks">
                     <a href="#">Home</a>
@@ -48,7 +44,7 @@
                     <a href="#" style="color: #6253BA;">Contato</a>
                     <a href="#">Entrar</a>
                 </div>
-                
+
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <!-- svg um icone da internet -->
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172"
@@ -67,7 +63,7 @@
                     </svg>
                 </a>
             </nav>
-            
+
 
         </div>
 
@@ -83,23 +79,24 @@
 
                 <h2>Contate-nos</h2>
 
-                <form action="">
+                <form  class="padraoFonte" action="">
 
-                    <label for="name">Seu nome:</label>
-                    <input type="text">
+                    <label class="padraoFonte" for="name">Seu nome:</label>
+                    <input style="font-family: 'Poppins-Bold'; font-size: small;"  type="text" placeholder="Exemplo de Araújo">
 
-                    <label for="email">Email:</label>
-                    <input type="text">
+                    <label class="padraoFonte" for="email">Email:</label>
+                    <input style="font-family: 'Poppins-Bold'; font-size: small;" type="text" placeholder="example@example.com.br">
 
-                    <label for="typeOfMessage">Tipo de mensagem:</label>
-                    <select name="" id="">
+                    <label style="font-family: 'Poppins-Bold'; font-size: small;"for="typeOfMessage">Tipo de mensagem:</label>
+                    <select style="font-family: 'Poppins-Bold'; font-size: small;"name="" id="">
+                        <option value="">Selecione uma opção</option>
                         <option value="">Erros ou Bugs</option>
-                        <option value=""></option>
+                        <option value="">Desejo obter os serviços DevTime</option>
                         <option value=""></option>
                     </select>
 
-                    <label for="message">Mensagem:</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label style="font-family: 'Poppins-Bold'; font-size: small;" for="message">Mensagem:</label>
+                    <textarea style="font-family: 'Poppins-Bold'; font-size: small;" name="" id="" cols="30" rows="10" placeholder="Digite aqui"></textarea>
 
                 </form>
 
@@ -111,15 +108,15 @@
 
             <div class="moreInfo">
 
-                <h2 class="infoTitle">Outro meio de comunicação</h2>
+                <h2 style="font-family: 'Poppins-Bold';" class="infoTitle">// Outro meio de comunicação</h2>
 
-                <a href="">
+                <a href="https://newaccount1630861636489.freshdesk.com/support/tickets/new" target="_blank">
                     <div class="card">
                         <h2 class="title">Fale conosco pelo freshdesk</h2>
 
                         <div class="divInline">
                             <img src="img/freshdesk.png" alt="">
-                            <p>//O freshdesk é um software de suporte ao cliente</p>
+                            <p>// O freshdesk é um software de suporte ao cliente</p>
                         </div>
 
                     </div>
@@ -139,9 +136,9 @@
                     |
                     <a href="#"><img src="img/logo_bandtec.png" alt="Logo da Faculdade BandTec"></a>
                 </div>
-    
+
                 <div>
-                    <h3>Copyright © 2021 - Todos os direitos reservados - DevTime</h3>
+                    <h3 class="copyright">Copyright © 2021 - Todos os direitos reservados - DevTime</h3>
                 </div>
             </div>
         </div>

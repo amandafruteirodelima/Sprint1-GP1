@@ -1,79 +1,50 @@
-
-body{
-background: linear-gradient(140deg, #a27ce6 0%,  rgb(49, 2, 77) 70%), #0000 0%;
-background-repeat: no-repeat;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-.divheader{
-    padding: 10px 0 10px 0;
+@font-face{
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
     font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
 }
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-    display: flex;
-    justify-content: space-between;
-}
-.logo img {
-    height: 50px;
-}
-.navbar ul {
-    display: flex;
-    list-style-type: none;
-}
-.navbar li {
-    margin-left: 20px;
-}
-.navbar a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.1rem;
-    vertical-align: -webkit-baseline-middle;
-    
-}
-.navbar a:hover {
-    color: white;
-    font-size: 22px;
-    transition-duration: 0.4s;
-}
-.navbar button {
-    height: 30px;
-    width: 100px;
-    cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    color: white;
+body {
+    /* background: linear-gradient(120deg, #987fc4 0%,  rgb(49, 2, 77) 70%), #0000 0%; */
+    background: linear-gradient(100deg, #987fc4 0%, #7647c7 0%, #987fc4 0.01%, rgb(81, 10, 122) 48.54%, #4b11a1 100%);
+    background-repeat: no-repeat;
     font-family: 'Poppins-Bold';
-    background-color: #5250583a;
-    border: 1px solid #6253BA;
-    border-radius: 5px;
-    transition: 0.2s ease-in-out;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: small;
 }
-.navbar button:hover {
-    background-color: black;
-    border: 1px solid #4e34dd;
-    font-size: 15px;
-    transition-duration: 0.4s;
-}
-/* fim da header */
+
+
+
+
 
 /* conteudo sobrepag */
-.img_corrida{
+.img_corrida {
     width: 65px;
     height: 65px;
     margin-left: 160px;
     margin-top: 70px;
 }
-.img_corrida:hover{
+
+.img_corrida:hover {
     width: 80px;
     height: 80px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
-.box_pergunta1{
+
+.box_pergunta1 {
+    background-color: #5d04d99a;
+    font-size: small;
+    padding: 10px 10px 20px 10px;
+    
+
+    border-radius: 10px;
+
     float: right;
     margin-left: 300px;
     color: white;
@@ -81,10 +52,19 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 50px;
     text-align: justify;
     margin-right: 100px;
-    font-size: small;
+    
 
 }
-.img_acreditamos{
+
+.box_pergunta1:hover {
+    background-color: #5d04d9dc;
+    transform: 0.5s;
+    cursor: pointer;
+
+
+}
+
+.img_acreditamos {
     width: 60px;
     height: 60px;
     margin-left: 160px;
@@ -92,13 +72,21 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-.img_acreditamos:hover{
+.img_acreditamos:hover {
     width: 80px;
     height: 80px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
-.box_pergunta2{
+
+.box_pergunta2 {
+    background-color: #002c4d94;
+    font-size: small;
+
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px 10px 20px 10px;
+
     float: right;
     margin-left: 300px;
     color: white;
@@ -106,9 +94,16 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 50px;
     text-align: justify;
     margin-right: 100px;
-    font-size: small;
+   
 }
-.img_dev{
+
+.box_pergunta2:hover {
+    background-color: #002c4de3;
+    cursor: pointer;
+   
+}
+
+.img_dev {
     width: 60px;
     height: 60px;
     margin-left: 160px;
@@ -116,59 +111,95 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-.img_dev:hover{
+.img_dev:hover {
     width: 80px;
     height: 80px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
-.box_pergunta3{
+
+.box_pergunta3 {
+    background-color: #b68bff;
+    font-size: small;
+
+
+    padding: 10px 10px 20px 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+
     float: right;
     margin-left: 300px;
     color: white;
-    margin-top: -100px;
-    margin-bottom: 50px;
+    margin-top: -110px;
+    margin-bottom: 100px;
     text-align: justify;
     margin-right: 100px;
-    font-size: small;
+    
 }
+
+.box_pergunta3:hover {
+    background-color: #a26cff;
+    cursor: pointer;
+
+}
+
+
+.clique {
+    color: white;
+}
+
+.clique:hover {
+    color: rgb(40, 1, 63);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
 .linha_divisoria {
-    margin-top: 90px;
+
     height: 15px;
     width: 990px;
-    border-top: 2px solid #ffff;
-    margin-left: 160px;
+    border-top: 2px solid #9a6de7;
+    margin-left: 130px;
 }
+
+/* equipe */
 .equipe {
     color: white;
     font-size: 25px;
     margin-top: 20px;
     margin-left: 170px;
 }
-.karoll{
+
+.karoll {
     width: 135px;
     height: 135px;
     margin-right: 600px;
     margin-top: 50px;
     cursor: pointer;
 }
+
 .container_equipe {
     position: relative;
     width: 40%;
     float: right;
     margin-top: 40px;
 
-  }
-  
-  .image {
+}
+
+.image {
     display: block;
     width: 100%;
     height: auto;
     margin-bottom: 15px;
     margin-left: 60px;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -181,14 +212,14 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #ffff;
     border-radius: 50%;
     margin-left: 60px;
-  }
-  
-  .container_equipe:hover .overlay {
+}
+
+.container_equipe:hover .overlay {
     opacity: 2;
     cursor: pointer;
-  }
-  
-  .text {
+}
+
+.text {
     color: #4813a3;
     font-size: 15px;
     position: absolute;
@@ -198,13 +229,14 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  .amanda{
+}
+
+.amanda {
     width: 135px;
     height: 135px;
     margin-top: -180px;
-    float:right;
-    
+    float: right;
+
 }
 
 .guilherme {
@@ -214,11 +246,13 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: right;
     margin-right: 480px;
 }
+
 .matheus {
     width: 135px;
     height: 135px;
 }
-.rony{
+
+.rony {
     width: 135px;
     height: 135px;
 }
@@ -227,16 +261,163 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 135px;
     height: 135px;
 }
+
 .linha_divisoria2 {
     margin-top: 640px;
     height: 15px;
     width: 990px;
-    border-top: 2px solid #ffff;
-    margin-left: 160px;
+    border-top: 2px solid #9a6de7;
+    margin-left: 130px;
 }
-.planos {
+
+
+
+
+
+/*CSS Planos*/
+
+.divPlanos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-planos {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+}
+
+.planoPadrao {
+    background-color: #ffff;
+    border-radius: 8px;
+
+    height: 400px;
+    width: 250px;
+}
+
+
+.div-beneficio {
+    margin: 25px 60px;
+
+    display: flex;
+}
+
+.txt-beneficio {
+    padding-left: 15px;
+}
+
+
+.txt-plano {
+    color: #008FC4;
+
+    text-align: center;
+}
+
+.txt-plano2 {
+    color: #002b4d;
+
+    text-align: center;
+}
+
+.txt-plano3 {
+    color: #b68bff;
+
+    text-align: center;
+}
+
+.img-beneficio {
+    width: 20px;
+    height: 20px;
+}
+
+
+.txt-preco-basico {
+    color: #5c5c5c;
+}
+
+
+.divButton {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-padrao {
+
+    font-family: 'Poppins-Bold';
+    color: #ffff;
+    background-color: #008FC4;
+    border-radius: 5px;
+    border: none;
+
+    width: 120px;
+    height: 35px;
+
+    cursor: pointer;
+
+}
+
+.button-padrao:hover {
+    width: 125px;
+    height: 40px;
+    background-color:#5d04d9dc ;
+
+    transition: 0.5s;
+}
+
+
+/* footer */
+.responsiveFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.responsiveFooter h3 {
+    text-align: center;
+}
+
+.company {
+    text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .container {
+        max-width: 360px;
+    }
+
+    .containerBox {
+        max-width: 375px;
+    }
+
+    .divForm {
+        padding: 10px 50px 10px 50px;
+    }
+
+}
+
+.footer {
+    background: linear-gradient(140deg, #a27ce6 0%, rgb(49, 2, 77) 70%), #0000 0%;
     color: white;
-    font-size: 25px;
-    margin-top: 20px;
-    margin-left: 170px;
 }
+
+.responsiveFooter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.company img {
+    height: 30px;
+    margin-top: 15px;
+}
+
+.copyright {
+    font-size: small;
+}
+
+

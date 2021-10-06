@@ -1,23 +1,24 @@
-@font-face {
+@font-face{
     font-family: 'Poppins-Regular';
-    src: url(./fonts/Poppins-Regular.ttf);
+    src: url(../fonts/Poppins-Regular.ttf);
     font-family: 'Poppins-Bold';
-    src: url(./fonts/Poppins-Bold.ttf);
+    src: url(../fonts/Poppins-Bold.ttf);
 }
 body{
     margin: 0;
     box-sizing: border-box;
-    background-color: #000;
+    background: linear-gradient(140deg, #a27ce6 0%,  rgb(49, 2, 77) 70%), #0000 0%;
+    
 }
 /* Inicio header */
 .divheader{
-    background-color: #0C0C0C;
     padding: 10px 0 10px 0;
     font-family: 'Poppins-Bold';
 }
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     display: flex;
     justify-content: space-between;
@@ -47,6 +48,7 @@ body{
     height: 30px;
     width: 100px;
     cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     color: white;
     font-family: 'Poppins-Bold';
@@ -65,7 +67,7 @@ body{
 .divForm {
     padding: 10px 100px 10px 100px;
 
-    background: linear-gradient(180deg, #4E4389 0%, rgba(77, 67, 137, 0.055) 100%);
+    background: linear-gradient(180deg, #080808 0%, rgba(126, 111, 212, 0.055) 100%);
     color: white;
     font-family: 'Poppins-bold';
 }
@@ -107,7 +109,7 @@ body{
 .formButton button {
     height: 30px;
     width: 90px;
-    background-color: #4e34dd;
+    background-color: #080808;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -118,7 +120,7 @@ body{
     transition: 0.2s ease-in-out;
 }
 .formButton button:hover {
-    background-color: #22127c;
+    background-color: #8375D2;
 }
 .moreInfo {
     color: white;
@@ -343,4 +345,7 @@ body{
     .containerBox {
         max-width: 280px;
     }
+}
+.copyright{
+    font-size: small;
 }

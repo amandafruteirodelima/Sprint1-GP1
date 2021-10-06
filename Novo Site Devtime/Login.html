@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/headerLight.css">
+    <link rel="stylesheet" href="./css/Login.css">
+    <link rel="icon" href="img/Yin-Yang-DevTime.png">
+
     <title>Login</title>
 </head>
+
 <body>
-    
+    <!--Início Header-->
+
+    <div class="divHeader">
+
+        <div class="container-header">
+
+            <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
+
+            <nav class="divLista">
+                <ul>
+                    <li><a class="li-comum" href="index.html">Home</a></li>
+                    <li><a class="li-comum" href="sobrepage.html">Sobre</a></li>
+                    <li><a class="li-select" href="contato.html">Contato</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="divButton"><button>Entrar!</button></div>
+
+        </div>
+
+    </div>
+
+    <!--Fim Header-->
+
+
+    <div class="content">
+
+        <img class="img_login" src="./img/user-login-branco.png" alt="">
+
+        <div class="div-inpts">
+
+
+            <form action="Cadastro.html">
+
+                <input class="inptLarge inptPadrao" type="email" placeholder=" " required>
+                <label style="font-family: 'Poppins-Bold'; font-size: small;" class="label-email" for="email">Email</label>
+
+                <input class="inptLarge inptPadrao" type="password" placeholder=" " required>
+                <label style="font-family: 'Poppins-Bold'; font-size: small;" class="label-senha" for="senha">Senha</label>
+
+
+                <button class="btn-default"><a  href="Cadastro.html" class="link-comum"><b>Entrar</b></a></button>
+            </form>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
