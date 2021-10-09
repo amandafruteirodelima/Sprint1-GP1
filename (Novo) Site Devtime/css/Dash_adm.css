@@ -1,0 +1,16 @@
+@font-face{
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+body {
+    background-color: #0C0C0C;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    font-family: 'Poppins-Bold';
+    margin-top: 20px;
+}
