@@ -1,16 +1,127 @@
-@font-face{
+@font-face {
     font-family: 'Poppins-Regular';
     src: url(../fonts/Poppins-Regular.ttf);
     font-family: 'Poppins-Bold';
     src: url(../fonts/Poppins-Bold.ttf);
 }
+
 body {
     background-color: #0C0C0C;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Title */
 h1 {
+    margin: 0;
     color: rgb(255, 255, 255);
     font-size: 42px;
     font-family: 'Poppins-Bold';
-    margin-top: 20px;
+    margin-top: 50px;
+}
+
+/* Membros online */
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Poppins-Bold';
+    margin-top: 50px;
+}
+
+.div_online {
+    width: 80%;
+    height: 128px;
+    background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
+    margin-top: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.div_online_organizadora {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div_online_content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_online_content h3 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Poppins-Bold';
+}
+
+.circulo {
+    height: 22px;
+    width: 22px;
+    border-radius: 12px;
+    background-color: rgb(0, 251, 0);
+    margin-left: 10px;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+/* Divisória */
+.div_divisora {
+    height: 3px;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 80px
+}
+
+/* Desempenho equipe */
+
+.h2_alt {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Poppins-Bold';
+    margin-top: 42px;
+}
+
+.div_desempenho_pai {
+    width: 80%;
+    margin-top: 8px;
+}
+
+.div_desempenho_organizadora {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.div_desempenho_content {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }

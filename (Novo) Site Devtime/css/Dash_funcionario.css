@@ -16,7 +16,7 @@ main{
     align-content: center;
     flex-wrap: nowrap;
     margin: 4% auto;
-    justify-content: space-between;;
+    justify-content: space-between;
 }
 .card{
     width: 25%;
