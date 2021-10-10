@@ -58,20 +58,49 @@
     <div class="div_divisora"></div>
 
     <!-- Desempenho equipe -->
-    <h2 class="h2_alt">Membros da equipe que estão online agora</h2>
+    <h2 class="h2_alt">Desempenho dos membros da equipe</h2>
 
-    <div class="div_desempenho_pai">
+    <div id="div_desempenho_pai" class="div_desempenho_pai">
         <div class="div_desempenho_organizadora">
-            <div class="div_desempenho_content"></div>
-            <div class="div_desempenho_content"></div>
-            <div class="div_desempenho_content"></div>
+            <div id="desempenho_1" onclick="abrir_info(this.id)" class="div_desempenho_content">
+                <img id="check_1" class="check" src="img/checked.png" alt="">
+                <img class="person" src="img/woman.png" alt="woman icon">
+                <h3>Amanda</h3>
+            </div>
+            <div id="desempenho_2" onclick="abrir_info(this.id)" class="div_desempenho_content">
+                <img id="check_2" class="check" src="img/checked.png" alt="">
+                <img class="person" src="img/man.png" alt="man icon">
+                <h3>Danilo</h3>
+            </div>
+            <div id="desempenho_3" onclick="abrir_info(this.id)" class="div_desempenho_content">
+                <img id="check_3" class="check" src="img/checked.png" alt="">
+                <img class="person" src="img/woman.png" alt="woman icon">
+                <h3>Karolline</h3>
+            </div>
         </div>
 
         <div class="div_desempenho_organizadora">
-            <div class="div_desempenho_content"></div>
-            <div class="div_desempenho_content"></div>
-            <div class="div_desempenho_content"></div>
+            <div id="desempenho_4" onclick="abrir_info(this.id)" class="div_desempenho_content">
+                <img id="check_4" class="check" src="img/checked.png" alt="">
+                <img class="person" src="img/man.png" alt="man icon">
+                <h3>Guilherme</h3>
+            </div>
+            <div id="desempenho_5" onclick="abrir_info(this.id)" class="div_desempenho_content">
+                <img id="check_5" class="check" src="img/checked.png" alt="">
+                <img class="person" src="img/man.png" alt="man icon">
+                <h3>Matheus</h3>
+            </div>
+            <div id="desempenho_6" onclick="abrir_info(this.id)" class="div_desempenho_content">
+                <img id="check_6" class="check" src="img/checked.png" alt="">
+                <img class="person" src="img/man.png" alt="man icon">
+                <h3>Rony</h3>
+            </div>
         </div>
+    </div>
+
+    <!-- Desempenho equipe (quando clicado) -->
+    <div id="div_desempenho_pai_alternativa" class="div_desempenho_pai_alternativa">
+        <img id="desempenho_go_back" onclick="go_back()" class="desempenho_go_back" src="img/seta.png" alt="">
     </div>
 
 </body>
@@ -79,7 +108,46 @@
 </html>
 
 <script>
+    // Codigo sendo preparado para receber APIs
+
     window.onload = function online() {
         online_6.style.backgroundColor = "red";
+    }
+
+    window.onload = function online() {
+        ok = "img/checked.png";
+        notOk = "img/warning.png";
+        check_1.src = ok;
+        check_2.src = ok;
+        check_3.src = ok;
+        check_4.src = ok;
+        check_5.src = notOk;
+        check_6.src = notOk;
+    }
+
+    function abrir_info(id){
+        desempenho_1.style.display = "none";
+        desempenho_2.style.display = "none";
+        desempenho_3.style.display = "none";
+        desempenho_4.style.display = "none";
+        desempenho_5.style.display = "none";
+        desempenho_6.style.display = "none";
+        div_desempenho_pai.style.display = "none";
+
+        div_desempenho_pai_alternativa.style.display = "block";
+        
+    }
+
+    function go_back(){
+        desempenho_1.style.display = "block";
+        desempenho_2.style.display = "block";
+        desempenho_3.style.display = "block";
+        desempenho_4.style.display = "block";
+        desempenho_5.style.display = "block";
+        desempenho_6.style.display = "block";
+        div_desempenho_pai.style.display = "block";
+
+        div_desempenho_pai_alternativa.style.display = "none";
+        
     }
 </script>

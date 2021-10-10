@@ -90,7 +90,6 @@ h2 {
 }
 
 /* Desempenho equipe */
-
 .h2_alt {
     color: rgb(255, 255, 255);
     font-size: 24px;
@@ -124,4 +123,50 @@ h2 {
     text-align: center;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.check {
+    height: 65px;
+    margin-left: 78%;
+    margin-top: 10px;
+}
+
+.person {
+    height: 200px;
+}
+
+.div_desempenho_content h3 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Poppins-Bold';
+}
+
+/* Desempenho equipe (quando clicada) */
+.div_desempenho_pai_alternativa{
+    display: none;
+    margin: 0;
+    border-radius: 20px;
+    width: 80%;
+    height: 740px;
+    background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
+    margin-bottom: 40px;
+}
+
+.desempenho_go_back{
+    transform: rotateY(180deg);
+    height: 65px;
+    margin-right: 94%;
+    margin-top: 0.8%;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.desempenho_go_back:hover{
+    transform: rotateY(180deg);
+    height: 65px;
+    margin-right: 94%;
+    margin-top: 0.8%;
+    cursor: pointer;
+    opacity: 1;
 }
