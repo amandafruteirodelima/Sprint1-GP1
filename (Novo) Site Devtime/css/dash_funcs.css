@@ -77,6 +77,14 @@ align-items: center;
     border-radius: 3px;
 }
 
+.grafico_pizza{
+    position: relative;
+    height: 159px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
 
 .divDisplayIndividual div {
     margin-bottom: 6px;

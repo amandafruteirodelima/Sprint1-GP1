@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/dash_funcs.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+        integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+        crossorigin="anonymous"></script>
     <title>Dashboard Funcionários</title>
 </head>
+
 <body>
 
     <div class="divConteudoDashboard">
@@ -17,72 +22,108 @@
                 <div>
                     Status pc
                 </div>
-               <span id="statusPC">ON</span>
+                <span id="statusPC">ON</span>
             </div>
 
             <div class="divDisplayIndividual">
                 <div>
                     tempo operação
                 </div>
-               <span>04:30:12</span>
+                <span>04:30:12</span>
             </div>
 
             <div class="divDisplayIndividual">
                 <div>
                     CPU
                 </div>
-               <span id="statusCpu">77%</span>
+                <span id="statusCpu">77%</span>
             </div>
 
             <div class="divDisplayIndividual">
                 <div>
                     RAM
                 </div>
-               <span id="statusRam">30%</span>
+                <span id="statusRam">30%</span>
             </div>
 
             <div class="divDisplayIndividual">
                 <div>
-                    DISCO C: 
+                    DISCO C:
                 </div>
-               <span id="statusDisco">52%</span>
+                <span id="statusDisco">52%</span>
             </div>
         </div>
 
         <div class="linha_meio">
 
             <div class="tabela_softwares ">
-                <div class="divGraficos">TABELA SOFTWARES</div> 
+                <div class="divGraficos">TABELA SOFTWARES</div>
             </div>
-            
+
             <div class="grafico_softwares ">
-               <div class="divGraficos"> GRAFICO SOFTWARES </div>
+                <div class="divGraficos"> GRAFICO SOFTWARES </div>
+                <div class="grafico_pizza">
+                    <canvas id="pizza_process"></canvas>
+                </div>
             </div>
-            
+
         </div>
 
 
-<div class="linha_meio" >
+        <div class="linha_meio">
 
-    <div class="tabela_softwares ">
-        <div class="divGraficos">GRAFICO MONITORAMENTO GERAL(HORA)</div>
-        
-    </div>
-    
-    <div class="grafico_softwares ">
-       <div class="divGraficos"> TABELAS MONITORAMENTO</div>
-    </div>
-    
-</div>
+            <div class="tabela_softwares ">
+                <div class="divGraficos">GRAFICO MONITORAMENTO GERAL(HORA)</div>
+
+            </div>
+
+            <div class="grafico_softwares ">
+                <div class="divGraficos"> TABELAS MONITORAMENTO</div>
+            </div>
+
+        </div>
 
     </div>
-    
+
 </body>
+
 </html>
 
 <script>
-
-
-
-
+    const data = {
+        labels: [
+            'Chrome',
+            'Apache NetBeans',
+            'Discord',
+        ],
+        datasets: [{
+            label: 'Softwares',
+            data: [300, 50, 100],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+            ],
+            hoverOffset: 4
+        }]
+    };
+    const config = {
+        type: 'doughnut',
+        data: data,
+        options: {
+            plugins: {
+                legend: {
+                    position: 'left',
+                    aling: 'start',
+                    labels: {
+                        color: 'red'
+                    }
+                }
+            }
+        }
+    };
+    var myChart = new Chart(
+        document.getElementById('pizza_process'),
+        config
+    );
 </script>
