@@ -58,21 +58,24 @@
     <div class="div_divisora"></div>
 
     <!-- Desempenho equipe -->
-    <h2 class="h2_alt">Desempenho dos membros da equipe</h2>
+    <div class="organizadora">
+        <h2 id="h2_alt" class="h2_alt">Desempenho dos membros da equipe</h2>
+        <img onclick="mudar_frase()" class="question" src="img/question.png" alt="question icon">
+    </div>
 
     <div id="div_desempenho_pai" class="div_desempenho_pai">
         <div class="div_desempenho_organizadora">
-            <div id="desempenho_1" onclick="abrir_info(this.id)" class="div_desempenho_content">
+            <div id="desempenho_1" name="1" onclick="abrir_info(this.name)" class="div_desempenho_content">
                 <img id="check_1" class="check" src="img/checked.png" alt="">
                 <img class="person" src="img/woman.png" alt="woman icon">
                 <h3>Amanda</h3>
             </div>
-            <div id="desempenho_2" onclick="abrir_info(this.id)" class="div_desempenho_content">
+            <div id="desempenho_2" name="2" onclick="abrir_info(this.name)" class="div_desempenho_content">
                 <img id="check_2" class="check" src="img/checked.png" alt="">
                 <img class="person" src="img/man.png" alt="man icon">
                 <h3>Danilo</h3>
             </div>
-            <div id="desempenho_3" onclick="abrir_info(this.id)" class="div_desempenho_content">
+            <div id="desempenho_3" name="3" onclick="abrir_info(this.name)" class="div_desempenho_content">
                 <img id="check_3" class="check" src="img/checked.png" alt="">
                 <img class="person" src="img/woman.png" alt="woman icon">
                 <h3>Karolline</h3>
@@ -80,17 +83,17 @@
         </div>
 
         <div class="div_desempenho_organizadora">
-            <div id="desempenho_4" onclick="abrir_info(this.id)" class="div_desempenho_content">
+            <div id="desempenho_4" name="4" onclick="abrir_info(this.name)" class="div_desempenho_content">
                 <img id="check_4" class="check" src="img/checked.png" alt="">
                 <img class="person" src="img/man.png" alt="man icon">
                 <h3>Guilherme</h3>
             </div>
-            <div id="desempenho_5" onclick="abrir_info(this.id)" class="div_desempenho_content">
+            <div id="desempenho_5" name="5" onclick="abrir_info(this.name)" class="div_desempenho_content">
                 <img id="check_5" class="check" src="img/checked.png" alt="">
                 <img class="person" src="img/man.png" alt="man icon">
                 <h3>Matheus</h3>
             </div>
-            <div id="desempenho_6" onclick="abrir_info(this.id)" class="div_desempenho_content">
+            <div id="desempenho_6" name="6" onclick="abrir_info(this.name)" class="div_desempenho_content">
                 <img id="check_6" class="check" src="img/checked.png" alt="">
                 <img class="person" src="img/man.png" alt="man icon">
                 <h3>Rony</h3>
@@ -101,6 +104,8 @@
     <!-- Desempenho equipe (quando clicado) -->
     <div id="div_desempenho_pai_alternativa" class="div_desempenho_pai_alternativa">
         <img id="desempenho_go_back" onclick="go_back()" class="desempenho_go_back" src="img/seta.png" alt="">
+        <h2 class="alt_title">Detalhes da produtividade de: </h2>
+        <h2 id="h2_nome" class="alt_title2"></h2>
     </div>
 
 </body>
@@ -125,7 +130,19 @@
         check_6.src = notOk;
     }
 
-    function abrir_info(id){
+    cont = 0;
+
+    function mudar_frase() {
+        if (cont == 0) {
+            h2_alt.innerHTML = "Desempenho dos membros da equipe (Para ver detalhes, clique no ícone do membro da equipe desejado)";
+            cont ++;
+        } else {
+            h2_alt.innerHTML = "Desempenho dos membros da equipe";
+            cont --;
+        }
+    }
+
+    function abrir_info(name) {
         desempenho_1.style.display = "none";
         desempenho_2.style.display = "none";
         desempenho_3.style.display = "none";
@@ -135,11 +152,13 @@
         div_desempenho_pai.style.display = "none";
 
         div_desempenho_pai_alternativa.style.display = "block";
-        
+
+        h2_nome.innerHTML = "Amanda";
+
     }
 
     // Seta (voltar)
-    function go_back(){
+    function go_back() {
         desempenho_1.style.display = "block";
         desempenho_2.style.display = "block";
         desempenho_3.style.display = "block";
@@ -149,6 +168,6 @@
         div_desempenho_pai.style.display = "block";
 
         div_desempenho_pai_alternativa.style.display = "none";
-        
+
     }
 </script>

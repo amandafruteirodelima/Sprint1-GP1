@@ -90,11 +90,26 @@ h2 {
 }
 
 /* Desempenho equipe */
+.organizadora{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
 .h2_alt {
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-family: 'Poppins-Bold';
     margin-top: 42px;
+    margin-right: 10px;
+}
+
+.question {
+    height: 24px;
+    margin-top: 24px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .div_desempenho_pai {
@@ -151,6 +166,12 @@ h2 {
     height: 740px;
     background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 .desempenho_go_back{
@@ -162,7 +183,6 @@ h2 {
     opacity: 0.8;
 }
 
-/* Seta para voltar */
 .desempenho_go_back:hover{
     transform: rotateY(180deg);
     height: 65px;
@@ -170,4 +190,18 @@ h2 {
     margin-top: 0.8%;
     cursor: pointer;
     opacity: 1;
+}
+
+.alt_title {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Poppins-Bold';
+    margin-top: -3.5%;
+}
+
+.alt_title2 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Poppins-Bold';
+    margin: 0;
 }
