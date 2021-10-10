@@ -1,19 +1,18 @@
 * {
+    margin: 0;
     padding: 0;
     border: 0;
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 body {
-    background-color: #1E1B2E;    
-    /* background-image: url("../imgs/imgFundoPerfil.jpg"); */
-}
-
-.div_tudo {
-    background-color: #1E1B2E;
-    width: 90%;
-    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #161422;
 }
 
 ::-webkit-scrollbar {
@@ -27,6 +26,191 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #4837a4; 
 }
+
+
+#img_perfil {
+    width: 80px;
+    cursor: pointer;
+}
+
+#img_perfil:hover {
+    width: 90px;
+}
+
+#label_img_perfil {
+    margin-right: 30px;
+    background-color: #4e4389;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+nav {
+    background-color: gray;
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    transition: all .5s;
+    right: -400px;
+    /* -webkit-mask-image: linear-gradient(to top, transparent 25%, black 50%); */
+    background-image: linear-gradient(to bottom, transparent, #100738,  #443980), url(http://colorindonuvens.com/wp-content/uploads/2018/12/Wallpaper4k-cidade-Colorindonuvens-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input[type="checkbox"]:checked ~ nav {
+    transform: translateX(-400px);
+}
+
+ul {
+    list-style: none;
+    top: 155px;
+    position: absolute;
+    width: 100%;
+}
+
+label {
+    margin-right: 15px;
+    float: right;
+}
+
+#img_x {
+    width: 40px;
+    cursor: pointer;
+}
+
+#img_x:hover {
+   width: 50px;
+}
+
+.div_img_perfil_info {
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+#img_perfil_info {
+    width: 190px;
+    margin-left: 80px;
+    margin-top: 50px;
+    border: 3px solid rebeccapurple;
+    border-radius: 5px;
+}
+
+.div_nome_usuario_perfil {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nome_usuario_perfil {
+    color: white;
+}
+
+.div_geral_pontos_devicon {
+    width: 95%;
+    margin: 20px auto;
+    color: white;
+    display: flex;
+}
+
+.img_pontos_dc {
+    width: 30px;
+}
+
+.div_pontos_devicon {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.div_texto_pontos_dc {
+    background-color: #6353ba;
+    border-radius: 5px;
+    width: 75%;
+    padding-top: 8px;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.div_geral_conquistas {
+    margin-top: 50px;
+    font-size: 25px;
+    color: white;
+    width: 90;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #150b48;
+    border-radius: 10px;
+}
+
+.div_conquista_e_div_img {
+    margin-top: 0px;
+}
+
+.div_titulo_conquista {
+    margin-top: 50px;
+    font-size: 25px;
+    color: white;
+    background-color: #6353ba;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.div_geral_cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+    width: 65%;
+    margin-left: 115px;
+    margin-top: 5px;
+    background-color: #4e4389;
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    height: 70px;
+}
+
+.img_cabecalho {
+    width: 50px;
+    margin-top: 8px;
+}
+
+.img_cabecalho:hover {
+    width: 55px;
+}
+
+.div_a_img {
+    width: 20%;
+    text-align: center;
+    width: 10%;
+    text-align: center;
+    background-color: #6353ba;
+    border-radius: 10px;
+}
+
+.div_tudo {
+    background-color: #3c336e;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.div_conquistas {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.div_img_conquistas {
+    width: 80px;
+    height: 80px;
+    background-color: #6353ba;
+    border-radius: 10px;
+}
+
 
 .icones_link:hover {
     height: 45px;
@@ -154,7 +338,7 @@ body {
 .div_geral_estatisticas {
     height: 400px;
     width: 95%;
-    margin: 25px auto;
+    margin: 40px auto;
     display: flex;
 }
 
