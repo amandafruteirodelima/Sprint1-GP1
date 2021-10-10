@@ -8,11 +8,11 @@
 body {
     display: flex;
     margin: 0;
-    background: linear-gradient(90deg, #3B025C 48.54%,#431092 100%, #7647c7 0% );
+    background: linear-gradient(270deg, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
     background-size: cover;
     font-family: 'Poppins-Bold';
 
-
+    
     flex-direction: column;
     gap: 50px;
     align-items: center;
@@ -28,13 +28,35 @@ body {
     font-family: 'Poppins-Regular';
     font-size: 1rem;
 
-    background-color: #dcd2ea5b;
+    background-color: rgba(247, 247, 247, 0.856);
     
-    border-radius: 10px;
+    border-radius: 2px;
 
-    width: 85vh;
-    height: 65vh;
+    width: 120vh;
+    height: 70vh;
 
+    display: flex;
+    flex-direction: row;
+
+}
+
+.login-cor{
+    width: 40vh;
+    height: 70vh;
+    background: linear-gradient(to left, #5f2c82, #751df8);
+    margin: 0;
+}
+
+.txt-titulo{
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Poppins-Bold';
+    padding: 20px;
+}
+
+.conteudo-login{
+    height: 406px;
+    width: 525px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,6 +64,7 @@ body {
 }
 
 .content form {
+   
     width: 60vh;
     justify-content: center;
     align-items: center;
@@ -49,13 +72,20 @@ body {
 
 
 .img_login{
-    width: 15vh;
-    padding: 0vh 5vh 5vh 5vh;
+    width: 26vh;
+    padding: 0;
     margin: 0;
+}
+
+.img_login_2{
+    width: 35vh;
+    padding-top: 2vh;
+    padding-left: 20px;
 }
 
 
 .div-inpts {
+
    text-align: center;
    justify-content: center;
 }
@@ -95,6 +125,7 @@ label {
     color: #686868;
     transform-origin: 0 0;
     transition: transform 0.2s ease-in-out;
+    font-family: 'Poppins-Bold'; font-size: small;
 }
 
 
@@ -118,9 +149,12 @@ label {
     font-size: 1rem;
     text-transform: uppercase;
     color: #3B025C;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #5f2c82;
     border: solid 1px #D5CFF7;
     border-radius: 5px;
+
+
+    text-align: center;
 
     width: 20vh;
     height: 5vh;
@@ -129,7 +163,7 @@ label {
 
 .btn-default:hover {
 
-    background-color: rgba(255, 255, 255, 0.075);
+    background-color: #602c82ef;
 
     font-size: 1.15rem;
     transition: 0.5s;

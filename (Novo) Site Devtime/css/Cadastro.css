@@ -6,6 +6,7 @@
 }
 
 body {
+    font-family: 'Poppins-Bold';
     display: flex;
     margin: 0;
     background-color: #0C0C0C;
@@ -20,8 +21,9 @@ body {
 .content {
     font-family: 'Poppins-Regular';
     font-size: 1rem;
+    font-family: 'Poppins-Bold';
 
-    background: #4E4389;
+    background: linear-gradient(to top, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
     border-radius: 10px;
 
     width: 140vh;
@@ -44,6 +46,7 @@ body {
 }
 
 .div-inpts {
+    font-size: 0.9rem;
     padding: 3vh 4vh;
 }
 
@@ -163,7 +166,7 @@ label {
 /*INICIO FOOTER*/
 
 .footer {
-    background-color: #d5cff7ce;
+    background: linear-gradient(to bottom, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
     margin-top: 8vh;
     width: 199vh;
     height: 14vh;
