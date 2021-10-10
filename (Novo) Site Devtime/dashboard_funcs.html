@@ -62,7 +62,7 @@
 
             <div class="grafico_softwares ">
                 <div class="divGraficos"> GRAFICO SOFTWARES </div>
-                <div class="grafico_pizza">
+                <div class="grafico">
                     <canvas id="pizza_process"></canvas>
                 </div>
             </div>
@@ -74,11 +74,16 @@
 
             <div class="tabela_softwares ">
                 <div class="divGraficos">GRAFICO MONITORAMENTO GERAL(HORA)</div>
-
+                <div class="grafico grafico_geral">
+                    <canvas id="cpu_ram"></canvas>
+                </div>
             </div>
 
             <div class="grafico_softwares ">
-                <div class="divGraficos"> TABELAS MONITORAMENTO</div>
+                <div class="divGraficos"> ARMAZENAMENTO</div>
+                <div class="grafico">
+                    <canvas id="disco"></canvas>
+                </div>
             </div>
 
         </div>
@@ -116,7 +121,7 @@
                     position: 'left',
                     aling: 'start',
                     labels: {
-                        color: 'red'
+                        color: 'black'
                     }
                 }
             }
@@ -125,5 +130,103 @@
     var myChart = new Chart(
         document.getElementById('pizza_process'),
         config
+    );
+    ///////////////////////////////////////////////////////////////////
+    const databars = {
+        labels: ['disc 1', 'disc 2', 'disc 3'],
+        datasets: [{
+            label: 'Armazenamento',
+            data: [65, 59, 85, 81],
+            backgroundColor: [
+                'red',
+                'green',
+                'blue',
+                'yellow'
+            ],
+            borderColor: [
+                'black',
+                'black',
+                'black',
+                'black'
+            ],
+            borderWidth: 1
+        }]
+    };
+    const configbars = {
+        type: 'bar',
+        data: databars,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        },
+    };
+    var myChart = new Chart(
+        document.getElementById('disco'),
+        configbars
+    );
+    /////////////////////////////////////////////////////////////////////
+    const dataline = {
+        labels: ['0s', '5s', '10s', '15s', '20s', '25s', '30s', '35s', '40s', '45s', '50s', '55s', '60s'],
+        datasets: [{
+            label: "Intel(R) Core(TM) i3-3220 CPU @3.30 GHz",
+            data: [0, 10, 24, 42, 35, 50, 51, 73, 80, 90, 100, 65, 50],
+            fill: false,
+            borderColor: '#4A024D',
+            backgroundColor: 'white',
+            tension: 0.1
+        },
+        {
+            label: "RAM",
+            data: [20, 15, 34, 52, 15, 80, 61, 93, 20, 60, 90, 95, 90],
+            fill: false,
+            borderColor: 'blue',
+            backgroundColor: 'white',
+            tension: 0.1
+        }]
+    };
+    const configline = {
+        type: 'line',
+        data: dataline,
+        options: {
+            responsive: true,
+            interaction: {
+                mode: 'index',
+                intersect: false,
+            },
+            stacked: false,
+            plugins: {
+                legend: {
+                    display: true
+                }
+            },
+            scales: {
+                y: {
+                    type: 'linear',
+                    display: true,
+                    position: 'left',
+                },
+                y1: {
+                    type: 'linear',
+                    display: false,
+                    position: 'right',
+
+                    grid: {
+                        drawOnChartArea: false, // only want the grid lines for one axis to show up
+                    },
+                },
+            }
+        },
+    };
+    var myChart = new Chart(
+        document.getElementById('cpu_ram'),
+        configline
     );
 </script>

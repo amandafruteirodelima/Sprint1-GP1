@@ -63,7 +63,7 @@ align-items: center;
 
     background: white;;
 
-    height: 200px;
+    height: 220px;
     width: 450px;
     border-radius: 3px;
 }
@@ -71,19 +71,22 @@ align-items: center;
 .grafico_softwares{
     background: white;;
 
-    height: 200px;
+    height: 220px;
     width: 450px;
 
     border-radius: 3px;
 }
 
-.grafico_pizza{
+.grafico{
     position: relative;
-    height: 159px;
-    width: 70%;
+    height: 177px;
+    width: 75%;
     display: flex;
     align-items: center;
     margin: 0 auto;
+}
+.grafico_geral{
+    width: 84%;
 }
 
 .divDisplayIndividual div {
