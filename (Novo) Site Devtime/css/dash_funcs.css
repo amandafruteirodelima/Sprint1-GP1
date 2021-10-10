@@ -118,6 +118,18 @@ align-items: center;
 }
 
 
-.linha_meio div {
-    
+
+
+.divGraficos {
+    margin-bottom: 6px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-family: 'Poppins-Bold';
+    background: linear-gradient(to top, #7100a5, #4A024D);
+
+    height: 25px;
+    text-align: center;
+    padding-top: 6px;
 }
+
