@@ -162,6 +162,7 @@ h2 {
     opacity: 0.8;
 }
 
+/* Seta para voltar */
 .desempenho_go_back:hover{
     transform: rotateY(180deg);
     height: 65px;
