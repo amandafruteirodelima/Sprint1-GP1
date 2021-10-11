@@ -129,6 +129,7 @@ h2 {
 }
 
 .div_desempenho_content {
+    transition: 0.8s;
     width: 30%;
     border-radius: 20px;
     background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
@@ -138,6 +139,10 @@ h2 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.div_desempenho_content:hover {
+    background-image: linear-gradient(to bottom, #7418d1, #e644ff);
 }
 
 .check {
@@ -158,7 +163,6 @@ h2 {
 
 /* Desempenho equipe (quando clicada) */
 .div_desempenho_pai_alternativa{
-    display: none;
     margin: 0;
     border-radius: 20px;
     width: 80%;

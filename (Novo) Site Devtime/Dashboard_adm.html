@@ -102,7 +102,7 @@
     </div>
 
     <!-- Desempenho equipe (quando clicado) -->
-    <div id="div_desempenho_pai_alternativa" class="div_desempenho_pai_alternativa">
+    <div id="div_desempenho_pai_alternativa" style="display: none;" class="div_desempenho_pai_alternativa">
         <img id="desempenho_go_back" onclick="go_back()" class="desempenho_go_back" src="img/seta.png" alt="">
         <h2 class="alt_title">Detalhes da produtividade de: </h2>
         <h2 id="h2_nome" class="alt_title2"></h2>
@@ -134,9 +134,11 @@
 
     function mudar_frase() {
         if (cont == 0) {
+            h2_alt.style.fontSize = "18px";
             h2_alt.innerHTML = "Desempenho dos membros da equipe (Para ver detalhes, clique no ícone do membro da equipe desejado)";
             cont ++;
         } else {
+            h2_alt.style.fontSize = "24px";
             h2_alt.innerHTML = "Desempenho dos membros da equipe";
             cont --;
         }
