@@ -8,23 +8,22 @@ public class DiscoEntity {
     private Integer idDisco;
     private String nomeDisco;
     private String modelo;
-    private Long tamanhoDisco;
+    private Double tamanhoDisco;
     private Integer fkMaquina;
 
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
 
-    public DiscoEntity(String nomeDisco, String modelo, Long tamanhoDisco) {
+    public DiscoEntity(String nomeDisco, String modelo, Double tamanhoDisco) {
         this.nomeDisco = nomeDisco;
         this.modelo = modelo;
         this.tamanhoDisco = tamanhoDisco;
     }
 
-    public void insertDisco() {
-        Double conversor =  tamanhoDisco / Math.pow(10, 9);
+    public void insertDisco() {      
         assistente.update("INSERT INTO DISCO VALUES(?,?,?,?)", null,
-                nomeDisco, modelo, conversor);
+                nomeDisco, modelo, tamanhoDisco);
         System.out.println(assistente.queryForList("SELECT * FROM DISCO"));
     }
 
@@ -44,11 +43,11 @@ public class DiscoEntity {
         this.modelo = modelo;
     }
 
-    public Long getTamanhoDisco() {
+    public Double getTamanhoDisco() {
         return tamanhoDisco;
     }
 
-    public void setTamanhoDisco(Long tamanhoDisco) {
+    public void setTamanhoDisco(Double tamanhoDisco) {
         this.tamanhoDisco = tamanhoDisco;
     }
 

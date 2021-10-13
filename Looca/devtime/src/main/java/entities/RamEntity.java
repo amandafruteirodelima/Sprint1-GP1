@@ -5,6 +5,31 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 public class RamEntity {
     private Integer idRam;
-    private Double Total;
+    private Double total;
     private Integer fkMaquina;
+    
+        ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+    JdbcTemplate assistente = new JdbcTemplate(
+            configuracaoBanco.getBancoDeDados());
+    
+    public void insertRam(){
+        
+        assistente.update("INSERT INTO RAM VALUES(?,?)", null,
+                total);
+        System.out.println(assistente.queryForList("SELECT * FROM RAM"));
+    }
+
+    public RamEntity(Double total) {
+        this.total = total;
+    }
+
+    public Double getTotal() {
+        return total;
+    }
+
+    public void setTotal(Double Total) {
+        this.total = Total;
+    }
+    
+    
 }
