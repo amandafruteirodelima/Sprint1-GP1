@@ -68,6 +68,7 @@ body {
 
     justify-content: center;
     margin-bottom: 4vh;
+    cursor: pointer;
 
 }
 
@@ -91,6 +92,7 @@ label {
     color: #686868;
     transform-origin: 0 0;
     transition: transform 0.2s ease-in-out;
+    
 }
 
 .label-nascimento {
@@ -120,13 +122,16 @@ label {
 
 
 .sel-padrao {
+    font-family: 'Poppins-Bold';
     background-color: white;
+    color: #686868;
     border: none;
     border-radius: 5px;
 
     width: 55vh;
     height: 6vh;
     margin-bottom: 4vh;
+    cursor: pointer;
 }
 
 /*Imagem*/
