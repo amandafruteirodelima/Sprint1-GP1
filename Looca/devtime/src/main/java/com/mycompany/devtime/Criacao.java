@@ -35,9 +35,9 @@ public class Criacao {
 
         assistente.execute(createDisco);
         
-                assistente.execute("drop table historicodisco");
+                assistente.execute("drop table historico_disco");
         
-        String createHistoricoDisco = "CREATE TABLE HISTORICODISCO ("
+        String createHistoricoDisco = "CREATE TABLE HISTORICO_DISCO ("
                 + "  idHistoricoDisco INT NOT NULL AUTO_INCREMENT,"
                 + "  ARMAZENAMENTO DOUBLE,"
                 + "  DATA_HORA DATETIME,"
@@ -68,6 +68,17 @@ public class Criacao {
                 + ");";
 
         assistente.execute(createRam);
+        
+        assistente.execute("drop table historico_processador");
+        
+        String createHistoricoProcessador = "CREATE TABLE historico_processador("
+                + "  idHistoricoProcessador INT NOT NULL AUTO_INCREMENT,"
+                + "  usoProcessador DOUBLE,"
+                + "  DATA_HORA DATETIME,"
+                + "  PRIMARY KEY (idHistoricoProcessador)"
+                + ");";
+
+        assistente.execute(createHistoricoProcessador);
     }
 
 }

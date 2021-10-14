@@ -23,13 +23,4 @@ public class RamEntity {
         this.total = total;
     }
 
-    public Double getTotal() {
-        return total;
-    }
-
-    public void setTotal(Double Total) {
-        this.total = Total;
-    }
-    
-    
 }

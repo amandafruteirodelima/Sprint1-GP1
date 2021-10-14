@@ -2217,3 +2217,15 @@ Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection wa
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
 	... 22 more
+2021-10-14 09:49:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HISTORICO_DISCO" not found; SQL statement:
+drop table historico_disco [42102-200]
+2021-10-14 09:50:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HISTORICO_DISCO" not found; SQL statement:
+drop table historico_disco [42102-200]
+2021-10-14 09:50:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HISTORICO_DISCO" not found; SQL statement:
+drop table historico_disco [42102-200]
+2021-10-14 13:41:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HISTORICO_DISCO" already exists; SQL statement:
+CREATE TABLE HISTORICO_DISCO (  idHistoricoDisco INT NOT NULL AUTO_INCREMENT,  ARMAZENAMENTO DOUBLE,  DATA_HORA DATETIME,  PRIMARY KEY (idHistoricoDisco)); [42101-200]

@@ -7,19 +7,20 @@ import entities.HistoricoDiscoEntity;
 import java.util.List;
 
 public class HistoricoDiscoImpl {
-    
-    public void findHistoricoDisco(){
-        
-        Looca looca = new Looca();
-        DiscosGroup grupoDeDiscos = looca.getGrupoDeDiscos();
+
+    Looca looca = new Looca();
+    DiscosGroup grupoDeDiscos = looca.getGrupoDeDiscos();
+
+    public void findHistoricoDisco() {
+
         List<Volume> volumes = grupoDeDiscos.getVolumes();
-        
-        for (Volume volume : volumes){
-            Double convertido =  volume.getDisponivel() / Math.pow(10, 9);
+
+        for (Volume volume : volumes) {
+            Double convertido = volume.getDisponivel() / Math.pow(10, 9);
             HistoricoDiscoEntity historicoDisco = new HistoricoDiscoEntity(
                     convertido);
             historicoDisco.insertHistoricoDisco();
         }
-    } 
-    
+    }
+
 }

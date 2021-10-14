@@ -22,13 +22,10 @@ public class HistoricoDiscoEntity {
     }
     
     public void insertHistoricoDisco() {       
-        assistente.update("INSERT INTO HISTORICODISCO VALUES(?,?,?)", null,
+        assistente.update("INSERT INTO HISTORICO_DISCO VALUES(?,?,?)", null,
                 armazenamento,formatter.format(date));
         System.out.println(assistente.queryForList(
-                "SELECT * FROM HISTORICODISCO"));
+                "SELECT * FROM HISTORICO_DISCO"));
     }
 
-    public Double getArmazenamento() {
-        return armazenamento;
-    }
 }
