@@ -1,3 +1,13 @@
-com\mycompany\devtime\ConfiguracaoBanco.class
-entities\MaquinaEntity.class
+implantation\ProcessadorImpl.class
+implantation\HistoricoDiscoImpl.class
+com\mycompany\devtime\Criacao.class
+entities\DiscoEntity.class
+implantation\RamImpl.class
 implantation\MaquinaImpl.class
+entities\MaquinaEntity.class
+entities\RamEntity.class
+entities\ProcessadorEntity.class
+entities\HistoricoDiscoEntity.class
+implantation\DiscoImpl.class
+com\mycompany\devtime\ConfiguracaoBanco.class
+com\mycompany\devtime\Executor.class
