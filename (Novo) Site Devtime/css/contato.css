@@ -66,6 +66,7 @@ body{
 /* Fim Header */
 .divForm {
     padding: 10px 100px 10px 100px;
+    border-radius: 10px;
 
     background: linear-gradient(180deg, #080808 0%, rgba(126, 111, 212, 0.055) 100%);
     color: white;

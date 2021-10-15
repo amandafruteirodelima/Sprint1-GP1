@@ -401,23 +401,18 @@ a {
 }
 
 .footer {
-    background: linear-gradient(140deg, #a27ce6 0%, rgb(49, 2, 77) 70%), #0000 0%;
+    background-color: #0C0C0C;
     color: white;
+    padding: 5px;
 }
-
-.responsiveFooter {
+.responsiveFooter{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-
 .company img {
     height: 30px;
     margin-top: 15px;
-}
-
-.copyright {
-    font-size: small;
 }
 
 
