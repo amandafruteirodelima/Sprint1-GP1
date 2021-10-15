@@ -1,6 +1,8 @@
 package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
+import java.util.List;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class MaquinaEntity {
@@ -14,18 +16,20 @@ public class MaquinaEntity {
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
+    FuncionarioEntity funcionario = new FuncionarioEntity();
 
-    public MaquinaEntity(String sistemaOperacional, Integer arquiteturaSO, 
+    public MaquinaEntity(String sistemaOperacional, Integer arquiteturaSO,
             String fabricanteSO) {
         this.sistemaOperacional = sistemaOperacional;
         this.arquiteturaSO = arquiteturaSO;
         this.fabricanteSO = fabricanteSO;
+        this.fkFuncionario = funcionario.getIdFuncionario();
     }
-    
+
     public void insertMaquina() {
-        
-        assistente.update("INSERT INTO MAQUINA VALUES(?,?,?,?)", null,
-                sistemaOperacional, arquiteturaSO, fabricanteSO); 
+        assistente.update("INSERT INTO MAQUINA VALUES(?,?,?,?,?)", null,
+                sistemaOperacional, arquiteturaSO, fabricanteSO, fkFuncionario);
+
         System.out.println(assistente.queryForList("SELECT * FROM maquina"));
     }
 

@@ -1,21 +1,18 @@
 package com.mycompany.devtime;
 
-import entities.HistoricoProcessadorEntity;
-import entities.ProcessadorEntity;
 import implantation.DiscoImpl;
 import implantation.HistoricoDiscoImpl;
 import implantation.HistoricoProcessadorImpl;
+import implantation.HistoricoRamImpl;
 import implantation.MaquinaImpl;
+import implantation.MaquinaSoftwareImpl;
 import implantation.ProcessadorImpl;
 import implantation.RamImpl;
-import java.util.Scanner;
-import org.springframework.jdbc.core.JdbcTemplate;
+import implantation.SoftwareImpl;
 
 public class Executor {
 
     public void Executor() {
-
-  
 
         MaquinaImpl maquina = new MaquinaImpl();
         DiscoImpl disco = new DiscoImpl();
@@ -24,6 +21,9 @@ public class Executor {
         HistoricoDiscoImpl histDisco = new HistoricoDiscoImpl();
         HistoricoProcessadorImpl histProcessador
                 = new HistoricoProcessadorImpl();
+        HistoricoRamImpl histRam = new HistoricoRamImpl();
+        MaquinaSoftwareImpl maquinaSoftware = new MaquinaSoftwareImpl();
+        SoftwareImpl software = new SoftwareImpl();
 
         maquina.findMaquina();
         disco.findDisco();
@@ -32,6 +32,8 @@ public class Executor {
 
         histDisco.findHistoricoDisco();
         histProcessador.findHistoricoProcessador();
-
+        histRam.findHistoricoRam();
+        maquinaSoftware.findMaquinaSoftware();
+        software.findSoftware();
     }
 }

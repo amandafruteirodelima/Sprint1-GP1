@@ -181,11 +181,6 @@
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/JFrame/login-devtime/src/main/java/com/mycompany/login/devtime/Logo-Branco.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="lblEmail">
           <Events>

@@ -5,10 +5,13 @@
 package com.mycompany.devtime.telas;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
+import entities.FuncionarioEntity;
+import entities.MaquinaEntity;
 import java.util.List;
 import java.util.Map;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
@@ -205,20 +208,32 @@ public class TelaLogin extends javax.swing.JFrame {
         JdbcTemplate assistente = new JdbcTemplate(
                 configuracaoBanco.getBancoDeDados());
 
-        System.out.println(assistente.queryForList("SELECT senha FROM usuario "
-                + "where email = '" + senha + "'"));
+        List<FuncionarioEntity> funcionario = assistente.query("SELECT * "
+                + "FROM funcionario where email = '" + email + "' and senha = '"
+                + senha + "'",
+                new BeanPropertyRowMapper<>(FuncionarioEntity.class));
 
-        System.out.println(assistente.queryForList("SELECT email FROM usuario where email = '" + email + "'"));
-        System.out.println(assistente.queryForMap("SELECT email FROM usuario where email = '" + email + "'"));
+        FuncionarioEntity funcionarioDaVez = null;
 
-        if (email.equals("devtime") && senha.equals("devtime")) {
+        for (int i = 0; i < funcionario.size(); i++) {
+            funcionarioDaVez = funcionario.get(i);
+        }
+
+        
+//        System.out.println(assistente.queryForList("SELECT senha FROM usuario "
+//                + "where email = '" + senha + "'"));
+//
+//        System.out.println(assistente.queryForList("SELECT email FROM usuario where email = '" + email + "'"));
+//        System.out.println(assistente.queryForMap("SELECT email FROM usuario where email = '" + email + "'"));
+        if (funcionarioDaVez == null) {
+
+            JOptionPane.showMessageDialog(null, "Email ou Senha incorreta!!.");
+
+        } else if (funcionarioDaVez.getEmail().equals(email)
+                && funcionarioDaVez.getSenha().equals(senha)) {
 
             logado.setVisible(true);
             setVisible(false);
-
-        } else {
-
-            JOptionPane.showMessageDialog(null, "Email ou Senha incorreta!!.");
 
         }
 

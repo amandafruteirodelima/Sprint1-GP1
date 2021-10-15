@@ -16,6 +16,7 @@ public class MaquinaImpl {
                 sistema.getFabricante());
 
         maquina.insertMaquina();
+
     }
 
 }
