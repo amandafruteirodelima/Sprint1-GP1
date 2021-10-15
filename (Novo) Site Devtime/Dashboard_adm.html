@@ -15,30 +15,30 @@
 </head>
 
 <body>
-        <!--Início Header-->
+    <!--Início Header-->
 
-        <div class="divHeader">
+    <div class="divHeader">
 
-            <div class="container-header">
-    
-                <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
-    
-                <nav class="divLista">
-                    <ul>
-                        <li><a class="li-select" href="Dashboard_adm.html">Dashboard</a></li>
-                        <li><a class="li-comum" href="ranking.html">Ranking</a></li>
-                        <li><a class="li-comum" href="Cadastro.html">Cadastro</a></li>
-                    </ul>
-    
-                </nav>
-    
-                <div class="divButton"><button><a class="li-comum" href="Login.html">Sair</a></button></div>
-    
-            </div>
-    
+        <div class="container-header">
+
+            <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
+
+            <nav class="divLista">
+                <ul>
+                    <li><a class="li-select" href="Dashboard_adm.html">Dashboard</a></li>
+                    <li><a class="li-comum" href="ranking.html">Ranking</a></li>
+                    <li><a class="li-comum" href="Cadastro.html">Cadastro</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="divButton"><button><a class="li-comum" href="Login.html">Sair</a></button></div>
+
         </div>
-    
-        <!--Fim Header-->
+
+    </div>
+
+    <!--Fim Header-->
 
     <!-- Início da página -->
     <h1 id="h1_1">BEM-VINDO GERSON</h1>
@@ -128,9 +128,31 @@
 
     <!-- Desempenho equipe (quando clicado) -->
     <div id="div_desempenho_pai_alternativa" style="display: none;" class="div_desempenho_pai_alternativa">
-        <img id="desempenho_go_back" onclick="go_back()" class="desempenho_go_back" src="img/seta.png" alt="">
-        <h2 class="alt_title">Detalhes da produtividade de: </h2>
+
+        <div class="organizadora_title_alternativa">
+
+            <img id="desempenho_go_back" onclick="go_back()" class="desempenho_go_back" src="img/seta.png" alt="">
+
+            <h2 class="alt_title">Detalhes da produtividade de: </h2>
+
+            <img class="invisible" src="img/seta.png">
+
+        </div>
+
         <h2 id="h2_nome" class="alt_title2"></h2>
+
+        <div class="div_options">
+
+            <div class="div_option_content">
+
+            </div>
+
+            <div class="div_option_content">
+
+            </div>
+
+        </div>
+
     </div>
 
 </body>
@@ -138,13 +160,11 @@
 </html>
 
 <script>
-    // Codigo sendo preparado para receber APIs
+    // Código sendo preparado para receber APIs
+
 
     window.onload = function online() {
-        online_6.style.backgroundColor = "red";
-    }
-
-    window.onload = function online() {
+        online_1.style.backgroundColor = "red";
         ok = "img/checked.png";
         notOk = "img/warning.png";
         check_1.src = ok;
@@ -161,15 +181,16 @@
         if (cont == 0) {
             h2_alt.style.fontSize = "18px";
             h2_alt.innerHTML = "Desempenho dos membros da equipe (Para ver detalhes, clique no ícone do membro da equipe desejado)";
-            cont ++;
+            cont++;
         } else {
             h2_alt.style.fontSize = "24px";
             h2_alt.innerHTML = "Desempenho dos membros da equipe";
-            cont --;
+            cont--;
         }
     }
 
     function abrir_info(name) {
+
         desempenho_1.style.display = "none";
         desempenho_2.style.display = "none";
         desempenho_3.style.display = "none";
@@ -186,15 +207,6 @@
 
     // Seta (voltar)
     function go_back() {
-        desempenho_1.style.display = "block";
-        desempenho_2.style.display = "block";
-        desempenho_3.style.display = "block";
-        desempenho_4.style.display = "block";
-        desempenho_5.style.display = "block";
-        desempenho_6.style.display = "block";
-        div_desempenho_pai.style.display = "block";
-
-        div_desempenho_pai_alternativa.style.display = "none";
-
+        location.reload();
     }
 </script>
