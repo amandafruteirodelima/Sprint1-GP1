@@ -207,7 +207,6 @@ label {
 .a_cabecalho:hover {
     font-size: 20px;
     color: #ac9fe9;
-    border-bottom: 1px solid #ac9fe9;
     cursor: pointer;
 }
 
@@ -590,7 +589,7 @@ label {
 
 .div_gerenciamento {
     width: 550px;
-    height: 330px;
+    height: 335px;
     border-radius: 10px;
     display: flex;
 }

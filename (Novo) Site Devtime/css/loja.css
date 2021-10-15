@@ -1,7 +1,15 @@
+@font-face{
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
 body {
     margin: 0;
     color: white;
     background-color: #1E1B2E;
+    font-family: 'Poppins-Bold';
 }
 .header {
     padding: 25px 0 25px 0;
@@ -11,7 +19,7 @@ body {
 }
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 50px auto
 }
 .boxPerfil {
     display: flex;
