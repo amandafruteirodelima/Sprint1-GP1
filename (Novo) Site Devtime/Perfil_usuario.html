@@ -8,8 +8,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
     integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
     crossorigin="anonymous"></script>
-    <link rel="icon" href="img/Yin-Yang-DevTime.png">
 
+    <link rel="icon" href="img/Yin-Yang-DevTime.png">
     <link rel="stylesheet" href="css/perfil.css">
     <title>Perfil</title>
 </head>
@@ -109,7 +109,11 @@
     <div class="div_geral_estatisticas">
         <div class="div_estatisticas_lado">
             <div class="txt_titulo_estatisticas">
-                <b>Estatísticas</b>
+                <div>
+                    <div class="caixa_txt_missao_notificacao">
+                        <b>Estatísticas</b>
+                    </div>
+                </div>
             </div>
             <div class="grafico">
                 <canvas id="estatisticas"></canvas>
@@ -117,8 +121,16 @@
         </div>
         <div class="div_missao_notificacao div_estatisticas_lado">
             <div class="txt_titulo_missao_notificacao txt_titulo_estatisticas">
-                <div class="missao_notificacao" onclick="mostrar_missao()">Missões</div>
-                <div class="missao_notificacao" onclick="mostrar_notificacao()">Notificações</div>
+                <div class="missao_notificacao" onclick="mostrar_missao()">
+                    <div class="caixa_txt_missao_notificacao">
+                        <b>Missões</b>
+                    </div>
+                </div>
+                <div class="missao_notificacao" onclick="mostrar_notificacao()">
+                    <div class="caixa_txt_missao_notificacao">
+                        <b>Notificações</b>
+                    </div>
+                </div>
             </div>
             <div id="notificacao">
                 <div id="info_missao_notificacao" class="div_info_missao_notificacao">

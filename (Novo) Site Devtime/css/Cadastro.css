@@ -10,7 +10,6 @@ body {
     display: flex;
     margin: 0;
     background-color: #0C0C0C;
-
     flex-direction: column;
     gap: 50px;
     align-items: center;
