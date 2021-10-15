@@ -1,13 +1,17 @@
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\entities\MaquinaEntity.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\ConfiguracaoBanco.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\entities\DiscoEntity.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\entities\ProcessadorEntity.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\entities\RamEntity.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\Executor.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\implantation\RamImpl.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\entities\HistoricoDiscoEntity.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\Criacao.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\implantation\DiscoImpl.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\implantation\MaquinaImpl.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\implantation\ProcessadorImpl.java
-C:\Users\karolline.a.silva\Pictures\Saved Pictures\Sprint1-GP1\Looca\devtime\src\main\java\implantation\HistoricoDiscoImpl.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/entities/HistoricoProcessadorEntity.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/com/mycompany/devtime/ConfiguracaoBanco.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/com/mycompany/devtime/telas/TelaLogin.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/entities/HistoricoDiscoEntity.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/implantation/RamImpl.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/com/mycompany/devtime/Criacao.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/entities/ProcessadorEntity.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/com/mycompany/devtime/Executor.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/entities/MaquinaEntity.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/implantation/MaquinaImpl.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/implantation/DiscoImpl.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/com/mycompany/devtime/telas/Logado.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/implantation/ProcessadorImpl.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/implantation/HistoricoDiscoImpl.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/implantation/HistoricoProcessadorImpl.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/entities/RamEntity.java
+/home/rony.sobral@VALEMOBI.CORP/Documentos/bandtec/Projeto-Em-Grupo/Sprint1-GP1/Looca/devtime/src/main/java/entities/DiscoEntity.java

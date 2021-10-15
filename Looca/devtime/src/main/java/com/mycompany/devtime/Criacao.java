@@ -79,6 +79,23 @@ public class Criacao {
                 + ");";
 
         assistente.execute(createHistoricoProcessador);
+        
+        assistente.execute("drop table usuario");
+        
+        String createUsario = "CREATE TABLE usuario("
+                + "  idUser INT NOT NULL AUTO_INCREMENT,"
+                + "  email VARCHAR(60),"
+                + "  senha Varchar(16)"
+                + ");";
+        
+        assistente.execute(createUsario);
+        
+        
+      
+
+        assistente.update("INSERT INTO usuario VALUES(?,?,?)", null,
+                "devtime", "devtime");
+        
     }
 
 }

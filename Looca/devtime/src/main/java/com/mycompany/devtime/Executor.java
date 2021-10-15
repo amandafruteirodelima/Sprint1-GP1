@@ -9,10 +9,13 @@ import implantation.MaquinaImpl;
 import implantation.ProcessadorImpl;
 import implantation.RamImpl;
 import java.util.Scanner;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 public class Executor {
 
-    public static void main(String[] args) {
+    public void Executor() {
+
+  
 
         MaquinaImpl maquina = new MaquinaImpl();
         DiscoImpl disco = new DiscoImpl();
@@ -22,19 +25,13 @@ public class Executor {
         HistoricoProcessadorImpl histProcessador
                 = new HistoricoProcessadorImpl();
 
-        Scanner leitor = new Scanner(System.in);
-        Integer teste = leitor.nextInt();
-        if (teste == 1) {
-            System.out.println("Area de teste");
-        } else {
-            maquina.findMaquina();
-            disco.findDisco();
-            processador.findProcessador();
-            ram.findRam();
+        maquina.findMaquina();
+        disco.findDisco();
+        processador.findProcessador();
+        ram.findRam();
 
-            histDisco.findHistoricoDisco();
-            histProcessador.findHistoricoProcessador();
-        }
+        histDisco.findHistoricoDisco();
+        histProcessador.findHistoricoProcessador();
 
     }
 }
