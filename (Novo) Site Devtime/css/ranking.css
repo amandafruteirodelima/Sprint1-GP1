@@ -12,13 +12,13 @@
 }
 
 body {
-    background-color: #141418;
+    background-color: #101011;
     margin: 0;
     font-family: 'Poppins-Bold';
+    color: white;
 }
 
 .div_geral_top {
-    background-color: red;
     height: 555px;
     width: 95%;
     margin: 20px auto;
@@ -27,7 +27,6 @@ body {
 }
 
 .div_top {
-    background-color: black;
     height: 95%;
     width: 45%;
     margin-top: 15px;
@@ -35,12 +34,15 @@ body {
 }
 
 .div_txt_top {
-    color: white;
     width: 95%;
     margin: 0px auto;
     background-color: #7D35B7;
     font-size: 2vw;
     border-radius: 5px;
+}
+
+#img_podio {
+    width: 75%;
 }
 
 .div_txt_outras_equipes {
@@ -49,8 +51,24 @@ body {
 }
 
 .div_outras_equipes {
-    background-color: red;
-    height: 50%;
+    max-height: 85%;
     width: 95%;
-    margin: 0 auto
+    margin: 0 auto;
+    padding-top: 1px;
+    overflow-x: overlay;
+    /* background: linear-gradient(289.04deg, #6010AF 37.25%, #9E32AF 66.61%); */
+    background: linear-gradient(to top, #9E32AF, #6010AF);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.div_geral_txt_colocado {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3vw;
+    margin-top: 3vw;
+}
+
+.div_txt_podio_colocado {
+    font-family: 'Rampart One', cursive;
 }
