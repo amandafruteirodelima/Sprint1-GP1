@@ -41,8 +41,12 @@ body {
     border-radius: 5px;
 }
 
-#img_podio {
-    width: 75%;
+.img_podio {
+    width: 7vw;
+}
+
+.div_txt_equipe {
+    padding-top: 1.5vw;
 }
 
 .div_txt_outras_equipes {
@@ -51,6 +55,7 @@ body {
 }
 
 .div_outras_equipes {
+    height: 85%;
     max-height: 85%;
     width: 95%;
     margin: 0 auto;
