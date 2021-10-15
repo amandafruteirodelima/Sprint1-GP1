@@ -19,7 +19,7 @@ a {
 body {
     overflow-x: hidden;
     font-family: 'Poppins-Bold';
-    background-color: #161422;
+    background-color: #101011;
 }
 
 ::-webkit-scrollbar {
@@ -34,9 +34,30 @@ body {
     background: #4837a4; 
 }
 
+.tela_selecionada {
+    color: #7e70ca;
+    font-size: 15px;
+}
+
 #img_perfil {
     width: 55px;
     cursor: pointer;
+}
+
+.div_ver_perfil {
+    height: 30px;
+}
+
+.a_ver_perfil {
+    margin-left: 5%;
+    font-size: 1.2vw;
+    color: white;
+    margin-top: 1%;
+}
+
+.a_ver_perfil:hover {
+    font-size: 1.5vw;
+    color: #ac9fe9;
 }
 
 #img_perfil:hover {
