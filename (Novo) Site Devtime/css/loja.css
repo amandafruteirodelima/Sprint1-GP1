@@ -187,6 +187,7 @@ body {
 }
 .produto:hover img {
     transform: scale(1.05, 1.05);
+    cursor: pointer;
 }
 .btnCompra {
     background-color: #383838;
@@ -206,7 +207,7 @@ body {
 width: 100%;
 }
 .loja {
-    background-color: #4837A4;
+    background: linear-gradient(to top, #9E32AF, #6010AF);
     min-height: 500px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -244,11 +245,11 @@ width: 100%;
     background: linear-gradient(180deg, #472178 0%, #BA49E1 100%);
 }
 .GradAzul {
-    background: linear-gradient(180deg, #4CA5D8 0%, #4C62D8 100%);
+    background: linear-gradient(180deg, #55acdf 0%, #2847f7 100%);
 }
 .GradMarrom {
-    background: linear-gradient(180deg, #CD9D65 0%, #915E21 100%);
+    background: linear-gradient(180deg, #9a67d4 0%, #4907b4 100%);
 }
 .GradMarromC {
-    background: linear-gradient(180deg, #D2AD64 0%, #97793E 100%);
+    background: linear-gradient(180deg, #eb83eb 0%, #951499 100%);
 }

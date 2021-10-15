@@ -90,7 +90,7 @@ align-items: center;
     text-transform: uppercase;
     font-size: 0.9em;
     font-family: 'Poppins-Bold';
-    background: linear-gradient(to top, #7100a5, #4A024D);
+    background: linear-gradient(to top, #9E32AF, #6010AF);
   
 
     height: 25px;
@@ -132,7 +132,7 @@ align-items: center;
     text-transform: uppercase;
     font-size: 0.9em;
     font-family: 'Poppins-Bold';
-    background: linear-gradient(to top, #7100a5, #4A024D);
+    background: linear-gradient(to top, #9E32AF, #6010AF);
 
     height: 25px;
     text-align: center;
@@ -144,7 +144,7 @@ align-items: center;
 .softwares{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: justify;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
