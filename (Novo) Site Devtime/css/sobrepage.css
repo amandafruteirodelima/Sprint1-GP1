@@ -7,7 +7,7 @@
 
 body {
     /* background: linear-gradient(120deg, #987fc4 0%,  rgb(49, 2, 77) 70%), #0000 0%; */
-    background: linear-gradient(100deg, #987fc4 0%, #7647c7 0%, #987fc4 0.01%, rgb(81, 10, 122) 48.54%, #4b11a1 100%);
+    background-image: linear-gradient(to right, #be9cfa 2.2%, rgba(97, 3, 151, 0.801) 37.73%, #441092f6 64.49%);
     background-repeat: no-repeat;
     font-family: 'Poppins-Bold';
     margin: 0;
@@ -163,7 +163,7 @@ a {
 
     height: 15px;
     width: 990px;
-    border-top: 2px solid #9a6de7;
+    border-top: 2px solid white;
     margin-left: 130px;
 }
 
@@ -266,7 +266,7 @@ a {
     margin-top: 640px;
     height: 15px;
     width: 990px;
-    border-top: 2px solid #9a6de7;
+    border-top: 2px solid white;
     margin-left: 130px;
 }
 
@@ -292,9 +292,16 @@ a {
 .planoPadrao {
     background-color: #ffff;
     border-radius: 8px;
+    
 
-    height: 400px;
-    width: 250px;
+    height: 480px;
+    width: 300px;
+}
+.porPC{
+    text-align: center;
+    padding-top: -20px;
+    color: black;
+    font-size: medium;
 }
 
 
