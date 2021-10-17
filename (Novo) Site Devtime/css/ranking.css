@@ -61,8 +61,7 @@ body {
     margin: 0 auto;
     padding-top: 1px;
     overflow-x: overlay;
-    /* background: linear-gradient(289.04deg, #6010AF 37.25%, #9E32AF 66.61%); */
-    background: linear-gradient(to top, #9E32AF, #6010AF);
+    background: linear-gradient(to top, #44134c, #6010AF);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }

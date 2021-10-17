@@ -15,30 +15,30 @@
 </head>
 
 <body>
-        <!--Início Header-->
+    <!--Início Header-->
 
-        <div class="divHeader">
+    <div class="divHeader">
 
-            <div class="container-header">
-    
-                <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
-    
-                <nav class="divLista">
-                    <ul>
-                        <li><a class="li-select" href="Dashboard_adm.html">Dashboard</a></li>
-                        <li><a class="li-comum" href="ranking.html">Ranking</a></li>
-                        <li><a class="li-comum" href="Cadastro.html">Cadastro</a></li>
-                    </ul>
-    
-                </nav>
-    
-                <div class="divButton"><button><a class="li-comum" href="Login.html">Sair</a></button></div>
-    
-            </div>
-    
+        <div class="container-header">
+
+            <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
+
+            <nav class="divLista">
+                <ul>
+                    <li><a class="li-select" href="Dashboard_adm.html">Dashboard</a></li>
+                    <li><a class="li-comum" href="ranking.html">Ranking</a></li>
+                    <li><a class="li-comum" href="Cadastro.html">Cadastro</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="divButton"><button><a class="li-comum" href="Login.html">Sair</a></button></div>
+
         </div>
-    
-        <!--Fim Header-->
+
+    </div>
+
+    <!--Fim Header-->
 
     <!-- Início da página -->
     <h1 id="h1_1">BEM-VINDO GERSON</h1>
@@ -128,9 +128,291 @@
 
     <!-- Desempenho equipe (quando clicado) -->
     <div id="div_desempenho_pai_alternativa" style="display: none;" class="div_desempenho_pai_alternativa">
-        <img id="desempenho_go_back" onclick="go_back()" class="desempenho_go_back" src="img/seta.png" alt="">
-        <h2 class="alt_title">Detalhes da produtividade de: </h2>
+
+        <div class="organizadora_title_alternativa">
+
+            <img id="desempenho_go_back" onclick="go_back()" class="desempenho_go_back" src="img/seta.png" alt="">
+
+            <h2 class="alt_title">Detalhes da produtividade de: </h2>
+
+            <img class="invisible" src="img/seta.png">
+
+        </div>
+
         <h2 id="h2_nome" class="alt_title2"></h2>
+
+        <div id="div_options" class="div_options">
+
+            <div class="div_option_content" onclick="tempo_logado()">
+
+                <h2 class="alt_title3">Ver tempo logado na máquina</h2>
+                <img class="img_option" src="img/time-left.png">
+
+            </div>
+
+            <div class="div_option_content" onclick="aplicativos_usados()">
+
+                <h2 class="alt_title3">Ver aplicativos usados na máquina</h2>
+                <img class="img_option" src="img/apps.png">
+
+            </div>
+
+        </div>
+
+        <!-- Desempenho equipe (quando clicado) / Tempo Logado -->
+        <div id="div_tempo_logado" class="div_tempo_logado" style="display: none;">
+
+            <!-- Divisória -->
+            <div class="div_divisora_alt"></div>
+
+            <div class="div_data">
+                <h2 class="alt_title3">Tempo usado hoje:</h2>
+                <h2 class="alt_title3">4 horas</h2>
+            </div>
+
+            <!-- Divisória -->
+            <div class="div_divisora_alt"></div>
+
+            <div class="div_data">
+
+                <h2 class="alt_title3">Tempo usado na semana:</h2>
+
+                <div class="organizadora_alt">
+
+                    <div class="quadrado">
+                        <h4 class="alt_title4">seg</h4>
+                        <h4 class="alt_title4">8h</h4>
+                    </div>
+                    <div class="quadrado">
+                        <h4 class="alt_title4">ter</h4>
+                        <h4 class="alt_title4">8h</h4>
+                    </div>
+                    <div class="quadrado">
+                        <h4 class="alt_title4">qua</h4>
+                        <h4 class="alt_title4">8h</h4>
+                    </div>
+                    <div class="quadrado">
+                        <h4 class="alt_title4">qui</h4>
+                        <h4 class="alt_title4">10h</h4>
+                    </div>
+                    <div class="quadrado">
+                        <h4 class="alt_title4">sex</h4>
+                        <h4 class="alt_title4">8h</h4>
+                    </div>
+                    <div class="quadrado">
+                        <h4 class="alt_title4">sab</h4>
+                        <h4 class="alt_title4">2h</h4>
+                    </div>
+                    <div class="quadrado">
+                        <h4 class="alt_title4">dom</h4>
+                        <h4 class="alt_title4">0h</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Divisória -->
+            <div class="div_divisora_alt"></div>
+
+            <div class="div_data">
+                <h2 class="alt_title3">Tempo usado na quinzena</h2>
+
+                <div class="organizadora_alt">
+
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 1</h4>
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 2</h4>
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 3</h4>
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 4</h4>
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 5</h4>
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 6</h4>
+                        <h4 class="alt_title5">0h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 7</h4>
+                        <h4 class="alt_title5">0h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 8</h4>
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 9</h4>
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 10</h4>
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 11</h4>
+                        <h4 class="alt_title5">10h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 12</h4>
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 13</h4>
+                        <h4 class="alt_title5">2h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 14</h4>
+                        <h4 class="alt_title5">0h</h4>
+                    </div>
+                    <div class="quadrado2">
+                        <h4 class="alt_title5">dia 15</h4>
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Desempenho equipe (quando clicado) / Aplicativos Usados -->
+        <div id="div_aplicativos_usados" class="div_tempo_logado" style="display: none;">
+
+            <!-- Divisória -->
+            <div class="div_divisora_alt"></div>
+
+            <div class="div_data">
+                <h2 class="alt_title3">Aplicativos usados hoje:</h2>
+
+                <div class="organizadora_alt2">
+
+                <div class="quadrado3">
+                    <img class="img_quadrado" src="img/Apache_NetBeans.png">
+                    <h4 class="alt_title5">2h</h4>
+                </div>
+
+                <div class="quadrado3">
+                    <img class="img_quadrado" src="img/vs-code.png">
+                    <h4 class="alt_title5">4h</h4>
+                </div>
+
+                <div class="quadrado3">
+                    <img class="img_quadrado" src="img/chrome.png">
+                    <h4 class="alt_title5">0.4h</h4>
+                </div>
+
+                <div class="quadrado3">
+                    <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
+                    <h4 class="alt_title5">5h</h4>
+                </div>
+
+                <div class="quadrado3">
+                    <img class="img_quadrado" src="img/spotify.png">
+                    <h4 class="alt_title5">2h</h4>
+                </div>
+
+                </div>
+            </div>
+
+            <!-- Divisória -->
+            <div class="div_divisora_alt"></div>
+
+            <div class="div_data">
+
+                <h2 class="alt_title3">Aplicativos usados na semana:</h2>
+
+                <div class="organizadora_alt2">
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Apache_NetBeans.png">
+                        <h4 class="alt_title5">10h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/vs-code.png">
+                        <h4 class="alt_title5">12h</h4>
+                    </div>
+    
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/chrome.png">
+                        <h4 class="alt_title5">4h</h4>
+                    </div>
+    
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/youtube.png">
+                        <h4 class="alt_title5">2h</h4>
+                    </div>
+    
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
+                        <h4 class="alt_title5">25h</h4>
+                    </div>
+    
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/spotify.png">
+                        <h4 class="alt_title5">10h</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Divisória -->
+            <div class="div_divisora_alt"></div>
+
+            <div class="div_data">
+                <h2 class="alt_title3">Aplicativos usados na quinzena</h2>
+
+                <div class="organizadora_alt2">
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Apache_NetBeans.png">
+                        <h4 class="alt_title5">20h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/vs-code.png">
+                        <h4 class="alt_title5">30h</h4>
+                    </div>
+    
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/chrome.png">
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+    
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/youtube.png">
+                        <h4 class="alt_title5">3h</h4>
+                    </div>
+    
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
+                        <h4 class="alt_title5">45h</h4>
+                    </div>
+    
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/spotify.png">
+                        <h4 class="alt_title5">14h</h4>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
 
 </body>
@@ -138,13 +420,20 @@
 </html>
 
 <script>
-    // Codigo sendo preparado para receber APIs
+    // Código sendo preparado para receber APIs
 
-    window.onload = function online() {
-        online_6.style.backgroundColor = "red";
+    function tempo_logado() {
+        div_options.style.display = "none";
+        div_tempo_logado.style.display = "block";
+    }
+
+    function aplicativos_usados() {
+        div_options.style.display = "none";
+        div_aplicativos_usados.style.display = "block";
     }
 
     window.onload = function online() {
+        online_1.style.backgroundColor = "red";
         ok = "img/checked.png";
         notOk = "img/warning.png";
         check_1.src = ok;
@@ -161,15 +450,16 @@
         if (cont == 0) {
             h2_alt.style.fontSize = "18px";
             h2_alt.innerHTML = "Desempenho dos membros da equipe (Para ver detalhes, clique no ícone do membro da equipe desejado)";
-            cont ++;
+            cont++;
         } else {
             h2_alt.style.fontSize = "24px";
             h2_alt.innerHTML = "Desempenho dos membros da equipe";
-            cont --;
+            cont--;
         }
     }
 
     function abrir_info(name) {
+
         desempenho_1.style.display = "none";
         desempenho_2.style.display = "none";
         desempenho_3.style.display = "none";
@@ -186,15 +476,6 @@
 
     // Seta (voltar)
     function go_back() {
-        desempenho_1.style.display = "block";
-        desempenho_2.style.display = "block";
-        desempenho_3.style.display = "block";
-        desempenho_4.style.display = "block";
-        desempenho_5.style.display = "block";
-        desempenho_6.style.display = "block";
-        div_desempenho_pai.style.display = "block";
-
-        div_desempenho_pai_alternativa.style.display = "none";
-
+        location.reload();
     }
 </script>
