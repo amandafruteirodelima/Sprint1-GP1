@@ -239,6 +239,9 @@ width: 100%;
     text-align: center;
     font-size: xx-large;
 }
+.lblCategoria {
+    float: left;
+}
 
 /* Gradientes */
 .GradRoxo {

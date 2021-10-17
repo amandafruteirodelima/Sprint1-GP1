@@ -184,10 +184,10 @@ label {
     margin-top: 50px;
     font-size: 25px;
     color: white;
-    width: 90;
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 10px;
     background-color: #150b48;
     border-radius: 10px;
 }
