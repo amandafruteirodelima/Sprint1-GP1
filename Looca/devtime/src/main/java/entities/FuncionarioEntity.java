@@ -3,6 +3,7 @@ package entities;
 import java.util.Date;
 
 public class FuncionarioEntity {
+
     private Integer idFuncionario;
     private String nomeFuncionario;
     private Integer cargaHoraria;
@@ -13,6 +14,14 @@ public class FuncionarioEntity {
     private Integer pontosFuncionario;
     private Integer fkEmpresa;
     private Integer fkEquipe;
+
+    
+    
+    private static FuncionarioEntity instance = new FuncionarioEntity();
+    
+    public static FuncionarioEntity getInstance() {
+        return instance;
+    }
 
     public Integer getIdFuncionario() {
         return idFuncionario;
@@ -93,6 +102,5 @@ public class FuncionarioEntity {
     public void setFkEquipe(Integer fkEquipe) {
         this.fkEquipe = fkEquipe;
     }
-    
-    
+
 }

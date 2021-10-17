@@ -7,7 +7,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 public class HistoricoProcessadorEntity {
 
-    private Integer idHistoricoProcessador;
     private Double usoProcessador;
     private Integer fkProcessador;
 
@@ -18,15 +17,14 @@ public class HistoricoProcessadorEntity {
     SimpleDateFormat formatter = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
     Date date = new Date();
 
-    public HistoricoProcessadorEntity(Double usoProcessador) {
+    public HistoricoProcessadorEntity(Double usoProcessador, Integer fkProcessador) {
         this.usoProcessador = usoProcessador;
+        this.fkProcessador = fkProcessador;
     }
 
     public void insertHistoricoProcessador() {
-        assistente.update("INSERT INTO HISTORICO_PROCESSADOR VALUES(?,?,?)",
-                null, usoProcessador, formatter.format(date));
-        System.out.println(assistente.queryForList(
-                "SELECT * FROM HISTORICO_PROCESSADOR"));
+        assistente.update("INSERT INTO HISTORICO_PROCESSADOR VALUES(?,?,?,?)",
+                null, usoProcessador, formatter.format(date), fkProcessador);
     }
 
     public Double getUsoProcessador() {

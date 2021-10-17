@@ -24,7 +24,7 @@
             <nav class="divLista">
                 <ul>
                     <li><a class="li-comum" href="Dashboard_adm.html">Dashboard</a></li>
-                    <li><a class="li-comum" href="">Guildas</a></li>
+                    <li><a class="li-comum" href="Ranking_adm.html">Ranking</a></li>
                     <li><a class="li-select" href="Cadastro.html">Cadastro</a></li>
                 </ul>
 
@@ -37,6 +37,8 @@
     </div>
 
     <!--Fim Header-->
+
+    <!-- Início do Conteúdo -->
 
     <div class="content">
         <div>
@@ -55,8 +57,8 @@
                     <label for="nome">Nome</label>
                     <br>
 
-                    <input id="inpt_data" onkeyup="mascara_data(this,this.value)" class="inptSmall inptPadrao" type="text"
-                        placeholder=" " required maxlength="10">
+                    <input id="inpt_data" onkeyup="mascara_data(this,this.value)" class="inptSmall inptPadrao"
+                        type="text" placeholder=" " required maxlength="10">
                     <label class="label-nascimento" for="dataNascimento">Data de Nascimento</label>
 
                     <input id="inpt_carga" class="inptSmall inptPadrao" type="text" placeholder=" " required>
@@ -93,10 +95,22 @@
         </div>
     </div>
 
+    <!-- Fim do Conteúdo -->
 
+    <!-- Início do footer  -->
+    <div class="footer">
+        <div class="company">
+            <a href="#"><img src="img/Logo-Branco.png" alt="Logo da DevTime"></a>
+            |
+            <a href="#"><img src="img/logo_bandtec.png" alt="Logo da Faculdade BandTec"></a>
+        </div>
 
+        <div>
+            <h3 class="copyright">Copyright © 2021 - Todos os direitos reservados - DevTime</h3>
+        </div>
+    </div>
+    <!-- Fim do footer  -->
 
-    <div class="footer"></div>
 </body>
 
 </html>
@@ -115,11 +129,10 @@
         }
     }
 
-    function cadastroRealizado(){
-        if(inpt_nome.value != "" && inpt_data.value != "" && inpt_carga.value != "" && sel_empresa != "" && sel_adm != "" && inpt_email != "" && inpt_senha != 0){
+    function cadastroRealizado() {
+        if (inpt_nome.value != "" && inpt_data.value != "" && inpt_carga.value != "" && sel_empresa != "" && sel_adm !=
+            "" && inpt_email != "" && inpt_senha != 0) {
             alert("Cadastro realizado com sucesso!")
         }
     }
-
-   
 </script>

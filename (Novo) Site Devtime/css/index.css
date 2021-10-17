@@ -1,138 +1,388 @@
-@font-face{
+@font-face {
     font-family: 'Poppins-Regular';
     src: url(../fonts/Poppins-Regular.ttf);
     font-family: 'Poppins-Bold';
     src: url(../fonts/Poppins-Bold.ttf);
 }
-body{
-    /* background: linear-gradient(140deg, #a27ce6 30%,  rgb(251, 246, 252) 100%), #0000 2%; */
-    background: linear-gradient(170deg, #cbb1f8 0%,  rgb(49, 2, 77) 80%), #0000 0%;
-    background-repeat: no-repeat;
-    font-family: 'Poppins-Bold';
+
+
+
+*{
     margin: 0;
-    margin-left: 1%;
-    text-align: center
-    margin-right: 1%;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins-Regular';
+    font-size: 1rem;
+    background-image: linear-gradient(174deg, #aa79ff 2.2%, rgba(90, 0, 142, 0.801) 37.73%, #441092f6 64.49%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    letter-spacing: 1.2px;
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.linha-branca-divisoria{
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    
+}
+
+.sloganDevTime{
+    font-family: 'Poppins-Bold';
+    font-size: 1.7rem;
+    color: white;
+    position: absolute;
+    top: 200px;
+
+    max-width: 70%;
+}
+
+/* BANNER */
+
+.divBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.slide{
+    width: 1024px;
+    height: 300px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.slides{
+    display: flex;
+    width: 5120px;
+}
+
+
+
+.image img {
+    width: 1024px;
+    height: 500px;
+  
+}
+
+#atual {
+    transition: all 2s;
+}
+
+.btn {
+    position: absolute;
+  
+    padding: 10px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    transition: all 0.4s;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+.img-seta {
+width: 100px;
+}
+
+.img-seta-esq {
+    width: 50px;
+}
+
+#voltar{
+    top: 33%;
+    left: 1%;
+}
+
+#next {
+    top: 33%;
+    right: 1%;
+}
+
+.balls {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    top: 430px;
+    left: 600px;
+}
+
+.balls div{
+    transition: all 0.5s;
+    border: 3px solid #fff;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.balls div:hover{
+    background-color: #fff;
+}
+
+.imgAtual {
+    transition: all 0.5s;
+    background: #fff;
+    
+}
+
+/*INICIO PROPOSTA DEVTIME*/
+
+.divProposta{
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5vh;
+    
 
-  
+    padding-top: 10vh;
+    margin-bottom: 60px;
     
-    }
+}
 
-/* banner */
-    * {box-sizing: border-box}
-    body {font-family: 'Poppins-Bold'; margin:0}
-    .mySlides {display: none}
-    img {vertical-align: middle;}
-    
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-    }
-    
-    /* Next & previous buttons */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: rgb(169, 49, 238);
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    
-    /* Position the "next button" to the right */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-      background-color: #cbb1f8;
-    }
-    
-    .text {
-      color: rgb(251, 246, 252);
-      font-size: 25px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
-      text-align: justify;
-      margin-bottom: 114px;
-      margin-left: 170px;
-      font-family: 'Poppins-Bold';
-    }
-    
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-    
-    /* The dots/bullets/indicators */
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.8s ease;
-    }
-    
-    .active, .dot:hover {
-      background-color: #717171;
-    }
-    
-    /* Fading animation */
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-    
-    @-webkit-keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
-    }
-    
-    @keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
-    }
-    
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-      .prev, .next,.text {font-size: 11px}
-    }
-    .imagens {
-        opacity: 64%;
-    }
-    .saiba_mais:hover{
-        color: #cbb1f8;
-        font-size: 27px;
-        cursor: pointer;
-        transition-duration: 0.4s;
+.imgDev {
+    width: 270px;
+}
 
-    }
-    .saiba_mais{
-        text-decoration: none;
-        color:rgb(251, 246, 252) ;
 
-    }
+.txtProposta{
+    color: white;
+    font-family: 'Poppins-Bold';
+    max-width: 80%;
+    font-size: 1.5rem;
+}
+
+.divCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(228, 228, 228);
+    
+    box-shadow: 10px -5px #22005c9c;
+    height: 230px;
+    width: 300px;
+    border-radius: 2px;
+}
+
+.card:hover {
+    height: 235px;
+    width: 305px;
+    transition: 0.5s;
+}
+
+.imgProposta{
+    margin-top: 10px;
+    border-radius: 60px;
+    width: 100px;
+    
+}
+
+
+/*INICIO PARCEIROS*/
+
+.divParceiros{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+    max-width: 80%;
+
+}
+
+.divImgParceiros{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.imgParceiro{
+    width: 150px;
+    
+}
+
+.vale{
+    width: 180px;
+}
+
+.amazon{
+    width: 130px;
+    padding-top: 10px;
+}
+
+.accenture {
+    padding-bottom: 15px;
+}
+
+.imgParceiro:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+}
+
+
+
+/*INICIO CARDS SERVIÇOS DEVTIME*/
+
+.tituloServico{
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-size: 1.6rem;
+}
+
+.servicosDevTime{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding-top: 40px;
+}
+
+.divServico {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+
+}
+
+.cardServico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.904);
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+   
+}
+
+.imgServicos{
+    margin-top: 40px;
+    width: 90px;
+}
+
+
+.cabecalhoCardServico{
+    display: flex;
+    background-image: linear-gradient(to top, #5f2c82, #751df8);
+    width: 100%;
+    height: 60px;
+    font-family: 'Poppins-Bold';
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.textoServicos {
+color: #232323;
+font-family: 'Poppins-Bold';
+text-align: center;
+
+}
+
+.tituloServicoFinal{
+    padding: 32px;
+}
+
+.fimServico{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.imgServicoFinal{
+    width: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.imgServicoFinal:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+/*FIM CARDS SERVIÇOS DEVTIME*/
+
+
+/*FOOTER*/
+
+.responsiveFooter {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.responsiveFooter h3 {
+    text-align: center;
+}
+
+.company {
+    text-align: center;
+}
+
+
+.footer {
+    background: black;
+    color: white;
+    width: 100%;
+}
+
+.responsiveFooter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.company img {
+    height: 30px;
+    margin-top: 15px;
+}
+
+.copyright {
+    font-size: small;
+}
+
+
+
+

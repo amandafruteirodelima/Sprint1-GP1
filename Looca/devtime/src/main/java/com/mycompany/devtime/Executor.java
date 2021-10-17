@@ -29,12 +29,17 @@ public class Executor {
         disco.findDisco();
         processador.findProcessador();
         ram.findRam();
+        software.findSoftware();
 
         histDisco.findHistoricoDisco();
         histProcessador.findHistoricoProcessador();
         histRam.findHistoricoRam();
         maquinaSoftware.findMaquinaSoftware();
+<<<<<<< HEAD
         software.findSoftware();
         
+=======
+
+>>>>>>> d676933696ddd99de454c060cbbb055df8bac947
     }
 }
