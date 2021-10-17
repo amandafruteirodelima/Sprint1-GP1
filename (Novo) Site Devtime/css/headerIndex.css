@@ -63,13 +63,13 @@
   .divLista li:hover {
     font-size: 1.1rem;
     transition: 0.5s;
-    color: rgb(98, 83, 186);
+    color: #9c5bff;
   
   }
   
   .li-select {
     text-decoration: none;
-    color: #3d003d;
+    color: #9c5bff;
   }
   
   .li-comum {
@@ -79,7 +79,7 @@
   
   
   .li-comum:hover {
-    color: #3d003d;
+    color: #9c5bff;
   }
   
   
