@@ -1,6 +1,7 @@
 package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
+import java.util.List;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class DiscoEntity {
@@ -8,6 +9,7 @@ public class DiscoEntity {
     private Integer idDisco;
     private String nomeDisco;
     private String modelo;
+    private String uuid;
     private Double tamanhoDisco;
     private Integer fkMaquina;
 
@@ -15,16 +17,29 @@ public class DiscoEntity {
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
 
-    public DiscoEntity(String nomeDisco, String modelo, Double tamanhoDisco) {
+    public DiscoEntity(String nomeDisco, String modelo, String uuid, 
+            Double tamanhoDisco, Integer fkMaquina) {
         this.nomeDisco = nomeDisco;
         this.modelo = modelo;
+        this.uuid = uuid;
         this.tamanhoDisco = tamanhoDisco;
+        this.fkMaquina = fkMaquina;
     }
 
-    public void insertDisco() {      
-        assistente.update("INSERT INTO DISCO VALUES(?,?,?,?)", null,
-                nomeDisco, modelo, tamanhoDisco);
-        System.out.println(assistente.queryForList("SELECT * FROM DISCO"));
+    public DiscoEntity() {
+    }
+
+    public void insertDisco() {
+        assistente.update("INSERT INTO DISCO VALUES(?,?,?,?,?,?)", null,
+                nomeDisco, modelo, uuid, tamanhoDisco, fkMaquina);
+    }
+
+    public Integer getIdDisco() {
+        return idDisco;
+    }
+
+    public void setIdDisco(Integer idDisco) {
+        this.idDisco = idDisco;
     }
 
     public String getNomeDisco() {

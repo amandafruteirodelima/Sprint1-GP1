@@ -6,10 +6,11 @@ import java.util.Date;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class HistoricoDiscoEntity {
+
     private Integer idHistoricoDisco;
     private Double armazenamento;
     private Integer fkDisco;
-    
+
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
@@ -17,15 +18,14 @@ public class HistoricoDiscoEntity {
     SimpleDateFormat formatter = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
     Date date = new Date();
 
-    public HistoricoDiscoEntity(Double armazenamento) {
+    public HistoricoDiscoEntity(Double armazenamento, Integer fkDisco) {
         this.armazenamento = armazenamento;
+        this.fkDisco = fkDisco;
     }
-    
-    public void insertHistoricoDisco() {       
-        assistente.update("INSERT INTO HISTORICO_DISCO VALUES(?,?,?)", null,
-                armazenamento,formatter.format(date));
-        System.out.println(assistente.queryForList(
-                "SELECT * FROM HISTORICO_DISCO"));
+
+    public void insertHistoricoDisco() {
+        assistente.update("INSERT INTO HISTORICO_DISCO VALUES(?,?,?,?)", null,
+                armazenamento, formatter.format(date), fkDisco);
     }
 
 }

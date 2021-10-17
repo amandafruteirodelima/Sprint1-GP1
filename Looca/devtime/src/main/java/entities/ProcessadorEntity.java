@@ -1,34 +1,50 @@
 package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
-import java.text.DecimalFormat;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class ProcessadorEntity {
+
     private Integer idProcessador;
     private String fabricante;
     private String nomeProcessador;
     private Long frequencia;
     private Integer numeroCPUs;
     private Integer fkMaquina;
-    
-    
+
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
 
-    public ProcessadorEntity(String fabricante, String nomeProcessador, 
-            Long frequencia, Integer numeroCPUs) {
+    public ProcessadorEntity(String fabricante, String nomeProcessador,
+            Long frequencia, Integer numeroCPUs, Integer fkMaquina) {
         this.fabricante = fabricante;
         this.nomeProcessador = nomeProcessador;
         this.frequencia = frequencia;
         this.numeroCPUs = numeroCPUs;
+        this.fkMaquina = fkMaquina;
     }
-    
-    public void insertProcessador(){
-        assistente.update("INSERT INTO PROCESSADOR VALUES(?,?,?,?,?)", null,
-                fabricante, nomeProcessador, frequencia, numeroCPUs);
-        System.out.println(assistente.queryForList("SELECT * FROM PROCESSADOR"));
+
+    public ProcessadorEntity() {
+    }
+
+    private static ProcessadorEntity instance = new ProcessadorEntity();
+
+    public static ProcessadorEntity getInstance() {
+        return instance;
+    }
+
+    public void insertProcessador() {
+        assistente.update("INSERT INTO PROCESSADOR VALUES(?,?,?,?,?,?)", null,
+                fabricante, nomeProcessador, frequencia, numeroCPUs, fkMaquina);
+    }
+
+    public Integer getIdProcessador() {
+        return idProcessador;
+    }
+
+    public void setIdProcessador(Integer idProcessador) {
+        this.idProcessador = idProcessador;
     }
 
     public String getFabricante() {
@@ -62,5 +78,15 @@ public class ProcessadorEntity {
     public void setNumeroCPUs(Integer numeroCPUs) {
         this.numeroCPUs = numeroCPUs;
     }
+
+    public Integer getFkMaquina() {
+        return fkMaquina;
+    }
+
+    public void setFkMaquina(Integer fkMaquina) {
+        this.fkMaquina = fkMaquina;
+    }
+
     
+
 }

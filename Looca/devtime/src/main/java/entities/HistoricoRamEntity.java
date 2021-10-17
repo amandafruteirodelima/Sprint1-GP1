@@ -6,7 +6,7 @@ import java.util.Date;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class HistoricoRamEntity {
-
+    
     private Double usoRam;
     private Double disponivel;
     private Integer fkRam;
@@ -18,15 +18,14 @@ public class HistoricoRamEntity {
     SimpleDateFormat formatter = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
     Date date = new Date();
 
-    public HistoricoRamEntity(Double usoRam, Double disponivel) {
+    public HistoricoRamEntity(Double usoRam, Double disponivel, Integer fkRam) {
         this.usoRam = usoRam;
         this.disponivel = disponivel;
+        this.fkRam = fkRam;
     }
 
     public void insertHistoricoRam() {
-        assistente.update("INSERT INTO HISTORICO_RAM VALUES(?,?,?,?)", null,
-                usoRam, disponivel, formatter.format(date));
-        System.out.println(assistente.queryForList(
-                "SELECT * FROM HISTORICO_RAM"));
+        assistente.update("INSERT INTO HISTORICO_RAM VALUES(?,?,?,?,?)", null,
+                usoRam, disponivel, formatter.format(date), fkRam);
     }
 }

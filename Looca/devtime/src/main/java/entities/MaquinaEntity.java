@@ -1,8 +1,6 @@
 package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
-import java.util.List;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class MaquinaEntity {
@@ -16,21 +14,36 @@ public class MaquinaEntity {
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
-    FuncionarioEntity funcionario = new FuncionarioEntity();
 
     public MaquinaEntity(String sistemaOperacional, Integer arquiteturaSO,
-            String fabricanteSO) {
+            String fabricanteSO, Integer fkFuncionario) {
         this.sistemaOperacional = sistemaOperacional;
         this.arquiteturaSO = arquiteturaSO;
         this.fabricanteSO = fabricanteSO;
-        this.fkFuncionario = funcionario.getIdFuncionario();
+        this.fkFuncionario = fkFuncionario;
+    }
+
+    public MaquinaEntity() {
+    }
+
+    private static MaquinaEntity instance = new MaquinaEntity();
+
+    public static MaquinaEntity getInstance() {
+        return instance;
     }
 
     public void insertMaquina() {
         assistente.update("INSERT INTO MAQUINA VALUES(?,?,?,?,?)", null,
-                sistemaOperacional, arquiteturaSO, fabricanteSO, fkFuncionario);
+                sistemaOperacional, arquiteturaSO,
+                fabricanteSO, fkFuncionario);
+    }
 
-        System.out.println(assistente.queryForList("SELECT * FROM maquina"));
+    public Integer getIdMaquina() {
+        return idMaquina;
+    }
+
+    public void setIdMaquina(Integer idMaquina) {
+        this.idMaquina = idMaquina;
     }
 
     public String getSistemaOperacional() {
@@ -55,6 +68,14 @@ public class MaquinaEntity {
 
     public void setFabricanteSO(String fabricanteSO) {
         this.fabricanteSO = fabricanteSO;
+    }
+
+    public Integer getFkFuncionario() {
+        return fkFuncionario;
+    }
+
+    public void setFkFuncionario(Integer fkFuncionario) {
+        this.fkFuncionario = fkFuncionario;
     }
 
 }

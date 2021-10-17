@@ -5,6 +5,7 @@
 package com.mycompany.devtime.telas;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
+import com.mycompany.devtime.Executor;
 import entities.FuncionarioEntity;
 import entities.MaquinaEntity;
 import java.util.List;
@@ -199,14 +200,15 @@ public class TelaLogin extends javax.swing.JFrame {
     private void btnLogar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogar1ActionPerformed
         // TODO add your handling code here:
 
+//        Executor executar = new Executor();
+        
         String email = lblEmail.getText();
         String senha = lblSenha.getText();
-
-        Logado logado = new Logado();
 
         ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
         JdbcTemplate assistente = new JdbcTemplate(
                 configuracaoBanco.getBancoDeDados());
+        FuncionarioEntity funcionarioEntity = FuncionarioEntity.getInstance();
 
         List<FuncionarioEntity> funcionario = assistente.query("SELECT * "
                 + "FROM funcionario where email = '" + email + "' and senha = '"
@@ -219,21 +221,22 @@ public class TelaLogin extends javax.swing.JFrame {
             funcionarioDaVez = funcionario.get(i);
         }
 
-        
-//        System.out.println(assistente.queryForList("SELECT senha FROM usuario "
-//                + "where email = '" + senha + "'"));
-//
-//        System.out.println(assistente.queryForList("SELECT email FROM usuario where email = '" + email + "'"));
-//        System.out.println(assistente.queryForMap("SELECT email FROM usuario where email = '" + email + "'"));
         if (funcionarioDaVez == null) {
 
             JOptionPane.showMessageDialog(null, "Email ou Senha incorreta!!.");
 
         } else if (funcionarioDaVez.getEmail().equals(email)
                 && funcionarioDaVez.getSenha().equals(senha)) {
+            
+            funcionarioEntity.setIdFuncionario(funcionarioDaVez.getIdFuncionario());
 
+            Logado logado = new Logado();
+    
             logado.setVisible(true);
             setVisible(false);
+
+
+//            executar.Executor();
 
         }
 
