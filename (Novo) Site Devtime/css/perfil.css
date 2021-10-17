@@ -58,6 +58,7 @@ body {
 .a_ver_perfil:hover {
     font-size: 1.5vw;
     color: #ac9fe9;
+    transition: 0.5s;
 }
 
 #img_perfil:hover {
@@ -226,9 +227,10 @@ label {
 }
 
 .a_cabecalho:hover {
-    font-size: 20px;
+    font-size: 18px;
     color: #ac9fe9;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .img_cabecalho {

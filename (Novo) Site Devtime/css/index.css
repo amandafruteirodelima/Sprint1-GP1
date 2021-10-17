@@ -34,6 +34,16 @@ body {
     
 }
 
+.sloganDevTime{
+    font-family: 'Poppins-Bold';
+    font-size: 1.7rem;
+    color: white;
+    position: absolute;
+    top: 200px;
+
+    max-width: 70%;
+}
+
 /* BANNER */
 
 .divBanner{
