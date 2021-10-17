@@ -35,5 +35,6 @@ public class Executor {
         histRam.findHistoricoRam();
         maquinaSoftware.findMaquinaSoftware();
         software.findSoftware();
+        
     }
 }

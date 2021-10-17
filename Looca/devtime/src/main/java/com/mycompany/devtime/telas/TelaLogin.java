@@ -219,12 +219,6 @@ public class TelaLogin extends javax.swing.JFrame {
             funcionarioDaVez = funcionario.get(i);
         }
 
-        
-//        System.out.println(assistente.queryForList("SELECT senha FROM usuario "
-//                + "where email = '" + senha + "'"));
-//
-//        System.out.println(assistente.queryForList("SELECT email FROM usuario where email = '" + email + "'"));
-//        System.out.println(assistente.queryForMap("SELECT email FROM usuario where email = '" + email + "'"));
         if (funcionarioDaVez == null) {
 
             JOptionPane.showMessageDialog(null, "Email ou Senha incorreta!!.");
@@ -236,7 +230,7 @@ public class TelaLogin extends javax.swing.JFrame {
             setVisible(false);
 
         }
-
+        
 
     }//GEN-LAST:event_btnLogar1ActionPerformed
 
