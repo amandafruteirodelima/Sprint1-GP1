@@ -256,22 +256,34 @@ width: 100px;
 
 .vale{
     width: 180px;
+    filter: grayscale(100%);
 }
 
 .amazon{
     width: 130px;
     padding-top: 10px;
+    filter: grayscale(100%);
 }
 
 .accenture {
     padding-bottom: 15px;
+    filter: grayscale(100%);
+}
+.microsoft{
+    filter: grayscale(100%);
+}
+.alpe{
+    filter: grayscale(100%);
+    transition: 2s;
 }
 
 .imgParceiro:hover{
     transform: scale(1.1);
     transition: 0.5s;
     cursor: pointer;
+    filter: none;
 }
+
 
 
 
