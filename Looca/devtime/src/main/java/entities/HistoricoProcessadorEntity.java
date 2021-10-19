@@ -23,8 +23,9 @@ public class HistoricoProcessadorEntity {
     }
 
     public void insertHistoricoProcessador() {
-        assistente.update("INSERT INTO HISTORICO_PROCESSADOR VALUES(?,?,?,?)",
-                null, usoProcessador, formatter.format(date), fkProcessador);
+        assistente.update("INSERT INTO HISTORICO_PROCESSADOR(usoProcessador, "
+                + "DataHora, fk_Processador) VALUES(?,?,?)",
+                usoProcessador, formatter.format(date), fkProcessador);
     }
 
     public Double getUsoProcessador() {

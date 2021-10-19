@@ -26,8 +26,9 @@ public class SoftwareEntity {
     }
 
     public void insertSoftware() {
-        assistente.update("INSERT INTO SOFTWARES VALUES(?,?)",
-                null, nomeSoftware);
+        assistente.update("INSERT INTO SOFTWARE(nomeSoftware,linkImagemSoftware)"
+                + " VALUES(?,?)",
+                nomeSoftware,"https://pbs.twimg.com/media/EeTDgb4WoAAcrmS.jpg");
     }
 
     public Integer getIdSoftware() {

@@ -26,7 +26,7 @@ public class RamImpl {
         ram.insertRam();
 
         List<RamEntity> ramid = assistente.query("Select"
-                + " idram from ram where fkmaquina = '"
+                + " idram from ram where fk_maquina = '"
                 + maquinaInstance.getIdMaquina() + "'",
                 new BeanPropertyRowMapper<>(RamEntity.class));
 

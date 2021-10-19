@@ -25,7 +25,8 @@ public class HistoricoRamEntity {
     }
 
     public void insertHistoricoRam() {
-        assistente.update("INSERT INTO HISTORICO_RAM VALUES(?,?,?,?,?)", null,
+        assistente.update("INSERT INTO HISTORICO_RAM(usoRam, disponivel, "
+                + "DataHora, fk_Ram) VALUES(?,?,?,?)",
                 usoRam, disponivel, formatter.format(date), fkRam);
     }
 }

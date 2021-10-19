@@ -31,8 +31,10 @@ public class MaquinaSoftwareEntity {
     }
 
     public void insertMaquinaSoftware() {
-        assistente.update("INSERT INTO MAQUINA_SOFTWARE VALUES(?,?,?,?,?,?,?)",
-                null, usoCPUSoftware, usoRAMSoftware, pid,
+        assistente.update("INSERT INTO MAQUINA_SOFTWARE(usoCPUSoftware, "
+                + "usoRAMSoftware, pid, DataHora, fk_maquina, fk_software) "
+                + "VALUES(?,?,?,?,?,?)",
+                usoCPUSoftware, usoRAMSoftware, pid,
                 formatter.format(date), fk_maquina, fk_software);
     }
 

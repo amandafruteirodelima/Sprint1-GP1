@@ -33,7 +33,8 @@ public class MaquinaEntity {
     }
 
     public void insertMaquina() {
-        assistente.update("INSERT INTO MAQUINA VALUES(?,?,?,?,?)", null,
+        assistente.update("INSERT INTO Maquina(sistemaOperacional,arquiteturaSO, "
+                + "fabricanteSO,fk_Funcionario) VALUES(?,?,?,?)",
                 sistemaOperacional, arquiteturaSO,
                 fabricanteSO, fkFuncionario);
     }

@@ -35,7 +35,8 @@ public class ProcessadorEntity {
     }
 
     public void insertProcessador() {
-        assistente.update("INSERT INTO PROCESSADOR VALUES(?,?,?,?,?,?)", null,
+        assistente.update("INSERT INTO PROCESSADOR(fabricante, nomeProcessador, "
+                + "frequencia, numeroCPU, fk_Maquina) VALUES(?,?,?,?,?)",
                 fabricante, nomeProcessador, frequencia, numeroCPUs, fkMaquina);
     }
 

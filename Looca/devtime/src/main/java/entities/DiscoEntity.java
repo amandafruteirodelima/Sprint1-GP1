@@ -30,7 +30,8 @@ public class DiscoEntity {
     }
 
     public void insertDisco() {
-        assistente.update("INSERT INTO DISCO VALUES(?,?,?,?,?,?)", null,
+        assistente.update("INSERT INTO DISCO(nomeDisco, modelo, uuid, "
+                + "tamanhoDisco, fk_Maquina) VALUES(?,?,?,?,?)",
                 nomeDisco, modelo, uuid, tamanhoDisco, fkMaquina);
     }
 

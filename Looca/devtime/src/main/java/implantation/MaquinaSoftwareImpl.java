@@ -27,7 +27,7 @@ public class MaquinaSoftwareImpl {
         for (Processo processo : processos) {
 
             List<SoftwareEntity> softwareid = assistente.query("Select *"
-                    + " from Softwares where nomeSoftware = '"
+                    + " from Software where nomeSoftware = '"
                     + processo.getNome() + "'",
                     new BeanPropertyRowMapper<>(SoftwareEntity.class));
 

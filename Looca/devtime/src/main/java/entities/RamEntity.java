@@ -29,7 +29,7 @@ public class RamEntity {
 
     public void insertRam() {
 
-        assistente.update("INSERT INTO RAM VALUES(?,?,?)", null,
+        assistente.update("INSERT INTO RAM(total, fk_Maquina) VALUES(?,?)",
                 total, fkMaquina);
         System.out.println(assistente.queryForList("SELECT * FROM RAM"));
     }

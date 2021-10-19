@@ -24,7 +24,8 @@ public class HistoricoDiscoEntity {
     }
 
     public void insertHistoricoDisco() {
-        assistente.update("INSERT INTO HISTORICO_DISCO VALUES(?,?,?,?)", null,
+        assistente.update("INSERT INTO HISTORICO_DISCO(ArmazenamentoDisco, "
+                + "DataHora, fk_Disco) VALUES(?,?,?)",
                 armazenamento, formatter.format(date), fkDisco);
     }
 

@@ -27,7 +27,7 @@ public class HistoricoDiscoImpl {
         for (Volume volume : volumes) {
 
             List<DiscoEntity> discoid = assistente.query("Select idDisco"
-                    + " from Disco where fkMaquina = '"
+                    + " from Disco where fk_Maquina = '"
                     + maquina.getIdMaquina() + "' and uuid = '"
                     + volume.getUUID() + "'",
                     new BeanPropertyRowMapper<>(DiscoEntity.class));

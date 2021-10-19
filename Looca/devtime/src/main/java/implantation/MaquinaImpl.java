@@ -30,7 +30,7 @@ public class MaquinaImpl {
         maquina.insertMaquina();
 
         List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
-                + " from Maquina where fkFuncionario = '"
+                + " from Maquina where fk_Funcionario = '"
                 + funcionario.getIdFuncionario() + "'",
                 new BeanPropertyRowMapper<>(MaquinaEntity.class));
 
