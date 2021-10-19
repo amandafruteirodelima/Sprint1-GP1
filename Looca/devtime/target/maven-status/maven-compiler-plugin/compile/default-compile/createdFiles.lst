@@ -11,6 +11,7 @@ com\mycompany\devtime\telas\TelaLogin$3.class
 entities\HistoricoRamEntity.class
 com\mycompany\devtime\ConfiguracaoBanco.class
 com\mycompany\devtime\telas\TelaLogin$6.class
+com\mycompany\devtime\telas\Logado$1.class
 entities\SoftwareEntity.class
 implantation\ProcessadorImpl.class
 implantation\HistoricoDiscoImpl.class

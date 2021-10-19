@@ -9,10 +9,10 @@ public class ConfiguracaoBanco {
     public ConfiguracaoBanco() {
         this.bancoDeDados = new BasicDataSource();
 
-        this.bancoDeDados​.setDriverClassName("org.h2.Driver");
-        this.bancoDeDados​.setUrl("jdbc:h2:file:./devtime");
-        this.bancoDeDados​.setUsername("sa");
-        this.bancoDeDados​.setPassword("");
+        this.bancoDeDados​.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        this.bancoDeDados​.setUrl("jdbc:sqlserver://servidor-grupo1-devtime.database.windows.net/grupo1-Devtime;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net");
+        this.bancoDeDados​.setUsername("Grupo01");
+        this.bancoDeDados​.setPassword("@#grupo1");
     }
 
     public BasicDataSource getBancoDeDados() {

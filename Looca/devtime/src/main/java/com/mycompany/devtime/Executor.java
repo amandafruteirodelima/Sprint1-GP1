@@ -35,11 +35,6 @@ public class Executor {
         histProcessador.findHistoricoProcessador();
         histRam.findHistoricoRam();
         maquinaSoftware.findMaquinaSoftware();
-<<<<<<< HEAD
-        software.findSoftware();
-        
-=======
 
->>>>>>> d676933696ddd99de454c060cbbb055df8bac947
     }
 }
