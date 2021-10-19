@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #101011;
+    margin: 0;
+    font-family: 'Poppins-Bold';
+    color: white;
+}
+
+.div_geral_top {
+    height: 555px;
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.div_top {
+    height: 95%;
+    width: 45%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.div_txt_top {
+    width: 95%;
+    margin: 0px auto;
+    background-color: #7D35B7;
+    font-size: 2vw;
+    border-radius: 5px;
+}
+
+.img_podio {
+    width: 7vw;
+}
+
+.div_txt_equipe {
+    padding-top: 1.5vw;
+}
+
+.div_txt_outras_equipes {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.div_outras_equipes {
+    height: 85%;
+    max-height: 85%;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 1px;
+    overflow-x: overlay;
+    background: linear-gradient(to top, #44134c, #6010AF);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.div_geral_txt_colocado {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3vw;
+    margin-top: 3vw;
+}
+
+.div_txt_podio_colocado {
+    font-family: 'Rampart One', cursive;
+}

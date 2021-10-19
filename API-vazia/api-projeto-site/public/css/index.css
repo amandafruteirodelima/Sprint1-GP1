@@ -1,0 +1,422 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins-Regular';
+    font-size: 1rem;
+    background-image: linear-gradient(to left, #be9cfa 2.2%, rgba(97, 3, 151, 0.801) 37.73%, #441092f6 64.49%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    letter-spacing: 1.2px;
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.linha-branca-divisoria{
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    
+}
+
+.sloganDevTime{
+    font-family: 'Poppins-Bold';
+    font-size: 1.6rem;
+    color: white;
+    position: absolute;
+    top: 200px;
+
+    max-width: 70%;
+}
+
+/* BANNER */
+
+.divBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.slide{
+    width: 1024px;
+    height: 300px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.slides{
+    display: flex;
+    width: 5120px;
+}
+
+
+
+.image img {
+    width: 1024px;
+    height: 500px;
+  
+}
+
+#atual {
+    transition: all 2s;
+}
+
+.btn {
+    position: absolute;
+  
+    padding: 10px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    transition: all 0.4s;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.img-seta {
+width: 100px;
+}
+
+.img-seta-esq {
+    width: 50px;
+}
+
+#voltar{
+    top: 33%;
+    left: 1%;
+}
+
+#next {
+    top: 33%;
+    right: 1%;
+}
+
+.balls {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    top: 430px;
+    left: 600px;
+    margin-bottom: 15px;
+}
+
+.balls div{
+    transition: all 0.5s;
+    border: 3px solid #fff;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.balls div:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.imgAtual {
+    transition: all 0.5s;
+    background: #fff;
+    
+}
+
+/*INICIO PROPOSTA DEVTIME*/
+
+.divProposta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5vh;
+    
+
+    padding-top: 10vh;
+    margin-bottom: 60px;
+    
+}
+
+.imgDev {
+    width: 270px;
+}
+
+
+.txtProposta{
+    color: white;
+    font-family: 'Poppins-Bold';
+    max-width: 60%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.divCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(245, 241, 241);
+    margin: 5px;
+    padding: 8px;
+    
+    box-shadow: 10px -5px #350264;
+    height: 230px;
+    width: 300px;
+    border-radius: 2px;
+}
+
+.card:hover {
+    height: 235px;
+    width: 305px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.imgProposta{
+    margin-top: 10px;
+    border-radius: 60px;
+    width: 100px;
+    
+    
+}
+
+
+/*INICIO PARCEIROS*/
+.txtEmpresas{
+    color: white;
+    font-family: 'Poppins-Bold';
+    max-width: 50%;
+    font-size: 1.3rem;
+    text-align: center;
+    
+   
+}
+.divParceiros{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+    max-width: 80%;
+
+}
+
+.divImgParceiros{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.imgParceiro{
+    width: 150px;
+    
+}
+
+.vale{
+    width: 180px;
+    filter: grayscale(100%);
+}
+
+.amazon{
+    width: 130px;
+    padding-top: 10px;
+    filter: grayscale(100%);
+}
+
+.accenture {
+    padding-bottom: 15px;
+    filter: grayscale(100%);
+}
+.microsoft{
+    filter: grayscale(100%);
+}
+.alpe{
+    filter: grayscale(100%);
+    transition: 2s;
+}
+
+.imgParceiro:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+    filter: none;
+}
+
+
+
+
+/*INICIO CARDS SERVIÇOS DEVTIME*/
+
+.tituloServico{
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-size: 1.3rem;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.servicosDevTime{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding-top: 40px;
+}
+
+.divServico {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+
+}
+
+.cardServico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.904);
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    padding: ;
+   
+}
+
+.imgServicos{
+    margin-top: 40px;
+    width: 90px;
+}
+
+
+.cabecalhoCardServico{
+    display: flex;
+    background-image: linear-gradient(to top, #5f2c82, #751df8);
+    width: 100%;
+    height: 60px;
+    font-family: 'Poppins-Bold';
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.textoServicos {
+color: #232323;
+font-family: 'Poppins-Bold';
+text-align: center;
+
+}
+
+.tituloServicoFinal{
+    margin-top: 22px;
+    
+}
+
+.fimServico{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.imgServicoFinal{
+    width: 100px;
+   margin-top: -48px;
+}
+
+.imgServicoFinal:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+/*FIM CARDS SERVIÇOS DEVTIME*/
+
+
+/*FOOTER*/
+
+.responsiveFooter {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.responsiveFooter h3 {
+    text-align: center;
+}
+
+.company {
+    text-align: center;
+}
+
+
+.footer {
+    background: black;
+    color: white;
+    width: 100%;
+}
+
+.responsiveFooter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.company img {
+    height: 30px;
+    margin-top: 15px;
+}
+
+.copyright {
+    font-size: small;
+}
+
+
+
+

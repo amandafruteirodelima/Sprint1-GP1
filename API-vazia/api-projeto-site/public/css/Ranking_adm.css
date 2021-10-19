@@ -1,0 +1,42 @@
+
+/*FOOTER*/
+
+.responsiveFooter {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.responsiveFooter h3 {
+    text-align: center;
+}
+
+.company {
+    text-align: center;
+}
+
+
+.footer {
+    background: linear-gradient(to bottom, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);;
+    color: white;
+    width: 100%;
+}
+
+.responsiveFooter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.company img {
+    height: 30px;
+    margin-top: 15px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+    integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+    crossorigin="anonymous"></script>
+
+    <link rel="icon" href="img/Yin-Yang-DevTime.png">
+    <link rel="stylesheet" href="css/perfil.css">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <div>
+        
+        <input id="caixa_selecao" type="checkbox">
+        <label id="label_img_perfil" for="caixa_selecao">
+            <div class="div_img_perfil_icone">
+                <div class="texto_cabecalho">
+                    <b class="a_cabecalho"> Perfil </b>
+                </div>
+            </div>
+        </label>
+        <nav>
+            <label for="caixa_selecao">
+                <img id="img_x" src="img/marca-x (1).png" alt="">
+            </label>
+            <div class="div_ver_perfil">
+                <a href="Perfil_usuario.html" class="a_ver_perfil"><b>Ver Perfil</b></a> 
+            </div>
+            <div class="div_img_perfil_info">
+                <img id="img_perfil_info" src="img/imgUsuario.jpg" alt="">
+            </div>
+            <div class="div_nome_usuario_perfil">
+                <b class="nome_usuario_perfil"> Ednaldo Pereira</b>
+            </div>
+            <div class="div_nome_usuario_perfil">
+                <b class="nome_usuario_perfil">Nivel: 3</b>
+            </div>
+            <div class="div_geral_pontos_devicon">
+                <div class="div_pontos_devicon">
+                    <div>
+                        <img class="img_pontos_dc" src="img/score.png" alt="">
+                    </div>
+                    <div class="div_texto_pontos_dc">
+                        <b> Pontos: 48.252</b>
+                    </div>   
+                </div>
+                <div class="div_pontos_devicon">
+                    <div>
+                        <img class="img_pontos_dc" src="img/moeda.png" alt="">
+                    </div>
+                    <div class="div_texto_pontos_dc">
+                        <b> DevCoins: 5.252</b>
+                    </div>  
+                </div>
+            </div>
+            <div class="div_nome_usuario_perfil">
+                <div class="div_geral_conquistas">
+                    <div class="div_titulo_conquista"><b>Conquistas</b></div>
+                    <div class="div_conquista_e_div_img div_nome_usuario_perfil">
+                        <div class="div_conquistas">
+                            <div class="div_img_conquistas"> <img src="" alt=""></div>
+                            <div class="div_img_conquistas"> <img src="" alt=""></div>
+                            <div class="div_img_conquistas"> <img src="" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="div_conquista_e_div_img div_nome_usuario_perfil">
+                        <div class="div_conquistas">
+                            <div class="div_img_conquistas"> <img src="" alt=""></div>
+                            <div class="div_img_conquistas"> <img src="" alt=""></div>
+                            <div class="div_img_conquistas"> <img src="" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="div_geral_cabecalho">
+        <div class="div_a_img">
+            <img class="img_logo_dev_time" src="img/Logo-DevTime.png" alt=""></a>
+        </div> 
+        <div class="div_a_img">
+            <div class="texto_cabecalho">
+                <a href="dashboard_funcs.html" class="a_cabecalho"><b> Dashboard </b></a>
+            </div>
+        </div>         
+        <div class="div_a_img">
+            <!-- <a href="ranking.html"><img class="img_cabecalho" src="img/ranking.png" alt=""></a> -->
+            <div class="texto_cabecalho">
+               <a href="ranking.html" class="a_cabecalho"><b> Ranking </b></a>
+            </div>
+        </div>
+        <div class="div_a_img">
+            <!-- <a href="Loja.html"><img class="img_cabecalho" src="img/shop.png" alt=""></a> -->
+            <div class="texto_cabecalho">
+                <a href="Loja.html" class="a_cabecalho"><b> Loja </b></a>
+            </div>
+        </div>
+        <div class="div_a_img">
+            <!-- <a href="Login.html"><img class="img_cabecalho" src="img/porta.png" alt=""></a> -->
+            <div class="texto_cabecalho">
+                <a href="Login.html" class="a_cabecalho"><b> Sair </b></a>
+            </div>
+        </div>        
+    </div>
+    <div class="div_geral_estatisticas">
+        <div class="div_estatisticas_lado">
+            <div class="txt_titulo_estatisticas">
+                <div>
+                    <div class="caixa_txt_missao_notificacao">
+                        <b>Estatísticas</b>
+                    </div>
+                </div>
+            </div>
+            <div class="grafico">
+                <canvas id="estatisticas"></canvas>
+            </div>
+        </div>
+        <div class="div_missao_notificacao div_estatisticas_lado">
+            <div class="txt_titulo_missao_notificacao txt_titulo_estatisticas">
+                <div class="missao_notificacao" onclick="mostrar_missao()">
+                    <div class="caixa_txt_missao_notificacao">
+                        <b>Missões</b>
+                    </div>
+                </div>
+                <div class="missao_notificacao" onclick="mostrar_notificacao()">
+                    <div class="caixa_txt_missao_notificacao">
+                        <b>Notificações</b>
+                    </div>
+                </div>
+            </div>
+            <div id="notificacao">
+                <div id="info_missao_notificacao" class="div_info_missao_notificacao">
+                    <div class="img_missao_notificacao">
+                        <img class="img_icones_premio" src="img/premio.png" alt="">
+                    </div>
+                    <div class="txt_missao_notificacao">
+                        <span> Ednaldo adquiriu uma nova conquista <br> <b>Mestre do Conhecimento</b></span>
+                    </div>
+                </div>
+                <div id="info_missao_notificacao" class="div_info_missao_notificacao">
+                    <div class="img_missao_notificacao">
+                        <img class="img_icones_premio" src="img/premio.png" alt="">
+                    </div>
+                    <div class="txt_missao_notificacao">
+                        <span> Ednaldo adquiriu uma nova conquista <br> <b>Implacavel</b></span>
+                    </div>
+                </div>
+                <div id="info_missao_notificacao" class="div_info_missao_notificacao">
+                    <div class="img_missao_notificacao">
+                        <img class="img_icones_premio" src="img/premio.png" alt="">
+                    </div>
+                    <div class="txt_missao_notificacao">
+                        <span> Ednaldo adquiriu uma nova conquista <br> <b>Imparável</b></span>
+                    </div>
+                </div>                
+            </div>
+
+            <div id="missao">
+                <div id="info_missao_notificacao" class="div_info_missao_notificacao">
+                    <div class="img_missao_notificacao">
+                        <img class="img_icones_premio" src="img/ponto-de-exclamacao (1).png" alt="">
+                    </div>
+                    <div class="txt_missao_notificacao">
+                        <span>
+                            Atingir 50.000 pontos. <br>
+                            <b>Recompensa: 50 DevCoins</b>
+                        </span>
+                    </div>
+                </div>
+                <div id="info_missao_notificacao" class="div_info_missao_notificacao">
+                    <div class="img_missao_notificacao">
+                        <img class="img_icones_premio" src="img/ponto-de-exclamacao (1).png" alt="">
+                    </div>
+                    <div class="txt_missao_notificacao">
+                        <span>
+                            Atingir 100.000 pontos. <br>
+                            <b>Recompensa: 100 DevCoins</b>
+                        </span>
+                    </div>
+                </div>
+                <div id="info_missao_notificacao" class="div_info_missao_notificacao">
+                    <div class="img_missao_notificacao">
+                        <img class="img_icones_premio" src="img/ponto-de-exclamacao (1).png" alt="">
+                    </div>
+                    <div class="txt_missao_notificacao">
+                        <span>
+                            Atingir 150.000 pontos. <br>
+                            <b>Recompensa: 350 DevCoins</b>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inicio da faixa onde tem o Gerenciamento de Tempo e o botão de clicar -->
+    <div class="div_desafios div_conquista div_perfil_icones">
+        <div class="div_txt_gerenciamento div_txt_desafios div_txt_conquista">
+            <div class="txt_conquista txt_desafios">
+                <b> Atividades Recentes </b>
+            </div>
+        </div>
+        <div>
+            <img class="img_seta img_icones" onclick="aparecer_gerenciamento()" src="img/seta-direita.png" alt="">
+        </div>
+    </div>
+
+    <!-- Inicio das caixas onde mostra o tempo usado dos aplicativos -->
+    <div id="secao_gerenciamento">
+        <div class="div_gerenciamento_geral">
+            <div class="div_gerenciamento div_desafios_desc">
+                <div class="div_desc_gerenciamento">
+                    <div class="div_gerenciamento_titulo_img div_desc_titulo">
+                        <div class="div_img_logo_app">
+                            <img class="img_icones_app" src="img/youtube.png" alt="">
+                        </div>
+                        <div class="div_geral_txt_tempo_hora">
+                            <div>
+                                <span>Tempo Utilizado</span>
+                            </div>
+                            <div class="div_hora">
+                                <span>1 Hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_gerenciamento_titulo_img div_desc_titulo">
+                        <div class="div_img_logo_app">
+                            <img class="img_icones_app" src="img/valorant-logo.svg" alt="">
+                        </div>
+                        <div class="div_geral_txt_tempo_hora">
+                            <div>
+                                <span>Tempo Utilizado</span>
+                            </div>
+                            <div class="div_hora">
+                                <span>5 Hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_txt_desc div_gerenciamento_titulo_img">
+                        <div class="txt_desc_gerenciamento">
+                            <b>Tempo de utilização baseado no total de horas que se descansa.</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="div_geral_app div_gerenciamento_titulo_img">
+                    <div class="img_titulo">
+                        <img class="img_icones_app" src="img/cadeira-de-praia.png" alt="">
+                    </div>
+                    <div class="txt_horas_usadas">
+                        <b>4 Horas p/ dia</b>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                    </div>
+                    <div class="txt_horas_usadas_recentemente txt_horas_usadas">
+                        <b>Usados Recentemente</b>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados">
+                            <div class="div_img_logo_app_usados div_img_logo_app">
+                                <img class="img_icones_app_usados" src="img/youtube.png" alt="">
+                            </div>
+                        </div>
+                        <div class="div_app_usados">
+                            <div class="div_img_logo_app_usados div_img_logo_app">
+                                <img class="img_icones_app_usados" src="img/valorant-logo.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                    </div>
+                    <div class="txt_horas_usadas_recentemente">
+                        <b>4 Horas</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_gerenciamento div_desafios_desc">
+                <div class="div_desc_gerenciamento">
+                    <div class="div_gerenciamento_titulo_img div_desc_titulo">
+                        <div class="div_img_logo_app">
+                            <img class="img_icones_app" src="img/vs-code.png" alt="">
+                        </div>
+                        <div class="div_geral_txt_tempo_hora">
+                            <div>
+                                <span>Tempo Utilizado</span>
+                            </div>
+                            <div class="div_hora">
+                                <span>6 Hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_gerenciamento_titulo_img div_desc_titulo">
+                        <div class="div_img_logo_app">
+                            <img class="img_icones_app" src="img/w3-school.png" alt="">
+                        </div>
+                        <div class="div_geral_txt_tempo_hora">
+                            <div>
+                                <span>Tempo Utilizado</span>
+                            </div>
+                            <div class="div_hora">
+                                <span>2 Hrs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_txt_desc div_gerenciamento_titulo_img">
+                        <div class="txt_desc_gerenciamento">
+                            <b>Tempo de utilização baseado no total de horas que se descansa.</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="div_geral_app div_gerenciamento_titulo_img">
+                    <div class="img_titulo">
+                        <img class="img_icones_app" src="img/escritorio.png" alt="">
+                    </div>
+                    <div class="txt_horas_usadas">
+                        <b>8 Horas p/ dia</b>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                    </div>
+                    <div class="txt_horas_usadas_recentemente txt_horas_usadas">
+                        <b>Usados Recentemente</b>
+                    </div>
+                    <div class="div_apps">
+                        <div class="div_app_usados">
+                            <div class="div_img_logo_app_usados div_img_logo_app">
+                                <img class="img_icones_app_usados" src="img/vs-code.png" alt="">
+                            </div>
+                        </div>
+                        <div class="div_app_usados">
+                            <div class="div_img_logo_app_usados div_img_logo_app">
+                                <img class="img_icones_app_usados" src="img/w3-school.png" alt="">
+                            </div>
+                        </div>
+                        <div class="div_app_usados"></div>
+                        <div class="div_app_usados"></div>
+                    </div>
+                    <div class="txt_horas_usadas_recentemente">
+                        <b>8 Horas</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inicio Seção da faixa onde tem os 4 escudos e a conquista -->
+    <div class="div_conquista div_perfil_icones">
+        <div class="div_lado_lado div_geral_escudos">
+            <div class="div_escudos">
+                <img class="img_icones_escudos" src="img/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_escudos">
+                <img class="img_icones_escudos" src="img/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_escudos">
+                <img class="img_icones_escudos" src="img/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_escudos">
+                <img class="img_icones_escudos" src="img/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+        </div>
+        <div class="div_txt_conquista">
+            <div class="txt_conquista">
+                <b> Conquistas </b>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inicio Seção da Faixa onde tem o Desafio e o botão de clicar -->
+    <div class="div_desafios div_conquista div_perfil_icones">
+        <div class="div_txt_conquista div_txt_desafios">
+            <div class="txt_conquista txt_desafios">
+                <b> Desafios </b>
+            </div>
+        </div>
+        <div>
+            <img class="img_seta img_icones" onclick="aparecer_desafio()" src="img/seta-direita.png" alt="">
+        </div>
+    </div>
+
+    <!-- Inicio da Seção onde mostra as caixas com a desc dos desafios -->
+    <div id="secao_desafio" class="div_perfil_icones div_geral_desc_desafios">
+        <div class="div_desafios_desc">
+            <div class="div_desc_titulo">
+                <span class="txt_titulo"> Desafio: </span>
+                <img class="img_icones" src="img/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_desc_txt">
+                <span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
+                </span>
+            </div>
+            <div class="barra_desafio barra_bloqueado">
+                <b> Bloqueado </b>
+            </div>
+        </div>
+        <div class="div_desafios_desc">
+            <div class="div_desc_titulo">
+                <span class="txt_titulo"> Desafio: </span>
+                <img class="img_icones" src="img/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_desc_txt">
+                <span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
+                </span>
+            </div>
+            <div class="barra_desafio barra_bloqueado">
+                <b> Bloqueado </b>
+            </div>
+        </div>
+        <div class="div_desafios_desc">
+            <div class="div_desc_titulo">
+                <span class="txt_titulo"> Desafio: </span>
+                <img class="img_icones" src="img/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_desc_txt">
+                <span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
+                </span>
+            </div>
+            <div class="barra_desafio barra_receber">
+                <b> Receber </b>
+            </div>
+        </div>
+        <div class="div_desafios_desc">
+            <div class="div_desc_titulo">
+                <span class="txt_titulo"> Desafio: </span>
+                <img class="img_icones" src="img/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_desc_txt">
+                <span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
+                </span>
+            </div>
+            <div class="barra_desafio barra_bloqueado">
+                <b> Bloqueado </b>
+            </div>
+        </div>
+        <div class="div_desafios_desc">
+            <div class="div_desc_titulo">
+                <span class="txt_titulo"> Desafio: </span>
+                <img class="img_icones" src="img/escudo-com-fita-na-cor-preta.png" alt="">
+            </div>
+            <div class="div_desc_txt">
+                <span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eos adipisci optio dignissimos, mollitia consequatur in rem earum voluptatem consectetur.
+                </span>
+            </div>
+            <div class="barra_desafio barra_recebido">
+                <b> Já Coletou </b>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    const dataestatisticas = {
+        labels: ['Amanda', 'Danilo', 'Guilherme', 'Karol', 'Matheus', 'Rony', 'Ednaldo'],
+        datasets: [{
+            label: "estatisticas",
+            data: [20, 20, 20, 20, 20, 20, 20],
+            fill: false,
+            borderColor: 'black',
+            backgroundColor: ['#C8C8C8', '#EFDA1B', '#409A15', '#2D89BD', '#BF1FC2', '#D01717', '#252725'],
+            tension: 0.1,
+            borderWidth: 0.5,
+            hoverBackgroundColor: ["#E2E2E2", '#FFE600', '#47CD09', '#31B5FF', "#FA00FF", "#FF0000", "#080908"]
+        }]
+    };
+    const configestatisticas = {
+        type: 'doughnut',
+        data: dataestatisticas,
+
+    };
+    var myChart = new Chart(
+        document.getElementById('estatisticas'),
+        configestatisticas
+    );
+
+    var contadorCliqueDesafio = 0;
+
+    function mostrar_notificacao() {
+        if (contadorCliqueDesafio % 2 == 0) {
+            notificacao.style.display = "block";
+            missao.style.display = "none";
+            contadorCliqueDesafio = 0;
+        }
+        else {
+            notificacao.style.display = "none";
+            missa.style.display = "none";
+            contadorCliqueDesafio = 0;
+        }
+    }
+
+    function mostrar_missao() {
+        if (contadorCliqueDesafio % 2 == 0) {
+            missao.style.display = "block";
+            notificacao.style.display = "none";
+            contadorCliqueDesafio = 0;
+        }
+        else {
+            missao.style.display = "none";
+            notificacao.style.display = "none";
+            contadorCliqueDesafio = 0;
+        }
+    }
+</script>

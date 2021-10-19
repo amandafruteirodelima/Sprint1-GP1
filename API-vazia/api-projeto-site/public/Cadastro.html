@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/headerDark.css">
+    <link rel="stylesheet" href="./css/Cadastro.css">
+    <link rel="icon" href="img/Yin-Yang-DevTime.png">
+    <title>DevTme</title>
+</head>
+
+<body>
+
+    <!--Início Header-->
+
+    <div class="divHeader">
+
+        <div class="container-header">
+
+            <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
+
+            <nav class="divLista">
+                <ul>
+                    <li><a class="li-comum" href="Dashboard_adm.html">Dashboard</a></li>
+                    <li><a class="li-comum" href="Ranking_adm.html">Ranking</a></li>
+                    <li><a class="li-select" href="Cadastro.html">Cadastro</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="divButton"><button><a class="li-comum" href="Login.html">Sair</a></button></div>
+
+        </div>
+
+    </div>
+
+    <!--Fim Header-->
+
+    <!-- Início do Conteúdo -->
+
+    <div class="content">
+        <div>
+            <h1>&lt;Cadastre seus funcionários/&gt;</h1>
+        </div>
+        <div class="content-escrito">
+
+
+            <div class="div-inpts">
+
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+
+
+                    <input id="inpt_nome" name="nome" class="inptLarge inptPadrao" type="text" placeholder=" " required autofocus>
+
+                    <label for="nome">Nome</label>
+                    <br>
+
+
+                    <input id="inpt_carga" name="cargaHoraria" class="inptSmall inptPadrao" type="number" placeholder=" " required>
+                    <label class="label-cargahoraria" for="cargaHoraria">Carga horária</label>
+
+
+                    <select name="fk_Empresa" id="sel_empresa" class="sel-padrao" name="" id="">
+                        <option value="">--Selecione uma empresa--</option>
+                        <option value="1">Accenture</option>
+                        <option value="2">Alpe</option>
+                        <option value="3">Valemobi</option>
+                    </select>
+
+                    <br>
+
+                    <select name="fk_Equipe" id="sel_adm" class="sel-padrao" name="" id="">
+                        <option value="">--Selecione uma Equipe--</option>
+                        <option value="1">Equipe A</option>
+                        <option value="2">Equipe B</option>
+                        <option value="3">Equipe C</option>s
+                    </select>
+
+
+                    <input id="inpt_email" name="email" class="inptLarge inptPadrao" type="email" placeholder=" " required>
+                    <label class="label-email" for="email">Email</label>
+                    <input id="inpt_senha" name="senha" class="inptLarge inptPadrao" type="password" placeholder=" " required>
+                    <label class="label-senha" for="senha">Senha</label>
+
+
+                    <button class="btn-default" ><a><b>Cadastrar</b></a></button>
+                </form>
+
+            </div>
+            <div><img class="imagem-cadastro" src="./img/img-6.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- Fim do Conteúdo -->
+
+    <!-- Início do footer  -->
+    <div class="footer">
+        <div class="company">
+            <a href="#"><img src="img/Logo-Branco.png" alt="Logo da DevTime"></a>
+            |
+            <a href="#"><img src="img/logo_bandtec.png" alt="Logo da Faculdade BandTec"></a>
+        </div>
+
+        <div>
+            <h3 class="copyright">Copyright © 2021 - Todos os direitos reservados - DevTime</h3>
+        </div>
+    </div>
+    <!-- Fim do footer  -->
+
+</body>
+
+</html>
+
+<script>
+    function mascara_data(campo, valor) {
+        var mydata = '';
+        mydata = mydata + valor;
+        if (mydata.length == 2) {
+            mydata = mydata + '/';
+            campo.value = mydata;
+        }
+        if (mydata.length == 5) {
+            mydata = mydata + '/';
+            campo.value = mydata;
+        }
+    }
+
+    function cadastrar() {
+        
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='Cadastro.html';
+                alert("Cadastro realizado com sucesso!")
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    alert(resposta);
+                    alert("Erro!");
+                });
+                
+            }
+        });
+
+        return false;
+    }
+</script>
