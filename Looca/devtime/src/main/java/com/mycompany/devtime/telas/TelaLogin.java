@@ -6,6 +6,7 @@ package com.mycompany.devtime.telas;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
 import entities.FuncionarioEntity;
+import java.util.Arrays;
 import java.util.List;
 import javax.swing.JOptionPane;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -50,7 +51,7 @@ public class TelaLogin extends javax.swing.JFrame {
         checkBoxSenha = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
         jLabel7 = new javax.swing.JLabel();
-        lblSenha = new javax.swing.JPasswordField();
+        lblSenha = new javax.swing.JTextField();
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,20 +135,17 @@ public class TelaLogin extends javax.swing.JFrame {
                         .addGap(74, 74, 74)
                         .addComponent(jLabel7))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(104, 104, 104)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addGap(1, 1, 1)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel3)
-                                    .addComponent(lblEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(checkBoxSenha)
-                                    .addComponent(jCheckBox2)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(53, 53, 53)
-                                        .addComponent(btnLogar1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                        .addGap(105, 105, 105)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel3)
+                            .addComponent(lblEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
+                            .addComponent(checkBoxSenha)
+                            .addComponent(jCheckBox2)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(53, 53, 53)
+                                .addComponent(btnLogar1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblSenha))))
                 .addContainerGap(74, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -204,7 +202,8 @@ public class TelaLogin extends javax.swing.JFrame {
 
 //        Executor executar = new Executor();
         String email = lblEmail.getText();
-        char[] senha = lblSenha.getPassword();
+        String senha = lblSenha.getText();
+
 
         ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
         JdbcTemplate assistente = new JdbcTemplate(
@@ -212,7 +211,7 @@ public class TelaLogin extends javax.swing.JFrame {
         FuncionarioEntity funcionarioEntity = FuncionarioEntity.getInstance();
 
         List<FuncionarioEntity> funcionario = assistente.query("SELECT * "
-                + "FROM funcionario where email = '" + email + "' and senha = '"
+                + "FROM Funcionario where email = '" + email + "' and senha = '"
                 + senha + "'",
                 new BeanPropertyRowMapper<>(FuncionarioEntity.class));
 
@@ -248,13 +247,7 @@ public class TelaLogin extends javax.swing.JFrame {
     private void checkBoxSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkBoxSenhaActionPerformed
         // TODO add your handling code here:
 
-        if (checkBoxSenha.isSelected()) {
 
-            lblSenha.setEchoChar((char) 0);
-
-        } else {
-            lblSenha.setEchoChar('*');
-        }
     }//GEN-LAST:event_checkBoxSenhaActionPerformed
 
     /**
@@ -312,6 +305,10 @@ public class TelaLogin extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField lblEmail;
-    private javax.swing.JPasswordField lblSenha;
+    private javax.swing.JTextField lblSenha;
     // End of variables declaration//GEN-END:variables
+
+    private String toString(char[] senha) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

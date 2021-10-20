@@ -39,6 +39,7 @@ public class TelaLogado extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(138, 17, 190));
 
         jLabel1.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Logado com Sucesso!!");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mascote.png"))); // NOI18N
@@ -63,7 +64,7 @@ public class TelaLogado extends javax.swing.JFrame {
                         .addGap(95, 95, 95)
                         .addComponent(jLabel2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(83, 83, 83)
+                        .addGap(104, 104, 104)
                         .addComponent(btnLogs)))
                 .addContainerGap(83, Short.MAX_VALUE))
         );
