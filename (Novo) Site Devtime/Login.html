@@ -52,19 +52,19 @@
             <div class="div-inpts">
 
 
-                <form action="Dashboard_adm.html">
+                <form id="form_login" method="post" onsubmit="return entrar()">
 
-                    <input class="inptLarge inptPadrao" type="email" placeholder=" " required>
+                    <input class="inptLarge inptPadrao" type="email" name="email" placeholder=" " required>
                     <label class="label-email" for="email">Email</label>
                     
 
-                    <input class="inptLarge inptPadrao" type="password" placeholder=" " required>
+                    <input class="inptLarge inptPadrao" type="password" name="senha" placeholder=" " required>
                     <label style="font-family: 'Poppins-Bold'; font-size: small;" class="label-senha"
                     for="senha">Senha</label>
                     
                     
 
-                    <button class="btn-default"><a href="Dashboard_adm.html" class="link-comum"><b>Entrar</b></a></button>
+                    <button class="btn-default"><a class="link-comum"><b>Entrar</b></a></button>
                 </form>
 
             </div>
@@ -74,3 +74,51 @@
 </body>
 
 </html>
+
+<script>
+
+
+function entrar() {
+        
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    
+
+                    alert("Login realizado com sucesso!")
+                    console.log(json);
+
+                    if(json.idFuncionario){
+                        sessionStorage.login_usuario_meuapp = json.email;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                        window.location.href = 'Perfil_usuario.html';
+                    }
+                    else{
+                        sessionStorage.login_usuario_meuapp = json.emailGestor;
+                        sessionStorage.nome_usuario_meuapp = json.nomeGestor;
+                        window.location.href = 'Dashboard_adm.html';
+                    }
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+</script>

@@ -49,13 +49,9 @@ body {
     padding: 3vh 4vh;
 }
 
-.inptSmall {
-    width: 26.8vh;
-}
 
-.inptLarge {
-    width: 55vh;
-}
+
+
 
 .inptPadrao {
     background-color: white;
@@ -64,6 +60,7 @@ body {
     
     padding: 0.3vh;
     height: 5.5vh;
+    width: 55vh;
 
     justify-content: center;
     margin-bottom: 4vh;
@@ -94,13 +91,10 @@ label {
     
 }
 
-.label-nascimento {
-    left: 1vh;
-    top: 11.45vh;
-}
+
 
 .label-cargahoraria {
-    left: 29vh;
+    left: 1vh;
     top: 11.45vh;
 }
 

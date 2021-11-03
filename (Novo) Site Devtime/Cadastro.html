@@ -49,45 +49,43 @@
 
             <div class="div-inpts">
 
-                <form action="">
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
 
 
-                    <input id="inpt_nome" class="inptLarge inptPadrao" type="text" placeholder=" " required autofocus>
+                    <input id="inpt_nome" name="nome" class="inptLarge inptPadrao" type="text" placeholder=" " required autofocus>
 
                     <label for="nome">Nome</label>
                     <br>
 
-                    <input id="inpt_data" onkeyup="mascara_data(this,this.value)" class="inptSmall inptPadrao"
-                        type="text" placeholder=" " required maxlength="10">
-                    <label class="label-nascimento" for="dataNascimento">Data de Nascimento</label>
 
-                    <input id="inpt_carga" class="inptSmall inptPadrao" type="number" placeholder=" " required>
+                    <input id="inpt_carga" name="cargaHoraria" class="inptSmall inptPadrao" type="number" placeholder=" " required>
                     <label class="label-cargahoraria" for="cargaHoraria">Carga horária</label>
 
 
-                    <select id="sel_empresa" class="sel-padrao" name="" id="">
+                    <select name="fk_Empresa" id="sel_empresa" class="sel-padrao" name="" id="">
                         <option value="">--Selecione uma empresa--</option>
-                        <option value="Accenture">Accenture</option>
-                        <option value="Alpe">Alpe</option>
-                        <option value="Valemobi">Valemobi</option>
+                        <option value="1">Accenture</option>
+                        <option value="2">Alpe</option>
+                        <option value="3">Valemobi</option>
                     </select>
 
                     <br>
 
-                    <select id="sel_adm" class="sel-padrao" name="" id="">
+                    <select name="fk_Equipe" id="sel_adm" class="sel-padrao" name="" id="">
                         <option value="">--Selecione uma Equipe--</option>
-                        <option value="Equipe A">Equipe A</option>
-                        <option value="Equipe B">Equipe B</option>
-                        <option value="Equipe C">Equipe C</option>s
+                        <option value="1">Equipe A</option>
+                        <option value="2">Equipe B</option>
+                        <option value="3">Equipe C</option>s
                     </select>
 
-                    <input id="inpt_email" class="inptLarge inptPadrao" type="email" placeholder=" " required>
+
+                    <input id="inpt_email" name="email" class="inptLarge inptPadrao" type="email" placeholder=" " required>
                     <label class="label-email" for="email">Email</label>
-                    <input id="inpt_senha" class="inptLarge inptPadrao" type="password" placeholder=" " required>
+                    <input id="inpt_senha" name="senha" class="inptLarge inptPadrao" type="password" placeholder=" " required>
                     <label class="label-senha" for="senha">Senha</label>
 
 
-                    <button class="btn-default" onclick="cadastroRealizado()"><a><b>Cadastrar</b></a></button>
+                    <button class="btn-default" ><a><b>Cadastrar</b></a></button>
                 </form>
 
             </div>
@@ -129,10 +127,30 @@
         }
     }
 
-    function cadastroRealizado() {
-        if (inpt_nome.value != "" && inpt_data.value != "" && inpt_carga.value != "" && sel_empresa != "" && sel_adm !=
-            "" && inpt_email != "" && inpt_senha != 0) {
-            alert("Cadastro realizado com sucesso!")
-        }
+    function cadastrar() {
+        
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='Cadastro.html';
+                alert("Cadastro realizado com sucesso!")
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    alert(resposta);
+                    alert("Erro!");
+                });
+                
+            }
+        });
+
+        return false;
     }
 </script>
