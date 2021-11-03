@@ -1,0 +1,160 @@
+//Software --> OKAY
+
+CREATE TABLE Software (
+idSoftware INT PRIMARY KEY IDENTITY(1,1),
+nomeSoftware VARCHAR(30) NOT NULL,
+linkImagemSoftware VARCHAR(500) NULL
+);
+
+//Produto --> OKAY
+
+CREATE TABLE Produto (
+idProduto INT PRIMARY KEY IDENTITY(1,1),
+nomeProduto VARCHAR(50) NOT NULL,
+devCoinProduto INT NOT NULL
+);
+
+//Conquista--> OKAY
+
+CREATE TABLE Conquista (
+idConquista INT PRIMARY KEY IDENTITY(1,1),
+nomeConquista VARCHAR(30) NOT NULL,
+descConquista VARCHAR(100) NOT NULL,
+devCoinConquista INT NOT NULL,
+pontosConquista INT NOT NULL,
+);
+
+//Empresa --> OKAY
+
+CREATE TABLE Empresa (
+idEmpresa INT PRIMARY KEY IDENTITY(1,1),
+nomeEmpresa VARCHAR(30) NOT NULL,
+cnpj VARCHAR(18) NOT NULL
+);
+
+
+
+//Equipe --> OKAY
+CREATE TABLE Equipe (
+idEquipe INT PRIMARY KEY IDENTITY(1,1),
+nomeEquipe VARCHAR(45) NOT NULL,	
+);
+
+//Maquina --> OKAY
+
+CREATE TABLE Maquina (
+idMaquina INT PRIMARY KEY IDENTITY(1,1),
+sistemaOperacional VARCHAR(45),
+arquiteturaSo VARCHAR (5),
+fabricanteSo VARCHAR(45)
+);
+
+
+//Funcionario --> OKAY
+
+CREATE TABLE Funcionario(
+idFuncionario INT PRIMARY KEY IDENTITY(1,1),
+nomeFuncionario VARCHAR(50) NOT NULL,
+cargaHoraria INT NOT NULL,
+email VARCHAR(60) NOT NULL,
+senha VARCHAR(30) NOT NULL,
+devCoinFuncionario INT NOT NULL,
+pontosFuncionario INT NULL,
+isGestor TINYINT,
+fk_Chefe INT FOREIGN KEY
+REFERENCES Funcionario (idFuncionario)
+fk_Empresa INT FOREIGN KEY
+REFERENCES Empresa (idEmpresa),
+fk_Maquina INT FOREIGN KEY
+REFERENCES Maquina (idMaquina)
+);
+
+
+//Equipe_Funcionario -->OKAY
+
+CREATE TABLE Equipe_Funcionario (
+idEquipeFuncionario INT PRIMARY KEY IDENTITY(1,1),
+fk_Equipe INT FOREIGN KEY
+REFERENCES Equipe idEquipe
+fk_Funcionario INT FOREIGN KEY
+REFERENCES Funcionario idFuncionario
+);
+
+
+//Componente --> OKAY
+
+CREATE TABLE Componente(
+idComponente INT PRIMARY KEY IDENTITY(1,1),
+nomeComponente VARCHAR(25),
+capacidade FLOAT,
+descricao VARCHAR(45),
+infoAdicional VARCHAR(50),
+unidadeDeMedida VARCHAR(5)
+);
+
+//Componente_Maquina --> OKAY
+
+CREATE TABLE Componente_Maquina(
+idComponenteMaquina INT PRIMARY KEY IDENTITY(1,1),
+fk_Componente INT FOREIGN KEY
+REFERENCES Componente (idComponente),
+fk_Maquina INT FOREIGN KEY
+REFERENCES Maquina (idMaquina),
+);
+
+//Historico_Uso --> OKAY
+
+CREATE TABLE Historico_Uso (
+idHistoricoUso INT PRIMARY KEY IDENTITY(1,1),
+fk_Componente INT FOREIGN KEY
+REFERENCES Componente (idComponente),
+dataHora DATETIME,
+consumo FLOAT
+);
+
+
+//Funcionario_Produto --> OKAY
+
+CREATE TABLE Funcionario_Produto (
+idFuncionario_Produto INT PRIMARY KEY IDENTITY(1,1),
+fk_Funcionario INT FOREIGN KEY
+REFERENCES Funcionario (idFuncionario),
+fk_Produto INT FOREIGN KEY
+REFERENCES Produto (idProduto),
+checkAdquirido TINYINT NOT NULL
+);
+
+
+
+//Funcionario_Conquista --> OKAY 
+
+CREATE TABLE Funcionario_Conquista (
+idFuncionario_Conquista INT PRIMARY KEY IDENTITY(1,1),
+fk_Funcionario INT FOREIGN KEY
+REFERENCES Funcionario (idFuncionario),
+fk_Conquista INT FOREIGN KEY
+REFERENCES Conquista (idConquista),
+checkCompleta TINYINT NOT NULL
+);
+
+//Maquina_Software
+
+CREATE TABLE Maquina_Software(
+idMaquinaSoftware INT PRIMARY KEY IDENTITY(1,1),
+fk_Maquina INT FOREIGN KEY
+REFERENCES Maquina (idMaquina),
+fk_Software INT FOREIGN KEY
+REFERENCES Software(idSoftware)
+);
+
+//Historico_Uso_Software
+
+CREATE TABLE Historico_Uso_Software(
+idHistoricoUsoSoftware INT PRIMARY KEY IDENTITY(1,1),
+dataHora DATETIME,
+consumo FLOAT,
+fk_Software INT FOREIGN KEY
+REFERENCES Software (idSoftware)
+);
+
+
