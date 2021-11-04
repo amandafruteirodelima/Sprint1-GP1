@@ -19,7 +19,7 @@ body {
 }
 
 .div_geral_top {
-    height: 555px;
+    height: 90%;
     width: 95%;
     margin: 20px auto;
     display: flex;
@@ -34,7 +34,6 @@ body {
 }
 
 .div_txt_top {
-    width: 95%;
     margin: 0px auto;
     background-color: #7D35B7;
     font-size: 2vw;
@@ -55,24 +54,39 @@ body {
 }
 
 .div_outras_equipes {
-    height: 85%;
-    max-height: 85%;
-    width: 95%;
+    padding-bottom: 10px;
+    padding-top: 10px;
     margin: 0 auto;
-    padding-top: 1px;
-    overflow-x: overlay;
     background: linear-gradient(to top, #44134c, #6010AF);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 0 0 5px 5px;
 }
 
 .div_geral_txt_colocado {
     display: flex;
     justify-content: space-evenly;
     font-size: 3vw;
-    margin-top: 3vw;
+    margin-bottom: 3vw;
 }
 
 .div_txt_podio_colocado {
     font-family: 'Rampart One', cursive;
+}
+
+@media only screen and (max-width: 425px) {
+    .div_geral_top {
+        height: 0%;
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+        justify-content: baseline; 
+    }
+    .div_top {
+        height: 95%;
+        width: 90%;
+        margin-top: 15px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 10px;
+    }
 }
