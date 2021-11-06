@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="213e8944-6e48-4997-b9fd-71064cc4bad1" name="Default Changelist" comment="" />
+    <list default="true" id="213e8944-6e48-4997-b9fd-71064cc4bad1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/(Novo) Site Devtime/Ranking_adm.html" beforeDir="false" afterPath="$PROJECT_DIR$/(Novo) Site Devtime/Ranking_adm.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
