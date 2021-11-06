@@ -16,7 +16,6 @@
 
 <body>
     <!--Início Header-->
-
     <div class="divHeader">
 
         <div class="container-header">
@@ -29,15 +28,10 @@
                     <li><a class="li-comum" href="Ranking_adm.html">Ranking</a></li>
                     <li><a class="li-comum" href="Cadastro.html">Cadastro</a></li>
                 </ul>
-
             </nav>
-
             <div class="divButton"><button><a class="li-comum" href="Login.html">Sair</a></button></div>
-
         </div>
-
     </div>
-
     <!--Fim Header-->
 
     <!-- Início da página -->
@@ -165,15 +159,31 @@
             <!-- Divisória -->
             <div class="div_divisora_alt"></div>
 
-            <div class="div_data">
+            <div class="div_geral_check_lado">
+                <div class="div_check_lado">
+                    <input id="caixa_selecao1" type="checkbox" onclick="caixa_usado_hoje()">
+                    <label class="alt_title3" for="caixa_selecao1">Ver tempo usado hoje:</label>
+                </div>
+                <div class="div_check_lado">
+                    <input id="caixa_selecao2" type="checkbox" onclick="caixa_usado_semana()">
+                    <label class="alt_title3" for="caixa_selecao2">Ver tempo usado na semana:</label>
+                    
+                </div>
+                <div class="div_check_lado">
+                    <input id="caixa_selecao3" type="checkbox" onclick="caixa_usado_quinzena()">
+                    <label class="alt_title3" for="caixa_selecao3">Ver tempo usado na quinzena:</label>
+                </div>                
+            </div>
+
+            <div class="div_data" id="div_usado_hoje">
                 <h2 class="alt_title3">Tempo usado hoje:</h2>
                 <h2 class="alt_title3">4 horas</h2>
             </div>
 
             <!-- Divisória -->
-            <div class="div_divisora_alt"></div>
+            <div class="div_divisora_alt" id="div_divisora_alt1"></div>
 
-            <div class="div_data">
+            <div class="div_data" id="div_usado_semana">
 
                 <h2 class="alt_title3">Tempo usado na semana:</h2>
 
@@ -207,14 +217,13 @@
                         <h4 class="alt_title4">dom</h4>
                         <h4 class="alt_title4">0h</h4>
                     </div>
-
                 </div>
             </div>
 
             <!-- Divisória -->
-            <div class="div_divisora_alt"></div>
+            <div class="div_divisora_alt" id="div_divisora_alt2"></div>
 
-            <div class="div_data">
+            <div class="div_data"  id="div_usado_quinzena">
                 <h2 class="alt_title3">Tempo usado na quinzena</h2>
 
                 <div class="organizadora_alt">
@@ -280,10 +289,8 @@
                         <h4 class="alt_title5">dia 15</h4>
                         <h4 class="alt_title5">8h</h4>
                     </div>
-
                 </div>
             </div>
-
         </div>
 
 
@@ -292,37 +299,37 @@
         <div id="div_aplicativos_usados" class="div_tempo_logado" style="display: none;">
 
             <!-- Divisória -->
-            <div class="div_divisora_alt"></div>
+            <div class="div_divisora_alt" id="div_divisora_alt3"></div>
 
             <div class="div_data">
                 <h2 class="alt_title3">Aplicativos usados hoje:</h2>
 
                 <div class="organizadora_alt2">
 
-                <div class="quadrado3">
-                    <img class="img_quadrado" src="img/Apache_NetBeans.png">
-                    <h4 class="alt_title5">2h</h4>
-                </div>
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Apache_NetBeans.png">
+                        <h4 class="alt_title5">2h</h4>
+                    </div>
 
-                <div class="quadrado3">
-                    <img class="img_quadrado" src="img/vs-code.png">
-                    <h4 class="alt_title5">4h</h4>
-                </div>
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/vs-code.png">
+                        <h4 class="alt_title5">4h</h4>
+                    </div>
 
-                <div class="quadrado3">
-                    <img class="img_quadrado" src="img/chrome.png">
-                    <h4 class="alt_title5">0.4h</h4>
-                </div>
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/chrome.png">
+                        <h4 class="alt_title5">0.4h</h4>
+                    </div>
 
-                <div class="quadrado3">
-                    <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
-                    <h4 class="alt_title5">5h</h4>
-                </div>
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
+                        <h4 class="alt_title5">5h</h4>
+                    </div>
 
-                <div class="quadrado3">
-                    <img class="img_quadrado" src="img/spotify.png">
-                    <h4 class="alt_title5">2h</h4>
-                </div>
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/spotify.png">
+                        <h4 class="alt_title5">2h</h4>
+                    </div>
 
                 </div>
             </div>
@@ -345,22 +352,22 @@
                         <img class="img_quadrado" src="img/vs-code.png">
                         <h4 class="alt_title5">12h</h4>
                     </div>
-    
+
                     <div class="quadrado3">
                         <img class="img_quadrado" src="img/chrome.png">
                         <h4 class="alt_title5">4h</h4>
                     </div>
-    
+
                     <div class="quadrado3">
                         <img class="img_quadrado" src="img/youtube.png">
                         <h4 class="alt_title5">2h</h4>
                     </div>
-    
+
                     <div class="quadrado3">
                         <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
                         <h4 class="alt_title5">25h</h4>
                     </div>
-    
+
                     <div class="quadrado3">
                         <img class="img_quadrado" src="img/spotify.png">
                         <h4 class="alt_title5">10h</h4>
@@ -386,22 +393,22 @@
                         <img class="img_quadrado" src="img/vs-code.png">
                         <h4 class="alt_title5">30h</h4>
                     </div>
-    
+
                     <div class="quadrado3">
                         <img class="img_quadrado" src="img/chrome.png">
                         <h4 class="alt_title5">8h</h4>
                     </div>
-    
+
                     <div class="quadrado3">
                         <img class="img_quadrado" src="img/youtube.png">
                         <h4 class="alt_title5">3h</h4>
                     </div>
-    
+
                     <div class="quadrado3">
                         <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
                         <h4 class="alt_title5">45h</h4>
                     </div>
-    
+
                     <div class="quadrado3">
                         <img class="img_quadrado" src="img/spotify.png">
                         <h4 class="alt_title5">14h</h4>
@@ -477,5 +484,47 @@
     // Seta (voltar)
     function go_back() {
         location.reload();
+    }
+
+    cont_checkbox_hoje = 1;
+    cont_checkbox_semana = 1;
+    cont_checkbox_quinzena = 1;
+
+    function caixa_usado_hoje() {
+        if (cont_checkbox_hoje == 0) {
+            div_usado_hoje.style.display = "none";
+            div_divisora_alt1.style.display = "none";
+            cont_checkbox_hoje++;
+        } else {
+            div_usado_hoje.style.display = "block";
+            div_divisora_alt1.style.display = "block"
+            cont_checkbox_hoje--;
+        }
+    }
+
+    function caixa_usado_semana() {
+        if (cont_checkbox_semana == 0) {
+            div_usado_semana.style.display = "none";
+            div_divisora_alt2.style.display = "none";
+            cont_checkbox_semana++;
+        } else {
+            div_usado_semana.style.display = "block";
+            div_usado_semana.style.display = "flex";
+            div_divisora_alt2.style.display = "block";
+            cont_checkbox_semana--;
+        }
+    }
+
+    function caixa_usado_quinzena() {
+        if (cont_checkbox_quinzena == 0) {
+            div_usado_quinzena.style.display = "none";
+            div_divisora_alt3.style.display = "none";
+            cont_checkbox_quinzena++;
+        } else {
+            div_usado_quinzena.style.display = "revert";
+            div_usado_quinzena.style.display = "flex";
+            div_divisora_alt3.style.display = "block";
+            cont_checkbox_quinzena--;
+        }
     }
 </script>
