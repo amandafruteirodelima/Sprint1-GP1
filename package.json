@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./projeto-site/bin/www",
-    "postinstall": "cd projeto-site && npm install"
+    "start": "node ./APICadastro/api-projeto-site/bin/www",
+    "postinstall": "cd APICadastro && cd api-projeto-site && npm install"
   }
 }
