@@ -1,9 +1,10 @@
 {
-  "name": "pi-ads-2020-2",
-  "version": "1.0.0",
+  "name": "devtime-raiz",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./projeto-site/bin/www",
+    "postinstall": "cd projeto-site && npm install"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
