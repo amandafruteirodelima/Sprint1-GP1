@@ -378,3 +378,37 @@ h2 {
     font-family: 'Poppins-Bold';
     margin: 0;
 }
+
+.div_geral_check_lado {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div_check_lado {
+    display: flex;
+    align-items: center;
+}
+
+#div_usado_hoje {
+    display: none;
+}
+
+#div_usado_semana {
+    display: none;
+}
+
+#div_usado_quinzena {
+    display: none;
+}
+
+#div_divisora_alt1 {
+    display: none;
+}
+
+#div_divisora_alt2 {
+    display: none;
+}
+
+#div_divisora_alt3 {
+    display: none;
+}
