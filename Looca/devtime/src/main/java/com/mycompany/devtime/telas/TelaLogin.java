@@ -204,7 +204,6 @@ public class TelaLogin extends javax.swing.JFrame {
         String email = lblEmail.getText();
         String senha = lblSenha.getText();
 
-
         ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
         JdbcTemplate assistente = new JdbcTemplate(
                 configuracaoBanco.getBancoDeDados());

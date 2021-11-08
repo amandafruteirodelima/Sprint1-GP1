@@ -46,7 +46,9 @@ CREATE TABLE Maquina (
 idMaquina INT PRIMARY KEY IDENTITY(1,1),
 sistemaOperacional VARCHAR(45),
 arquiteturaSo VARCHAR (5),
-fabricanteSo VARCHAR(45)
+fabricanteSo VARCHAR(45), 
+fk_Funcionario INT FOREIGN KEY 
+REFERENCES Funcionario(idFuncionario)
 );
 
 
@@ -64,9 +66,7 @@ isGestor TINYINT,
 fk_Chefe INT FOREIGN KEY
 REFERENCES Funcionario (idFuncionario)
 fk_Empresa INT FOREIGN KEY
-REFERENCES Empresa (idEmpresa),
-fk_Maquina INT FOREIGN KEY
-REFERENCES Maquina (idMaquina)
+REFERENCES Empresa (idEmpresa)
 );
 
 
@@ -89,17 +89,9 @@ nomeComponente VARCHAR(25),
 capacidade FLOAT,
 descricao VARCHAR(45),
 infoAdicional VARCHAR(50),
-unidadeDeMedida VARCHAR(5)
-);
-
-//Componente_Maquina --> OKAY
-
-CREATE TABLE Componente_Maquina(
-idComponenteMaquina INT PRIMARY KEY IDENTITY(1,1),
-fk_Componente INT FOREIGN KEY
-REFERENCES Componente (idComponente),
-fk_Maquina INT FOREIGN KEY
-REFERENCES Maquina (idMaquina),
+unidadeDeMedida VARCHAR(5),
+fk_Maquina INT FOREIGN KEY 
+REFERENCES Maquina (idMaquina) 
 );
 
 //Historico_Uso --> OKAY
@@ -137,15 +129,6 @@ REFERENCES Conquista (idConquista),
 checkCompleta TINYINT NOT NULL
 );
 
-//Maquina_Software
-
-CREATE TABLE Maquina_Software(
-idMaquinaSoftware INT PRIMARY KEY IDENTITY(1,1),
-fk_Maquina INT FOREIGN KEY
-REFERENCES Maquina (idMaquina),
-fk_Software INT FOREIGN KEY
-REFERENCES Software(idSoftware)
-);
 
 //Historico_Uso_Software
 
@@ -154,7 +137,9 @@ idHistoricoUsoSoftware INT PRIMARY KEY IDENTITY(1,1),
 dataHora DATETIME,
 consumo FLOAT,
 fk_Software INT FOREIGN KEY
-REFERENCES Software (idSoftware)
+REFERENCES Software (idSoftware),
+fk_Maquina INT FOREIGN KEY
+REFERENCES Maquina(idMaquina)
 );
 
 

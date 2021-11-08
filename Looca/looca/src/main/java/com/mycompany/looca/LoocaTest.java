@@ -13,6 +13,7 @@ import com.github.britooo.looca.api.group.servicos.ServicosGroup;
 import com.github.britooo.looca.api.group.sistema.Sistema;
 import com.github.britooo.looca.api.group.temperatura.Temperatura;
 import com.github.britooo.looca.api.util.Conversor;
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class LoocaTest {
@@ -71,7 +72,7 @@ public class LoocaTest {
 ////////////////////////////////////////////////////////////////////////////////
 //      Temperatura  
 //
-        System.out.println(temperatura);
+//        System.out.println(temperatura);
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -114,9 +115,10 @@ public class LoocaTest {
 //            System.out.println(disco.getSerial());
 //        }
 //
-//        for (Disco disco : discos) {
-//            System.out.println(disco.getTamanho());
-//        }
+        DecimalFormat df = new DecimalFormat("###,###");
+        for (Disco disco : discos) {
+            System.out.println(df.format((double)disco.getTamanho()));
+        }
 //
 //        for (Disco disco : discos) {
 //            System.out.println(disco.getTamanhoAtualDaFila());
@@ -126,9 +128,9 @@ public class LoocaTest {
 //            System.out.println(disco.getTempoDeTransferencia());
 //        }
 //        
-        for (Disco disco : discos) {
-            System.out.println(disco.toString());
-        }
+//        for (Disco disco : discos) {
+//            System.out.println(disco.toString());
+//        }
 //        
 //        for (Volume volume : volumes){
 //            System.out.println(volume.getDisponivel());

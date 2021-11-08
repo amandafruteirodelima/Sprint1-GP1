@@ -18,6 +18,8 @@ public class Criacao {
 //        assistente.execute("drop table processador");
 //        assistente.execute("drop table historico_disco");
 //        assistente.execute("drop table disco");
+//        assistente.execute("drop table Historico_Uso");
+//        assistente.execute("drop table componente");
 //        assistente.execute("drop table maquina");
 //        assistente.execute("drop table funcionario");
 //
@@ -26,32 +28,57 @@ public class Criacao {
 //                + "  nomeFuncionario varchar(50),"
 //                + "  cargaHoraria Int,"
 //                + "  email VARCHAR(60),"
-//                + "  senha Varchar(20),"
-//                + "  dataNascimento DATE,"
+//                + "  senha Varchar(30),"
 //                + "  devCoinFuncionario int,"
 //                + "  pontosFuncionario int,"
-//                + "  fkEmpresa Int,"
-//                + "  fkEquipe Int"
+//                + "  isGestor TINYINT,"
+//                + "  fk_Chefe Int,"
+//                + "  foreign key(fk_chefe)"
+//                + "  references funcionario(idFuncionario),"
+//                + "  fk_Empresa Int"
 //                + ");";
 //
 //        assistente.execute(createFuncionario);
 //
 //        assistente.update("INSERT INTO funcionario VALUES(?,?,?,?,?,?,?,?,?,?)", null,
-//                "Juninho", "7", "devtime", "devtime", null, "0", "0", "1", "1");
+//                "Juninho", "7", "devtime", "devtime", "0", "0", 1, "1", "1");
 //
 //        String createMaquina = "CREATE TABLE MAQUINA ("
 //                + "  idMaquina INT NOT NULL AUTO_INCREMENT,"
 //                + "  sistemaOperacional VARCHAR(45),"
 //                + "  arquiteturaSO varchar(5),"
 //                + "  fabricanteSO varchar(45),"
-//                + "  fkfuncionario int, "
-//                + "  foreign key (fkfuncionario) references "
-//                + "funcionario(Idfuncionario),"
+//                + "  fk_funcionario int, "
+//                + "  foreign key(fk_funcionario) references "
+//                + "  funcionario(Idfuncionario),"
 //                + "  PRIMARY KEY (idMaquina)"
 //                + ");";
 //
 //        assistente.execute(createMaquina);
 //
+//        String createComponente = "CREATE TABLE COMPONENTE("
+//                + "  idComponente INT NOT NULL AUTO_INCREMENT,"
+//                + "  nomeComponente varchar(25),"
+//                + "  capacidade Double,"
+//                + "  descricao varchar(45),"
+//                + "  infoAdicional varchar(45),"
+//                + "  unidadeDeMedida varchar(5),"
+//                + "  fk_maquina int,"
+//                + "  foreign key(fk_maquina) references "
+//                + "  maquina(idMaquina),"
+//                + "  PRIMARY KEY(idComponente));";
+//        assistente.execute(createComponente);
+//        
+//        String createHistorico = "CREATE TABLE Historico_Uso("
+//                + "  idhistoricoUso INT NOT NULL AUTO_INCREMENT PRIMARY KEY,"
+//                + "  fk_Componente int,"
+//                + "  foreign key(fk_componente) references "
+//                + "  componente(idComponente),"
+//                + "  dataHora DATETIME,"
+//                + "  consumo Double"
+//                + ");";
+//        assistente.execute(createHistorico);    
+
 //        String createDisco = "CREATE TABLE DISCO ("
 //                + "  idDisco INT NOT NULL AUTO_INCREMENT,"
 //                + "  nomeDisco VARCHAR(45),"

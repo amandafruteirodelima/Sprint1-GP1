@@ -1,6 +1,8 @@
 package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
+import java.util.List;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class MaquinaEntity {
@@ -14,6 +16,7 @@ public class MaquinaEntity {
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
+    FuncionarioEntity funcionario = FuncionarioEntity.getInstance();
 
     public MaquinaEntity(String sistemaOperacional, Integer arquiteturaSO,
             String fabricanteSO, Integer fkFuncionario) {
@@ -37,6 +40,20 @@ public class MaquinaEntity {
                 + "fabricanteSO,fk_Funcionario) VALUES(?,?,?,?)",
                 sistemaOperacional, arquiteturaSO,
                 fabricanteSO, fkFuncionario);
+    }
+    
+    public void instanciarMaquina(){
+        List<MaquinaEntity> maquinaid = assistente.query("Select *"
+                + " from Maquina where fk_Funcionario = '"
+                + funcionario.getIdFuncionario() + "'",
+                new BeanPropertyRowMapper<>(MaquinaEntity.class));
+
+        MaquinaEntity maquinaDaVez = null;
+        for (int i = 0; i < maquinaid.size(); i++) {
+            maquinaDaVez = maquinaid.get(i);
+            
+        }
+        instance.setIdMaquina(maquinaDaVez.getIdMaquina());
     }
 
     public Integer getIdMaquina() {

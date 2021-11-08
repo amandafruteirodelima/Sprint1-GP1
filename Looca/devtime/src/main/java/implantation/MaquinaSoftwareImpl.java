@@ -4,7 +4,6 @@ import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.processos.Processo;
 import com.github.britooo.looca.api.group.processos.ProcessosGroup;
 import com.mycompany.devtime.ConfiguracaoBanco;
-import entities.DiscoEntity;
 import entities.MaquinaEntity;
 import entities.MaquinaSoftwareEntity;
 import entities.SoftwareEntity;
@@ -41,9 +40,6 @@ public class MaquinaSoftwareImpl {
                         maquinaInstance.getIdMaquina(),
                         softwareDaVez.getIdSoftware()
                 );
-
-//                System.out.println(assistente.queryForList("Select fk_software "
-//                        + "from maquina_software"));
 
                 maquinaSoftware.insertMaquinaSoftware();
             }

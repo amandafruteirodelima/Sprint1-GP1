@@ -2,19 +2,18 @@ package implantation;
 
 import com.github.britooo.looca.api.group.discos.Disco;
 import com.github.britooo.looca.api.group.discos.DiscosGroup;
-import entities.DiscoEntity;
 import java.util.List;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Volume;
 import com.mycompany.devtime.ConfiguracaoBanco;
+import entities.Componente;
 import entities.MaquinaEntity;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class DiscoImpl {
 
-    MaquinaEntity maquina = MaquinaEntity.getInstance();
     Looca looca = new Looca();
+    MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
@@ -27,13 +26,12 @@ public class DiscoImpl {
         int i = 0;
         for (Disco disco : discos) {
 
-            Double convertido = disco.getTamanho() / Math.pow(10, 9);
-            DiscoEntity discoAtual;
-            discoAtual = new DiscoEntity(disco.getNome(),
-                    disco.getModelo(), volumes.get(i).getUUID(),
-                    convertido, maquina.getIdMaquina());
+            Double convertido = (double) disco.getTamanho();
+            Componente discoAtual;
+            discoAtual = new Componente("DISCO", convertido, disco.getNome(),
+                    volumes.get(i).getUUID(), "GB", maquinaInstance.getIdMaquina());
 
-            discoAtual.insertDisco();
+            discoAtual.insertComponente();
 
             i++;
         }

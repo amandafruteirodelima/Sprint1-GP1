@@ -1,5 +1,8 @@
 package com.mycompany.devtime;
 
+import com.github.britooo.looca.api.core.Looca;
+import entities.FuncionarioEntity;
+import entities.MaquinaEntity;
 import implantation.DiscoImpl;
 import implantation.HistoricoDiscoImpl;
 import implantation.HistoricoProcessadorImpl;
@@ -9,32 +12,66 @@ import implantation.MaquinaSoftwareImpl;
 import implantation.ProcessadorImpl;
 import implantation.RamImpl;
 import implantation.SoftwareImpl;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 public class Executor {
 
+    Looca looca = new Looca();
+    ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+    JdbcTemplate assistente = new JdbcTemplate(
+            configuracaoBanco.getBancoDeDados());
+    MaquinaImpl maquina = new MaquinaImpl();
+    DiscoImpl disco = new DiscoImpl();
+    ProcessadorImpl processador = new ProcessadorImpl();
+    RamImpl ram = new RamImpl();
+    HistoricoDiscoImpl histDisco = new HistoricoDiscoImpl();
+    HistoricoProcessadorImpl histProcessador
+            = new HistoricoProcessadorImpl();
+    HistoricoRamImpl histRam = new HistoricoRamImpl();
+    MaquinaSoftwareImpl maquinaSoftware = new MaquinaSoftwareImpl();
+    SoftwareImpl software = new SoftwareImpl();
+    MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
+    FuncionarioEntity funcionario = FuncionarioEntity.getInstance();
+    Timer timer = new Timer();
+
     public void Executor() {
 
-        MaquinaImpl maquina = new MaquinaImpl();
-        DiscoImpl disco = new DiscoImpl();
-        ProcessadorImpl processador = new ProcessadorImpl();
-        RamImpl ram = new RamImpl();
-        HistoricoDiscoImpl histDisco = new HistoricoDiscoImpl();
-        HistoricoProcessadorImpl histProcessador
-                = new HistoricoProcessadorImpl();
-        HistoricoRamImpl histRam = new HistoricoRamImpl();
-        MaquinaSoftwareImpl maquinaSoftware = new MaquinaSoftwareImpl();
-        SoftwareImpl software = new SoftwareImpl();
+        List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
+                + " from Maquina where fk_Funcionario = '"
+                + funcionario.getIdFuncionario() + "'",
+                new BeanPropertyRowMapper<>(MaquinaEntity.class));
+        MaquinaEntity maquinaDaVez = null;
+        for (int i = 0; i < maquinaid.size(); i++) {
+            maquinaDaVez = maquinaid.get(i);
+        }
 
-        maquina.findMaquina();
-        disco.findDisco();
-        processador.findProcessador();
-        ram.findRam();
-        software.findSoftware();
+        if (maquinaDaVez == null) {
+            maquina.findMaquina();
+            disco.findDisco();
+            processador.findProcessador();
+            ram.findRam();
+        }
 
-        histDisco.findHistoricoDisco();
-        histProcessador.findHistoricoProcessador();
-        histRam.findHistoricoRam();
-        maquinaSoftware.findMaquinaSoftware();
+        if (maquinaInstance.getIdMaquina() == null) {
+            maquinaInstance.instanciarMaquina();
+        }
+        
+        coletarLeitura();
+//        software.findSoftware();
+//        maquinaSoftware.findMaquinaSoftware();
+    }
 
+    public void coletarLeitura() {
+        timer.scheduleAtFixedRate(new TimerTask() {
+            public void run() {
+                histDisco.findHistoricoDisco();
+                histProcessador.findHistoricoProcessador();
+                histRam.findHistoricoRam();
+            }
+        }, 1000, 5000);
     }
 }

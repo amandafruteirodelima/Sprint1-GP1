@@ -1,7 +1,5 @@
 package entities;
 
-import java.util.Date;
-
 public class FuncionarioEntity {
 
     private Integer idFuncionario;
@@ -9,13 +7,10 @@ public class FuncionarioEntity {
     private Integer cargaHoraria;
     private String email;
     private String senha;
-    private Date dataNascimento;
     private Integer devCoinFuncionario;
     private Integer pontosFuncionario;
     private Integer fkEmpresa;
     private Integer fkEquipe;
-
-    
     
     private static FuncionarioEntity instance = new FuncionarioEntity();
     
@@ -61,14 +56,6 @@ public class FuncionarioEntity {
 
     public void setSenha(String senha) {
         this.senha = senha;
-    }
-
-    public Date getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
     }
 
     public Integer getDevCoinFuncionario() {

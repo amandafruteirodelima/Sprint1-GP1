@@ -4,8 +4,8 @@ import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.DiscosGroup;
 import com.github.britooo.looca.api.group.discos.Volume;
 import com.mycompany.devtime.ConfiguracaoBanco;
-import entities.DiscoEntity;
-import entities.HistoricoDiscoEntity;
+import entities.Componente;
+import entities.HistoricoUsoEntity;
 import entities.MaquinaEntity;
 import java.util.List;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -26,23 +26,23 @@ public class HistoricoDiscoImpl {
 
         for (Volume volume : volumes) {
 
-            List<DiscoEntity> discoid = assistente.query("Select idDisco"
-                    + " from Disco where fk_Maquina = '"
-                    + maquina.getIdMaquina() + "' and uuid = '"
+            List<Componente> discoid = assistente.query("Select idComponente"
+                    + " from Componente where fk_Maquina = '"
+                    + maquina.getIdMaquina() + "' and infoAdicional = '"
                     + volume.getUUID() + "'",
-                    new BeanPropertyRowMapper<>(DiscoEntity.class));
+                    new BeanPropertyRowMapper<>(Componente.class));
 
-            DiscoEntity discoDaVez = null;
+            Componente discoDaVez = null;
 
             for (int i = 0; i < discoid.size(); i++) {
                 discoDaVez = discoid.get(i);
             }
 
-            Double convertido = volume.getDisponivel() / Math.pow(10, 9);
-            HistoricoDiscoEntity historicoDisco = new HistoricoDiscoEntity(
-                    convertido, discoDaVez.getIdDisco());
+            Double convertido = (double) volume.getDisponivel();
+            HistoricoUsoEntity historicoDisco = new HistoricoUsoEntity(
+                    discoDaVez.getIdComponente(),convertido);
 
-            historicoDisco.insertHistoricoDisco();
+            historicoDisco.insertHistorico();
         }
 
     }
