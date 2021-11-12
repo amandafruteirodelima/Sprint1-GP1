@@ -67,10 +67,11 @@ public class Executor {
 
     public void coletarLeitura() {
         timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
             public void run() {
-                histDisco.findHistoricoDisco();
                 histProcessador.findHistoricoProcessador();
                 histRam.findHistoricoRam();
+                 histDisco.findHistoricoDisco();
             }
         }, 1000, 5000);
     }

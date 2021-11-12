@@ -49,4 +49,11 @@ public class Componente {
         this.idComponente = idComponente;
     }
 
+    @Override
+    public String toString() {
+        return "Componente{" + "idComponente=" + idComponente + ", nomeComponente=" + nomeComponente + ", capacidade=" + capacidade + ", descricao=" + descricao + ", infoAdicional=" + infoAdicional + ", unidadeDeMedida=" + unidadeDeMedida + ", fkMaquina=" + fkMaquina + ", maquinaInstance=" + maquinaInstance + ", configuracaoBanco=" + configuracaoBanco + ", assistente=" + assistente + '}';
+    }
+    
+    
+
 }

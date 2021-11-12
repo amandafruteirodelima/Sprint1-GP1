@@ -192,14 +192,16 @@ public class TelaLogin extends javax.swing.JFrame {
         String senha = lblSenha.getText();
 
         ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+
         JdbcTemplate assistente = new JdbcTemplate(
-            configuracaoBanco.getBancoDeDados());
+                configuracaoBanco.getBancoDeDados());
+
         FuncionarioEntity funcionarioEntity = FuncionarioEntity.getInstance();
 
         List<FuncionarioEntity> funcionario = assistente.query("SELECT * "
-            + "FROM Funcionario where email = '" + email + "' and senha = '"
-            + senha + "'",
-            new BeanPropertyRowMapper<>(FuncionarioEntity.class));
+                + "FROM Funcionario where email = '" + email + "' and senha = '"
+                + senha + "'",
+                new BeanPropertyRowMapper<>(FuncionarioEntity.class));
 
         FuncionarioEntity funcionarioDaVez = null;
 
@@ -212,7 +214,7 @@ public class TelaLogin extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Email ou Senha incorreta!!.");
 
         } else if (funcionarioDaVez.getEmail().equals(email)
-            && funcionarioDaVez.getSenha().equals(senha)) {
+                && funcionarioDaVez.getSenha().equals(senha)) {
 
             funcionarioEntity.setIdFuncionario(funcionarioDaVez.getIdFuncionario());
 
