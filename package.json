@@ -1,7 +1,7 @@
 {
   "name": "Sprint1-GP1",
   "version": "0.0.1",
-  "private": false,
+  "private": true,
   "scripts": {
     "start": "node ./APICadastro/api-projeto-site/bin/www",
     "postinstall": "cd APICadastro && cd api-projeto-site && npm install"
