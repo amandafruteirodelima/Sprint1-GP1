@@ -40,6 +40,24 @@ idEquipe INT PRIMARY KEY IDENTITY(1,1),
 nomeEquipe VARCHAR(45) NOT NULL,	
 );
 
+//Funcionario --> OKAY
+
+CREATE TABLE Funcionario(
+idFuncionario INT PRIMARY KEY IDENTITY(1,1),
+nomeFuncionario VARCHAR(50) NOT NULL,
+cargaHoraria INT NOT NULL,
+email VARCHAR(60) NOT NULL,
+senha VARCHAR(30) NOT NULL,
+devCoinFuncionario INT NOT NULL DEFAULT 0,
+pontosFuncionario INT NULL DEFAULT 0,
+isGestor TINYINT DEFAULT 0,
+fk_Chefe INT FOREIGN KEY
+REFERENCES Funcionario (idFuncionario),
+fk_Empresa INT FOREIGN KEY
+REFERENCES Empresa (idEmpresa)
+);
+
+
 //Maquina --> OKAY
 
 CREATE TABLE Maquina (
@@ -52,32 +70,14 @@ REFERENCES Funcionario(idFuncionario)
 );
 
 
-//Funcionario --> OKAY
-
-CREATE TABLE Funcionario(
-idFuncionario INT PRIMARY KEY IDENTITY(1,1),
-nomeFuncionario VARCHAR(50) NOT NULL,
-cargaHoraria INT NOT NULL,
-email VARCHAR(60) NOT NULL,
-senha VARCHAR(30) NOT NULL,
-devCoinFuncionario INT NOT NULL,
-pontosFuncionario INT NULL,
-isGestor TINYINT,
-fk_Chefe INT FOREIGN KEY
-REFERENCES Funcionario (idFuncionario)
-fk_Empresa INT FOREIGN KEY
-REFERENCES Empresa (idEmpresa)
-);
-
-
 //Equipe_Funcionario -->OKAY
 
 CREATE TABLE Equipe_Funcionario (
 idEquipeFuncionario INT PRIMARY KEY IDENTITY(1,1),
 fk_Equipe INT FOREIGN KEY
-REFERENCES Equipe idEquipe
+REFERENCES Equipe (idEquipe),
 fk_Funcionario INT FOREIGN KEY
-REFERENCES Funcionario idFuncionario
+REFERENCES Funcionario (idFuncionario)
 );
 
 

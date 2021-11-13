@@ -54,7 +54,7 @@
 
                 <form id="form_login" method="post" onsubmit="return entrar()">
 
-                    <input class="inptLarge inptPadrao" type="text" name="email" placeholder=" " required>
+                    <input class="inptLarge inptPadrao" type="email" name="email" placeholder=" " required>
                     <label class="label-email" for="email">Email</label>
                     
 
@@ -108,6 +108,7 @@ function entrar() {
             } else {
 
                 console.log('Erro de login!');
+                alert('Erro de login!')
 
                 resposta.text().then(texto => {
                     console.error(texto);

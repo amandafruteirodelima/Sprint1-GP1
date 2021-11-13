@@ -21,7 +21,7 @@ router.post('/autenticar', function(req, res, next) {
 		console.log(`Encontrados: ${resultado.length}`);
 
 		if (resultado.length == 1) {
-			sessoes.push(resultado[0].dataValues.login);
+			sessoes.push(resultado[0].dataValues.email);
 			console.log('sessoes: ',sessoes);
 			res.json(resultado[0]);
 		} else if (resultado.length == 0) {
@@ -49,6 +49,7 @@ router.post('/cadastrar', function(req, res, next) {
 		fk_Empresa: req.body.fk_Empresa
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
+		alert('Cadastro realizado com sucesso!');
         res.send(resultado);
     }).catch(erro => {
 		console.error(erro);
