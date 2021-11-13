@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*INÍCIO HEADER*/
+
+/*DISPOSITIVOS EXTRAGRANDES*/
+
+@media only screen and(max-width: 1200px) {
+
+    .divImagem {
+        padding-bottom: 1.5vh;
+    }
+
+    .divImagem img {
+        cursor: pointer;
+        width: 13vw;
+    }
+
+    .divLista ul {
+        list-style: none;
+        width: 8000vw;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .divLista li {
+
+        color: white;
+        font-size: 0.7rem;
+        text-decoration: none;
+
+
+        cursor: pointer;
+
+    }
+
+    .divButton {
+        padding-bottom: 0.3vh;
+    }
+
+    .divButton button {
+        width: 9vw;
+        height: 3.5vh;
+        font-size: 0.7rem;
+    }
+}
+
+
+
+
+/*DESKTOP*/
+
+
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+
+.divHeader {
+    font-family: 'Poppins-Bold';
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 15vh;
+    width: 98vw;
+
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80vw;
+}
+
+
+
+/*Imagem*/
+
+.divImagem {
+    padding-bottom: 3vh;
+}
+
+
+.divImagem img {
+    cursor: pointer;
+    width: 10vw;
+}
+
+/*Lista*/
+
+.divLista {
+    display: flex;
+}
+
+.divLista ul {
+    list-style: none;
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.divLista li {
+
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+
+
+    cursor: pointer;
+
+}
+
+
+.divLista li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: rgb(98, 83, 186);
+
+}
+
+.li-select {
+    text-decoration: none;
+    color: rgb(98, 83, 186);
+}
+
+.li-comum {
+    text-decoration: none;
+    color: white;
+}
+
+
+.li-comum:hover {
+    color: rgb(98, 83, 186);
+}
+
+
+/*Button*/
+
+
+.divButton {
+    padding-bottom: 1vh;
+}
+
+.divButton button {
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 1px rgb(98, 83, 186);
+    border-radius: 5px;
+    text-align: center;
+
+    width: 8vw;
+    height: 5vh;
+    font-family: 'Poppins-Bold';
+    font-size: 1rem;
+}
+
+.divButton button:hover {
+
+    background-color: rgba(255, 255, 255, 0.137);
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+/*TABLETS*/
+
+@media only screen and (max-width: 768px) {
+    .divImagem {
+        padding-bottom: 1.5vh;
+    }
+
+    .divImagem img {
+        cursor: pointer;
+        width: 13vw;
+    }
+
+    .divLista ul {
+        list-style: none;
+        width: 50vw;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .divLista li {
+
+        color: white;
+        font-size: 0.7rem;
+        text-decoration: none;
+
+
+        cursor: pointer;
+
+    }
+
+    .divButton {
+        padding-bottom: 0.3vh;
+    }
+
+    .divButton button {
+        width: 9vw;
+        height: 3.5vh;
+        font-size: 0.7rem;
+    }
+}
+
+
+
+
+
+
+/*CELULAR*/
+
+@media  screen and (max-width: 600px) {
+
+    .divImagem {
+        padding-bottom: 0.5vh;
+    }
+
+    .divImagem img {
+        cursor: pointer;
+        width: 13vw;
+    }
+
+    .divLista ul {
+        list-style: none;
+        width: 50vw;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .divLista li {
+
+        color: white;
+        font-size: 0.5rem;
+        text-decoration: none;
+
+
+        cursor: pointer;
+
+    }
+
+    .divButton {
+        padding-bottom: 1vh;
+    }
+
+    .divButton button {
+        width: 9vw;
+        height: 2.5vh;
+        font-size: 0.5rem;
+    }
+
+}
+/*FIM HEADER*/

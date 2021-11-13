@@ -1,0 +1,409 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+
+
+
+
+/*Desktop*/
+body {
+    font-family: 'Poppins-Bold';
+    display: flex;
+    margin: 0;
+    background-color: #0C0C0C;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+
+}
+
+
+.content {
+    font-family: 'Poppins-Regular';
+    font-size: 1rem;
+    font-family: 'Poppins-Bold';
+
+    background: linear-gradient(to top, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
+    border-radius: 10px;
+
+
+    width: 70vw;
+    height: 90vh;
+
+}
+
+
+.content h1 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.content-escrito {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.content form {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-inpts {
+    font-size: 0.9rem;
+    padding: 3vh 4vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.inptPadrao {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+
+    height: 5.5vh;
+    width: 27vw;
+
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+.inptPadrao:focus+label,
+.inptPadrao:not(:placeholder-shown)+label {
+    transform: translate(-0.2em) translateY(-0.6em) scale(0.8);
+}
+
+
+/*Labels*/
+
+form {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    left: 2vw;
+    top: 4vh;
+    color: #686868;
+    transform-origin: 0 0;
+    transition: transform 0.2s ease-in-out;
+    font-size: 0.9rem;
+
+}
+
+
+.label-cargahoraria {
+    top: 14vh;
+}
+
+.label-email {
+    top: 54.5vh;
+}
+
+
+.label-senha {
+    top: 64.5vh;
+}
+
+
+
+/*Selects*/
+
+
+.sel-padrao {
+    font-family: 'Poppins-Bold';
+    font-size: 0.9rem;
+    background-color: white;
+    color: #686868;
+    border: none;
+    border-radius: 5px;
+
+    width: 27vw;
+    height: 6vh;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*Imagem*/
+
+.imagem-cadastro {
+    padding-top: 25vh;
+    width: 30vw;
+}
+
+/*Botão Cadastro*/
+
+.btn-default {
+    font-family: 'Poppins-Bold';
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 1px #D5CFF7;
+    border-radius: 5px;
+
+    width: 13vw;
+    height: 5vh;
+
+}
+
+.btn-default:hover {
+
+    background-color: rgba(255, 255, 255, 0.075);
+
+    font-size: 1.15rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+/*INICIO FOOTER*/
+
+/*FOOTER*/
+
+.responsiveFooter {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.responsiveFooter h3 {
+    text-align: center;
+}
+
+.company {
+    text-align: center;
+}
+
+
+.footer {
+    background: linear-gradient(to bottom, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
+    ;
+    color: white;
+    width: 100%;
+}
+
+.responsiveFooter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.company img {
+    height: 30px;
+    margin-top: 15px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+/*FIM DO FOOTER*/
+
+
+/*TABLET*/
+
+@media only screen and (max-width: 768px) {
+
+    .content {
+        font-family: 'Poppins-Regular';
+        font-size: 1rem;
+        font-family: 'Poppins-Bold';
+
+        background: linear-gradient(to top, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
+        border-radius: 10px;
+
+
+        width: 70vw;
+        height: 65vh;
+
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content form {
+        width: 30vw;
+    }
+
+
+    .div-inpts {
+        font-size: 0.9rem;
+        padding: 3vh 4vw;
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    .inptPadrao {
+        font-size: 0.7rem;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+
+        height: 5vh;
+        width: 27vw;
+
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .label {
+        font-size: 0.7rem;
+    }
+
+    .label-cargahoraria {
+        top: 11.2vh;
+    }
+
+    .label-email {
+        top: 39.6vh;
+    }
+
+
+    .label-senha {
+        top: 46.8vh;
+    }
+
+    .sel-padrao {
+        font-size: 0.7rem;
+        width: 27vw;
+        height: 5vh;
+    }
+
+    .btn-default {
+        width: 10vw;
+        height: 4vh;
+        font-size: 0.7rem;
+    }
+
+    .btn-default:hover {
+        font-size: 0.8rem;
+    }
+
+
+}
+
+
+
+
+
+/*CELULAR*/
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        gap: 20px;
+    }
+
+
+    .content {
+        width: 70vw;
+        height: 45vh;
+
+    }
+
+    .content h1 {
+        font-size: 1rem;
+    }
+
+    .content form {
+        width: 30vw;
+    }
+
+
+    .div-inpts {
+        font-size: 0.9rem;
+        padding: 3vh 4vw;
+        height: 32vh;
+    }
+
+
+
+    .inptPadrao {
+        font-size: 0.4rem;
+        height: 3vh;
+        width: 25vw;
+    }
+
+    .label {
+        font-size: 0.4rem;
+        left: 0.7rem;
+        top: 1.3rem;
+    }
+
+    .label-cargahoraria {
+        top: 8vh;
+    }
+
+    .label-email {
+        top: 25vh;
+    }
+
+
+    .label-senha {
+        top: 29.5vh;
+    }
+
+    .sel-padrao {
+        font-size: 0.4rem;
+        height: 3vh;
+        width: 25vw;
+        border-radius: 3px;
+    }
+
+    .btn-default {
+        width: 15vw;
+        height: 2vh;
+        font-size: 0.4rem;
+        border-radius: 3px;
+    }
+
+    .btn-default:hover {
+        font-size: 0.5rem;
+    }
+
+    .imagem-cadastro {
+        padding-top: 10vh;
+        width: 30vw;
+    }
+
+   .footer{
+
+    position: absolute;
+    bottom: 0;
+
+   }
+
+
+}

@@ -1,0 +1,425 @@
+@font-face{
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+body {
+    /* background: linear-gradient(120deg, #987fc4 0%,  rgb(49, 2, 77) 70%), #0000 0%; */
+    background-image: linear-gradient(to right, #be9cfa 2.2%, rgba(97, 3, 151, 0.801) 37.73%, #441092f6 64.49%);
+    background-repeat: no-repeat;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: small;
+}
+
+
+
+
+
+/* conteudo sobrepag */
+.img_corrida {
+    width: 65px;
+    height: 65px;
+    margin-left: 160px;
+    margin-top: 70px;
+}
+
+.img_corrida:hover {
+    width: 80px;
+    height: 80px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.box_pergunta1 {
+    background-color: #5d04d99a;
+    font-size: small;
+    padding: 10px 10px 20px 10px;
+    
+
+    border-radius: 10px;
+
+    float: right;
+    margin-left: 300px;
+    color: white;
+    margin-top: -120px;
+    margin-bottom: 50px;
+    text-align: justify;
+    margin-right: 100px;
+    
+
+}
+
+.box_pergunta1:hover {
+    background-color: #5d04d9dc;
+    transform: 0.5s;
+    cursor: pointer;
+
+
+}
+
+.img_acreditamos {
+    width: 60px;
+    height: 60px;
+    margin-left: 160px;
+    margin-top: 50px;
+}
+
+
+.img_acreditamos:hover {
+    width: 80px;
+    height: 80px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.box_pergunta2 {
+    background-color: #002c4d94;
+    font-size: small;
+
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px 10px 20px 10px;
+
+    float: right;
+    margin-left: 300px;
+    color: white;
+    margin-top: -113px;
+    margin-bottom: 50px;
+    text-align: justify;
+    margin-right: 100px;
+   
+}
+
+.box_pergunta2:hover {
+    background-color: #002c4de3;
+    cursor: pointer;
+   
+}
+
+.img_dev {
+    width: 60px;
+    height: 60px;
+    margin-left: 160px;
+    margin-top: 50px;
+}
+
+
+.img_dev:hover {
+    width: 80px;
+    height: 80px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.box_pergunta3 {
+    background-color: #b68bff;
+    font-size: small;
+
+
+    padding: 10px 10px 20px 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+
+    float: right;
+    margin-left: 300px;
+    color: white;
+    margin-top: -110px;
+    margin-bottom: 100px;
+    text-align: justify;
+    margin-right: 100px;
+    
+}
+
+.box_pergunta3:hover {
+    background-color: #a26cff;
+    cursor: pointer;
+
+}
+
+
+.clique {
+    color: white;
+}
+
+.clique:hover {
+    color: rgb(40, 1, 63);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linha_divisoria {
+
+    height: 15px;
+    width: 990px;
+    border-top: 2px solid white;
+    margin-left: 130px;
+}
+
+/* equipe */
+.equipe {
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 170px;
+}
+
+.karoll {
+    width: 135px;
+    height: 135px;
+    margin-right: 600px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.container_equipe {
+    position: relative;
+    width: 40%;
+    float: right;
+    margin-top: 40px;
+
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 60px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90%;
+    width: 27%;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    background-color: #ffff;
+    border-radius: 50%;
+    margin-left: 60px;
+}
+
+.container_equipe:hover .overlay {
+    opacity: 2;
+    cursor: pointer;
+}
+
+.text {
+    color: #4813a3;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.amanda {
+    width: 135px;
+    height: 135px;
+    margin-top: -180px;
+    float: right;
+
+}
+
+.guilherme {
+    width: 135px;
+    height: 135px;
+    margin-top: -150px;
+    float: right;
+    margin-right: 480px;
+}
+
+.matheus {
+    width: 135px;
+    height: 135px;
+}
+
+.rony {
+    width: 135px;
+    height: 135px;
+}
+
+.danilo {
+    width: 135px;
+    height: 135px;
+}
+
+.linha_divisoria2 {
+    margin-top: 640px;
+    height: 15px;
+    width: 990px;
+    border-top: 2px solid white;
+    margin-left: 130px;
+}
+
+
+
+
+
+/*CSS Planos*/
+
+.divPlanos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-planos {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+}
+
+.planoPadrao {
+    background-color: #ffff;
+    border-radius: 8px;
+    
+
+    height: 480px;
+    width: 300px;
+}
+.porPC{
+    text-align: center;
+    padding-top: -20px;
+    color: black;
+    font-size: medium;
+}
+
+
+.div-beneficio {
+    margin: 25px 60px;
+
+    display: flex;
+}
+
+.txt-beneficio {
+    padding-left: 15px;
+}
+
+
+.txt-plano {
+    color: #008FC4;
+
+    text-align: center;
+}
+
+.txt-plano2 {
+    color: #002b4d;
+
+    text-align: center;
+}
+
+.txt-plano3 {
+    color: #b68bff;
+
+    text-align: center;
+}
+
+.img-beneficio {
+    width: 20px;
+    height: 20px;
+}
+
+
+.txt-preco-basico {
+    color: #5c5c5c;
+}
+
+
+.divButton {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-padrao {
+
+    font-family: 'Poppins-Bold';
+    color: #ffff;
+    background-color: #008FC4;
+    border-radius: 5px;
+    border: none;
+
+    width: 120px;
+    height: 35px;
+
+    cursor: pointer;
+
+}
+
+.button-padrao:hover {
+    width: 125px;
+    height: 40px;
+    background-color:#5d04d9dc ;
+
+    transition: 0.5s;
+}
+
+
+/* footer */
+.responsiveFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.responsiveFooter h3 {
+    text-align: center;
+}
+
+.company {
+    text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .container {
+        max-width: 360px;
+    }
+
+    .containerBox {
+        max-width: 375px;
+    }
+
+    .divForm {
+        padding: 10px 50px 10px 50px;
+    }
+
+}
+
+.footer {
+    background-color: #0C0C0C;
+    color: white;
+    padding: 5px;
+}
+.responsiveFooter{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.company img {
+    height: 30px;
+    margin-top: 15px;
+}
+
+

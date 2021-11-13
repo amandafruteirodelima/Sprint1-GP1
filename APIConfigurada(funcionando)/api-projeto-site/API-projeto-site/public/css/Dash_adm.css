@@ -1,0 +1,414 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+body {
+    background-color: #0C0C0C;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title */
+h1 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    font-family: 'Poppins-Bold';
+    margin-top: 50px;
+}
+
+/* Membros online */
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Poppins-Bold';
+    margin-top: 50px;
+}
+
+.div_online {
+    width: 80%;
+    height: 128px;
+    background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
+    margin-top: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.div_online_organizadora {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div_online_content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_online_content h3 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Poppins-Bold';
+}
+
+.circulo {
+    height: 22px;
+    width: 22px;
+    border-radius: 12px;
+    background-color: rgb(0, 251, 0);
+    margin-left: 10px;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+/* Divisória */
+.div_divisora {
+    height: 3px;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 80px
+}
+
+/* Desempenho equipe */
+.organizadora{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.h2_alt {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Poppins-Bold';
+    margin-top: 42px;
+    margin-right: 10px;
+}
+
+.question {
+    height: 24px;
+    margin-top: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.div_desempenho_pai {
+    width: 80%;
+    margin-top: 8px;
+}
+
+.div_desempenho_organizadora {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.div_desempenho_content {
+    transition: 0.8s;
+    width: 30%;
+    height: 265px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.div_desempenho_content:hover {
+    background-image: linear-gradient(to bottom, #7418d1, #e644ff);
+}
+
+.check {
+    height: 55px;
+    margin-left: 74%;
+    margin-top: 20px;
+}
+
+.person {
+    height: 150px;
+    margin-top: -20px;
+}
+
+.div_desempenho_content h3 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Poppins-Bold';
+}
+
+/* Desempenho equipe (quando clicada) */
+.div_desempenho_pai_alternativa{
+    margin: 0;
+    border-radius: 20px;
+    width: 80%;
+    height: 570px;
+    background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.organizadora_title_alternativa {
+    margin-left: 1%;
+    width: 98%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desempenho_go_back{
+    transform: rotateY(180deg);
+    height: 65px;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.desempenho_go_back:hover{
+    opacity: 1;
+}
+
+.alt_title {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+}
+
+.alt_title2 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+}
+
+.alt_title3 {
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+}
+
+.invisible {
+    height: 65px;
+    margin: 0;
+    opacity: 0;
+}
+
+.div_options {
+    margin-top: 20px;
+    margin-left: 2.5%;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div_option_content {
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 42%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.div_option_content:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.img_option {
+    margin-top: 20%;
+    margin-bottom: 15%;
+    height: 40%;
+}
+
+/* Desempenho equipe (quando clicado) / Tempo Logado */
+.div_tempo_logado {
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.div_divisora_alt {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+ }
+
+ .div_data {
+    height: 25%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .quadrado {
+     margin-top: 10px;
+     height: 40px;
+     width: 40px;
+     border-radius: 5px;
+     border-width: 3px;
+     border-color: rgb(255, 255, 255);
+     border-style: solid;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .quadrado2 {
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 3.75px;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado3 {
+    margin-top: 10px;
+    height: 55px;
+    width: 55px;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_quadrado {
+    height: 35px;
+}
+
+.organizadora_alt{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.organizadora_alt2{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.alt_title4 {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+}
+
+.alt_title5 {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+}
+
+.div_geral_check_lado {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div_check_lado {
+    display: flex;
+    align-items: center;
+}
+
+#div_usado_hoje {
+    display: none;
+}
+
+#div_usado_semana {
+    display: none;
+}
+
+#div_usado_quinzena {
+    display: none;
+}
+
+#div_divisora_alt1 {
+    display: none;
+}
+
+#div_divisora_alt2 {
+    display: none;
+}
+
+#div_divisora_alt3 {
+    display: none;
+}
