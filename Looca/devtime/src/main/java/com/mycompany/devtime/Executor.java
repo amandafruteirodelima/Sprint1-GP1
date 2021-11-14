@@ -39,48 +39,70 @@ public class Executor {
     FuncionarioEntity funcionario = FuncionarioEntity.getInstance();
     Timer timer = new Timer();
     LogErro logErro = new LogErro();
-    
-    public void Executor() {
 
-        try {
-            List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
-                    + " from Maquina where fk_Funcionario = '"
-                    + funcionario.getIdFuncionario() + "'",
-                    new BeanPropertyRowMapper<>(MaquinaEntity.class));
-            MaquinaEntity maquinaDaVez = null;
-            for (int i = 0; i < maquinaid.size(); i++) {
-                maquinaDaVez = maquinaid.get(i);
-            }
+    public void Executor(Boolean isLogado) {
 
-            if (maquinaDaVez == null) {
-                maquina.findMaquina();
-                disco.findDisco();
-                processador.findProcessador();
-                ram.findRam();
-            }
+        if (isLogado) {
 
-            if (maquinaInstance.getIdMaquina() == null) {
-                maquinaInstance.instanciarMaquina();
-            }
+            try {
+                List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
+                        + " from Maquina where fk_Funcionario = '"
+                        + funcionario.getIdFuncionario() + "'",
+                        new BeanPropertyRowMapper<>(MaquinaEntity.class));
+                MaquinaEntity maquinaDaVez = null;
 
-            coletarLeitura();
+                for (int i = 0; i < maquinaid.size(); i++) {
+                    maquinaDaVez = maquinaid.get(i);
+                }
+
+                if (maquinaDaVez == null) {
+                    maquina.findMaquina();
+                    disco.findDisco();
+                    processador.findProcessador();
+                    ram.findRam();
+                }
+
+                if (maquinaInstance.getIdMaquina() == null) {
+                    maquinaInstance.instanciarMaquina();
+                }
+
+                coletarLeitura(true);
 //        software.findSoftware();
 //        maquinaSoftware.findMaquinaSoftware();
 
-        } catch (Exception erro) {
-            logErro.mensagemErroSelect(erro);
+            } catch (Exception erro) {
+                logErro.mensagemErroSelect(erro);
+            }
+
+        } else {
+
+            coletarLeitura(false);
+
         }
 
     }
 
-    public void coletarLeitura() {
-        timer.scheduleAtFixedRate(new TimerTask() {
-            @Override
-            public void run() {
-                histProcessador.findHistoricoProcessador();
-                histRam.findHistoricoRam();
-                histDisco.findHistoricoDisco();
-            }
-        }, 1000, 5000);
+    public void coletarLeitura(Boolean isLigado) {
+
+        
+            TimerTask tt = new TimerTask() {
+                @Override
+                public void run() {
+                    histProcessador.findHistoricoProcessador();
+                    histRam.findHistoricoRam();
+                    histDisco.findHistoricoDisco();
+                }
+            ;
+            }; timer.schedule(tt, 1000, 5000);
+            
+            
+        if (isLigado) {
+            tt.run();
+        } 
+        else {
+            System.out.println("Coleta de dados interrompidos");
+            tt.cancel();
+        }
+
     }
 }

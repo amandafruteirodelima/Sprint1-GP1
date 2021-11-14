@@ -33,5 +33,6 @@ implantation/ProcessadorImpl.class
 com/mycompany/devtime/telas/TelaLogado$4.class
 com/mycompany/devtime/telas/TelaLogin$5.class
 implantation/HistoricoDiscoImpl.class
+logging/LogErro.class
 com/mycompany/devtime/telas/TelaComponente$2.class
 com/mycompany/devtime/ConfiguracaoBanco.class

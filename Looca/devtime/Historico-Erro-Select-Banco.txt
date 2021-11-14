@@ -20,3 +20,981 @@ ERRO: org.springframework.jdbc.UncategorizedSQLException: StatementCallback
  nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '*'.
 
 
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:48:48
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:48:48
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:48:52
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:48:53
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:48:57
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:48:58
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:02
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:02
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:07
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:08
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:12
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:12
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:17
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:17
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:22
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:23
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:27
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:28
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:32
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:33
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:37
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:38
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:43
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:43
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:47
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:48
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:53
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:53
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:58
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:49:58
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:50:02
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:50:02
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:50:07
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:50:08
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:50:12
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:50:12
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:29
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:29
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:34
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:34
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:39
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:39
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:44
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:44
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:49
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:49
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:54
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:54
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:59
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:52:59
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:04
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:04
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:09
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:09
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:29
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:29
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:34
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:34
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:39
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:39
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:44
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:44
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:49
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:49
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:54
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:54
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:59
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:53:59
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:04
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:04
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:09
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:09
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:29
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:29
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:34
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:34
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:39
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:39
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:44
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:44
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:49
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:49
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:54
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:54
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:59
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:54:59
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:04
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:04
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:09
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:09
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:29
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:29
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:34
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:34
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:39
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:39
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:44
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:44
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:49
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:49
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:54
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:54
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:59
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:55:59
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:04
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:04
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:09
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:09
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:29
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:29
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:34
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:34
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:39
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:39
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:44
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:44
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:49
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:49
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:54
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:54
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:59
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:56:59
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:57:04
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:57:04
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:57:09
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:57:09
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:57:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:57:14
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:57:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:57:19
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:57:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 13:57:24
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 14:36:23
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+

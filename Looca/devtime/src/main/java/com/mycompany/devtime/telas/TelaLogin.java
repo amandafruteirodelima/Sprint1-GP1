@@ -199,7 +199,7 @@ public class TelaLogin extends javax.swing.JFrame {
         FuncionarioEntity funcionarioEntity = FuncionarioEntity.getInstance();
 
         try {
-            List<FuncionarioEntity> funcionario = assistente.query("SEEECT * "
+            List<FuncionarioEntity> funcionario = assistente.query("SELECT * "
                     + "FROM Funcionario where email = '" + email + "' and senha = '"
                     + senha + "'",
                     new BeanPropertyRowMapper<>(FuncionarioEntity.class));
@@ -210,7 +210,8 @@ public class TelaLogin extends javax.swing.JFrame {
                 funcionarioDaVez = funcionario.get(i);
             }
 
-            if (funcionarioDaVez == null) {
+            if (funcionarioDaVez.getEmail().equals(email)
+                    && funcionarioDaVez.getSenha().equals(senha)) {
                 
                 funcionarioEntity.setIdFuncionario(funcionarioDaVez.getIdFuncionario());
 
@@ -219,9 +220,7 @@ public class TelaLogin extends javax.swing.JFrame {
                 logado.setVisible(true);
                 setVisible(false);
             } 
-            else if (funcionarioDaVez.getEmail().equals(email)
-                    && funcionarioDaVez.getSenha().equals(senha)) {
-            }
+            
 
         } catch (Exception erro) {
             logErro.mensagemErroSelect(erro);
