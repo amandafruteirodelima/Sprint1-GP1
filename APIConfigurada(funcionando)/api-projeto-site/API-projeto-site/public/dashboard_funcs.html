@@ -8,15 +8,35 @@
     <link rel="icon" href="img/Yin-Yang-DevTime.png">
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="./css/dash_funcs.css">
+    <script type="text/javascript" src="funcoes.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
         integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <title>Dashboard Funcionários</title>
+
+<style>
+
+    .red {
+        color: red;
+    }
+    .yellow {
+        color: yellow;
+    }
+    .green {
+        color: green;
+    }
+
+
+
+</style>
+
 </head>
 
 <body>
     <div>
-        
+
         <input id="caixa_selecao" type="checkbox">
         <label id="label_img_perfil" for="caixa_selecao">
             <div class="div_img_perfil_icone">
@@ -28,12 +48,12 @@
         <nav>
             <label for="caixa_selecao">
                 <img id="img_x" src="img/marca-x (1).png" alt="">
-            </label> 
+            </label>
             <div class="div_img_perfil_info">
                 <img id="img_perfil_info" src="img/imgUsuario.jpg" alt="">
             </div>
             <div class="div_nome_usuario_perfil">
-                <b class="nome_usuario_perfil"> Ednaldo Pereira</b>
+                <b class="nome_usuario_perfil" id="b_usuario"> Ednaldo Pereira</b>
             </div>
             <div class="div_nome_usuario_perfil">
                 <b class="nome_usuario_perfil">Nivel: 3</b>
@@ -45,7 +65,7 @@
                     </div>
                     <div class="div_texto_pontos_dc">
                         <b> Pontos: 48.252</b>
-                    </div>   
+                    </div>
                 </div>
                 <div class="div_pontos_devicon">
                     <div>
@@ -53,7 +73,7 @@
                     </div>
                     <div class="div_texto_pontos_dc">
                         <b> DevCoins: 5.252</b>
-                    </div>  
+                    </div>
                 </div>
             </div>
             <div class="div_nome_usuario_perfil">
@@ -80,15 +100,15 @@
     <div class="div_geral_cabecalho">
         <div class="div_a_img">
             <img class="img_logo_dev_time" src="img/Logo-DevTime.png" alt=""></a>
-        </div> 
+        </div>
         <div class="div_a_img">
             <div class="texto_cabecalho">
                 <b class="tela_selecionada"> Dashboard </b>
             </div>
-        </div>         
+        </div>
         <div class="div_a_img">
             <div class="texto_cabecalho">
-               <a href="ranking.html" class="a_cabecalho"><b> Ranking </b></a>
+                <a href="ranking.html" class="a_cabecalho"><b> Ranking </b></a>
             </div>
         </div>
         <div class="div_a_img">
@@ -98,11 +118,11 @@
         </div>
         <div class="div_a_img">
             <div class="texto_cabecalho">
-                <a href="Login.html" class="a_cabecalho"><b> Sair </b></a>
+                <a href="Login.html" class="a_cabecalho" onclick="logoff()"><b> Sair </b></a>
             </div>
-        </div>        
+        </div>
     </div>
-    
+
 
     <div class="divConteudoDashboard">
 
@@ -126,7 +146,7 @@
                 <div>
                     CPU
                 </div>
-                <span id="statusCpu">77%</span>
+                <span id="statusCpu" class="statusCpu">...</span>
             </div>
 
             <div class="divDisplayIndividual">
@@ -259,35 +279,106 @@
         configbars
     );
     /////////////////////////////////////////////////////////////////////
-    const dataline = {
-        labels: ['0s', '5s', '10s', '15s', '20s', '25s', '30s', '35s', '40s', '45s', '50s', '55s', '60s'],
-        datasets: [{
-            label: "Intel(R) Core(TM) i3-3220 CPU @3.30 GHz",
-            data: [0, 10, 24, 42, 35, 50, 51, 73, 80, 90, 100, 65, 50],
-            fill: false,
-            borderColor: '#4A024D',
-            backgroundColor: 'white',
-            tension: 0.1
-        },
-        {
-            label: "RAM",
-            data: [20, 15, 34, 52, 15, 80, 61, 93, 20, 60, 90, 95, 90],
-            fill: false,
-            borderColor: 'blue',
-            backgroundColor: 'white',
-            tension: 0.1
-        }]
-    };
-    const configline = {
-        type: 'line',
-        data: dataline,
-        options: {
+    // const dataline = {
+    //     labels: ['0s', '5s', '10s', '15s', '20s', '25s', '30s', '35s', '40s', '45s', '50s', '55s', '60s'],
+    //     datasets: [{
+    //         label: "Intel(R) Core(TM) i3-3220 CPU @3.30 GHz",
+    //         data: [0, 10, 24, 42, 35, 50, 51, 73, 80, 90, 100, 65, 50],
+    //         fill: false,
+    //         borderColor: '#4A024D',
+    //         backgroundColor: 'white',
+    //         tension: 0.1
+    //     },
+    //     {
+    //         label: "RAM",
+    //         data: [20, 15, 34, 52, 15, 80, 61, 93, 20, 60, 90, 95, 90],
+    //         fill: false,
+    //         borderColor: 'blue',
+    //         backgroundColor: 'white',
+    //         tension: 0.1
+    //     }]
+    // };
+    // const configline = {
+    //     type: 'line',
+    //     data: dataline,
+    //     options: {
+    //         responsive: true,
+    //         interaction: {
+    //             mode: 'index',
+    //             intersect: false,
+    //         },
+    //         stacked: false,
+    //         plugins: {
+    //             legend: {
+    //                 display: true
+    //             }
+    //         },
+    //         scales: {
+    //             y: {
+    //                 type: 'linear',
+    //                 display: true,
+    //                 position: 'left',
+    //             },
+    //             y1: {
+    //                 type: 'linear',
+    //                 display: false,
+    //                 position: 'right',
+
+    //                 grid: {
+    //                     drawOnChartArea: false, // only want the grid lines for one axis to show up
+    //                 },
+    //             },
+    //         }
+    //     },
+    // };
+    // var myChart = new Chart(
+    //     document.getElementById('cpu_ram'),
+    //     configline
+    // );
+
+
+    let proximaAtualizacao;
+
+    verificar_autenticacao();
+
+    usuarioEmail = sessionStorage.login_usuario_meuapp;
+
+    console.log(`Usuario logado: ${usuarioEmail}`);
+
+    
+
+    window.onload = chamargraficos(usuarioEmail);
+
+    function chamargraficos(usuarioEmail) {
+        console.log("executei chamargraficos")
+        obterDadosGraficoPrimeiraVez(usuarioEmail)
+        //atualizarGrafico(usuarioEmail)
+        atualizacaoPeriodica()
+    }
+
+    function atualizacaoPeriodica() {
+        obterdadosconsumoCPU(usuarioEmail);
+
+        setTimeout(atualizacaoPeriodica, 5000);
+    }
+
+    // CPU
+
+    function configurarGraficoCPU() {
+        console.log("executei configurarGraficoCPU")
+        var configuracoes = {
             responsive: true,
+            animation: { duration: 500 },
+            hoverMode: 'index',
+            stacked: false,
+            title: {
+                display: true,
+                text: 'Histórico'
+            },
             interaction: {
                 mode: 'index',
                 intersect: false,
             },
-            stacked: false,
             plugins: {
                 legend: {
                     display: true
@@ -305,14 +396,256 @@
                     position: 'right',
 
                     grid: {
-                        drawOnChartArea: false, // only want the grid lines for one axis to show up
+                        drawOnChartArea: false,
                     },
                 },
             }
-        },
-    };
-    var myChart = new Chart(
-        document.getElementById('cpu_ram'),
-        configline
-    );
+        };
+
+        return configuracoes;
+    }
+
+
+    function obterDadosGraficoPrimeiraVez(usuarioEmail) {
+        console.log("executei obterDadosGraficoPrimeiraVez")
+
+        if (proximaAtualizacao != undefined) {
+            clearTimeout(proximaAtualizacao);
+        }
+
+        fetch(`/leiturasDaMaquina/processadorultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                    resposta.reverse();
+
+                    var dados = {
+                        labels: [],
+                        datasets: [
+                            {
+                                yAxisID: 'Y-processador',
+                                label: 'Processador',
+                                borderColor: '#4A024D',
+                                backgroundColor: 'white',
+                                fill: false,
+                                data: [],
+                                tension: 0.1
+                            }
+
+                        ]
+                    };
+
+                    for (i = 0; i < resposta.length; i++) {
+                        var registro = resposta[i];
+
+                        dados.labels.push(registro.dataHora);
+                        dados.datasets[0].data.push(registro.consumo);
+
+                    }
+                    console.log(JSON.stringify(dados));
+
+                    plotarGrafico(dados, usuarioEmail);
+
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        }).catch(function (error) {
+                console.error(`Erro na obtenção dos dados da CPU p/ gráfico: ${error.message}`);
+            });
+
+
+        // fetch(`/leiturasDaMaquina/ramultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
+        //     if (response.ok) {
+        //         response.json().then(function (resposta) {
+        //             console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+        //             resposta.reverse();
+
+        //             var dados = {
+        //                 labels: [],
+        //                 datasets: [
+        //                     {
+        //                         yAxisID: 'Y-ram',
+        //                         label: 'RAM',
+        //                         borderColor: '#4A024D',
+        //                         backgroundColor: 'white',
+        //                         fill: false,
+        //                         data: [],
+        //                         tension: 0.1
+        //                     }
+
+        //                 ]
+        //             };
+
+        //             for (i = 0; i < resposta.length; i++) {
+        //                 var registro = resposta[i];
+
+        //                 dados.labels.push(registro.dataHora);
+        //                 dados.datasets[1].data.push(registro.consumo);
+
+        //             }
+        //             console.log(JSON.stringify(dados));
+
+        //             plotarGrafico(dados, usuarioEmail);
+
+        //         });
+        //     } else {
+        //         console.error('Nenhum dado encontrado ou erro na API');
+        //     }
+        // }).catch(function (error) {
+        //     console.error(`Erro na obtenção dos dados da RAM p/ gráfico: ${error.message}`);
+        // });
+
+    }
+
+    function atualizarGrafico(usuarioEmail, dados) {
+        console.log("executei atualizarGrafico")
+        fetch(`/leiturasDaMaquina/processadorultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
+            console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
+            if (response.ok) {
+                response.json().then(function (novoRegistro) {
+
+                    console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
+                    console.log(`Dados atuais do gráfico: ${dados}`);
+
+                    // tirando e colocando valores no gráfico
+                    dados.labels.shift(); // apagar o primeiro
+                    dados.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
+                    dados.datasets[0].data.shift();  // apagar o primeiro
+                    dados.datasets[0].data.push(novoRegistro.consumo); // incluir uma nova leitura 
+
+
+                    console.log("o usuário é o " + usuarioEmail)
+
+                    window.grafico_linha.update();
+
+
+                    proximaAtualizacao = setTimeout(() => atualizarGrafico(usuarioEmail, dados), 5000);
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+                proximaAtualizacao = setTimeout(() => atualizarGrafico(usuarioEmail, dados), 5000);
+            }
+        }).catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+
+        //     fetch(`/leiturasDaMaquina/ramultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
+        //     console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
+        //     if (response.ok) {
+        //         response.json().then(function (novoRegistro) {
+
+        //             console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
+        //             console.log(`Dados atuais do gráfico: ${dados}`);
+
+        //             // tirando e colocando valores no gráfico
+        //             dados.labels.shift(); // apagar o primeiro
+        //             dados.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
+        //             dados.datasets[1].data.shift();  // apagar o primeiro
+        //             dados.datasets[1].data.push(novoRegistro.consumo); // incluir uma nova leitura 
+
+
+        //             console.log("o usuário é o " + usuarioEmail)
+
+        //             window.grafico_linha.update();
+
+
+        //             proximaAtualizacao = setTimeout(() => atualizarGrafico(usuarioEmail, dados), 5000);
+        //         });
+        //     } else {
+        //         console.error('Nenhum dado encontrado ou erro na API');
+        //         proximaAtualizacao = setTimeout(() => atualizarGrafico(usuarioEmail, dados), 5000);
+        //     }
+        // }).catch(function (error) {
+        //         console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+        //     });
+
+    }
+
+    function plotarGrafico(dados, usuarioEmail) {
+        console.log("executei plotarGrafico")
+        console.log('iniciando plotagem do gráfico...');
+
+        var ctx = cpu_ram.getContext('2d');
+        window.grafico_linha = Chart.Line(ctx, {
+            data: dados,
+            options: configurarGraficoCPU()
+        });
+
+        setTimeout(() => atualizarGrafico(usuarioEmail, dados), 2000);
+    }
+
+    // function sendData() {
+    //     var http = new XMLHttpRequest();
+    //     http.open('GET', 'http://localhost:9001/api/sendData', false);
+    //     http.send(null);
+    // }
+
+    // setInterval(() => {
+    //     sendData();
+    // }, 2000);
+
+    // cor alertas
+
+    function obterdadosconsumoCPU(usuarioEmail) {
+        // aguardar();
+        fetch(`/leiturasDaMaquina/processador/${usuarioEmail}`)
+            .then(resposta => {
+
+                if (resposta.ok) {
+                    resposta.json().then(function (resposta) {
+
+                        console.log(`Dados recebidos sa: ${JSON.stringify(resposta.consumo)}`);
+
+                        var dados = {
+                            consumo: resposta.consumo,
+                        }
+                        
+                        alertarCPU(dados);
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                }
+            })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados do caminhao p/ gráfico: ${error.message}`);
+            });
+    }
+
+    function alertarCPU(dados) {
+        // padrão para meu alerta
+
+        let cpu = dados.consumo.toFixed(1); 
+
+        var classe_consumo ='';
+
+        var limites = {
+            max_consumo: 80,
+            medio_consumo: 60
+        };
+
+        // comparando
+        if (cpu >= limites.max_consumo) {
+            classe_consumo = 'red';
+        }
+        if (cpu >= limites.medio_consumo && dados.consumo < limites.max_consumo) {
+            classe_consumo = 'yellow';
+        }
+        if (cpu < limites.medio_consumo) {
+            classe_consumo = 'green';
+        }
+
+        // escolhendo qual alterar
+        var div_consumo_alterar = statusCpu;
+
+        // alterando
+        div_consumo_alterar.className = classe_consumo;
+
+        console.log("Linhha 625");
+        console.log(dados);
+
+        div_consumo_alterar.innerHTML = `<b> ${cpu}% </b>`;
+
+    }
+
 </script>

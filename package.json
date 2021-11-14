@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./APICadastro/api-projeto-site/bin/www",
-    "postinstall": "cd APICadastro && cd api-projeto-site && npm install"
+    "start": "node ./APIConfigurada(funcionando)/api-projeto-site/API-projeto-site/bin/www",
+    "postinstall": "cd APIConfigurada(funcionando) && cd api-projeto-site && cd API-projeto-site && npm install"
   }
 }
