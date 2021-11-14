@@ -1,6 +1,7 @@
 package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
+import logging.LogErro;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class Componente {
@@ -13,6 +14,7 @@ public class Componente {
     private String unidadeDeMedida;
     private Integer fkMaquina;
 
+    LogErro logErro = new LogErro();
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
@@ -33,12 +35,17 @@ public class Componente {
     }
 
     public void insertComponente() {
-        assistente.update("INSERT INTO COMPONENTE(nomeComponente, capacidade, "
+        
+        try {
+            assistente.update("INSERT INTO COMPONENTE(nomeComponente, capacidade, "
                 + "descricao, infoAdicional,unidadeDeMedida, fk_Maquina) "
                 + "VALUES(?,?,?,?,?,?)",
                 nomeComponente, capacidade, descricao, infoAdicional,
                 unidadeDeMedida, fkMaquina);
-
+            
+        } catch (Exception erro) {
+            logErro.mensagemErroInsert(erro);
+        }
     }
 
     public Integer getIdComponente() {
@@ -53,7 +60,4 @@ public class Componente {
     public String toString() {
         return "Componente{" + "idComponente=" + idComponente + ", nomeComponente=" + nomeComponente + ", capacidade=" + capacidade + ", descricao=" + descricao + ", infoAdicional=" + infoAdicional + ", unidadeDeMedida=" + unidadeDeMedida + ", fkMaquina=" + fkMaquina + ", maquinaInstance=" + maquinaInstance + ", configuracaoBanco=" + configuracaoBanco + ", assistente=" + assistente + '}';
     }
-    
-    
-
 }

@@ -1,6 +1,7 @@
 package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
+import logging.LogErro;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class SoftwareEntity {
@@ -8,6 +9,7 @@ public class SoftwareEntity {
     private Integer idSoftware;
     private String nomeSoftware;
 
+    LogErro logErro = new LogErro();
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
@@ -26,9 +28,15 @@ public class SoftwareEntity {
     }
 
     public void insertSoftware() {
-        assistente.update("INSERT INTO SOFTWARE(nomeSoftware,linkImagemSoftware)"
-                + " VALUES(?,?)",
-                nomeSoftware,"https://pbs.twimg.com/media/EeTDgb4WoAAcrmS.jpg");
+        try {
+            assistente.update("INSERT INTO SOFTWARE(nomeSoftware,linkImagemSoftware)"
+                    + " VALUES(?,?)",
+                    nomeSoftware, "https://pbs.twimg.com/media/EeTDgb4WoAAcrmS.jpg");
+            
+        } catch (Exception erro) {
+            logErro.mensagemErroInsert(erro);
+        }
+
     }
 
     public Integer getIdSoftware() {
@@ -47,5 +55,4 @@ public class SoftwareEntity {
         this.nomeSoftware = nomeSoftware;
     }
 
-    
 }

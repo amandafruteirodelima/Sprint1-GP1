@@ -7,6 +7,7 @@ import entities.Componente;
 import entities.HistoricoUsoEntity;
 import entities.MaquinaEntity;
 import java.util.List;
+import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -18,24 +19,31 @@ public class HistoricoProcessadorImpl {
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
+    LogErro logErro = new LogErro();
 
     public void findHistoricoProcessador() {
 
-        List<Componente> componente = assistente.query("SELECT IDCOMPONENTE"
-                + " FROM COMPONENTE WHERE FK_MAQUINA ='"
-                + maquinaInstance.getIdMaquina() + "' AND NOMECOMPONENTE = 'CPU'",
-                new BeanPropertyRowMapper<>(Componente.class));
+        try {
+            List<Componente> componente = assistente.query("SELECT IDCOMPONENTE"
+                    + " FROM COMPONENTE WHERE FK_MAQUINA ='"
+                    + maquinaInstance.getIdMaquina() + "' AND NOMECOMPONENTE = 'CPU'",
+                    new BeanPropertyRowMapper<>(Componente.class));
 
-        Componente componenteDaVez = null;
-        for (int i = 0; i < componente.size(); i++) {
-            componenteDaVez = componente.get(i);
+            Componente componenteDaVez = null;
+            for (int i = 0; i < componente.size(); i++) {
+                componenteDaVez = componente.get(i);
+            }
+
+            HistoricoUsoEntity historicoProcessador
+                    = new HistoricoUsoEntity(componenteDaVez.getIdComponente(),
+                            processador.getUso());
+
+            historicoProcessador.insertHistorico();
+
+        } catch (Exception erro) {
+            logErro.mensagemErroSelect(erro);
         }
 
-        HistoricoUsoEntity historicoProcessador
-                = new HistoricoUsoEntity(componenteDaVez.getIdComponente(),
-                        processador.getUso());
-
-        historicoProcessador.insertHistorico();
     }
 
 }

@@ -9,6 +9,7 @@ import entities.Componente;
 import entities.HistoricoUsoEntity;
 import entities.MaquinaEntity;
 import java.util.List;
+import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -20,32 +21,37 @@ public class HistoricoDiscoImpl {
             configuracaoBanco.getBancoDeDados());
     MaquinaEntity maquina = MaquinaEntity.getInstance();
     DiscosGroup grupoDeDiscos = looca.getGrupoDeDiscos();
+    LogErro logErro = new LogErro();
 
     public void findHistoricoDisco() {
 
         List<Volume> volumes = grupoDeDiscos.getVolumes();
         List<Disco> discos = grupoDeDiscos.getDiscos();
 
-
         for (Disco disco : discos) {
 
-            List<Componente> discoid = assistente.query("Select *"
-                    + " from Componente where fk_Maquina = '"
-                    + maquina.getIdMaquina() + "' and descricao = '"
-                    + disco.getNome() + "'",
-                    new BeanPropertyRowMapper<>(Componente.class));
+            try {
+                List<Componente> discoid = assistente.query("Select *"
+                        + " from Componente where fk_Maquina = '"
+                        + maquina.getIdMaquina() + "' and descricao = '"
+                        + disco.getNome() + "'",
+                        new BeanPropertyRowMapper<>(Componente.class));
 
-            Componente discoDaVez = null;
+                Componente discoDaVez = null;
 
-            for (int i = 0; i < discoid.size(); i++) {
-                discoDaVez = discoid.get(i);
-            }
+                for (int i = 0; i < discoid.size(); i++) {
+                    discoDaVez = discoid.get(i);
+                }
 
-            for (int i = 0; i == 0; i++) {
-                Double convertido = (double) volumes.get(i).getDisponivel();
-                HistoricoUsoEntity historicoDisco = new HistoricoUsoEntity(
-                        discoDaVez.getIdComponente(), convertido);
-                historicoDisco.insertHistorico();
+                for (int i = 0; i == 0; i++) {
+                    Double convertido = (double) volumes.get(i).getDisponivel();
+                    HistoricoUsoEntity historicoDisco = new HistoricoUsoEntity(
+                            discoDaVez.getIdComponente(), convertido);
+                    historicoDisco.insertHistorico();
+                }
+                
+            } catch (Exception erro) {
+                logErro.mensagemErroSelect(erro);
             }
 
         }

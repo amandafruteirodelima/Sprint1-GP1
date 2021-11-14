@@ -3,6 +3,7 @@ package entities;
 import com.mycompany.devtime.ConfiguracaoBanco;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import logging.LogErro;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class MaquinaSoftwareEntity {
@@ -14,6 +15,7 @@ public class MaquinaSoftwareEntity {
     private Integer fk_maquina;
     private Integer fk_software;
 
+    LogErro logErro = new LogErro();
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
@@ -31,11 +33,18 @@ public class MaquinaSoftwareEntity {
     }
 
     public void insertMaquinaSoftware() {
-        assistente.update("INSERT INTO MAQUINA_SOFTWARE(usoCPUSoftware, "
+        
+        try {
+            assistente.update("INSERT INTO MAQUINA_SOFTWARE(usoCPUSoftware, "
                 + "usoRAMSoftware, pid, DataHora, fk_maquina, fk_software) "
                 + "VALUES(?,?,?,?,?,?)",
                 usoCPUSoftware, usoRAMSoftware, pid,
                 formatter.format(date), fk_maquina, fk_software);
+            
+        } catch (Exception erro) {
+            logErro.mensagemErroInsert(erro);
+        }
+        
     }
 
     public Integer getIdMaquina_Software() {

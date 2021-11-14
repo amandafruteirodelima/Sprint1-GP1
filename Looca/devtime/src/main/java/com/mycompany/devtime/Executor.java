@@ -15,6 +15,7 @@ import implantation.SoftwareImpl;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
+import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -37,32 +38,39 @@ public class Executor {
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
     FuncionarioEntity funcionario = FuncionarioEntity.getInstance();
     Timer timer = new Timer();
-
+    LogErro logErro = new LogErro();
+    
     public void Executor() {
 
-        List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
-                + " from Maquina where fk_Funcionario = '"
-                + funcionario.getIdFuncionario() + "'",
-                new BeanPropertyRowMapper<>(MaquinaEntity.class));
-        MaquinaEntity maquinaDaVez = null;
-        for (int i = 0; i < maquinaid.size(); i++) {
-            maquinaDaVez = maquinaid.get(i);
-        }
+        try {
+            List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
+                    + " from Maquina where fk_Funcionario = '"
+                    + funcionario.getIdFuncionario() + "'",
+                    new BeanPropertyRowMapper<>(MaquinaEntity.class));
+            MaquinaEntity maquinaDaVez = null;
+            for (int i = 0; i < maquinaid.size(); i++) {
+                maquinaDaVez = maquinaid.get(i);
+            }
 
-        if (maquinaDaVez == null) {
-            maquina.findMaquina();
-            disco.findDisco();
-            processador.findProcessador();
-            ram.findRam();
-        }
+            if (maquinaDaVez == null) {
+                maquina.findMaquina();
+                disco.findDisco();
+                processador.findProcessador();
+                ram.findRam();
+            }
 
-        if (maquinaInstance.getIdMaquina() == null) {
-            maquinaInstance.instanciarMaquina();
-        }
-        
-        coletarLeitura();
+            if (maquinaInstance.getIdMaquina() == null) {
+                maquinaInstance.instanciarMaquina();
+            }
+
+            coletarLeitura();
 //        software.findSoftware();
 //        maquinaSoftware.findMaquinaSoftware();
+
+        } catch (Exception erro) {
+            logErro.mensagemErroSelect(erro);
+        }
+
     }
 
     public void coletarLeitura() {
@@ -71,7 +79,7 @@ public class Executor {
             public void run() {
                 histProcessador.findHistoricoProcessador();
                 histRam.findHistoricoRam();
-                 histDisco.findHistoricoDisco();
+                histDisco.findHistoricoDisco();
             }
         }, 1000, 5000);
     }

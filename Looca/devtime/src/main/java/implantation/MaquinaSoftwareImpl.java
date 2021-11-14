@@ -8,6 +8,7 @@ import entities.MaquinaEntity;
 import entities.MaquinaSoftwareEntity;
 import entities.SoftwareEntity;
 import java.util.List;
+import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -20,28 +21,32 @@ public class MaquinaSoftwareImpl {
     ProcessosGroup grupoDeProcessos = looca.getGrupoDeProcessos();
     SoftwareEntity softwareInstance = SoftwareEntity.getInstance();
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
+    LogErro logErro = new LogErro();
 
     public void findMaquinaSoftware() {
         List<Processo> processos = grupoDeProcessos.getProcessos();
         for (Processo processo : processos) {
+            try {
+                List<SoftwareEntity> softwareid = assistente.query("Select *"
+                        + " from Software where nomeSoftware = '"
+                        + processo.getNome() + "'",
+                        new BeanPropertyRowMapper<>(SoftwareEntity.class));
 
-            List<SoftwareEntity> softwareid = assistente.query("Select *"
-                    + " from Software where nomeSoftware = '"
-                    + processo.getNome() + "'",
-                    new BeanPropertyRowMapper<>(SoftwareEntity.class));
+                for (int i = 0; i < softwareid.size(); i++) {
+                    SoftwareEntity softwareDaVez = softwareid.get(i);
 
-            for (int i = 0; i < softwareid.size(); i++) {
-                SoftwareEntity softwareDaVez = softwareid.get(i);
-
-                MaquinaSoftwareEntity maquinaSoftware = new MaquinaSoftwareEntity(
-                        processo.getUsoCpu(),
-                        processo.getUsoMemoria(),
-                        processo.getPid(),
-                        maquinaInstance.getIdMaquina(),
-                        softwareDaVez.getIdSoftware()
-                );
-
-                maquinaSoftware.insertMaquinaSoftware();
+                    MaquinaSoftwareEntity maquinaSoftware = new MaquinaSoftwareEntity(
+                            processo.getUsoCpu(),
+                            processo.getUsoMemoria(),
+                            processo.getPid(),
+                            maquinaInstance.getIdMaquina(),
+                            softwareDaVez.getIdSoftware()
+                    );
+                    maquinaSoftware.insertMaquinaSoftware();
+                }
+                
+            } catch (Exception erro) {
+                logErro.mensagemErroSelect(erro);
             }
 
         }

@@ -6,9 +6,8 @@ package com.mycompany.devtime.telas;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
 import entities.FuncionarioEntity;
-import java.util.Arrays;
 import java.util.List;
-import javax.swing.JOptionPane;
+import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -17,13 +16,14 @@ import org.springframework.jdbc.core.JdbcTemplate;
  * @author rony.sobral@VALEMOBI.CORP
  */
 public class TelaLogin extends javax.swing.JFrame {
+    
+    LogErro logErro = new LogErro();
 
     /**
      * Creates new form TelaLogar
      */
     public TelaLogin() {
         initComponents();
-
     }
 
     /**
@@ -198,33 +198,34 @@ public class TelaLogin extends javax.swing.JFrame {
 
         FuncionarioEntity funcionarioEntity = FuncionarioEntity.getInstance();
 
-        List<FuncionarioEntity> funcionario = assistente.query("SELECT * "
-                + "FROM Funcionario where email = '" + email + "' and senha = '"
-                + senha + "'",
-                new BeanPropertyRowMapper<>(FuncionarioEntity.class));
+        try {
+            List<FuncionarioEntity> funcionario = assistente.query("SEEECT * "
+                    + "FROM Funcionario where email = '" + email + "' and senha = '"
+                    + senha + "'",
+                    new BeanPropertyRowMapper<>(FuncionarioEntity.class));
 
-        FuncionarioEntity funcionarioDaVez = null;
+            FuncionarioEntity funcionarioDaVez = null;
 
-        for (int i = 0; i < funcionario.size(); i++) {
-            funcionarioDaVez = funcionario.get(i);
+            for (int i = 0; i < funcionario.size(); i++) {
+                funcionarioDaVez = funcionario.get(i);
+            }
+
+            if (funcionarioDaVez == null) {
+                
+                funcionarioEntity.setIdFuncionario(funcionarioDaVez.getIdFuncionario());
+
+                TelaLogado logado = new TelaLogado();
+
+                logado.setVisible(true);
+                setVisible(false);
+            } 
+            else if (funcionarioDaVez.getEmail().equals(email)
+                    && funcionarioDaVez.getSenha().equals(senha)) {
+            }
+
+        } catch (Exception erro) {
+            logErro.mensagemErroSelect(erro);
         }
-
-        if (funcionarioDaVez == null) {
-
-            JOptionPane.showMessageDialog(null, "Email ou Senha incorreta!!.");
-
-        } else if (funcionarioDaVez.getEmail().equals(email)
-                && funcionarioDaVez.getSenha().equals(senha)) {
-
-            funcionarioEntity.setIdFuncionario(funcionarioDaVez.getIdFuncionario());
-
-            TelaLogado logado = new TelaLogado();
-
-            logado.setVisible(true);
-            setVisible(false);
-
-        }
-
     }//GEN-LAST:event_btnLogar1ActionPerformed
 
     /**

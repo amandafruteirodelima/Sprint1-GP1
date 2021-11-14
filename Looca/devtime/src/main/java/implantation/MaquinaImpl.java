@@ -6,6 +6,7 @@ import com.mycompany.devtime.ConfiguracaoBanco;
 import entities.FuncionarioEntity;
 import entities.MaquinaEntity;
 import java.util.List;
+import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -16,6 +17,7 @@ public class MaquinaImpl {
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
+    LogErro logErro = new LogErro();
 
     public void findMaquina() {
         Looca looca = new Looca();
@@ -29,16 +31,21 @@ public class MaquinaImpl {
 
         maquina.insertMaquina();
 
-        List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
-                + " from Maquina where fk_Funcionario = '"
-                + funcionario.getIdFuncionario() + "'",
-                new BeanPropertyRowMapper<>(MaquinaEntity.class));
+        try {
+            List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
+                    + " from Maquina where fk_Funcionario = '"
+                    + funcionario.getIdFuncionario() + "'",
+                    new BeanPropertyRowMapper<>(MaquinaEntity.class));
 
-        MaquinaEntity maquinaDaVez = null;
-        for (int i = 0; i < maquinaid.size(); i++) {
-            maquinaDaVez = maquinaid.get(i);
+            MaquinaEntity maquinaDaVez = null;
+            for (int i = 0; i < maquinaid.size(); i++) {
+                maquinaDaVez = maquinaid.get(i);
+            }
+            maquinaInstance.setIdMaquina(maquinaDaVez.getIdMaquina());
+
+        } catch (Exception erro) {
+            logErro.mensagemErroSelect(erro);
         }
-        maquinaInstance.setIdMaquina(maquinaDaVez.getIdMaquina());
 
     }
 }

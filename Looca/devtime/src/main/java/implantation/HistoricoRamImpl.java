@@ -7,6 +7,7 @@ import entities.Componente;
 import entities.HistoricoUsoEntity;
 import entities.MaquinaEntity;
 import java.util.List;
+import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -18,24 +19,31 @@ public class HistoricoRamImpl {
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
+    LogErro logErro = new LogErro();
 
     public void findHistoricoRam() {
-        
-        List<Componente> componente = assistente.query("SELECT *"
-                + " FROM COMPONENTE WHERE FK_MAQUINA ='"
-                + maquinaInstance.getIdMaquina() + "' AND NOMECOMPONENTE = 'RAM'",
-                new BeanPropertyRowMapper<>(Componente.class));
 
-        Componente componenteDaVez = null;
-        for (int i = 0; i < componente.size(); i++) {
-            componenteDaVez = componente.get(i);
+        try {
+            List<Componente> componente = assistente.query("SELECT *"
+                    + " FROM COMPONENTE WHERE FK_MAQUINA ='"
+                    + maquinaInstance.getIdMaquina() + "' AND NOMECOMPONENTE = 'RAM'",
+                    new BeanPropertyRowMapper<>(Componente.class));
+
+            Componente componenteDaVez = null;
+            for (int i = 0; i < componente.size(); i++) {
+                componenteDaVez = componente.get(i);
+            }
+
+            Double emUso = (double) memoria.getEmUso();
+
+            HistoricoUsoEntity historicoRam = new HistoricoUsoEntity(
+                    componenteDaVez.getIdComponente(), emUso);
+
+            historicoRam.insertHistorico();
+
+        } catch (Exception erro) {
+            logErro.mensagemErroSelect(erro);
         }
-       
-        Double emUso = (double)memoria.getEmUso();
 
-        HistoricoUsoEntity historicoRam = new HistoricoUsoEntity(
-                componenteDaVez.getIdComponente(), emUso);
-
-        historicoRam.insertHistorico();
     }
 }

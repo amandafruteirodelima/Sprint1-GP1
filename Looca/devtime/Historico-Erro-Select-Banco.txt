@@ -1,0 +1,22 @@
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 02:18:26
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: org.springframework.jdbc.UncategorizedSQLException: StatementCallback
+ uncategorized SQLException for SQL [SEEECT * FROM Funcionario where email = 'asdasd' and senha = 'sdadsada']
+ SQL state [S0001]
+ error code [102]
+ Incorrect syntax near '*'.
+ nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '*'.
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 02:19:31
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: org.springframework.jdbc.UncategorizedSQLException: StatementCallback
+ uncategorized SQLException for SQL [SEEECT * FROM Funcionario where email = 'saddsa' and senha = 'dsadsa']
+ SQL state [S0001]
+ error code [102]
+ Incorrect syntax near '*'.
+ nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '*'.
+
+
