@@ -29,7 +29,7 @@ router.get('/processadorultimas/:usuarioEmail', function(req, res, next) {
 		INNER JOIN Historico_Uso
         ON (Componente.idComponente = Historico_Uso.fk_componente)
         where nomeComponente = 'CPU' and Funcionario.email = '${usuarioEmail}'
-		order by id desc limit ${limite_linhas}`;
+		order by datahora desc limit ${limite_linhas}`;
     }
     else if (env == 'production') {
         instrucaoSql = `select top ${limite_linhas}
@@ -46,7 +46,8 @@ router.get('/processadorultimas/:usuarioEmail', function(req, res, next) {
 		ON (Maquina.idMaquina = Componente.fk_Maquina)
 		INNER JOIN Historico_Uso
         ON (Componente.idComponente = Historico_Uso.fk_componente)
-        where nomeComponente = 'CPU' and Funcionario.email = '${usuarioEmail}'`;
+        where nomeComponente = 'CPU' and Funcionario.email = '${usuarioEmail}'
+		order by datahora desc`;
     }
     else {
         console.log("Erro ao buscar dados da CPU !!")
@@ -100,7 +101,8 @@ router.get('/processador/:usuarioEmail', function(req, res, next) {
 		ON (Maquina.idMaquina = Componente.fk_Maquina)
 		INNER JOIN Historico_Uso
         ON (Componente.idComponente = Historico_Uso.fk_componente)
-        where nomeComponente = 'CPU' and Funcionario.email = '${usuarioEmail}';`;
+        where nomeComponente = 'CPU' and Funcionario.email = '${usuarioEmail}'
+		order by datahora desc`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}
@@ -141,7 +143,7 @@ router.get('/ramultimas/:usuarioEmail', function(req, res, next) {
 		INNER JOIN Historico_Uso
         ON (Componente.idComponente = Historico_Uso.fk_componente)
         where nomeComponente = 'RAM' and Funcionario.email = '${usuarioEmail}'
-		order by id desc limit ${limite_linhas}`;
+		order by datahora desc limit ${limite_linhas}`;
     }
     else if (env == 'production') {
         instrucaoSql = `select top ${limite_linhas}
@@ -158,7 +160,8 @@ router.get('/ramultimas/:usuarioEmail', function(req, res, next) {
 		ON (Maquina.idMaquina = Componente.fk_Maquina)
 		INNER JOIN Historico_Uso
         ON (Componente.idComponente = Historico_Uso.fk_componente)
-        where nomeComponente = 'RAM' and Funcionario.email = '${usuarioEmail}'`;
+        where nomeComponente = 'RAM' and Funcionario.email = '${usuarioEmail}'
+		order by datahora desc`;
     }
     else {
         console.log("Erro ao buscar dados da RAM !!")
@@ -171,6 +174,59 @@ router.get('/ramultimas/:usuarioEmail', function(req, res, next) {
 	.then(resultado => {
 		console.log(`Encontrados: ${resultado.length}`);
 		res.json(resultado);
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+	});
+});
+
+router.get('/ram/:usuarioEmail', function(req, res, next) {
+	console.log('Recuperando RAM');
+	
+	var usuarioEmail = req.params.usuarioEmail;
+	
+	let instrucaoSql = "";
+	
+	if (env == 'dev') {
+		instrucaoSql = `
+		select 
+		consumo,
+		capacidade, 
+		dataHora,
+		DATE_FORMAT(data_leitura,'%H:%i:%s') as momento_grafico, 
+		email
+		FROM Funcionario
+		JOIN Maquina
+		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
+		JOIN Componente
+		ON (Maquina.idMaquina = Componente.fk_Maquina)
+		INNER JOIN Historico_Uso
+        ON (Componente.idComponente = Historico_Uso.fk_componente)
+        where nomeComponente = 'RAM' and Funcionario.email = '${usuarioEmail}'
+		order by id desc limit 1`;
+	} else if (env == 'production') {
+		instrucaoSql = `
+		select top 1 
+		consumo,
+		Componente.capacidade
+		FROM [dbo].[Funcionario]
+		JOIN [dbo].[Maquina]
+		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
+		JOIN [dbo].[Componente]
+		ON (Maquina.idMaquina = Componente.fk_Maquina)
+		INNER JOIN Historico_Uso
+        ON (Componente.idComponente = Historico_Uso.fk_componente)
+        where nomeComponente = 'RAM' and Funcionario.email = '${usuarioEmail}'
+		order by datahora desc`;
+	} else {
+		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
+	}
+	
+	console.log(instrucaoSql);
+	
+	sequelize.query(instrucaoSql, { type: sequelize.QueryTypes.SELECT })
+	.then(resultado => {
+		res.json(resultado[0]);
 	}).catch(erro => {
 		console.error(erro);
 		res.status(500).send(erro.message);

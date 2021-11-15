@@ -12,25 +12,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
         integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <title>Dashboard Funcionários</title>
 
-<style>
+    <style>
+        .red {
+            color: red;
+        }
 
-    .red {
-        color: red;
-    }
-    .yellow {
-        color: yellow;
-    }
-    .green {
-        color: green;
-    }
+        .yellow {
+            color: yellow;
+        }
 
-
-
-</style>
+        .green {
+            color: green;
+        }
+    </style>
 
 </head>
 
@@ -153,7 +151,7 @@
                 <div>
                     RAM
                 </div>
-                <span id="statusRam">30%</span>
+                <span id="statusRam">..</span>
             </div>
 
             <div class="divDisplayIndividual">
@@ -345,7 +343,7 @@
 
     console.log(`Usuario logado: ${usuarioEmail}`);
 
-    
+
 
     window.onload = chamargraficos(usuarioEmail);
 
@@ -358,6 +356,7 @@
 
     function atualizacaoPeriodica() {
         obterdadosconsumoCPU(usuarioEmail);
+        obterdadosconsumoRAM(usuarioEmail);
 
         setTimeout(atualizacaoPeriodica, 5000);
     }
@@ -372,7 +371,7 @@
             hoverMode: 'index',
             stacked: false,
             title: {
-                display: true,
+                display: false,
                 text: 'Histórico'
             },
             interaction: {
@@ -381,13 +380,13 @@
             },
             plugins: {
                 legend: {
-                    display: true
+                    display: false
                 }
             },
             scales: {
                 y: {
                     type: 'linear',
-                    display: true,
+                    display: false,
                     position: 'left',
                 },
                 y1: {
@@ -451,8 +450,8 @@
                 console.error('Nenhum dado encontrado ou erro na API');
             }
         }).catch(function (error) {
-                console.error(`Erro na obtenção dos dados da CPU p/ gráfico: ${error.message}`);
-            });
+            console.error(`Erro na obtenção dos dados da CPU p/ gráfico: ${error.message}`);
+        });
 
 
         // fetch(`/leiturasDaMaquina/ramultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
@@ -506,7 +505,6 @@
                 response.json().then(function (novoRegistro) {
 
                     console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
-                    console.log(`Dados atuais do gráfico: ${dados}`);
 
                     // tirando e colocando valores no gráfico
                     dados.labels.shift(); // apagar o primeiro
@@ -514,10 +512,6 @@
                     dados.datasets[0].data.shift();  // apagar o primeiro
                     dados.datasets[0].data.push(novoRegistro.consumo); // incluir uma nova leitura 
 
-
-                    console.log("o usuário é o " + usuarioEmail)
-
-                    window.grafico_linha.update();
 
 
                     proximaAtualizacao = setTimeout(() => atualizarGrafico(usuarioEmail, dados), 5000);
@@ -527,8 +521,8 @@
                 proximaAtualizacao = setTimeout(() => atualizarGrafico(usuarioEmail, dados), 5000);
             }
         }).catch(function (error) {
-                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-            });
+            console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+        });
 
         //     fetch(`/leiturasDaMaquina/ramultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
         //     console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
@@ -541,13 +535,8 @@
         //             // tirando e colocando valores no gráfico
         //             dados.labels.shift(); // apagar o primeiro
         //             dados.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
-        //             dados.datasets[1].data.shift();  // apagar o primeiro
-        //             dados.datasets[1].data.push(novoRegistro.consumo); // incluir uma nova leitura 
-
-
-        //             console.log("o usuário é o " + usuarioEmail)
-
-        //             window.grafico_linha.update();
+        //             dados.datasets[0].data.shift();  // apagar o primeiro
+        //             dados.datasets[0].data.push(novoRegistro.consumo); // incluir uma nova leitura 
 
 
         //             proximaAtualizacao = setTimeout(() => atualizarGrafico(usuarioEmail, dados), 5000);
@@ -566,26 +555,20 @@
         console.log("executei plotarGrafico")
         console.log('iniciando plotagem do gráfico...');
 
-        var ctx = cpu_ram.getContext('2d');
-        window.grafico_linha = Chart.Line(ctx, {
+        const config = {
+            type: 'line',
             data: dados,
             options: configurarGraficoCPU()
-        });
+        };
+        
+        const myChart = new Chart(
+            document.getElementById('cpu_ram'),
+            config
+        );
+
 
         setTimeout(() => atualizarGrafico(usuarioEmail, dados), 2000);
     }
-
-    // function sendData() {
-    //     var http = new XMLHttpRequest();
-    //     http.open('GET', 'http://localhost:9001/api/sendData', false);
-    //     http.send(null);
-    // }
-
-    // setInterval(() => {
-    //     sendData();
-    // }, 2000);
-
-    // cor alertas
 
     function obterdadosconsumoCPU(usuarioEmail) {
         // aguardar();
@@ -595,12 +578,10 @@
                 if (resposta.ok) {
                     resposta.json().then(function (resposta) {
 
-                        console.log(`Dados recebidos sa: ${JSON.stringify(resposta.consumo)}`);
-
                         var dados = {
                             consumo: resposta.consumo,
                         }
-                        
+
                         alertarCPU(dados);
                     });
                 } else {
@@ -610,14 +591,42 @@
             .catch(function (error) {
                 console.error(`Erro na obtenção dos dados do caminhao p/ gráfico: ${error.message}`);
             });
+
+    }
+    function obterdadosconsumoRAM(usuarioEmail) {
+        // aguardar();
+
+        fetch(`/leiturasDaMaquina/ram/${usuarioEmail}`)
+            .then(resposta => {
+
+                if (resposta.ok) {
+                    resposta.json().then(function (resposta) {
+
+                        console.log("Consumo ram");
+                
+                        var dados = {
+                            consumo: resposta.consumo,
+                            capacidade: resposta.capacidade
+                        }
+
+                        alertarRAM(dados);
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                }
+            })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados do caminhao p/ gráfico: ${error.message}`);
+            });
+
     }
 
     function alertarCPU(dados) {
         // padrão para meu alerta
 
-        let cpu = dados.consumo.toFixed(1); 
+        let cpu = dados.consumo.toFixed(1);
 
-        var classe_consumo ='';
+        var classe_consumo = '';
 
         var limites = {
             max_consumo: 80,
@@ -641,10 +650,43 @@
         // alterando
         div_consumo_alterar.className = classe_consumo;
 
-        console.log("Linhha 625");
-        console.log(dados);
-
         div_consumo_alterar.innerHTML = `<b> ${cpu}% </b>`;
+
+    }
+
+    function alertarRAM(dados) {
+        // padrão para meu alerta
+
+        let capa =  parseInt(dados.capacidade);
+        let ramOriginal = dados.consumo;
+
+        let ram = ((parseInt(dados.consumo) *100) / capa).toFixed(0);
+
+        var classe_consumo = '';
+
+        var limites = {
+            max_consumo: 80,
+            medio_consumo: 60
+        };
+
+        // comparando
+        if (ram >= limites.max_consumo) {
+            classe_consumo = 'red';
+        }
+        if (ram >= limites.medio_consumo && dados.consumo < limites.max_consumo) {
+            classe_consumo = 'yellow';
+        }
+        if (ram < limites.medio_consumo) {
+            classe_consumo = 'green';
+        }
+
+        // escolhendo qual alterar
+        var div_consumo_alterar = statusRam;
+
+        // alterando
+        div_consumo_alterar.className = classe_consumo;
+
+        div_consumo_alterar.innerHTML = `<b> ${ram}% </b>`;
 
     }
 

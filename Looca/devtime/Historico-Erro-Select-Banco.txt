@@ -998,3 +998,9 @@ MOTIVO DO ERRO: Não foi possivel realizar o select no banco
 ERRO: java.lang.NullPointerException
 
 
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/14 18:20:20
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
