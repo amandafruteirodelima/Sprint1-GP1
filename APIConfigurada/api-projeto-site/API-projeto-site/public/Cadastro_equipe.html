@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Cadastro_equipe.css">
+    <link rel="stylesheet" href="./css/headerDark.css">
+    <link rel="icon" href="img/Yin-Yang-DevTime.png">
+    <title>Cadastro de equipe</title>
+</head>
+
+<body>
+    <!--Início Header-->
+
+    <div class="divHeader">
+
+        <div class="container-header">
+
+            <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
+
+            <nav class="divLista">
+                <ul>
+                    <li><a class="li-comum" href="Dashboard_adm.html">Dashboard</a></li>
+                    <li><a class="li-comum" href="Ranking_adm.html">Ranking</a></li>
+                    <li><a class="li-select" href="Cadastro.html">Cadastro</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="divButton"><button><a class="li-comum" href="Login.html">Sair</a></button></div>
+
+        </div>
+
+    </div>
+    <!--Fim Header-->
+
+    <main>
+        <div>
+            <h1>Crie uma equipe</h1>
+        </div>
+        <div class="content-escrito">
+
+            <form id="form_cadastro">
+
+                <div class="div-criar">
+                    <input id="inp_nome_equipe" name ="nome" class="inptPadrao" type="text" placeholder=" ">
+
+                    <label class="label label-nome" for="nome">Nome da Equipe</label>
+
+
+                    <button class="btn-default"><a><b>Criar</b></a></button>
+                </div>
+            </form>
+            <h1>Adicione um funcionario a uma equipe</h1>
+            <div>
+                <form>
+                    <div class="div-adicionar">
+                        <div class="div-selects">
+                            <select name="nome_equipe" id="sel_equipe" class="sel-padrao">
+                                <option value="">--Selecione uma equipe--</option>
+                            </select>
+        
+                            <select name="nome_funcionario" id="sel_funcionario" class="sel-padrao">
+                                <option value="">--Selecione um funcionario--</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <button class="btn-default"><a><b>Adicionar</b></a></button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Início do footer  -->
+    <div class="footer">
+
+        <div class="company">
+
+            <a href="#"><img src="img/Logo-Branco.png" alt="Logo da DevTime"></a>
+            |
+            <a href="#"><img src="img/logo_bandtec.png" alt="Logo da Faculdade BandTec"></a>
+        </div>
+
+        <div>
+            <h3 class="copyright">Copyright © 2021 - Todos os direitos reservados - DevTime</h3>
+        </div>
+
+    </div>
+    <!-- Fim do footer  -->
+
+</body>
+
+</html>

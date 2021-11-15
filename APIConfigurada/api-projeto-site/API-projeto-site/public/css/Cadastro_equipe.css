@@ -1,0 +1,176 @@
+body{
+    font-family: 'Poppins-Bold';
+    display: flex;
+    margin: 0;
+    background-color: #0C0C0C;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+main{
+    font-family: 'Poppins-Regular';
+    font-size: 1rem;
+    font-family: 'Poppins-Bold';
+
+    background: linear-gradient(to top, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
+    border-radius: 10px;
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-criar {
+    font-size: 0.9rem;
+    padding: 3vh 5vw;
+    height: 30vh;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.div-adicionar{
+    font-size: 0.9rem;
+    padding: 3vh 4vw;
+    height: 40vh;
+    width: 62vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.inptPadrao {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+
+    height: 5.5vh;
+    width: 27vw;
+
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.inptPadrao:focus+label,
+.inptPadrao:not(:placeholder-shown)+label {
+    transform: translate(-0.2em) translateY(-0.6em) scale(0.8);
+}
+
+.btn-default {
+    font-family: 'Poppins-Bold';
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 1px #D5CFF7;
+    border-radius: 5px;
+    width: 13vw;
+    height: 5vh;
+}
+
+.btn-default:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+    font-size: 1.15rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+label {
+    position: absolute;
+    left: 30vw;
+    top: 25vh;
+    color: #686868;
+    transform-origin: 0 0;
+    transition: transform 0.2s ease-in-out;
+    font-size: 0.9rem;
+}
+
+.sel-padrao {
+    font-family: 'Poppins-Bold';
+    font-size: 0.9rem;
+    background-color: white;
+    color: #686868;
+    border: none;
+    border-radius: 5px;
+    width: 27vw;
+    height: 6vh;
+    cursor: pointer;
+}
+
+.div-selects{
+    width: fit-content;
+    display: flex;
+    height: 18vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*INICIO FOOTER*/
+
+/*FOOTER*/
+
+.responsiveFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.responsiveFooter h3 {
+    text-align: center;
+}
+
+.company {
+    text-align: center;
+}
+
+.footer {
+    background: linear-gradient(to bottom, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
+    ;
+    color: white;
+    width: 100%;
+}
+
+.responsiveFooter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.company img {
+    height: 30px;
+    margin-top: 15px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+/*FIM DO FOOTER*/
