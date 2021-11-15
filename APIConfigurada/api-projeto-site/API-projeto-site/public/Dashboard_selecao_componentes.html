@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
         integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
         crossorigin="anonymous"></script>
-    <title>Dashboard</title>
+    <title>Seleção de Compenentes</title>
 </head>
 
 <body>
@@ -35,45 +35,35 @@
     <!--Fim Header-->
 
     <!-- Início da página -->
-    <h1 class="h1_up">SELECIONE OS COMPONENTES</h1>
-    <h1 class="h1_down">QUE DESEJA MONITORAR</h1>
+    <h1 class="h1_up">SELECIONE OS COMPONENTES <br>
+        QUE DESEJA MONITORAR</h1>
 
     <!-- Membros online -->
-    <h2>Membros da equipe que estão online agora</h2>
+    <h2>Escolha a máquina de quem você deseja alterar o monitoramento, <br>
+        depois escolha quais componentes deseja que sejam monitorados</h2>
 
-    <div class="div_online">
-        <div class="div_online_organizadora">
-            <div class="div_online_content">
-                <h3 id="user_1">Amanda</h3>
-            </div>
-            <div class="div_online_content">
-                <h3 id="user_2">Danilo</h3>
-            </div>
-        </div>
-        <div class="div_online_organizadora">
-            <div class="div_online_content">
-                <h3 id="user_3">Guilherme</h3>
-            </div>
-            <div class="div_online_content">
-                <h3 id="user_4">Karolline</h3>
-            </div>
-        </div>
-        <div class="div_online_organizadora">
-            <div class="div_online_content">
-                <h3 id="user_5">Matheus</h3>
-            </div>
-            <div class="div_online_content">
-                <h3 id="user_6">Rony</h3>
-            </div>
-        </div>
-    </div>
+    <div class="div_alinhadora">
+        <div class="div_online">
 
-    <!-- Divisória -->
-    <div class="div_divisora"></div>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
+            <h1>teste</h1>
 
-    <!-- Desempenho equipe -->
-    <div class="organizadora">
-        <h2 id="h2_alt" class="h2_alt">Desempenho dos membros da equipe</h2>
+        </div>
+
+        <div class="div_componentes"></div>
     </div>
 
 </body>
@@ -81,104 +71,5 @@
 </html>
 
 <script>
-    // Código sendo preparado para receber APIs
 
-    function tempo_logado() {
-        div_options.style.display = "none";
-        div_tempo_logado.style.display = "block";
-    }
-
-    function aplicativos_usados() {
-        div_options.style.display = "none";
-        div_aplicativos_usados.style.display = "block";
-    }
-
-    window.onload = function online() {
-        online_1.style.backgroundColor = "red";
-        ok = "img/checked.png";
-        notOk = "img/warning.png";
-        check_1.src = ok;
-        check_2.src = ok;
-        check_3.src = ok;
-        check_4.src = ok;
-        check_5.src = notOk;
-        check_6.src = notOk;
-    }
-
-    cont = 0;
-
-    function mudar_frase() {
-        if (cont == 0) {
-            h2_alt.style.fontSize = "18px";
-            h2_alt.innerHTML = "Desempenho dos membros da equipe (Para ver detalhes, clique no ícone do membro da equipe desejado)";
-            cont++;
-        } else {
-            h2_alt.style.fontSize = "24px";
-            h2_alt.innerHTML = "Desempenho dos membros da equipe";
-            cont--;
-        }
-    }
-
-    function abrir_info(name) {
-
-        desempenho_1.style.display = "none";
-        desempenho_2.style.display = "none";
-        desempenho_3.style.display = "none";
-        desempenho_4.style.display = "none";
-        desempenho_5.style.display = "none";
-        desempenho_6.style.display = "none";
-        div_desempenho_pai.style.display = "none";
-
-        div_desempenho_pai_alternativa.style.display = "block";
-
-        h2_nome.innerHTML = "Amanda";
-
-    }
-
-    // Seta (voltar)
-    function go_back() {
-        location.reload();
-    }
-
-    cont_checkbox_hoje = 1;
-    cont_checkbox_semana = 1;
-    cont_checkbox_quinzena = 1;
-
-    function caixa_usado_hoje() {
-        if (cont_checkbox_hoje == 0) {
-            div_usado_hoje.style.display = "none";
-            div_divisora_alt1.style.display = "none";
-            cont_checkbox_hoje++;
-        } else {
-            div_usado_hoje.style.display = "block";
-            div_divisora_alt1.style.display = "block"
-            cont_checkbox_hoje--;
-        }
-    }
-
-    function caixa_usado_semana() {
-        if (cont_checkbox_semana == 0) {
-            div_usado_semana.style.display = "none";
-            div_divisora_alt2.style.display = "none";
-            cont_checkbox_semana++;
-        } else {
-            div_usado_semana.style.display = "block";
-            div_usado_semana.style.display = "flex";
-            div_divisora_alt2.style.display = "block";
-            cont_checkbox_semana--;
-        }
-    }
-
-    function caixa_usado_quinzena() {
-        if (cont_checkbox_quinzena == 0) {
-            div_usado_quinzena.style.display = "none";
-            div_divisora_alt3.style.display = "none";
-            cont_checkbox_quinzena++;
-        } else {
-            div_usado_quinzena.style.display = "revert";
-            div_usado_quinzena.style.display = "flex";
-            div_divisora_alt3.style.display = "block";
-            cont_checkbox_quinzena--;
-        }
-    }
 </script>
