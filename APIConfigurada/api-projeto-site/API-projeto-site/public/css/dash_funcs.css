@@ -27,7 +27,6 @@ body{
     height: 100%;
 
     padding-top: 40px;
-    
 }
 
 
@@ -45,8 +44,6 @@ body{
     background: rgba(223, 223, 223, 0.87);
     height: 80px;
     width: 150px;
-
- 
 }
 
 .linha_meio{
@@ -92,7 +89,6 @@ align-items: center;
     font-family: 'Poppins-Bold';
     background: linear-gradient(to top, #9E32AF, #6010AF);
   
-
     height: 25px;
     text-align: center;
     padding-top: 6px;
@@ -122,9 +118,6 @@ align-items: center;
 #statusDisco{
     color: rgb(251, 255, 13);
 }
-
-
-
 
 .divGraficos {
     margin-bottom: 6px;

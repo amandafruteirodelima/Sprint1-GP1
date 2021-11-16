@@ -151,14 +151,14 @@
                 <div>
                     RAM
                 </div>
-                <span id="statusRam">..</span>
+                <span id="statusRam">...</span>
             </div>
 
             <div class="divDisplayIndividual">
                 <div>
                     DISCO C:
                 </div>
-                <span id="statusDisco">52%</span>
+                <span id="statusDisco">...</span>
             </div>
         </div>
         <div class="linha_meio">
@@ -339,73 +339,48 @@
 
     verificar_autenticacao();
 
-    usuarioEmail = sessionStorage.login_usuario_meuapp;
+    var usuarioEmail = sessionStorage.login_usuario_meuapp;
 
     console.log(`Usuario logado: ${usuarioEmail}`);
 
+    window.onload = chamargraficos();
 
-
-    window.onload = chamargraficos(usuarioEmail);
-
-    function chamargraficos(usuarioEmail) {
+    function chamargraficos() {
         console.log("executei chamargraficos")
-        obterDadosGraficoPrimeiraVez(usuarioEmail)
-        //atualizarGrafico(usuarioEmail)
+        obterDadosGraficoPrimeiraVezCPU()
+        // obterDadosGraficoPrimeiraVezRAM()
+        
         atualizacaoPeriodica()
     }
 
     function atualizacaoPeriodica() {
-        obterdadosconsumoCPU(usuarioEmail);
-        obterdadosconsumoRAM(usuarioEmail);
+
+        obterdadosconsumoCPU();
+        obterdadosconsumoRAM();
+        obterdadosconsumoDISCO();
 
         setTimeout(atualizacaoPeriodica, 5000);
     }
 
     // CPU
 
-    function configurarGraficoCPU() {
+    function configurarGraficoCPURAM() {
         console.log("executei configurarGraficoCPU")
         var configuracoes = {
             responsive: true,
-            animation: { duration: 500 },
-            hoverMode: 'index',
-            stacked: false,
+            animation: { duration: 1000 },
             title: {
                 display: false,
                 text: 'Histórico'
             },
-            interaction: {
-                mode: 'index',
-                intersect: false,
-            },
-            plugins: {
-                legend: {
-                    display: false
-                }
-            },
-            scales: {
-                y: {
-                    type: 'linear',
-                    display: false,
-                    position: 'left',
-                },
-                y1: {
-                    type: 'linear',
-                    display: false,
-                    position: 'right',
 
-                    grid: {
-                        drawOnChartArea: false,
-                    },
-                },
-            }
         };
 
         return configuracoes;
     }
 
 
-    function obterDadosGraficoPrimeiraVez(usuarioEmail) {
+    function obterDadosGraficoPrimeiraVezCPU() {
         console.log("executei obterDadosGraficoPrimeiraVez")
 
         if (proximaAtualizacao != undefined) {
@@ -423,7 +398,54 @@
                         datasets: [
                             {
                                 yAxisID: 'Y-processador',
-                                label: 'Processador',
+                                label: 'CPU',
+                                borderColor: '#4A024D',
+                                backgroundColor: 'white',
+                                data: []
+                            }
+
+                        ]
+                    };
+
+                    for (i = 0; i < resposta.length; i++) {
+                        var registro = resposta[i];
+
+                        dados.labels.push(registro.dataFormatada);
+                        dados.datasets[0].data.push(registro.consumo);
+
+                    }
+                    console.log(JSON.stringify(dados));
+
+                    plotarGrafico(dados);
+
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        }).catch(function (error) {
+            console.error(`Erro na obtenção dos dados da CPU p/ gráfico: ${error.message}`);
+        });
+
+    }
+
+    function obterDadosGraficoPrimeiraVezRAM() {
+        console.log("executei obterDadosGraficoPrimeiraVez")
+
+        if (proximaAtualizacao != undefined) {
+            clearTimeout(proximaAtualizacao);
+        }
+
+        fetch(`/leiturasDaMaquina/ramultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                    resposta.reverse();
+
+                    var dados = {
+                        datasets: [
+                            {
+                                yAxisID: 'Y-ram',
+                                label: 'RAM',
                                 borderColor: '#4A024D',
                                 backgroundColor: 'white',
                                 fill: false,
@@ -437,140 +459,101 @@
                     for (i = 0; i < resposta.length; i++) {
                         var registro = resposta[i];
 
-                        dados.labels.push(registro.dataHora);
                         dados.datasets[0].data.push(registro.consumo);
 
                     }
                     console.log(JSON.stringify(dados));
 
-                    plotarGrafico(dados, usuarioEmail);
+                    // plotarGrafico(dados);
 
                 });
             } else {
                 console.error('Nenhum dado encontrado ou erro na API');
             }
         }).catch(function (error) {
-            console.error(`Erro na obtenção dos dados da CPU p/ gráfico: ${error.message}`);
+            console.error(`Erro na obtenção dos dados da RAM p/ gráfico: ${error.message}`);
         });
-
-
-        // fetch(`/leiturasDaMaquina/ramultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
-        //     if (response.ok) {
-        //         response.json().then(function (resposta) {
-        //             console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-        //             resposta.reverse();
-
-        //             var dados = {
-        //                 labels: [],
-        //                 datasets: [
-        //                     {
-        //                         yAxisID: 'Y-ram',
-        //                         label: 'RAM',
-        //                         borderColor: '#4A024D',
-        //                         backgroundColor: 'white',
-        //                         fill: false,
-        //                         data: [],
-        //                         tension: 0.1
-        //                     }
-
-        //                 ]
-        //             };
-
-        //             for (i = 0; i < resposta.length; i++) {
-        //                 var registro = resposta[i];
-
-        //                 dados.labels.push(registro.dataHora);
-        //                 dados.datasets[1].data.push(registro.consumo);
-
-        //             }
-        //             console.log(JSON.stringify(dados));
-
-        //             plotarGrafico(dados, usuarioEmail);
-
-        //         });
-        //     } else {
-        //         console.error('Nenhum dado encontrado ou erro na API');
-        //     }
-        // }).catch(function (error) {
-        //     console.error(`Erro na obtenção dos dados da RAM p/ gráfico: ${error.message}`);
-        // });
 
     }
 
-    function atualizarGrafico(usuarioEmail, dados) {
+    function atualizarGraficoCPU(dados) {
+        console.log("executei atualizarGraficoCPU")
+        fetch(`/leiturasDaMaquina/processadorultimas/${usuarioEmail}`, { cache: 'no-store' })
+        .then(function (response) {
+
+            console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
+
+            if (response.ok) {
+                response.json().then(function (novoRegistro) {
+
+
+                    console.log(`Dados recebidos: ${JSON.stringify(novoRegistro[0].consumo)}`);
+                    
+
+                    // tirando e colocando valores no gráfico
+                    dados.labels.shift(); // apagar o primeiro
+                    dados.labels.push(novoRegistro[0].dataFormatada); // incluir um novo momento
+                    dados.datasets[0].data.shift();  // apagar o primeiro
+                    dados.datasets[0].data.push(novoRegistro[0].consumo); // incluir uma nova leitura 
+
+                    myChart.update();
+
+                    proximaAtualizacao = setTimeout(() => atualizarGraficoCPU(dados), 2000);
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+                proximaAtualizacao = setTimeout(() => atualizarGraficoCPU(dados), 5000);
+            }
+        }).catch(function (error) {
+            console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+        });
+
+    }
+
+    function atualizarGraficoRAM(dados) {
         console.log("executei atualizarGrafico")
-        fetch(`/leiturasDaMaquina/processadorultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
+            fetch(`/leiturasDaMaquina/ramultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
             console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
             if (response.ok) {
                 response.json().then(function (novoRegistro) {
 
                     console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
 
-                    // tirando e colocando valores no gráfico
-                    dados.labels.shift(); // apagar o primeiro
-                    dados.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
                     dados.datasets[0].data.shift();  // apagar o primeiro
                     dados.datasets[0].data.push(novoRegistro.consumo); // incluir uma nova leitura 
 
-
-
-                    proximaAtualizacao = setTimeout(() => atualizarGrafico(usuarioEmail, dados), 5000);
+                    proximaAtualizacao = setTimeout(() => atualizarGraficoRAM(dados), 7000);
                 });
             } else {
                 console.error('Nenhum dado encontrado ou erro na API');
-                proximaAtualizacao = setTimeout(() => atualizarGrafico(usuarioEmail, dados), 5000);
+                proximaAtualizacao = setTimeout(() => atualizarGraficoRAM(dados), 5000);
             }
         }).catch(function (error) {
-            console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-        });
-
-        //     fetch(`/leiturasDaMaquina/ramultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
-        //     console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
-        //     if (response.ok) {
-        //         response.json().then(function (novoRegistro) {
-
-        //             console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
-        //             console.log(`Dados atuais do gráfico: ${dados}`);
-
-        //             // tirando e colocando valores no gráfico
-        //             dados.labels.shift(); // apagar o primeiro
-        //             dados.labels.push(novoRegistro.momento_grafico); // incluir um novo momento
-        //             dados.datasets[0].data.shift();  // apagar o primeiro
-        //             dados.datasets[0].data.push(novoRegistro.consumo); // incluir uma nova leitura 
-
-
-        //             proximaAtualizacao = setTimeout(() => atualizarGrafico(usuarioEmail, dados), 5000);
-        //         });
-        //     } else {
-        //         console.error('Nenhum dado encontrado ou erro na API');
-        //         proximaAtualizacao = setTimeout(() => atualizarGrafico(usuarioEmail, dados), 5000);
-        //     }
-        // }).catch(function (error) {
-        //         console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-        //     });
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
 
     }
 
-    function plotarGrafico(dados, usuarioEmail) {
+    function plotarGrafico(dados) {
         console.log("executei plotarGrafico")
         console.log('iniciando plotagem do gráfico...');
 
         const config = {
             type: 'line',
             data: dados,
-            options: configurarGraficoCPU()
+            options: configurarGraficoCPURAM() 
         };
-        
-        const myChart = new Chart(
+
+        myChart = new Chart(
             document.getElementById('cpu_ram'),
             config
         );
 
+        atualizarGraficoCPU(dados);
 
-        setTimeout(() => atualizarGrafico(usuarioEmail, dados), 2000);
     }
 
-    function obterdadosconsumoCPU(usuarioEmail) {
+    function obterdadosconsumoCPU() {
         // aguardar();
         fetch(`/leiturasDaMaquina/processador/${usuarioEmail}`)
             .then(resposta => {
@@ -583,6 +566,7 @@
                         }
 
                         alertarCPU(dados);
+                        console.log()
                     });
                 } else {
                     console.error('Nenhum dado encontrado ou erro na API');
@@ -593,7 +577,8 @@
             });
 
     }
-    function obterdadosconsumoRAM(usuarioEmail) {
+    
+    function obterdadosconsumoRAM() {
         // aguardar();
 
         fetch(`/leiturasDaMaquina/ram/${usuarioEmail}`)
@@ -610,6 +595,35 @@
                         }
 
                         alertarRAM(dados);
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                }
+            })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados do caminhao p/ gráfico: ${error.message}`);
+            });
+
+    }
+
+    function obterdadosconsumoDISCO() {
+        // aguardar();
+
+        fetch(`/leiturasDaMaquina/disco/${usuarioEmail}`)
+            .then(resposta => {
+
+                if (resposta.ok) {
+                    resposta.json().then(function (resposta) {
+
+                        console.log("Consumo disco");
+                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                
+                        var dados = {
+                            consumo: resposta.consumo,
+                            capacidade: resposta.capacidade
+                        }
+
+                        alertarDISCO(dados);
                     });
                 } else {
                     console.error('Nenhum dado encontrado ou erro na API');
@@ -658,7 +672,6 @@
         // padrão para meu alerta
 
         let capa =  parseInt(dados.capacidade);
-        let ramOriginal = dados.consumo;
 
         let ram = ((parseInt(dados.consumo) *100) / capa).toFixed(0);
 
@@ -687,6 +700,44 @@
         div_consumo_alterar.className = classe_consumo;
 
         div_consumo_alterar.innerHTML = `<b> ${ram}% </b>`;
+
+    }
+
+    function alertarDISCO(dados) {
+        // padrão para meu alerta
+
+        let capa =  parseInt(dados.capacidade);
+
+        let disco = ((parseInt(dados.consumo) *100) / capa).toFixed(0);
+
+        console.log("Disco:");
+        console.log(disco);
+
+        var classe_consumo = '';
+
+        var limites = {
+            max_consumo: 80,
+            medio_consumo: 60
+        };
+
+        // comparando
+        if (disco >= limites.max_consumo) {
+            classe_consumo = 'red';
+        }
+        if (disco >= limites.medio_consumo && dados.consumo < limites.max_consumo) {
+            classe_consumo = 'yellow';
+        }
+        if (disco < limites.medio_consumo) {
+            classe_consumo = 'green';
+        }
+
+        // escolhendo qual alterar
+        var div_consumo_alterar = statusDisco;
+
+        // alterando
+        div_consumo_alterar.className = classe_consumo;
+
+        div_consumo_alterar.innerHTML = `<b> ${disco}% </b>`;
 
     }
 
