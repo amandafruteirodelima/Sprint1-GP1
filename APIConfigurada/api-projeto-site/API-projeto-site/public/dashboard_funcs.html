@@ -498,7 +498,7 @@
 
                     myChart.update();
 
-                    proximaAtualizacao = setTimeout(() => atualizarGraficoCPU(dados), 2000);
+                    proximaAtualizacao = setTimeout(() => atualizarGraficoCPU(dados), 5000);
                 });
             } else {
                 console.error('Nenhum dado encontrado ou erro na API');
@@ -522,7 +522,7 @@
                     dados.datasets[0].data.shift();  // apagar o primeiro
                     dados.datasets[0].data.push(novoRegistro.consumo); // incluir uma nova leitura 
 
-                    proximaAtualizacao = setTimeout(() => atualizarGraficoRAM(dados), 7000);
+                    proximaAtualizacao = setTimeout(() => atualizarGraficoRAM(dados), 5000);
                 });
             } else {
                 console.error('Nenhum dado encontrado ou erro na API');
@@ -550,7 +550,7 @@
         );
 
         atualizarGraficoCPU(dados);
-
+        // atualizarGraficoRAM(dados);
     }
 
     function obterdadosconsumoCPU() {
