@@ -18,13 +18,16 @@
 
         <div class="container-header">
 
-            <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
+            <div class="divImagem"><a href="Dashboard_adm.html"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></a>
+            </div>
 
             <nav class="divLista">
                 <ul>
                     <li><a class="li-comum" href="Dashboard_adm.html">Dashboard</a></li>
                     <li><a class="li-comum" href="Ranking_adm.html">Ranking</a></li>
-                    <li><a class="li-select" href="Cadastro.html">Cadastro</a></li>
+                    <li><a class="li-select" href="Cadastro_equipe.html">Cadastro de Equipe</a></li>
+                    <li><a class="li-comum" href="Cadastro.html">Cadastro</a></li>
+                    <li><a class="li-comum" href="Dashboard_selecao_componentes.html">Componentes</a></li>
                 </ul>
 
             </nav>
@@ -37,40 +40,44 @@
     <!--Fim Header-->
 
     <main>
-        <div>
-            <h1>Crie uma equipe</h1>
+        <div class="div_titulo">
+            <h1>&lt;Crie uma equipe/&gt;</h1>
         </div>
-        <div class="content-escrito">
+        <div class="div-forms">
+            <div class="div_first_form">
+                <form id="form_cadastro_equipe" method="post" onsubmit="return criar()">
 
-            <form id="form_cadastro">
+                    <div class="div-criar">
+                        <input id="inp_nome_equipe" name="nome" class="inptPadrao" type="text" placeholder=" " required>
 
-                <div class="div-criar">
-                    <input id="inp_nome_equipe" name ="nome" class="inptPadrao" type="text" placeholder=" ">
-
-                    <label class="label label-nome" for="nome">Nome da Equipe</label>
+                        <label class="label label-nome" for="nome">Nome da Equipe</label>
 
 
-                    <button class="btn-default"><a><b>Criar</b></a></button>
-                </div>
-            </form>
-            <h1>Adicione um funcionario a uma equipe</h1>
+                        <button class="btn-default"><a><b>Criar</b></a></button>
+                    </div>
+                </form>
+            </div>
+            <h1>&lt;Adicione um funcionario a uma equipe/&gt;</h1>
             <div>
-                <form>
+                <form id="form_adicionar" method="post" onsubmit="return adicionar()">
                     <div class="div-adicionar">
                         <div class="div-selects">
-                            <select name="nome_equipe" id="sel_equipe" class="sel-padrao">
+                            <!-- <select name="nome_equipe" id="sel_equipe" class="sel-padrao">
                                 <option value="">--Selecione uma equipe--</option>
-                            </select>
-        
-                            <select name="nome_funcionario" id="sel_funcionario" class="sel-padrao">
+                            </select> -->
+
+                            <input id="sel_equipe" name="nome_equipe" class="inptPadrao" type="text" placeholder=" " required>
+
+                            <input id="sel_funcionario" name="nome_funcionario" class="inptPadrao" type="text" placeholder=" " required>
+
+                            <!-- <select name="nome_funcionario" id="sel_funcionario" class="sel-padrao">
                                 <option value="">--Selecione um funcionario--</option>
-                            </select>
+                            </select> -->
                         </div>
-                        
+
                         <div>
                             <button class="btn-default"><a><b>Adicionar</b></a></button>
                         </div>
-                        
                     </div>
                 </form>
             </div>
@@ -97,3 +104,69 @@
 </body>
 
 </html>
+<script>
+
+    function criar() {
+
+        var formulario = new URLSearchParams(new FormData(form_cadastro_equipe));
+        fetch("/equipes/criar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = 'Cadastro_equipe.html';
+                alert("Equipe criada com sucesso")
+
+            } else {
+
+                alert('Erro de cadastro!');
+
+            }
+        });
+
+        return false;
+    }
+
+    function adicionar() {
+
+        var formulario_add = new URLSearchParams(new FormData(form_adicionar));
+        fetch("/equipes/adicionar", {
+            method: "POST",
+            body: formulario_add
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                alert("Funcionario adicionado com sucesso")
+
+            } else {
+
+                alert('Falha na adição do funcionario!');
+
+            }
+        });
+
+        return false;
+    }
+
+
+    // var equipes = [
+    //     'Teste equipe'
+    // ]
+    // var select = document.getElementById("sel_equipe");
+    // for (index in equipes) {
+    //     select.options[select.options.length] = new Option(equipes[index], index);
+    // }
+
+    // var funcionarios = [
+    //     'Ednaldo Pereira da Silva',
+    //     'Matheus Magalhães Barbosa',
+    //     'Paulo de Cuiá da Silva'
+    // ]
+    // var select = document.getElementById("sel_funcionario");
+    // for (index in funcionarios) {
+    //     select.options[select.options.length] = new Option(funcionarios[index], index);
+    // }
+</script>

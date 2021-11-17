@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
 body{
     font-family: 'Poppins-Bold';
     display: flex;
@@ -8,11 +15,24 @@ body{
     align-items: center;
 }
 
+h1{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.div_titulo{
+    margin-top: 3vh;
+}
+
+.div_first_form{
+    height: 33vh;
+}
+
 main{
     font-family: 'Poppins-Regular';
     font-size: 1rem;
     font-family: 'Poppins-Bold';
-
     background: linear-gradient(to top, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
     border-radius: 10px;
     width: 70vw;
@@ -20,6 +40,12 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.div-forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .div-criar {
@@ -47,18 +73,15 @@ main{
     background-color: white;
     border-radius: 5px;
     border: none;
-
     height: 5.5vh;
     width: 27vw;
-
     justify-content: center;
     cursor: pointer;
-
 }
 
 .inptPadrao:focus+label,
 .inptPadrao:not(:placeholder-shown)+label {
-    transform: translate(-0.2em) translateY(-0.6em) scale(0.8);
+    transform: translate(-0.2em) translateY(-1.0em) scale(0.8);
 }
 
 .btn-default {
@@ -82,8 +105,8 @@ main{
 
 label {
     position: absolute;
-    left: 30vw;
-    top: 25vh;
+    left: 27vw;
+    top: 45vh;
     color: #686868;
     transform-origin: 0 0;
     transition: transform 0.2s ease-in-out;

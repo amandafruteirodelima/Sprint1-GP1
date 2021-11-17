@@ -80,7 +80,6 @@ router.get('/sessao/:login', function(req, res, next) {
 	
 });
 
-
 /* Logoff de usuário */
 router.get('/sair/:login', function(req, res, next) {
 	let login = req.params.login;
