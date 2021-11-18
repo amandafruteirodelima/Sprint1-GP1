@@ -6,9 +6,3 @@ Planner: https://tasks.office.com/bandtec.com.br/pt-BR/Home/Planner/#/plantaskbo
 
 Canva (Apresentação): https://www.canva.com/design/DAEpPmCzzAU/share/preview?token=tMnLGBHQ3ZfV5htwB-FJjg&role=EDITOR&utm_content=DAEpPmCzzAU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
 
-
-Select que precisa ser analisado:
-
-WHERE dataHora BETWEEN DATEADD(HOUR,-2,GETDATE()) AND CONVERT(datetime, GETDATE()) order by datahora desc;
-
-WHERE dataHora >= DATEADD(hour,-2,GETDATE());
