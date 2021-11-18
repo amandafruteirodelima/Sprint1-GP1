@@ -96,6 +96,9 @@ function entrar() {
                     if(json.isGestor){
                         sessionStorage.login_usuario_meuapp = json.email;
                     sessionStorage.nome_usuario_meuapp = json.nome;
+                    // MEXIDO PARA DASHBOARD ADM
+                    sessionStorage.setItem('idFuncionario', json.idFuncionario)
+                    sessionStorage.setItem('nome', json.nomeFuncionario)
                         window.location.href = 'Dashboard_adm.html';
                     }
                     else{
