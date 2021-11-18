@@ -1,5 +1,6 @@
 package logging;
 
+import com.github.britooo.looca.api.core.Looca;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -8,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 
 public class LogErro {    
     public void mensagemErroSelect(Exception erro) {
-        
+        Looca looca = new Looca();
         FileWriter fileWriter = null;
         try {
             File arquivoSelecao = new File("Historico-Erro-Select-Banco.txt");
@@ -17,6 +18,8 @@ public class LogErro {
             BufferedWriter escrever = new BufferedWriter(fileWriter);
             String original = erroEstilo()
                     + "\nMomento do erro: " + dataCorreta.format(LocalDateTime.now())
+                    + "\nVersão da Aplicação: " 
+                    + "\nInformações do Sistema: " + looca.getSistema()
                     + "\nMOTIVO DO ERRO: Não foi possivel realizar o select no banco"
                     + "\nERRO: " + erro + "\n\n";
             String textoCompleto = original.replaceAll(";", "\n");
@@ -35,6 +38,8 @@ public class LogErro {
     
     public void mensagemErroInsert(Exception erro) {
         
+        Looca looca = new Looca();
+        
         FileWriter fileWriter = null;
         try {
             File arquivoSelecao = new File("Historico-Erro-Insert-Banco.txt");
@@ -43,6 +48,7 @@ public class LogErro {
             BufferedWriter escrever = new BufferedWriter(fileWriter);
             String original = erroEstilo()
                     + "\nMomento do erro: " + dataCorreta.format(LocalDateTime.now())
+                    + "\nSistema Operacional: " + looca.getSistema()
                     + "\nMOTIVO DO ERRO: Não foi possivel realizar o insert no banco"
                     + "\nERRO: " + erro + "\n\n";
             String textoCompleto = original.replaceAll(";", "\n");
