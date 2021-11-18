@@ -17,63 +17,48 @@ router.post('/adicionar', function (req, res, next) {
 
 	let instrucaoSql = `select * from equipe where nomeEquipe = '${equipe}'`;
 	let instrucaoSql2 = `select * from Funcionario where nomeFuncionario = '${funcionario}'`;
-	// let instrucaoSql2 = `select * from Funcionario join equipe_funcionario on idFuncionario=fk_funcionario join equipe on idEquipe=fk_Equipe where nomeFuncionario = '${funcionario}' 
-	// and nomeEquipe = '${equipe}'`;
 
 	console.log(instrucaoSql2);
+	console.log(instrucaoSql);
 
 	sequelize.query(instrucaoSql2, {
 		model: Usuario
-	}).then(sequelize.query(instrucaoSql,{
-		model: Equipe
-		}).then(resultado => {
-		console.log(`Encontrados: ${resultado.length}`);
-
-		if (resultado.length != 0) {
-			funcionarios.push(resultado[0].dataValues.idFuncionario);	// ainda vou arrumar aqui 
-			equipes.push(resultado[0].dataValues.idEquipe);
-			res.json(resultado[0]);
-			console.log(`Encontrados: ${funcionarios[0]}`);
-			console.log(`Encontrados: ${equipes[0]}`);
+	}).then(resultado1 => {
+		console.log(`Encontrados: ${resultado1.length}`);
+		if (resultado1.length != 0) {
+			funcionarios.push(resultado1[0].dataValues.idFuncionario);
 		} else {
 			res.status(403).send('Usuario inválido');
 		}
+
+	}, sequelize.query(instrucaoSql, {
+		model: Equipe
+	}).then(resultado => {
+		console.log(`Encontrados: ${resultado.length}`);
+		if (resultado.length != 0) {
+			equipes.push(resultado[0].dataValues.idEquipe);
+			
+		} else {
+			res.status(403).send('Equipe inválida');
+		}
+
+		Equipe_Funcionario.create({
+			fk_equipe: equipes[0],
+			fk_funcionario: funcionarios[0]
+		}).then(resultado => {
+			console.log(`Registro criado: ${resultado}`)
+			res.send(resultado);
+		}).catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
 
 	}).catch(erro => {
 		console.error(erro);
 		res.status(500).send(erro.message);
 	}));
-
-// 	console.log(instrucaoSql);
-
-// 	sequelize.query(instrucaoSql, {
-// 		model: Equipe
-// 	}).then(resultado => {
-// 		console.log(`Encontrados: ${resultado.length}`);
-
-// 		if (resultado.length != 0) {
-// 			equipes.push(resultado[0].dataValues.idEquipe);
-// 			res.json(resultado[0]);
-// 		} else {
-// 			res.status(403).send('Equipe inválida');
-// 		}
-
-// 	}).catch(erro => {
-// 		console.error(erro);
-// 		res.status(500).send(erro.message);
-// 	});
-
-
-	// Equipe_Funcionario.create({
-	// 	fk_equipe: equipes[0],
-	// 	fk_funcionario: funcionarios[0]
-	// }).then(resultado => {
-	// 	console.log(`Registro criado: ${resultado}`)
-	// 	res.send(resultado);
-	// }).catch(erro => {
-	// 	console.error(erro);
-	// 	res.status(500).send(erro.message);
-	// });
+	equipes = [];
+	funcionarios = [];
 });
 
 /* Criar equipe */

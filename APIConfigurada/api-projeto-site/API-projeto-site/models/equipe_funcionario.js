@@ -7,21 +7,17 @@
 
 	module.exports = (sequelize, DataTypes) => {
 		let Equipe_Funcionario = sequelize.define('Equipe_Funcionario', {
-			id: {
-				field: 'idEquipeFuncionario',
-				type: DataTypes.INTEGER,
-				primaryKey: true,
-				autoIncrement: true
-			},
 			fk_equipe: {
 				field: 'fk_equipe',
 				type: DataTypes.INTEGER,
-				allowNull: true
+				primaryKey: true,
+				allowNull: false
 			},
 			fk_funcionario: {
 				field: 'fk_funcionario',
 				type: DataTypes.INTEGER,
-				allowNull: true
+				primaryKey: true,
+				allowNull: false
 			}
 		}, {
 			tableName: 'Equipe_Funcionario',
