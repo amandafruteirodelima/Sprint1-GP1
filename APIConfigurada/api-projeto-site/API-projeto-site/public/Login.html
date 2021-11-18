@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    
     <link rel="stylesheet" href="./css/Login.css">
     <link rel="stylesheet" href="./css/headerLight2.css">
     <link rel="icon" href="img/Yin-Yang-DevTime.png">
@@ -99,11 +100,14 @@ function entrar() {
                     // MEXIDO PARA DASHBOARD ADM
                     sessionStorage.setItem('idFuncionario', json.idFuncionario)
                     sessionStorage.setItem('nome', json.nomeFuncionario)
+                    sessionStorage.idFuncionario = json.idFuncionario;
                         window.location.href = 'Dashboard_adm.html';
                     }
                     else{
                         sessionStorage.login_usuario_meuapp = json.email;
                         sessionStorage.nome_usuario_meuapp = json.nome;
+                        sessionStorage.setItem('idFuncionario', json.idFuncionario);
+                        sessionStorage.idFuncionario = json.idFuncionario;
                         window.location.href = 'dashboard_funcs.html';
                     }
                 });
