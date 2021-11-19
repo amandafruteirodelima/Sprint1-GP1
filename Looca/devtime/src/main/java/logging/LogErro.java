@@ -18,9 +18,8 @@ public class LogErro {
             BufferedWriter escrever = new BufferedWriter(fileWriter);
             String original = erroEstilo()
                     + "\nMomento do erro: " + dataCorreta.format(LocalDateTime.now())
-                    + "\nVersão da Aplicação: " 
-                    + "\nInformações do Sistema: " + looca.getSistema()
-                    + "\nMOTIVO DO ERRO: Não foi possivel realizar o select no banco"
+                    + "\nVersão da Aplicação: "
+                    + looca.getSistema()
                     + "\nERRO: " + erro + "\n\n";
             String textoCompleto = original.replaceAll(";", "\n");
             escrever.write(textoCompleto);
@@ -48,8 +47,7 @@ public class LogErro {
             BufferedWriter escrever = new BufferedWriter(fileWriter);
             String original = erroEstilo()
                     + "\nMomento do erro: " + dataCorreta.format(LocalDateTime.now())
-                    + "\nSistema Operacional: " + looca.getSistema()
-                    + "\nMOTIVO DO ERRO: Não foi possivel realizar o insert no banco"
+                    + looca.getSistema()
                     + "\nERRO: " + erro + "\n\n";
             String textoCompleto = original.replaceAll(";", "\n");
             escrever.write(textoCompleto);

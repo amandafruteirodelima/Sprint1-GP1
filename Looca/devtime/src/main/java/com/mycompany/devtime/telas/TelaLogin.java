@@ -199,7 +199,7 @@ public class TelaLogin extends javax.swing.JFrame {
         FuncionarioEntity funcionarioEntity = FuncionarioEntity.getInstance();
 
         try {
-            List<FuncionarioEntity> funcionario = assistente.query("SEEECT * "
+            List<FuncionarioEntity> funcionario = assistente.query("SELECT * "
                     + "FROM Funcionario where email = '" + email + "' and senha = '"
                     + senha + "'",
                     new BeanPropertyRowMapper<>(FuncionarioEntity.class));
