@@ -73,11 +73,11 @@ REFERENCES Funcionario(idFuncionario)
 //Equipe_Funcionario -->OKAY
 
 CREATE TABLE Equipe_Funcionario (
-idEquipeFuncionario INT PRIMARY KEY IDENTITY(1,1),
-fk_Equipe INT FOREIGN KEY
+fk_Equipe INT NOT NULL FOREIGN KEY 
 REFERENCES Equipe (idEquipe),
-fk_Funcionario INT FOREIGN KEY
-REFERENCES Funcionario (idFuncionario)
+fk_Funcionario INT NOT NULL FOREIGN KEY
+REFERENCES Funcionario (idFuncionario),
+primary key(fk_Equipe, fk_funcionario)
 );
 
 
