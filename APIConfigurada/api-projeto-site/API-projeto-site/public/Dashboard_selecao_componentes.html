@@ -47,62 +47,12 @@
         <div id="div_online_fundo" class="div_online_fundo">
             <div id="div_online" class="div_online">
 
-                <button onclick="teste()">Teste</button>
-
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-
             </div>
         </div>
 
         <div id="div_componentes_fundo" class="div_componentes_fundo">
             <div class="div_componentes">
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
-                <h1 class="nome_funcionario">teste funcionário nome</h1>
+
             </div>
         </div>
     </div>
@@ -112,9 +62,77 @@
 </html>
 
 <script>
+    var idFuncionario = sessionStorage.getItem('idFuncionario');
 
-    function teste() {
-        div_online.innerHTML = `<h1 class="nome_funcionario">teste funcionário nome</h1>`;
+    window.onload = function ativarFunctions() {
+
+        trazerFuncionariosOnline();
+
+        trazerComponentes();
+
     }
 
+    function trazerFuncionariosOnline() {
+
+        fetch(`/usuarios/verOnline/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+
+                    //Mostrar cada funcionário na tela
+
+                    for (let index = 0; index < json.length; index++) {
+
+                        div_online.innerHTML +=
+                            `<h1 onclick class="nome_funcionario">${json[index].nomeFuncionario}</h1>`;
+
+                    }
+
+                });
+
+            } else {
+                alert('Você não possui funcionários para monitorar');
+            }
+        });
+
+        return false;
+
+    }
+
+    function trazerComponentes() {
+
+        fetch(`/usuarios/trazerComponentes/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+
+                    //Mostrar cada componentes na tela
+
+                    for (let index = 0; index < json.length; index++) {
+
+                        div_componentes.innerHTML +=
+                            `<h1 class="nome_funcionario">${json[index].nomeComponente}</h1>`;
+
+                    }
+
+                });
+
+            } else {
+                alert('Esse funcionário não possui componentes para monitorar');
+            }
+        });
+
+        return false;
+
+    }
 </script>
