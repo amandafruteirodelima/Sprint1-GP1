@@ -44,27 +44,17 @@
         depois escolha quais componentes deseja que sejam monitorados</h2>
 
     <div class="div_alinhadora">
-        <div class="div_online">
+        <div id="div_online_fundo" class="div_online_fundo">
+            <div id="div_online" class="div_online">
 
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-            <h1>teste</h1>
-
+            </div>
         </div>
 
-        <div class="div_componentes"></div>
+        <div id="div_componentes_fundo" class="div_componentes_fundo">
+            <div class="div_componentes">
+
+            </div>
+        </div>
     </div>
 
 </body>
@@ -72,5 +62,79 @@
 </html>
 
 <script>
+    var idFuncionario = sessionStorage.getItem('idFuncionario');
 
+    var idFuncionarioMembro = sessionStorage.getItem('idFuncionarioMembro');
+
+    window.onload = function ativarFunctions() {
+
+        trazerFuncionariosOnline();
+
+        trazerComponentes();
+
+    }
+
+    function trazerFuncionariosOnline() {
+
+        fetch(`/usuarios/verOnline/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+
+                    //Mostrar cada funcionário na tela
+
+                    for (let index = 0; index < json.length; index++) {
+
+                        div_online.innerHTML +=
+                            `<h1 onclick class="nome_funcionario">${json[index].nomeFuncionario}</h1>`;
+
+                    }
+
+                });
+
+            } else {
+                alert('Você não possui funcionários para monitorar');
+            }
+        });
+
+        return false;
+
+    }
+
+    function trazerComponentes() {
+
+        fetch(`/usuarios/trazerComponentes/${idFuncionarioMembro}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+
+                    //Mostrar cada componentes na tela
+
+                    for (let index = 0; index < json.length; index++) {
+
+                        div_componentes.innerHTML +=
+                            `<h1 class="nome_funcionario">${json[index].nomeComponente}</h1>`;
+
+                    }
+
+                });
+
+            } else {
+                alert('Esse funcionário não possui componentes para monitorar');
+            }
+        });
+
+        return false;
+
+    }
 </script>

@@ -5,6 +5,19 @@
     src: url(../fonts/Poppins-Bold.ttf);
 }
 
+/* Configurações da barra de rolagem */
+::-webkit-scrollbar {
+    height: 20px;
+    background-color: none;
+    opacity: 0.4;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
 body {
     /* background: linear-gradient(120deg, #987fc4 0%,  rgb(49, 2, 77) 70%), #0000 0%; */
     background-image: linear-gradient(to right, #be9cfa 2.2%, rgba(97, 3, 151, 0.801) 37.73%, #441092f6 64.49%);
