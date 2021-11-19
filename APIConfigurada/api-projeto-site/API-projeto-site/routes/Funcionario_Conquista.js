@@ -20,12 +20,12 @@ router.post('/recuperar', function(req, res, next) {
     //Neste select irei trazer todos os dados que desejo relacionando func e conquista
     //Trará todas as conquistas
 
-	let instrucaoSql = `select c.idConquista, c.nomeConquista, c.descConquista, c.devCoinConquista, 
-	c.pontosConquista, c.xpConquista, f.idFuncionario,f.nomeFuncionario
-		from Funcionario_Conquista as fc 
-		join Conquista as c on fc.fk_Conquista = c.idConquista 
-		join Funcionario as f on fc.fk_Funcionario = ${idFuncionario} 
-		where fc.fk_Funcionario = ${idFuncionario}`
+	let instrucaoSql = `select idConquista, nomeConquista, descConquista, devCoinConquista, 
+	pontosConquista, xpConquista, idFuncionario,nomeFuncionario
+		from Funcionario_Conquista  
+		join Conquista on fk_Conquista = idConquista 
+		join Funcionario on fk_Funcionario = idFuncionario
+		where fk_Funcionario = ${idFuncionario}`
 
 
 	console.log(instrucaoSql);
