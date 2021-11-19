@@ -61,7 +61,7 @@ main{
 .div-adicionar{
     font-size: 0.9rem;
     padding: 3vh 4vw;
-    height: 40vh;
+    height: 33vh;
     width: 62vw;
     display: flex;
     align-items: center;
@@ -106,11 +106,18 @@ main{
 label {
     position: absolute;
     left: 27vw;
-    top: 45vh;
+    top: 49.3vh;
     color: #686868;
     transform-origin: 0 0;
     transition: transform 0.2s ease-in-out;
     font-size: 0.9rem;
+}
+.label_nome_equipe{
+    top: 85vh;
+}
+
+.label_nome_funcionario{
+    top: 97.5vh;
 }
 
 .sel-padrao {
@@ -132,28 +139,6 @@ label {
     flex-direction: column;
     justify-content: space-between;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*INICIO FOOTER*/
 
