@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: 'Poppins-Regular';
     src: url(../fonts/Poppins-Regular.ttf);
     font-family: 'Poppins-Bold';
@@ -6,16 +6,18 @@
 }
 
 body {
-    display: flex;
     margin: 0;
+    padding: 0;
     background: linear-gradient(270deg, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
     background-size: cover;
     font-family: 'Poppins-Bold';
 
-    
+
+    display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
     align-items: center;
+    width: 100vw;
 
 }
 
@@ -29,10 +31,10 @@ body {
     font-size: 1rem;
 
     background-color: rgba(247, 247, 247, 0.856);
-    
+
     border-radius: 2px;
 
-    width: 120vh;
+    width: 60vw;
     height: 70vh;
 
     display: flex;
@@ -40,23 +42,24 @@ body {
 
 }
 
-.login-cor{
-    width: 40vh;
+.login-cor {
+    width: 20vw;
     height: 70vh;
     background: linear-gradient(to left, #5f2c82, #751df8);
     margin: 0;
 }
 
-.txt-titulo{
+.txt-titulo {
     color: white;
     font-size: 1.3rem;
     font-family: 'Poppins-Bold';
-    padding: 20px;
+    padding: 3vh 2vh;
 }
 
-.conteudo-login{
-    height: 406px;
-    width: 525px;
+.conteudo-login {
+    height: 60vh;
+    width: 38vw;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,30 +67,29 @@ body {
 }
 
 .content form {
-   
-    width: 60vh;
+
+    width: 30vw;
     justify-content: center;
     align-items: center;
 }
 
 
-.img_login{
-    width: 26vh;
+.img_login {
+    width: 14vw;
     padding: 0;
     margin: 0;
 }
 
-.img_login_2{
-    width: 35vh;
+.img_login_2 {
+    width: 18vw;
     padding-top: 2vh;
-    padding-left: 20px;
+    padding-left: 1vw;
 }
 
 
 .div-inpts {
-
-   text-align: center;
-   justify-content: center;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -95,10 +97,10 @@ body {
     background-color: white;
     border-radius: 5px;
     border: none;
-    padding-top: 7px;
-    
+    padding-top: 1vh;
+
     height: 5vh;
-    width: 55vh;
+    width: 27.5vw;
 
     justify-content: center;
     margin-bottom: 4vh;
@@ -121,24 +123,21 @@ form {
 
 label {
     position: absolute;
-    left: 1vh;
+    left: 2vw;
     top: 1.5vh;
     color: #686868;
     transform-origin: 0 0;
     transition: transform 0.2s ease-in-out;
-    font-family: 'Poppins-Bold'; font-size: small;
+    font-family: 'Poppins-Bold';
+    font-size: small;
 }
 
 
-.label-email {
-    left: 3vh;
-    top: 1.7vh;
-}
+
 
 
 .label-senha {
-    left: 3vh;
-    top: 12vh;
+    top: 11.7vh;
 }
 
 
@@ -157,21 +156,220 @@ label {
 
     text-align: center;
 
-    width: 20vh;
+    width: 10vw;
     height: 5vh;
-   
+
 }
 
 .btn-default:hover {
 
     background-color: #602c82ef;
 
-    font-size: 1.15rem;
+    transform: scale(1.03);
     transition: 0.5s;
     cursor: pointer;
 }
 
-.link-comum{
+.link-comum {
     color: white;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+/*TABLET*/
+@media only screen and (max-width: 768px) {
+
+    .content {
+        border-radius: 2px;
+
+        width: 70vw;
+        height: 55vh;
+    }
+
+
+    .login-cor {
+        width: 20vw;
+        height: 55vh;
+    }
+
+    .txt-titulo {
+        font-size: 1.0rem;
+        padding: 1vh 1vh;
+    }
+
+    .conteudo-login {
+        height: 55vh;
+        width: 50vw;
+    }
+
+    .content form {
+        width: 30vw;
+    }
+
+
+    .img_login {
+        width: 12vw;
+    }
+
+    .img_login_2 {
+        width: 18vw;
+        padding-top: 2vh;
+        padding-left: 1vw;
+    }
+
+
+    .inptPadrao {
+        border-radius: 3px;
+        padding-top: 1vh;
+
+        height: 3vh;
+        width: 27.5vw;
+
+        margin-bottom: 2vh;
+
+    }
+
+
+    /*Labels*/
+
+
+    label {
+        left: 1.5vh;
+        font-size: 0.7rem;
+    }
+
+
+    .label-email {
+        top: 1vh;
+    }
+
+
+    .label-senha {
+        top: 6.8vh;
+    }
+
+
+    /*Button*/
+
+
+    .btn-default {
+        font-size: 0.7rem;
+        border-radius: 3px;
+ 
+        width: 8vw;
+        height: 4vh;
+
+    }
+
+    .btn-default:hover {
+        transform: scale(0.8);
+        transition: 0.5s;
+
+    }
+}
+
+
+/*Celular*/
+
+
+@media only screen and (max-width: 600px) {
+    
+    .content {
+        border-radius: 2px;
+
+        width: 80vw;
+        height: 40vh;
+    }
+
+
+    .login-cor {
+        width: 30vw;
+        height: 40vh;
+    }
+
+    .txt-titulo {
+        font-size: 0.7rem;
+        padding: 1vh 1vh;
+    }
+
+    .conteudo-login {
+        height: 37vh;
+        width: 50vw;
+    }
+
+    .content form {
+        width: 30vw;
+    }
+
+
+    .img_login {
+        width: 20vw;
+    }
+
+    .img_login_2 {
+        width: 27vw;
+        padding-top: 5vh;
+        padding-left: 1vw;
+    }
+
+
+    .inptPadrao {
+        border-radius: 3px;
+        padding-top: 1vh;
+
+        height: 1.5vh;
+        width: 30vw;
+
+        margin-bottom: 1vh;
+
+    }
+
+
+    /*Labels*/
+
+
+    label {
+        left: 1vh;
+        font-size: 0.5rem;
+    }
+
+
+    .label-email {
+        top: 0.5vh;
+    }
+
+
+    .label-senha {
+        top: 4.2vh;
+    }
+
+
+    /*Button*/
+
+
+
+    .btn-default {
+        font-size: 0.5rem;
+        border-radius: 3px;
+        text-align: center;
+        margin: 0;
+        padding-top: 1px;
+ 
+        width: 15vw;
+        height: 2.5vh;
+
+    }
+
+    .btn-default:hover {
+        transform: scale(0.6);
+        transition: 0.5s;
+
+    }
+}
+
