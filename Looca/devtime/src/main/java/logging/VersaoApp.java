@@ -28,4 +28,9 @@ public class VersaoApp {
         }
         return versao.getVersion();
     }
+    
+    //FileNotFoundException aparece quando o arquivo não existe ou não tem um caminho acessivel
+    // IOException aparece quando ocorre alguma exceção
+    // XmlPullParserException aparece em um erro no Xml Pull Parser
+    // MavenXpp3Reader 
 }
