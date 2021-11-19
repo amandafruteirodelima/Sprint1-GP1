@@ -5,6 +5,7 @@ com\mycompany\devtime\telas\TelaLogin.class
 com\mycompany\devtime\telas\TelaLogin$1.class
 logging\LogErro.class
 entities\FuncionarioEntity.class
+logging\versionApp.class
 implantation\HistoricoRamImpl.class
 com\mycompany\devtime\telas\TelaLogin$4.class
 implantation\SoftwareImpl.class
