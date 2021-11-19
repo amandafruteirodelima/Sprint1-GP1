@@ -1,119 +1,229 @@
 /*INÍCIO HEADER*/
 
 
+/*Desktop*/
+
 .divHeader {
     font-family: 'Poppins-Bold';
     text-transform: uppercase;
-    
+
     justify-content: center;
     display: flex;
     align-items: center;
-    
-    padding-top: 5vh;
-    height: 10vh;
-    width: 100%;
-    
+
+
+    height: 20vh;
+    width: 98vw;
 }
 
-.divHeaderHome{
-    padding-top: 10vh ;
-}
+
 
 .container-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 0 150px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
 
+    height: 10vh;
+    width: 85vw;
 }
 
 /*Imagem*/
 
+img {
+    padding-bottom: 2vh;
+    margin: 0;
+}
+
 .divImagem img {
     cursor: pointer;
-    width: 20vh; 
-
+    width: 10vw;
 }
 
 
 
 /*Lista*/
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .divLista ul {
     list-style: none;
     margin: 0;
-    padding: 4% 0;
-    
+
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 150px;
-}
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 
-.divLista li {
+    width: 35vw;
 
-    display: flex;
-    font-size: 1rem;
-    text-decoration: none;
-    color: white;
-
-    flex-direction: row;
-    cursor: pointer;
-    
 }
 
 
-.divLista li:hover {
-    font-size: 1.1rem;
-    transition: 0.5s;
-    color: rgb(205, 198, 243); 
-    
-}
+
 
 .li-select {
     text-decoration: none;
     color: #9c5bff;
 }
 
-.li-comum{
-    text-decoration: none;
+.li-comum {
+
     color: white;
+    font-size: 1rem;
+    text-decoration: none;
+
+
+    cursor: pointer;
 }
 
 
-.li-comum:hover{
-    color: #9c5bff
+.li-comum:hover {
+    color: #9c5bff;
+
+    transform: scale(1.1);
+    transition: 0.5s;
+
 }
 
 
 /*Button*/
 
 
-.divButtonHeader button{
+button {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.divButtonHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.divButtonHeader button {
     text-transform: uppercase;
     color: white;
     background-color: rgba(255, 255, 255, 0);
-    border: solid 1px white;;
+    border: solid 1px white;
     border-radius: 5px;
     text-align: center;
 
-    margin-top: 18%;
-    width: 15vh;
+    width: 8vw;
     height: 5vh;
     font-family: 'Poppins-Bold';
     font-size: 1rem;
 }
 
-.divButtonHeader button:hover{
-  
-background-color: rgba(255, 255, 255, 0.137);
-font-size: 1.1rem;
-transition: 0.5s;
-cursor: pointer;
+.divButtonHeader button:hover {
+
+    background-color: rgba(255, 255, 255, 0.137);
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
 
 }
 
 
 /*FIM HEADER*/
+
+
+/*TABLET*/
+@media only screen and (max-width: 768px) {
+
+    img {
+        padding-bottom: 1vh;
+    }
+
+    .divLista ul {
+        width: 35vw;
+    }
+
+
+    .li-select {
+        text-decoration: none;
+        color: #9c5bff;
+    }
+
+
+
+    .li-comum {
+        font-size: 0.8rem;
+    }
+
+
+    .li-comum:hover {
+        font-size: 0.9rem;
+    }
+
+
+    .divButtonHeader button {
+        border-radius: 4px;
+
+        width: 9vw;
+        height: 4vh;
+        font-size: 0.8rem;
+    }
+
+    .divButtonHeader button:hover {
+        transform: scale(0.9);
+    }
+}
+
+/*Celular*/
+
+
+@media only screen and (max-width: 600px) {
+    img {
+        padding-bottom: 0.5vh;
+    }
+
+
+    .divImagem img {
+        width: 15vw;
+    }
+
+
+    .divLista ul {
+        width: 35vw;
+    }
+
+
+    .li-select {
+        text-decoration: none;
+        color: #9c5bff;
+    }
+
+
+
+    .li-comum {
+        font-size: 0.5rem;
+    }
+
+
+    .li-comum:hover {
+        font-size: 0.6rem;
+    }
+
+
+    .divButtonHeader button {
+        border-radius: 3px;
+
+        width: 13vw;
+        height: 2vh;
+        font-size: 0.5rem;
+    }
+
+    .divButtonHeader button:hover {
+        transform: scale(0.6);
+    }
+}
