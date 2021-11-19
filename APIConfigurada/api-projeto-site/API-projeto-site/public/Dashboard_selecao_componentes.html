@@ -64,6 +64,8 @@
 <script>
     var idFuncionario = sessionStorage.getItem('idFuncionario');
 
+    var idFuncionarioMembro = sessionStorage.getItem('idFuncionarioMembro');
+
     window.onload = function ativarFunctions() {
 
         trazerFuncionariosOnline();
@@ -106,7 +108,7 @@
 
     function trazerComponentes() {
 
-        fetch(`/usuarios/trazerComponentes/${idFuncionario}`, {
+        fetch(`/usuarios/trazerComponentes/${idFuncionarioMembro}`, {
             method: "post"
         }).then(resposta => {
 

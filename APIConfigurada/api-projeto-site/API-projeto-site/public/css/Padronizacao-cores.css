@@ -40,3 +40,16 @@
 
     background: linear-gradient(to top, #27063A 0%, #27063A 0%, #27063A 0.01%, #3B025C 48.54%, #431092 100%);
 }
+
+/* Configurações da barra de rolagem */
+::-webkit-scrollbar {
+    height: 20px;
+    background-color: none;
+    opacity: 0.4;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
