@@ -106,6 +106,7 @@
 
     }
 
+    // será ativada ao clicar no nome do funcionário quando estiver pronta
     function trazerComponentes() {
 
         fetch(`/usuarios/trazerComponentes/${idFuncionarioMembro}`, {
@@ -124,7 +125,6 @@
 
                         div_componentes.innerHTML +=
                             `<h1 class="nome_funcionario">${json[index].nomeComponente}</h1>`;
-
                     }
 
                 });
