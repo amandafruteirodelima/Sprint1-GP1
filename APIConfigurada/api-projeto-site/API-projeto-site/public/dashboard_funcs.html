@@ -130,7 +130,7 @@
                 <div>
                     Status pc
                 </div>
-                <span id="statusPC">ON</span>
+                <span id="statusPC">...</span>
             </div>
 
             <div class="divDisplayIndividual">
@@ -164,28 +164,29 @@
         <div class="linha_meio">
 
             <div class="tabela_softwares ">
-                <div class="divGraficos">GRAFICO MONITORAMENTO GERAL(HORA)</div>
+                <div class="divGraficos">GRAFICO MONITORAMENTO CPU(HORA)</div>
                 <div class="grafico grafico_geral">
-                    <canvas id="cpu_ram"></canvas>
+                    <canvas id="cpu"></canvas>
                 </div>
             </div>
 
-            <div class="grafico_softwares ">
-                <div class="divGraficos"> ARMAZENAMENTO</div>
-                <div class="grafico">
-                    <canvas id="disco"></canvas>
+            <div class="tabela_softwares ">
+                <div class="divGraficos">GRAFICO MONITORAMENTO RAM(HORA)</div>
+                <div class="grafico grafico_geral">
+                    <canvas id="ram"></canvas>
                 </div>
             </div>
+
+
 
         </div>
 
-        <div class="linha_meio">
-            <div class="grafico_softwares ">
-                <div class="divGraficos"> GRAFICO SOFTWARES </div>
-                <div class="grafico">
-                    <canvas id="pizza_process"></canvas>
-                </div>
+        <div class="grafico_softwares ">
+            <div class="divGraficos"> ARMAZENAMENTO</div>
+            <div class="grafico">
+                <canvas id="disco"></canvas>
             </div>
+        </div>
 
         </div>
     </div>
@@ -277,67 +278,12 @@
         configbars
     );
     /////////////////////////////////////////////////////////////////////
-    // const dataline = {
-    //     labels: ['0s', '5s', '10s', '15s', '20s', '25s', '30s', '35s', '40s', '45s', '50s', '55s', '60s'],
-    //     datasets: [{
-    //         label: "Intel(R) Core(TM) i3-3220 CPU @3.30 GHz",
-    //         data: [0, 10, 24, 42, 35, 50, 51, 73, 80, 90, 100, 65, 50],
-    //         fill: false,
-    //         borderColor: '#4A024D',
-    //         backgroundColor: 'white',
-    //         tension: 0.1
-    //     },
-    //     {
-    //         label: "RAM",
-    //         data: [20, 15, 34, 52, 15, 80, 61, 93, 20, 60, 90, 95, 90],
-    //         fill: false,
-    //         borderColor: 'blue',
-    //         backgroundColor: 'white',
-    //         tension: 0.1
-    //     }]
-    // };
-    // const configline = {
-    //     type: 'line',
-    //     data: dataline,
-    //     options: {
-    //         responsive: true,
-    //         interaction: {
-    //             mode: 'index',
-    //             intersect: false,
-    //         },
-    //         stacked: false,
-    //         plugins: {
-    //             legend: {
-    //                 display: true
-    //             }
-    //         },
-    //         scales: {
-    //             y: {
-    //                 type: 'linear',
-    //                 display: true,
-    //                 position: 'left',
-    //             },
-    //             y1: {
-    //                 type: 'linear',
-    //                 display: false,
-    //                 position: 'right',
-
-    //                 grid: {
-    //                     drawOnChartArea: false, // only want the grid lines for one axis to show up
-    //                 },
-    //             },
-    //         }
-    //     },
-    // };
-    // var myChart = new Chart(
-    //     document.getElementById('cpu_ram'),
-    //     configline
-    // );
-
 
     let proximaAtualizacao;
 
     verificar_autenticacao();
+
+    var statusIsLigado = false;
 
     var usuarioEmail = sessionStorage.login_usuario_meuapp;
 
@@ -348,23 +294,37 @@
     function chamargraficos() {
         console.log("executei chamargraficos")
         obterDadosGraficoPrimeiraVezCPU()
-        // obterDadosGraficoPrimeiraVezRAM()
+        obterDadosGraficoPrimeiraVezRAM()
         
         atualizacaoPeriodica()
     }
 
     function atualizacaoPeriodica() {
-
         obterdadosconsumoCPU();
         obterdadosconsumoRAM();
         obterdadosconsumoDISCO();
 
+        statusPcOnline()
+
         setTimeout(atualizacaoPeriodica, 5000);
+    }
+
+    function statusPcOnline() {
+
+        if(statusIsLigado) {
+
+            statusPC.innerHTML = 'ON';
+
+        } else {
+
+            statusPC.innerHTML = 'OFF';
+
+        }
     }
 
     // CPU
 
-    function configurarGraficoCPURAM() {
+    function configurarGraficoCPU() {
         console.log("executei configurarGraficoCPU")
         var configuracoes = {
             responsive: true,
@@ -416,7 +376,7 @@
                     }
                     console.log(JSON.stringify(dados));
 
-                    plotarGrafico(dados);
+                    plotarGraficoCPU(dados);
 
                 });
             } else {
@@ -426,6 +386,23 @@
             console.error(`Erro na obtenção dos dados da CPU p/ gráfico: ${error.message}`);
         });
 
+    }
+
+//  RAM
+
+    function configurarGraficoRAM() {
+        console.log("executei configurarGraficoRAM")
+        var configuracoes = {
+            responsive: true,
+            animation: { duration: 1000 },
+            title: {
+                display: false,
+                text: 'Histórico'
+            },
+
+        };
+
+        return configuracoes;
     }
 
     function obterDadosGraficoPrimeiraVezRAM() {
@@ -442,6 +419,7 @@
                     resposta.reverse();
 
                     var dados = {
+                        labels: [],
                         datasets: [
                             {
                                 yAxisID: 'Y-ram',
@@ -459,12 +437,15 @@
                     for (i = 0; i < resposta.length; i++) {
                         var registro = resposta[i];
 
+                        dados.labels.push(registro.dataFormatada);
                         dados.datasets[0].data.push(registro.consumo);
+
+                        console.log(registro.consumo);
 
                     }
                     console.log(JSON.stringify(dados));
 
-                    // plotarGrafico(dados);
+                    plotarGraficoRAM(dados);
 
                 });
             } else {
@@ -496,7 +477,7 @@
                     dados.datasets[0].data.shift();  // apagar o primeiro
                     dados.datasets[0].data.push(novoRegistro[0].consumo); // incluir uma nova leitura 
 
-                    myChart.update();
+                    chartCPU.update();
 
                     proximaAtualizacao = setTimeout(() => atualizarGraficoCPU(dados), 5000);
                 });
@@ -507,7 +488,7 @@
         }).catch(function (error) {
             console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
         });
-
+;
     }
 
     function atualizarGraficoRAM(dados) {
@@ -515,12 +496,17 @@
             fetch(`/leiturasDaMaquina/ramultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
             console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
             if (response.ok) {
+
                 response.json().then(function (novoRegistro) {
 
                     console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
 
+                    dados.labels.shift(); // apagar o primeiro
+                    dados.labels.push(novoRegistro[0].dataFormatada); // incluir um novo momento
                     dados.datasets[0].data.shift();  // apagar o primeiro
-                    dados.datasets[0].data.push(novoRegistro.consumo); // incluir uma nova leitura 
+                    dados.datasets[0].data.push(novoRegistro[0].consumo); // incluir uma nova leitura 
+                
+                    chartRAM.update();
 
                     proximaAtualizacao = setTimeout(() => atualizarGraficoRAM(dados), 5000);
                 });
@@ -534,27 +520,43 @@
 
     }
 
-    function plotarGrafico(dados) {
-        console.log("executei plotarGrafico")
+    function plotarGraficoCPU(dados) {
+        console.log("executei plotarGraficoCPU")
         console.log('iniciando plotagem do gráfico...');
 
         const config = {
             type: 'line',
             data: dados,
-            options: configurarGraficoCPURAM() 
+            options: configurarGraficoCPU() 
         };
 
-        myChart = new Chart(
-            document.getElementById('cpu_ram'),
+        chartCPU = new Chart(
+            document.getElementById('cpu'),
             config
         );
 
         atualizarGraficoCPU(dados);
-        // atualizarGraficoRAM(dados);
+    }
+
+    function plotarGraficoRAM(dados) {
+        console.log("executei plotarGraficoCPU")
+        console.log('iniciando plotagem do gráfico...');
+
+        const config = {
+            type: 'line',
+            data: dados,
+            options: configurarGraficoRAM() 
+        };
+
+        chartRAM = new Chart(
+            document.getElementById('ram'),
+            config
+        );
+
+        atualizarGraficoRAM(dados);
     }
 
     function obterdadosconsumoCPU() {
-        // aguardar();
         fetch(`/leiturasDaMaquina/processador/${usuarioEmail}`)
             .then(resposta => {
 
@@ -566,7 +568,6 @@
                         }
 
                         alertarCPU(dados);
-                        console.log()
                     });
                 } else {
                     console.error('Nenhum dado encontrado ou erro na API');
@@ -579,7 +580,6 @@
     }
     
     function obterdadosconsumoRAM() {
-        // aguardar();
 
         fetch(`/leiturasDaMaquina/ram/${usuarioEmail}`)
             .then(resposta => {
@@ -607,7 +607,6 @@
     }
 
     function obterdadosconsumoDISCO() {
-        // aguardar();
 
         fetch(`/leiturasDaMaquina/disco/${usuarioEmail}`)
             .then(resposta => {

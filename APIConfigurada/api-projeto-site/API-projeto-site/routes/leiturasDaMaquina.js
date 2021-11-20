@@ -150,8 +150,12 @@ router.get('/ramultimas/:usuarioEmail', function(req, res, next) {
     }
     else if (env == 'production') {
         instrucaoSql = `select top ${limite_linhas}
-		email, nomeComponente, capacidade, consumo, dataHora,
-		FORMAT(dataHora,'%H:%i:%s')
+		email, 
+		nomeComponente, 
+		capacidade, 
+		consumo, 
+		dataHora,
+		FORMAT(dataHora,'%H:%m:%s') as dataFormatada
 		FROM [dbo].[Funcionario]
 		JOIN [dbo].[Maquina]
 		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
@@ -234,6 +238,68 @@ router.get('/ram/:usuarioEmail', function(req, res, next) {
 
 
 // DISCO
+
+router.get('/discoultimas/:usuarioEmail', function(req, res, next) {
+	
+    const limite_linhas = 7;
+
+    var usuarioEmail = req.params.usuarioEmail;
+
+    console.log(`Recuperando dados do Processador da Maquina: ${usuarioEmail}`);
+
+    let sql = "";
+
+    if (env == 'dev') {
+		instrucaoSql = `select
+        nomeComponente, 
+		consumo, 
+		dataHora, 
+		DATE_FORMAT(dataHora,'%H:%i:%s')
+		FROM Funcionario
+		JOIN Maquina
+		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
+		JOIN Componente
+		ON (Maquina.idMaquina = Componente.fk_Maquina)
+		INNER JOIN Historico_Uso
+        ON (Componente.idComponente = Historico_Uso.fk_componente)
+        where nomeComponente = 'RAM' and Funcionario.email = '${usuarioEmail}'
+		order by datahora desc limit ${limite_linhas}`;
+    }
+    else if (env == 'production') {
+        instrucaoSql = ` select top ${limite_linhas}
+		idComponente,
+        nomeComponente, 
+		consumo,
+		capacidade,
+		dataHora,
+		FORMAT(dataHora,'%H:%m:%s') as dataFormatada
+		FROM Funcionario
+		JOIN Maquina
+		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
+		JOIN Componente
+		ON (Maquina.idMaquina = Componente.fk_Maquina)
+		INNER JOIN Historico_Uso
+        ON (Componente.idComponente = Historico_Uso.fk_componente)
+        where nomeComponente = 'DISCO' and Funcionario.email =  '${usuarioEmail}'
+		order by datahora desc`;
+    }
+    else {
+        console.log("Erro ao buscar dados da RAM !!")
+    }
+
+	sequelize.query(instrucaoSql, {
+		model: Historico_Uso,
+		mapToModel: true 
+	})
+	.then(resultado => {
+		console.log(`Encontrados: ${resultado.length}`);
+		res.json(resultado);
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+	});
+});
+
 
 router.get('/disco/:usuarioEmail', function(req, res, next) {
 	console.log('Recuperando RAM');

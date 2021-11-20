@@ -1016,3 +1016,87 @@ MOTIVO DO ERRO: Não foi possivel realizar o select no banco
 ERRO: java.lang.NullPointerException
 
 
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:39:11
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:39:33
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:39:50
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7775457280,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:39:50
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7775457280,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:39:55
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7667757056,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:00
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7796252672,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:05
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7733100544,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:10
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7746502656,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:15
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7726587904,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:20
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7719317504,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:25
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7774543872,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:30
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7767830528,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:35
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7755001856,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:40
+MOTIVO DO ERRO: Não foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7759155200,00"
+
+
