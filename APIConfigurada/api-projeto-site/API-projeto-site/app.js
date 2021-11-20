@@ -9,6 +9,9 @@ var indexRouter = require('./routes/index');
 var usuariosRouter = require('./routes/usuarios');
 var leiturasRouter = require('./routes/leituras');
 var leiturasMaquinaRouter = require('./routes/leiturasDaMaquina');
+var Funcionario_Conquista = require('./routes/Funcionario_Conquista');
+var equipesRouter = require('./routes/equipes');
+var equipeFuncionarioRouter = require('./routes/equipes');
 
 var app = express();
 
@@ -22,5 +25,8 @@ app.use('/', indexRouter);
 app.use('/usuarios', usuariosRouter);
 app.use('/leituras', leiturasRouter);
 app.use('/leiturasDaMaquina', leiturasMaquinaRouter);
+app.use('/Funcionario_Conquista',Funcionario_Conquista);
+app.use('/equipes', equipesRouter);
+app.use('/equipes', equipeFuncionarioRouter);
 
 module.exports = app;

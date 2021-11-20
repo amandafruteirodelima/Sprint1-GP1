@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    
     <link rel="stylesheet" href="./css/Login.css">
     <link rel="stylesheet" href="./css/headerLight2.css">
     <link rel="icon" href="img/Yin-Yang-DevTime.png">
@@ -22,14 +23,16 @@
 
             <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
 
+            <div>
             <nav class="divLista">
                 <ul>
-                    <li><a class="li-comum" href="index.html">Home</a></li>
-                    <li><a class="li-comum" href="sobrepage.html">Sobre</a></li>
-                    <li><a class="li-comum" href="contato.html">Contato</a></li>
+                    <li class="li-comum" ><a class="li-comum" href="index.html">Home</a></li>
+                    <li class="li-comum" ><a class="li-comum" href="sobrepage.html">Sobre</a></li>
+                    <li class="li-comum"  ><a class="li-comum" href="contato.html">Contato</a></li>
                 </ul>
 
             </nav>
+        </div>
 
             <div class="divButtonHeader"><button><a class="li-select" href="Login.html">Entrar</a></button></div>
 
@@ -55,11 +58,11 @@
                 <form id="form_login" method="post" onsubmit="return entrar()">
 
                     <input class="inptLarge inptPadrao" type="email" name="email" placeholder=" " required>
-                    <label class="label-email" for="email">Email</label>
+                    <label class="label-email label" for="email">Email</label>
                     
 
                     <input class="inptLarge inptPadrao" type="password" name="senha" placeholder=" " required>
-                    <label style="font-family: 'Poppins-Bold'; font-size: small;" class="label-senha"
+                    <label class="label label-senha"
                     for="senha">Senha</label>
                     
                     
@@ -96,11 +99,17 @@ function entrar() {
                     if(json.isGestor){
                         sessionStorage.login_usuario_meuapp = json.email;
                     sessionStorage.nome_usuario_meuapp = json.nome;
+                    // MEXIDO PARA DASHBOARD ADM
+                    sessionStorage.setItem('idFuncionario', json.idFuncionario)
+                    sessionStorage.setItem('nome', json.nomeFuncionario)
+                    sessionStorage.idFuncionario = json.idFuncionario;
                         window.location.href = 'Dashboard_adm.html';
                     }
                     else{
                         sessionStorage.login_usuario_meuapp = json.email;
                         sessionStorage.nome_usuario_meuapp = json.nome;
+                        sessionStorage.setItem('idFuncionario', json.idFuncionario);
+                        sessionStorage.idFuncionario = json.idFuncionario;
                         window.location.href = 'dashboard_funcs.html';
                     }
                 });

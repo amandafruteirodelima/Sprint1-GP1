@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
     <link rel="icon" href="img/Yin-Yang-DevTime.png">
+    <script src="../routes/Funcionario_Conquista.js"></script>
     <title>Ranking</title>
     
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="css/ranking.css">
 </head>
 
-<body>
+<body onload="recuperar()">
     <div>        
         <input id="caixa_selecao" type="checkbox">
         <label id="label_img_perfil" for="caixa_selecao">
@@ -201,3 +202,43 @@
 </body>
 
 </html>
+
+<script>
+    function recuperar() {
+        console.log("idFuncionário:", sessionStorage.idFuncionario)
+        let corpo = {
+            "idFuncionario": sessionStorage.idFuncionario
+        };
+        fetch("/Funcionario_Conquista/recuperar", {
+            method: "POST",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(corpo)
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    alert("Deu bom confia!")
+                    console.log(json);
+
+                });
+
+            } else {
+
+                console.log('Deu ruim oh nono!');
+                alert('Deu ruim oh nono!')
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+
+                });
+            }
+        });
+
+        return false;
+    }
+</script>

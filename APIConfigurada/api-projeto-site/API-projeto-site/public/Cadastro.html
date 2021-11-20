@@ -47,18 +47,17 @@
         </div>
         <div class="content-escrito">
 
-                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+            <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
 
-                    <div class="div-inpts">
-                    <input id="inpt_nome" name="nome" class="inptPadrao" type="text" placeholder=" " required
-                        autofocus>
+                <div class="div-inpts">
+                    <input id="inpt_nome" name="nome" class="inptPadrao" type="text" placeholder=" " required autofocus>
 
                     <label class="label label-nome" for="nome">Nome</label>
-                    
 
 
-                    <input id="inpt_carga" name="cargaHoraria" class="inptPadrao" type="number"
-                        placeholder=" " required>
+
+                    <input id="inpt_carga" name="cargaHoraria" class="inptPadrao" type="number" placeholder=" "
+                        required>
                     <label class="label label-cargahoraria" for="cargaHoraria">Carga horária</label>
 
 
@@ -72,27 +71,25 @@
                     <select name="fk_Chefe" id="sel_chefe" class="sel-padrao">
                         <option value="">--Selecione um Chefe--</option>
                         <option value="1">Amanda Fruteiro de Lima</option>
-                        <option value="2">Danilo</option>
-                        <option value="3">Guilherme</option>
-                        <option value="4">Karolline</option>
-                        <option value="5">Matheus</option>
-                        <option value="6">Rony</option>
+                        <option value="5">Danilo dos Santos da Silva</option>
+                        <option value="3">Guilherme de Carvalho Costa</option>
+                        <option value="4">Karolline Araújo da Silva</option>
+                        <option value="6">Matheus Magalhães Barbosa</option>
+                        <option value="7">Rony Alves Sobral</option>
                     </select>
 
 
-                    <input id="inpt_email" name="email" class="inptPadrao" type="email" placeholder=" "
-                        required>
+                    <input id="inpt_email" name="email" class="inptPadrao" type="email" placeholder=" " required>
                     <label class="label label-email" for="email">Email</label>
-                    <input id="inpt_senha" name="senha" class="inptPadrao" type="password" placeholder=" "
-                        required>
+                    <input id="inpt_senha" name="senha" class="inptPadrao" type="password" placeholder=" " required>
                     <label class="label label-senha" for="senha">Senha</label>
 
 
                     <button class="btn-default"><a><b>Cadastrar</b></a></button>
                 </div>
-                </form>
+            </form>
 
-            
+
             <div><img class="imagem-cadastro" src="./img/img-6.png" alt=""></div>
         </div>
     </div>
@@ -103,7 +100,7 @@
     <div class="footer">
 
         <div class="company">
-            
+
             <a href="#"><img src="img/Logo-Branco.png" alt="Logo da DevTime"></a>
             |
             <a href="#"><img src="img/logo_bandtec.png" alt="Logo da Faculdade BandTec"></a>
@@ -121,19 +118,6 @@
 </html>
 
 <script>
-    function mascara_data(campo, valor) {
-        var mydata = '';
-        mydata = mydata + valor;
-        if (mydata.length == 2) {
-            mydata = mydata + '/';
-            campo.value = mydata;
-        }
-        if (mydata.length == 5) {
-            mydata = mydata + '/';
-            campo.value = mydata;
-        }
-    }
-
     function cadastrar() {
 
         var formulario = new URLSearchParams(new FormData(form_cadastro));
@@ -149,11 +133,7 @@
 
             } else {
 
-                console.log('Erro de cadastro!');
-                response.text().then(function (resposta) {
-                    alert(resposta);
-                    alert("Erro!");
-                });
+                alert('Erro de cadastro!');
 
             }
         });

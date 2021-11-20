@@ -53,9 +53,6 @@ public class HistoricoDiscoImpl {
             } catch (Exception erro) {
                 logErro.mensagemErroSelect(erro);
             }
-
         }
-
     }
-
 }

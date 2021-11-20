@@ -2,6 +2,20 @@ body {
     background-color: #181818;
     margin: 0;
 }
+
+/* Configurações da barra de rolagem */
+::-webkit-scrollbar {
+    height: 20px;
+    background-color: none;
+    opacity: 0.4;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
 .body {
     max-width: 1000px;
     background-color: #443980;

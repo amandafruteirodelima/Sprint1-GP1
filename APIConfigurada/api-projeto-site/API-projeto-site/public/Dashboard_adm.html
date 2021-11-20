@@ -36,13 +36,13 @@
     <!--Fim Header-->
 
     <!-- Início da página -->
-    <h1 id="h1_1">BEM-VINDO DONATO</h1>
+    <h1 id="h1_1">BEM-VINDO</h1>
 
     <!-- Membros online -->
     <h2>Membros da equipe que estão online agora</h2>
 
-    <div class="div_online">
-        <div class="div_online_organizadora">
+    <div id="div_online" class="div_online">
+        <!-- <div class="div_online_organizadora">
             <div class="div_online_content">
                 <h3 id="user_1">Amanda:</h3>
                 <div class="circulo" id="online_1"></div>
@@ -71,7 +71,8 @@
                 <h3 id="user_6">Rony:</h3>
                 <div class="circulo" id="online_6"></div>
             </div>
-        </div>
+        </div> -->
+
     </div>
 
     <!-- Divisória -->
@@ -168,12 +169,12 @@
                 <div class="div_check_lado">
                     <input id="caixa_selecao2" type="checkbox" onclick="caixa_usado_semana()">
                     <label class="alt_title3" for="caixa_selecao2">Ver tempo usado na semana:</label>
-                    
+
                 </div>
                 <div class="div_check_lado">
                     <input id="caixa_selecao3" type="checkbox" onclick="caixa_usado_quinzena()">
                     <label class="alt_title3" for="caixa_selecao3">Ver tempo usado na quinzena:</label>
-                </div>                
+                </div>
             </div>
 
             <div class="div_data" id="div_usado_hoje">
@@ -224,7 +225,7 @@
             <!-- Divisória -->
             <div class="div_divisora_alt" id="div_divisora_alt2"></div>
 
-            <div class="div_data"  id="div_usado_quinzena">
+            <div class="div_data" id="div_usado_quinzena">
                 <h2 class="alt_title3">Tempo usado na quinzena</h2>
 
                 <div class="organizadora_alt">
@@ -430,6 +431,9 @@
 <script>
     // Código sendo preparado para receber APIs
 
+    // NOVAS COISAS
+    var idFuncionario = sessionStorage.getItem('idFuncionario');
+
     function tempo_logado() {
         div_options.style.display = "none";
         div_tempo_logado.style.display = "block";
@@ -440,7 +444,10 @@
         div_aplicativos_usados.style.display = "block";
     }
 
+    // NOVAS FUNCTIONS
     window.onload = function online() {
+        bemvindoNome();
+        trazerFuncionariosOnline();
         online_1.style.backgroundColor = "red";
         ok = "img/checked.png";
         notOk = "img/warning.png";
@@ -457,7 +464,8 @@
     function mudar_frase() {
         if (cont == 0) {
             h2_alt.style.fontSize = "18px";
-            h2_alt.innerHTML = "Desempenho dos membros da equipe (Para ver detalhes, clique no ícone do membro da equipe desejado)";
+            h2_alt.innerHTML =
+                "Desempenho dos membros da equipe (Para ver detalhes, clique no ícone do membro da equipe desejado)";
             cont++;
         } else {
             h2_alt.style.fontSize = "24px";
@@ -527,5 +535,43 @@
             div_divisora_alt3.style.display = "block";
             cont_checkbox_quinzena--;
         }
+    }
+
+
+
+
+    // NOVAS FUNCTIONS
+    function bemvindoNome() {
+        h1_1.innerHTML = `BEM-VINDO ${sessionStorage.getItem('nome').toUpperCase()}`;
+    }
+
+    function trazerFuncionariosOnline() {
+
+        fetch(`/usuarios/verOnline/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+
+                    //Mostrar cada funcionário na tela
+
+                    for (let index = 0; index < json.length; index++) {
+                        
+                        div_online.innerHTML += `${json[index].nomeFuncionario}`;
+                    }
+
+                });
+
+            } else {
+                alert('Você não possui funcionários para monitorar')
+            }
+        });
+
+        return false;
+
     }
 </script>
