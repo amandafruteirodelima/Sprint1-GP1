@@ -88,7 +88,6 @@
 
                         div_online.innerHTML +=
                             `<h1 onclick="trazerComponentes(${json[index].idFuncionario})" class="nome_funcionario">${json[index].nomeFuncionario}</h1>`;
-                        `<button onclick="mudarStatusComponente(${json[index].idComponente})" class="button_componentes">Ativo</button>`;
 
                     }
 
@@ -122,6 +121,8 @@
 
                         div_componentes.innerHTML +=
                             `<h1 class="nome_funcionario">${json[index].nomeComponente}</h1>`;
+                        div_componentes.innerHTML +=
+                            `<button onclick="mudarStatusComponente(${json[index].idComponente})" class="button_componentes">Ativo</button>`;
                     }
 
                 });

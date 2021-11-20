@@ -446,8 +446,13 @@
 
     // NOVAS FUNCTIONS
     window.onload = function online() {
+
+
         bemvindoNome();
         trazerFuncionariosOnline();
+        isOnline(isOnline);
+
+
         online_1.style.backgroundColor = "red";
         ok = "img/checked.png";
         notOk = "img/warning.png";
@@ -560,8 +565,11 @@
                     //Mostrar cada funcionário na tela
 
                     for (let index = 0; index < json.length; index++) {
-                        
-                        div_online.innerHTML += `${json[index].nomeFuncionario}`;
+
+                        div_online.innerHTML += `<div class="div_online_content">
+                        <h3>${json[index].nomeFuncionario}</h3>
+                        <div class="circulo" id="circulo${json[index].idFuncionario}"></div>
+                        </div>`
                     }
 
                 });

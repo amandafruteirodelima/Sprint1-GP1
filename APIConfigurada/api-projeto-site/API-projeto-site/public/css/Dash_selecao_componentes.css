@@ -120,6 +120,7 @@ h2 {
     font-size: 100%;
     font-family: 'Poppins-Bold';
     transition: 0.5s;
+    margin-bottom: 4%;
 }
 
 .button_componentes:hover {
