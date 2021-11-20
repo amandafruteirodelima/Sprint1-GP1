@@ -133,13 +133,13 @@ router.post('/verOnline/:idFuncionario', function (req, res, next) {
 });
 
 /* Trazer componentes */
-router.post('/trazerComponentes/:idFuncionario/:idFuncionarioMembro', function (req, res, next) {
+router.post('/trazerComponentes/idFuncionarioMembro', function (req, res, next) {
 
 	let idFuncionario = req.params.idFuncionario;
 
-	let instrucaoSql = `select nomeComponente from Componente cpt 
+	let instrucaoSql = `select * from Componente cpt 
 	join Maquina mka on cpt.fk_Maquina = mka.idMaquina 
-	join Funcionario fc on fk_Chefe='${idFuncionario}' where idFuncionario = 11 group by nomeComponente`;
+	join Funcionario fc on fk_Funcionario= idFuncionario where fk_Funcionario = ${idFuncionarioMembro}`;
 
 	console.log(instrucaoSql);
 

@@ -91,7 +91,7 @@
                     for (let index = 0; index < json.length; index++) {
 
                         div_online.innerHTML +=
-                            `<h1 onclick class="nome_funcionario">${json[index].nomeFuncionario}</h1>`;
+                            `<h1  onclick="trazerComponentes(${json[index].idFuncionario})" class="nome_funcionario">${json[index].nomeFuncionario}</h1>`;
 
                     }
 
@@ -107,7 +107,7 @@
     }
 
     // será ativada ao clicar no nome do funcionário quando estiver pronta
-    function trazerComponentes() {
+    function trazerComponentes(idFuncionarioMembro) {
 
         fetch(`/usuarios/trazerComponentes/${idFuncionarioMembro}`, {
             method: "post"
