@@ -188,7 +188,7 @@
             </div>
         </div>
 
-        </div>
+    </div>
     </div>
 
     <!--Footer-->
@@ -200,83 +200,48 @@
 </html>
 
 <script>
-    const data = {
-        labels: [
-            'Chrome',
-            'Apache NetBeans',
-            'Discord',
-        ],
-        datasets: [{
-            label: 'Softwares',
-            data: [300, 50, 100],
-            backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
-                'rgb(255, 205, 86)'
-            ],
-            hoverOffset: 4
-        }]
-    };
-    const config = {
-        type: 'doughnut',
-        data: data,
-        options: {
-            plugins: {
-                legend: {
-                    position: 'left',
-                    aling: 'start',
-                    labels: {
-                        color: 'black'
-                    }
-                }
-            }
-        }
-    };
-    var myChart = new Chart(
-        document.getElementById('pizza_process'),
-        config
-    );
-    ///////////////////////////////////////////////////////////////////
-    const databars = {
-        labels: ['disc 1', 'disc 2', 'disc 3'],
-        datasets: [{
-            label: 'Armazenamento',
-            data: [65, 59, 85, 81],
-            backgroundColor: [
-                'red',
-                'green',
-                'blue',
-                'yellow'
-            ],
-            borderColor: [
-                'black',
-                'black',
-                'black',
-                'black'
-            ],
-            borderWidth: 1
-        }]
-    };
-    const configbars = {
-        type: 'bar',
-        data: databars,
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            },
-            plugins: {
-                legend: {
-                    display: false
-                }
-            }
-        },
-    };
-    var myChart = new Chart(
-        document.getElementById('disco'),
-        configbars
-    );
+
+    // ///////////////////////////////////////////////////////////////////
+    // const databars = {
+    //     labels: ['disc 1', 'disc 2', 'disc 3'],
+    //     datasets: [{
+    //         label: 'Armazenamento',
+    //         data: [65, 59, 85, 81],
+    //         backgroundColor: [
+    //             'red',
+    //             'green',
+    //             'blue',
+    //             'yellow'
+    //         ],
+    //         borderColor: [
+    //             'black',
+    //             'black',
+    //             'black',
+    //             'black'
+    //         ],
+    //         borderWidth: 1
+    //     }]
+    // };
+    // const configbars = {
+    //     type: 'bar',
+    //     data: databars,
+    //     options: {
+    //         scales: {
+    //             y: {
+    //                 beginAtZero: true
+    //             }
+    //         },
+    //         plugins: {
+    //             legend: {
+    //                 display: false
+    //             }
+    //         }
+    //     },
+    // };
+    // var myChart = new Chart(
+    //     document.getElementById('disco'),
+    //     configbars
+    // );
     /////////////////////////////////////////////////////////////////////
 
     let proximaAtualizacao;
@@ -295,7 +260,8 @@
         console.log("executei chamargraficos")
         obterDadosGraficoPrimeiraVezCPU()
         obterDadosGraficoPrimeiraVezRAM()
-        
+        obterDadosGraficoPrimeiraVezDISCO()
+
         atualizacaoPeriodica()
     }
 
@@ -311,7 +277,7 @@
 
     function statusPcOnline() {
 
-        if(statusIsLigado) {
+        if (statusIsLigado) {
 
             statusPC.innerHTML = 'ON';
 
@@ -388,7 +354,7 @@
 
     }
 
-//  RAM
+    //  RAM
 
     function configurarGraficoRAM() {
         console.log("executei configurarGraficoRAM")
@@ -434,13 +400,17 @@
                         ]
                     };
 
+                    let primeira = JSON.stringify(resposta);
+
                     for (i = 0; i < resposta.length; i++) {
                         var registro = resposta[i];
 
-                        dados.labels.push(registro.dataFormatada);
-                        dados.datasets[0].data.push(registro.consumo);
+                        let ultima = JSON.stringify(resposta[i].consumo);
+                        let valor = ultima.toString().slice(0, 4);
 
-                        console.log(registro.consumo);
+
+                        dados.labels.push(registro.dataFormatada);
+                        dados.datasets[0].data.push(valor);
 
                     }
                     console.log(JSON.stringify(dados));
@@ -457,43 +427,116 @@
 
     }
 
-    function atualizarGraficoCPU(dados) {
-        console.log("executei atualizarGraficoCPU")
-        fetch(`/leiturasDaMaquina/processadorultimas/${usuarioEmail}`, { cache: 'no-store' })
-        .then(function (response) {
+    // DISCO
 
-            console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
+    function configurarGraficoDISCO() {
+        console.log("executei configurarGraficoDISCO")
+        var configuracoes = {
+            responsive: true,
+            animation: { duration: 1000 },
+            title: {
+                display: false,
+                text: 'Histórico'
+            },
 
+        };
+
+        return configuracoes;
+    }
+
+    function obterDadosGraficoPrimeiraVezDISCO() {
+        console.log("executei obterDadosGraficoPrimeiraVez")
+
+        if (proximaAtualizacao != undefined) {
+            clearTimeout(proximaAtualizacao);
+        }
+
+        fetch(`/leiturasDaMaquina/discoultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
-                response.json().then(function (novoRegistro) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
 
 
-                    console.log(`Dados recebidos: ${JSON.stringify(novoRegistro[0].consumo)}`);
-                    
+                    var dados = {
+                        labels: [],
+                        datasets: [
+                            {
+                                yAxisID: 'Y-disco',
+                                label: 'DISCO',
+                                borderColor: '#4A024D',
+                                backgroundColor: `#4C224D`,
+                                fill: false,
+                                data: [],
+                                tension: 0.1
+                            }
 
-                    // tirando e colocando valores no gráfico
-                    dados.labels.shift(); // apagar o primeiro
-                    dados.labels.push(novoRegistro[0].dataFormatada); // incluir um novo momento
-                    dados.datasets[0].data.shift();  // apagar o primeiro
-                    dados.datasets[0].data.push(novoRegistro[0].consumo); // incluir uma nova leitura 
+                        ]
+                    };
 
-                    chartCPU.update();
+                    let primeira = JSON.stringify(resposta);
 
-                    proximaAtualizacao = setTimeout(() => atualizarGraficoCPU(dados), 5000);
+                    for (i = 0; i < resposta.length; i++) {
+                        var registro = resposta[i];
+
+                        let ultima = JSON.stringify(resposta[i].consumo);
+                        let valor = ultima.toString().slice(0, 5);
+
+                        dados.labels.push(registro.nomeComponente);
+                        dados.datasets[0].data.push(valor);
+
+                    }
+
+
+                    console.log(JSON.stringify(dados));
+
+                    plotarGraficoDISCO(dados);
+
                 });
             } else {
                 console.error('Nenhum dado encontrado ou erro na API');
-                proximaAtualizacao = setTimeout(() => atualizarGraficoCPU(dados), 5000);
             }
         }).catch(function (error) {
-            console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            console.error(`Erro na obtenção dos dados da RAM p/ gráfico: ${error.message}`);
         });
-;
+
+    }
+
+    function atualizarGraficoCPU(dados) {
+        console.log("executei atualizarGraficoCPU")
+        fetch(`/leiturasDaMaquina/processadorultimas/${usuarioEmail}`, { cache: 'no-store' })
+            .then(function (response) {
+
+                console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
+
+                if (response.ok) {
+                    response.json().then(function (novoRegistro) {
+
+
+                        console.log(`Dados recebidos: ${JSON.stringify(novoRegistro[0].consumo)}`);
+
+                        // tirando e colocando valores no gráfico
+                        dados.labels.shift(); // apagar o primeiro
+                        dados.labels.push(novoRegistro[0].dataFormatada); // incluir um novo momento
+                        dados.datasets[0].data.shift();  // apagar o primeiro
+                        dados.datasets[0].data.push(novoRegistro[0].consumo); // incluir uma nova leitura 
+
+                        chartCPU.update();
+
+                        proximaAtualizacao = setTimeout(() => atualizarGraficoCPU(dados), 5000);
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                    proximaAtualizacao = setTimeout(() => atualizarGraficoCPU(dados), 5000);
+                }
+            }).catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+        ;
     }
 
     function atualizarGraficoRAM(dados) {
         console.log("executei atualizarGrafico")
-            fetch(`/leiturasDaMaquina/ramultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
+        fetch(`/leiturasDaMaquina/ramultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
             console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
             if (response.ok) {
 
@@ -501,11 +544,14 @@
 
                     console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
 
+                    let ultima = JSON.stringify(novoRegistro[0].consumo);
+                    let valor = ultima.toString().slice(0, 4);
+
                     dados.labels.shift(); // apagar o primeiro
                     dados.labels.push(novoRegistro[0].dataFormatada); // incluir um novo momento
                     dados.datasets[0].data.shift();  // apagar o primeiro
-                    dados.datasets[0].data.push(novoRegistro[0].consumo); // incluir uma nova leitura 
-                
+                    dados.datasets[0].data.push(valor); // incluir uma nova leitura 
+
                     chartRAM.update();
 
                     proximaAtualizacao = setTimeout(() => atualizarGraficoRAM(dados), 5000);
@@ -515,9 +561,51 @@
                 proximaAtualizacao = setTimeout(() => atualizarGraficoRAM(dados), 5000);
             }
         }).catch(function (error) {
+            console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+        });
+
+    }
+
+    function atualizarGraficoDISCO(dados) {
+        console.log("executei atualizarGraficoDISCO")
+        fetch(`/leiturasDaMaquina/disco/${usuarioEmail}`, { cache: 'no-store' })
+            .then(function (response) {
+
+                console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
+
+                if (response.ok) {
+                    response.json().then(function (novoRegistro) {
+
+
+                        console.log(`Dados recebidos: ${JSON.stringify(novoRegistro.consumo)}`);
+
+
+                        for (i = 0; i < novoRegistro.length; i++) {
+                            var registro = novoRegistro[i];
+
+                            let ultima = JSON.stringify(registro.consumo);
+                            let valor = ultima.toString().slice(0, 4);
+
+                            // tirando e colocando valores no gráfico
+                            dados.labels.shift(); // apagar o primeiro
+                            dados.labels.push(novoRegistro[i].nomeComponente); // incluir um novo momento
+                            dados.datasets[i].data.shift();  // apagar o primeiro
+                            dados.datasets[i].data.push(valor); // incluir uma nova leitura 
+
+                        }
+
+                        chartDISCO.update();
+
+                        proximaAtualizacao = setTimeout(() => atualizarGraficoDISCO(dados), 5000);
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                    proximaAtualizacao = setTimeout(() => atualizarGraficoDISCO(dados), 5000);
+                }
+            }).catch(function (error) {
                 console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
             });
-
+        ;
     }
 
     function plotarGraficoCPU(dados) {
@@ -527,10 +615,10 @@
         const config = {
             type: 'line',
             data: dados,
-            options: configurarGraficoCPU() 
+            options: configurarGraficoCPU()
         };
 
-        chartCPU = new Chart(
+        chartDISCO = new Chart(
             document.getElementById('cpu'),
             config
         );
@@ -545,7 +633,7 @@
         const config = {
             type: 'line',
             data: dados,
-            options: configurarGraficoRAM() 
+            options: configurarGraficoRAM()
         };
 
         chartRAM = new Chart(
@@ -555,6 +643,25 @@
 
         atualizarGraficoRAM(dados);
     }
+
+    function plotarGraficoDISCO(dados) {
+        console.log("executei plotarGraficoDISCO")
+        console.log('iniciando plotagem do gráfico...');
+
+        const config = {
+            type: 'bar',
+            data: dados,
+            options: configurarGraficoDISCO()
+        };
+
+        chartCPU = new Chart(
+            document.getElementById('disco'),
+            config
+        );
+
+        atualizarGraficoDISCO(dados);
+    }
+
 
     function obterdadosconsumoCPU() {
         fetch(`/leiturasDaMaquina/processador/${usuarioEmail}`)
@@ -578,7 +685,7 @@
             });
 
     }
-    
+
     function obterdadosconsumoRAM() {
 
         fetch(`/leiturasDaMaquina/ram/${usuarioEmail}`)
@@ -588,7 +695,7 @@
                     resposta.json().then(function (resposta) {
 
                         console.log("Consumo ram");
-                
+
                         var dados = {
                             consumo: resposta.consumo,
                             capacidade: resposta.capacidade
@@ -616,7 +723,7 @@
 
                         console.log("Consumo disco");
                         console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-                
+
                         var dados = {
                             consumo: resposta.consumo,
                             capacidade: resposta.capacidade
@@ -670,9 +777,9 @@
     function alertarRAM(dados) {
         // padrão para meu alerta
 
-        let capa =  parseInt(dados.capacidade);
+        let capa = parseInt(dados.capacidade);
 
-        let ram = ((parseInt(dados.consumo) *100) / capa).toFixed(0);
+        let ram = ((parseInt(dados.consumo) * 100) / capa).toFixed(0);
 
         var classe_consumo = '';
 
@@ -705,9 +812,9 @@
     function alertarDISCO(dados) {
         // padrão para meu alerta
 
-        let capa =  parseInt(dados.capacidade);
+        let capa = parseInt(dados.capacidade);
 
-        let disco = ((parseInt(dados.consumo) *100) / capa).toFixed(0);
+        let disco = ((parseInt(dados.consumo) * 100) / capa).toFixed(0);
 
         console.log("Disco:");
         console.log(disco);

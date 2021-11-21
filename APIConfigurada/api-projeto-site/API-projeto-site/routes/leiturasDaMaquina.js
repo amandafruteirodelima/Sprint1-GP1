@@ -266,7 +266,7 @@ router.get('/discoultimas/:usuarioEmail', function(req, res, next) {
 		order by datahora desc limit ${limite_linhas}`;
     }
     else if (env == 'production') {
-        instrucaoSql = ` select top ${limite_linhas}
+        instrucaoSql = `select top ${limite_linhas}
 		idComponente,
         nomeComponente, 
 		consumo,
@@ -311,6 +311,7 @@ router.get('/disco/:usuarioEmail', function(req, res, next) {
 	if (env == 'dev') {
 		instrucaoSql = `
 		select 
+		nomeComponente,
 		consumo,
 		capacidade, 
 		dataHora,
@@ -328,6 +329,7 @@ router.get('/disco/:usuarioEmail', function(req, res, next) {
 	} else if (env == 'production') {
 		instrucaoSql = `
 		select top 1 
+		nomeComponente,
 		consumo, 
 		capacidade
 		FROM [dbo].[Funcionario]
