@@ -122,7 +122,7 @@ h2 {
 
 .question {
     height: 24px;
-    margin-top: 24px;
+    margin-top: 8%;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -146,7 +146,8 @@ h2 {
 .div_desempenho_content {
     transition: 0.8s;
     width: 30%;
-    height: 265px;
+    height: 30%px;
+    padding-bottom: 1%;
     border-radius: 20px;
     background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
     display: flex;
@@ -164,7 +165,7 @@ h2 {
 .check {
     height: 55px;
     margin-left: 74%;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 .person {
