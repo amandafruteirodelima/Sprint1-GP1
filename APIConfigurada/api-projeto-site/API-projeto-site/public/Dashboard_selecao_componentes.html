@@ -130,6 +130,8 @@
 
                     console.log(json);
 
+                    div_componentes.innerHTML = "";
+
                     // Mostrar cada componentes na tela
                     for (let index = 0; index < json.length; index++) {
 
@@ -154,6 +156,7 @@
                 });
 
             } else {
+                div_componentes.innerHTML = "";
                 alert('Esse funcionário não possui componentes para monitorar');
             }
         });
