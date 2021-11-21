@@ -8,7 +8,7 @@ import implantation.HistoricoDiscoImpl;
 import implantation.HistoricoProcessadorImpl;
 import implantation.HistoricoRamImpl;
 import implantation.MaquinaImpl;
-import implantation.MaquinaSoftwareImpl;
+import implantation.HistoricoUsoSoftwareImpl;
 import implantation.ProcessadorImpl;
 import implantation.RamImpl;
 import implantation.SoftwareImpl;
@@ -33,7 +33,7 @@ public class Executor {
     HistoricoProcessadorImpl histProcessador
             = new HistoricoProcessadorImpl();
     HistoricoRamImpl histRam = new HistoricoRamImpl();
-    MaquinaSoftwareImpl maquinaSoftware = new MaquinaSoftwareImpl();
+    HistoricoUsoSoftwareImpl historicoSoftware = new HistoricoUsoSoftwareImpl();
     SoftwareImpl software = new SoftwareImpl();
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
     FuncionarioEntity funcionario = FuncionarioEntity.getInstance();
@@ -67,8 +67,6 @@ public class Executor {
                 }
 
                 coletarLeitura(true);
-//        software.findSoftware();
-//        maquinaSoftware.findMaquinaSoftware();
 
             } catch (Exception erro) {
                 logErro.mensagemErroSelect(erro);
@@ -83,26 +81,16 @@ public class Executor {
     }
 
     public void coletarLeitura(Boolean isLigado) {
+        histDisco.findHistoricoDisco();
 
-        
-            TimerTask tt = new TimerTask() {
-                @Override
-                public void run() {
-                    histProcessador.findHistoricoProcessador();
-                    histRam.findHistoricoRam();
-                    histDisco.findHistoricoDisco();
-                }
-            ;
-            }; timer.schedule(tt, 1000, 5000);
-            
-            
-        if (isLigado) {
-            tt.run();
-        } 
-        else {
-            System.out.println("Coleta de dados interrompidos");
-            tt.cancel();
-        }
-
+        TimerTask tt = new TimerTask() {
+            @Override
+            public void run() {
+                histProcessador.findHistoricoProcessador();
+                histRam.findHistoricoRam();
+                historicoSoftware.findHistoricoSoftware();
+            }
+        ;
+        }; timer.schedule(tt, 1000, 5000);
     }
 }

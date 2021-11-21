@@ -6,12 +6,12 @@ import com.github.britooo.looca.api.group.processos.ProcessosGroup;
 import com.mycompany.devtime.ConfiguracaoBanco;
 import entities.SoftwareEntity;
 import java.util.List;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class SoftwareImpl {
 
     Looca looca = new Looca();
-    SoftwareEntity softwareInstance = SoftwareEntity.getInstance();
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
@@ -20,8 +20,30 @@ public class SoftwareImpl {
 
     public void findSoftware() {
         for (Processo processo : processos) {
-            SoftwareEntity software = new SoftwareEntity(processo.getNome());
-            software.insertSoftware();
+            if (isDuplicado(processo)) {
+                SoftwareEntity software = new SoftwareEntity(processo.getNome());
+                software.insertSoftware();
+                System.out.println("Caiu no true");
+            }
         }
+    }
+
+    public Boolean isDuplicado(Processo processo) {
+
+            List<SoftwareEntity> softwares = assistente.query("Select *"
+                    + " from Software where nomeSoftware = '"
+                    + processo.getNome() + "'",
+                    new BeanPropertyRowMapper<>(SoftwareEntity.class));
+
+            for (SoftwareEntity software : softwares) {
+
+                if (software.getNomeSoftware().equals(processo.getNome())) {
+
+                    System.out.println("Caiu no if false");
+                    return false;
+                }
+            }
+
+        return true;
     }
 }

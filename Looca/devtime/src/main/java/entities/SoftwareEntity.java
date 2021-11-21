@@ -1,6 +1,7 @@
 package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
+import com.mycompany.devtime.ConfiguracaoBancoMySql;
 import logging.LogErro;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -14,6 +15,10 @@ public class SoftwareEntity {
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
 
+    ConfiguracaoBancoMySql configuracaoBancoMySql = new ConfiguracaoBancoMySql();
+    JdbcTemplate assistenteMySql = new JdbcTemplate(
+            configuracaoBancoMySql.getBancoDeDadosMySql());
+
     public SoftwareEntity(String nomeSoftware) {
         this.nomeSoftware = nomeSoftware;
     }
@@ -21,22 +26,15 @@ public class SoftwareEntity {
     public SoftwareEntity() {
     }
 
-    private static SoftwareEntity instance = new SoftwareEntity();
-
-    public static SoftwareEntity getInstance() {
-        return instance;
-    }
-
     public void insertSoftware() {
         try {
-            assistente.update("INSERT INTO SOFTWARE(nomeSoftware,linkImagemSoftware)"
-                    + " VALUES(?,?)",
-                    nomeSoftware, "https://pbs.twimg.com/media/EeTDgb4WoAAcrmS.jpg");
-            
+            assistente.update("INSERT INTO SOFTWARE(nomeSoftware)"
+                    + " VALUES(?)",
+                    nomeSoftware);
+
         } catch (Exception erro) {
             logErro.mensagemErroInsert(erro);
         }
-
     }
 
     public Integer getIdSoftware() {
