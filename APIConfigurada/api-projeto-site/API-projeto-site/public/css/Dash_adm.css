@@ -140,6 +140,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .div_desempenho_content {
@@ -155,6 +156,7 @@ h2 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 4%;
 }
 
 .div_desempenho_content:hover {
