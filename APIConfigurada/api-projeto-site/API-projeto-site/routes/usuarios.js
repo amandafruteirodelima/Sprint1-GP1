@@ -159,5 +159,55 @@ router.post('/trazerComponentes/:idFuncionario', function (req, res, next) {
 	});
 });
 
+/* Desativa o monitoramento de um componente */
+router.post('/desativarComponenteBD/:idComponente', function (req, res, next) {
+
+	let idComponente = req.params.idComponente;
+
+	let instrucaoSql = `update [dbo].[Componente] set isAtivo= 0 where idComponente =${idComponente}`;
+
+	console.log(instrucaoSql);
+
+	sequelize.query(instrucaoSql, {
+		type: sequelize.QueryTypes.SELECT // se não for usar models
+	}).then(resultado => {
+
+		if (resultado.length > 0) {
+			res.json(resultado); // transforma resposta em json
+		} else {
+			res.status(403).send('sem componentes registrados');
+		}
+
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+	});
+});
+
+/* Ativa o monitoramento de um componente */
+router.post('/ativarComponenteBD/:idComponente', function (req, res, next) {
+
+	let idComponente = req.params.idComponente;
+
+	let instrucaoSql = `update [dbo].[Componente] set isAtivo= 1 where idComponente =${idComponente}`;
+
+	console.log(instrucaoSql);
+
+	sequelize.query(instrucaoSql, {
+		type: sequelize.QueryTypes.SELECT // se não for usar models
+	}).then(resultado => {
+
+		if (resultado.length > 0) {
+			res.json(resultado); // transforma resposta em json
+		} else {
+			res.status(403).send('sem componentes registrados');
+		}
+
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+	});
+});
+
 
 module.exports = router;

@@ -45,7 +45,7 @@ h2 {
 }
 
 .div_online_fundo {
-    width: 40%;
+    width: 45%;
     height: 400px;
     background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
     margin: 0;
@@ -67,7 +67,6 @@ h2 {
     flex-direction: column;
     text-align: left;
     align-items: left;
-    border-radius: 20px;
     overflow-y: auto;
 }
 
@@ -77,6 +76,7 @@ h2 {
     font-size: 24px;
     font-family: 'Poppins-Bold';
     transition: 0.5s;
+    margin-bottom: 10px;
 }
 
 .nome_funcionario:hover {
@@ -86,7 +86,7 @@ h2 {
 
 /* Componentes */
 .div_componentes_fundo {
-    width: 55%;
+    width: 45%;
     height: 400px;
     background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
     margin: 0;
@@ -106,7 +106,6 @@ h2 {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    border-radius: 20px;
     overflow-y: auto;
 }
 
@@ -127,6 +126,58 @@ h2 {
     background-color: rgb(251, 134, 255);
     color: #ffffff;
     cursor: pointer;
+}
+
+/* Salvar */
+
+.frase_salvar {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-family: 'Poppins-Bold';
+}
+
+.div_salvar_fundo {
+    width: 80%;
+    height: 150px;
+    background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 4%;
+}
+
+.div_salvar {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_salvar {
+    width: 10%;
+    height: 40%;
+    background-color: rgb(138, 255, 134);
+    color: #ffffff;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 150%;
+    font-family: 'Poppins-Bold';
+    transition: 0.5s;
+    margin-left: 5%;
+}
+
+.button_salvar:hover {
+    cursor: pointer;
+    font-size: 180%;
+    width: 10.5%;
+    height: 42%;
 }
 
 /* Configurações da barra de rolagem */
