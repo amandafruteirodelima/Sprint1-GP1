@@ -43,6 +43,7 @@ h2 {
     font-size: 24px;
     font-family: 'Poppins-Bold';
     margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .div_online {
@@ -117,6 +118,7 @@ h2 {
     font-size: 24px;
     font-family: 'Poppins-Bold';
     margin-top: 42px;
+    margin-bottom: 10px;
     margin-right: 10px;
 }
 
@@ -124,16 +126,13 @@ h2 {
     height: 24px;
     margin-top: 8%;
     margin-left: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
 .div_desempenho_pai {
     width: 80%;
     margin-top: 8px;
-}
-
-.div_desempenho_organizadora {
-    width: 100%;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -146,7 +145,7 @@ h2 {
 .div_desempenho_content {
     transition: 0.8s;
     width: 30%;
-    height: 30%px;
+    height: 30%;
     padding-bottom: 1%;
     border-radius: 20px;
     background-image: linear-gradient(to bottom, #6010AF, #DB00FF);
