@@ -23,27 +23,23 @@ public class SoftwareImpl {
             if (isDuplicado(processo)) {
                 SoftwareEntity software = new SoftwareEntity(processo.getNome());
                 software.insertSoftware();
-                System.out.println("Caiu no true");
             }
         }
     }
 
     public Boolean isDuplicado(Processo processo) {
 
-            List<SoftwareEntity> softwares = assistente.query("Select *"
-                    + " from Software where nomeSoftware = '"
-                    + processo.getNome() + "'",
-                    new BeanPropertyRowMapper<>(SoftwareEntity.class));
+        List<SoftwareEntity> softwares = assistente.query("Select *"
+                + " from Software where nomeSoftware = '"
+                + processo.getNome() + "'",
+                new BeanPropertyRowMapper<>(SoftwareEntity.class));
 
-            for (SoftwareEntity software : softwares) {
+        for (SoftwareEntity software : softwares) {
 
-                if (software.getNomeSoftware().equals(processo.getNome())) {
-
-                    System.out.println("Caiu no if false");
-                    return false;
-                }
+            if (software.getNomeSoftware().equals(processo.getNome())) {
+                return false;
             }
-
+        }
         return true;
     }
 }

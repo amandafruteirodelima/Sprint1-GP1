@@ -5,50 +5,58 @@ import com.github.britooo.looca.api.group.processos.Processo;
 import com.github.britooo.looca.api.group.processos.ProcessosGroup;
 import com.mycompany.devtime.ConfiguracaoBanco;
 import entities.MaquinaEntity;
-import entities.MaquinaSoftwareEntity;
+import entities.HistoricoUsoSoftwareEntity;
 import entities.SoftwareEntity;
 import java.util.List;
+import java.util.Objects;
 import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-public class MaquinaSoftwareImpl {
+public class HistoricoUsoSoftwareImpl {
 
     Looca looca = new Looca();
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
     ProcessosGroup grupoDeProcessos = looca.getGrupoDeProcessos();
-    SoftwareEntity softwareInstance = SoftwareEntity.getInstance();
+    SoftwareImpl software = new SoftwareImpl();
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
     LogErro logErro = new LogErro();
+    List<Processo> processos = grupoDeProcessos.getProcessos();
 
-    public void findMaquinaSoftware() {
-        List<Processo> processos = grupoDeProcessos.getProcessos();
+    public void findHistoricoSoftware() {
+
         for (Processo processo : processos) {
             try {
-                List<SoftwareEntity> softwareid = assistente.query("Select *"
+                String select = "Select *"
                         + " from Software where nomeSoftware = '"
-                        + processo.getNome() + "'",
+                        + processo.getNome() + "'";
+
+                List<SoftwareEntity> softwareid = assistente.query(select,
                         new BeanPropertyRowMapper<>(SoftwareEntity.class));
 
+                if (softwareid.isEmpty() || Objects.isNull(softwareid)) {
+                    software.findSoftware();
+                    softwareid = assistente.query(select,
+                            new BeanPropertyRowMapper<>(SoftwareEntity.class));
+                }
+
                 for (int i = 0; i < softwareid.size(); i++) {
+
                     SoftwareEntity softwareDaVez = softwareid.get(i);
 
-                    MaquinaSoftwareEntity maquinaSoftware = new MaquinaSoftwareEntity(
-                            processo.getUsoCpu(),
+                    HistoricoUsoSoftwareEntity usoSoftware = new HistoricoUsoSoftwareEntity(
                             processo.getUsoMemoria(),
-                            processo.getPid(),
-                            maquinaInstance.getIdMaquina(),
-                            softwareDaVez.getIdSoftware()
+                            softwareDaVez.getIdSoftware(),
+                            maquinaInstance.getIdMaquina()
                     );
-                    maquinaSoftware.insertMaquinaSoftware();
+                    usoSoftware.insertHistoricoUsoSoftware();
                 }
                 
             } catch (Exception erro) {
                 logErro.mensagemErroSelect(erro);
             }
-
         }
     }
 }

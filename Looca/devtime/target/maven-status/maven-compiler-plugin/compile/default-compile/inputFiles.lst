@@ -1,23 +1,23 @@
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\entities\MaquinaSoftwareEntity.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\implantation\MaquinaSoftwareImpl.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\entities\FuncionarioEntity.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\telas\TelaLogado.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\entities\MaquinaEntity.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\implantation\MaquinaImpl.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\logging\versionApp.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\Executor.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\implantation\ProcessadorImpl.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\telas\TelaLogin.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\implantation\HistoricoProcessadorImpl.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\logging\LogErro.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\implantation\HistoricoDiscoImpl.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\ConfiguracaoBanco.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\implantation\RamImpl.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\entities\SoftwareEntity.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\implantation\DiscoImpl.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\entities\Componente.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\entities\HistoricoUsoEntity.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\implantation\SoftwareImpl.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\telas\TelaComponente.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\Criacao.java
-C:\Users\danil\Desktop\Sprint1-GP1\Looca\devtime\src\main\java\implantation\HistoricoRamImpl.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\Criacao.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\ConfiguracaoBanco.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\implantation\ProcessadorImpl.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\entities\MaquinaEntity.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\ConfiguracaoBancoMySql.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\entities\HistoricoUsoSoftwareEntity.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\entities\HistoricoUsoEntity.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\implantation\SoftwareImpl.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\implantation\HistoricoProcessadorImpl.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\implantation\HistoricoDiscoImpl.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\implantation\RamImpl.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\implantation\DiscoImpl.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\entities\Componente.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\implantation\HistoricoRamImpl.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\telas\TelaLogado.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\Executor.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\com\mycompany\devtime\telas\TelaLogin.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\implantation\HistoricoUsoSoftwareImpl.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\implantation\MaquinaImpl.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\entities\SoftwareEntity.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\entities\FuncionarioEntity.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\logging\LogErro.java
+A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca\devtime\src\main\java\logging\VersaoApp.java

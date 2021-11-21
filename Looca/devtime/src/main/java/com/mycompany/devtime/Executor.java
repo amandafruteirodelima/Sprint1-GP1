@@ -42,45 +42,37 @@ public class Executor {
 
     public void Executor(Boolean isLogado) {
 
-        if (isLogado) {
+        try {
+            List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
+                    + " from Maquina where fk_Funcionario = '"
+                    + funcionario.getIdFuncionario() + "'",
+                    new BeanPropertyRowMapper<>(MaquinaEntity.class));
+            MaquinaEntity maquinaDaVez = null;
 
-            try {
-                List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
-                        + " from Maquina where fk_Funcionario = '"
-                        + funcionario.getIdFuncionario() + "'",
-                        new BeanPropertyRowMapper<>(MaquinaEntity.class));
-                MaquinaEntity maquinaDaVez = null;
-
-                for (int i = 0; i < maquinaid.size(); i++) {
-                    maquinaDaVez = maquinaid.get(i);
-                }
-
-                if (maquinaDaVez == null) {
-                    maquina.findMaquina();
-                    disco.findDisco();
-                    processador.findProcessador();
-                    ram.findRam();
-                }
-
-                if (maquinaInstance.getIdMaquina() == null) {
-                    maquinaInstance.instanciarMaquina();
-                }
-
-                coletarLeitura(true);
-
-            } catch (Exception erro) {
-                logErro.mensagemErroSelect(erro);
+            for (int i = 0; i < maquinaid.size(); i++) {
+                maquinaDaVez = maquinaid.get(i);
             }
 
-        } else {
+            if (maquinaDaVez == null) {
+                maquina.findMaquina();
+                disco.findDisco();
+                processador.findProcessador();
+                ram.findRam();
+            }
 
-            coletarLeitura(false);
+            if (maquinaInstance.getIdMaquina() == null) {
+                maquinaInstance.instanciarMaquina();
+            }
 
+            coletarLeitura();
+
+        } catch (Exception erro) {
+            logErro.mensagemErroSelect(erro);
         }
 
     }
 
-    public void coletarLeitura(Boolean isLigado) {
+    public void coletarLeitura() {
         histDisco.findHistoricoDisco();
 
         TimerTask tt = new TimerTask() {
