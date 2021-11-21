@@ -1,0 +1,2964 @@
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:12:44
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:18:28
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:12:48
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:18:32
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:18:18
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:24:02
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:18:22
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:24:06
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:08
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:35:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:13
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:35:58
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:18
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:36:02
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:22
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:36:07
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:27
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:36:11
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:31
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:36:16
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:36
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:36:20
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:40
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:36:24
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:45
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:36:30
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:50
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:36:35
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:59
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:36:44
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:31:05
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:36:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:31:14
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:36:58
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:31:18
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:37:02
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:38:40
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:44:24
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:38:45
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:44:29
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:38:49
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:44:33
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:38:54
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:44:38
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:38:58
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:44:42
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:03
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:44:47
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:07
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:44:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:12
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:44:56
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:16
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:00
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:20
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:05
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:25
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:09
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:29
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:14
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:34
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:18
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:38
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:23
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:43
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:27
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:47
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:31
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:52
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:36
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:39:56
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:40
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:00
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:45
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:05
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:09
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:14
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:45:58
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:18
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:03
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:23
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:07
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:27
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:11
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:32
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:16
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:36
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:20
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:40
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:25
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:45
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:29
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:49
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:34
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:54
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:38
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:40:58
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:42
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:03
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:47
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:07
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:11
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:46:56
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:16
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:00
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:21
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:05
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:25
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:09
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:29
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:14
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:34
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:18
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:38
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:23
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:43
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:27
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:47
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:32
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:52
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:36
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:41:56
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:40
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:01
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:45
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:05
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:09
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:14
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:47:58
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:18
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:03
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:23
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:07
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:27
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:12
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:32
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:16
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:36
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:20
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:41
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:25
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:45
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:29
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:49
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:34
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:54
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:38
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:42:58
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:43
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:03
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:47
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:07
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:12
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:48:56
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:16
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:00
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:21
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:05
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:25
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:09
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:29
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:14
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:34
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:18
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:38
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:23
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:43
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:27
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:47
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:32
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:52
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:36
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:43:56
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:40
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:01
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:45
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:05
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:10
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:14
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:49:58
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:18
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:03
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:23
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:07
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:27
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:12
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:32
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:16
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:36
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:21
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:41
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:25
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:45
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:30
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:50
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:34
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:54
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:39
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:44:59
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:43
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:03
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:48
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:08
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:12
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:50:56
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:17
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:01
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:21
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:05
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:26
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:10
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:30
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:14
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:34
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:19
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:39
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:23
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:43
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:28
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:48
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:32
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:52
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:36
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:45:57
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:41
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:01
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:45
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:05
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:10
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:14
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:51:59
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:19
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:03
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:23
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:07
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:28
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:12
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:32
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:16
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:36
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:21
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:41
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:25
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:45
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:30
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:50
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:34
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:54
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:39
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:46:59
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:43
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:03
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:47
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:08
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:12
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:52:56
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:17
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:01
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:21
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:05
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:25
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:10
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:30
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:14
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:34
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:19
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:39
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:23
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:43
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:27
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:48
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:32
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:52
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:36
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:47:56
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:41
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:01
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:45
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:05
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:10
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:14
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:53:59
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:19
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:03
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:23
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:08
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:28
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:12
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:32
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:17
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:37
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:21
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:41
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:25
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:46
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:30
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:50
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:34
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:54
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:39
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:48:59
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:43
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:03
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:48
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:08
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:13
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:54:57
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:17
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:01
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:22
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:06
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:26
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:10
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:30
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:15
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:35
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:19
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:39
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:24
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:44
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:28
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:48
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:32
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:53
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:37
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:49:57
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:41
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:01
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:46
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:06
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:10
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:55
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:15
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:55:59
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:19
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:03
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:24
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:08
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:28
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:12
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:32
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:17
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:37
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:21
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:41
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:26
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:46
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:30
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:50
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:34
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:55
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:39
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:50:59
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:44
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:04
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:48
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:08
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:13
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:56:57
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:17
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:01
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:21
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:06
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:26
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:10
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:30
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:15
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:35
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:19
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:39
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:24
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:44
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:28
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:48
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:32
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:52
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:37
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:51:57
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:41
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:52:01
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:46
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:52:06
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:52:10
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:52:15
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:57:59
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:52:19
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:58:03
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 18:03:31
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 03:09:15
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 18:03:37
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 03:09:22
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:42:12
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 04:47:56
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:42:16
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 04:48:01
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:42:21
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 04:48:05
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:42:25
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 04:48:09
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:42:30
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 04:48:14
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:42:34
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 04:48:18
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:42:39
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 04:48:23
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:42:43
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 04:48:27
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:55:35
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:01:19
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:55:40
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:01:24
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:55:44
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:01:28
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:55:48
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:01:33
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:55:53
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:01:37
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:55:57
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:01:42
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:56:02
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:01:46
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:00:10
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:05:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:00:15
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:05:59
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:00:19
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:06:03
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:00:24
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:06:08
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:18:11
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:23:55
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:18:15
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:23:59
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:24:00
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:29:44
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:24:05
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:29:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
+
+

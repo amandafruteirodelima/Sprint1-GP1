@@ -24,21 +24,25 @@ public class HistoricoProcessadorImpl {
     public void findHistoricoProcessador() {
 
         try {
-            List<Componente> componente = assistente.query("SELECT IDCOMPONENTE"
+            List<Componente> componente = assistente.query("SELECT *"
                     + " FROM COMPONENTE WHERE FK_MAQUINA ='"
-                    + maquinaInstance.getIdMaquina() + "' AND NOMECOMPONENTE = 'CPU'",
+                    + maquinaInstance.getIdMaquina() + "' AND NOMECOMPONENTE = "
+                    + "'CPU'",
                     new BeanPropertyRowMapper<>(Componente.class));
 
             Componente componenteDaVez = null;
             for (int i = 0; i < componente.size(); i++) {
                 componenteDaVez = componente.get(i);
             }
+            
+            if (componenteDaVez.getIsAtivo().equals(1)) {
+                HistoricoUsoEntity historicoProcessador
+                        = new HistoricoUsoEntity(
+                                componenteDaVez.getIdComponente(),
+                                processador.getUso());
 
-            HistoricoUsoEntity historicoProcessador
-                    = new HistoricoUsoEntity(componenteDaVez.getIdComponente(),
-                            processador.getUso());
-
-            historicoProcessador.insertHistorico();
+                historicoProcessador.insertHistorico();
+            }
 
         } catch (Exception erro) {
             logErro.mensagemErroSelect(erro);

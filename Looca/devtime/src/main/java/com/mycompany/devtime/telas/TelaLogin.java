@@ -187,7 +187,6 @@ public class TelaLogin extends javax.swing.JFrame {
     private void btnLogar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogar1ActionPerformed
         // TODO add your handling code here:
 
-        //        Executor executar = new Executor();
         String email = lblEmail.getText();
         String senha = lblSenha.getText();
 

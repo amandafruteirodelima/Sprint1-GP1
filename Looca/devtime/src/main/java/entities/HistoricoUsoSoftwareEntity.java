@@ -44,7 +44,6 @@ public class HistoricoUsoSoftwareEntity {
         } catch (Exception erro) {
             logErro.mensagemErroInsert(erro);
         }
-
     }
 
 }

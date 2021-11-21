@@ -2549,3 +2549,56 @@ ERRO: java.lang.NullPointerException
 >>>>>>> Stashed changes
 
 
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 16:58:33
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:04:18
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (O driver não pôde estabelecer uma conexão segura com o SQL Server usando a criptografia SSL. Erro: "Unexpected rethrowing".)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:12:38
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:18:22
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:18:12
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:23:57
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:02
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:35:46
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+

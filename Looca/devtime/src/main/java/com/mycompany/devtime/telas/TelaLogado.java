@@ -173,13 +173,12 @@ public class TelaLogado extends javax.swing.JFrame {
 
             toggleBtn.setText("Ligado");
 
-            exec.Executor(true);
+            exec.Executor();
 
         } else {
 
             toggleBtn.setText("Desligado");
            
-            exec.Executor(false);
         }
 
     }//GEN-LAST:event_toggleBtnActionPerformed

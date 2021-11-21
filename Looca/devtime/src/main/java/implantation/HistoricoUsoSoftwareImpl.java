@@ -53,7 +53,7 @@ public class HistoricoUsoSoftwareImpl {
                     );
                     usoSoftware.insertHistoricoUsoSoftware();
                 }
-                
+
             } catch (Exception erro) {
                 logErro.mensagemErroSelect(erro);
             }

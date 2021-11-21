@@ -40,7 +40,7 @@ public class Executor {
     Timer timer = new Timer();
     LogErro logErro = new LogErro();
 
-    public void Executor(Boolean isLogado) {
+    public void Executor() {
 
         try {
             List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"

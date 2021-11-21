@@ -1,6 +1,7 @@
 package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
+import com.mycompany.devtime.ConfiguracaoBancoMySql;
 import java.util.List;
 import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -18,6 +19,11 @@ public class MaquinaEntity {
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
+
+    ConfiguracaoBancoMySql configuracaoBancoMySql = new ConfiguracaoBancoMySql();
+    JdbcTemplate assistenteMySql = new JdbcTemplate(
+            configuracaoBancoMySql.getBancoDeDadosMySql());
+
     FuncionarioEntity funcionario = FuncionarioEntity.getInstance();
 
     public MaquinaEntity(String sistemaOperacional, Integer arquiteturaSO,
@@ -62,7 +68,7 @@ public class MaquinaEntity {
 
             }
             instance.setIdMaquina(maquinaDaVez.getIdMaquina());
-            
+
         } catch (Exception erro) {
             logErro.mensagemErroSelect(erro);
         }

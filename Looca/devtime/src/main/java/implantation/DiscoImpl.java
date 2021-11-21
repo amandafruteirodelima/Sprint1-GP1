@@ -5,18 +5,13 @@ import com.github.britooo.looca.api.group.discos.DiscosGroup;
 import java.util.List;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Volume;
-import com.mycompany.devtime.ConfiguracaoBanco;
 import entities.Componente;
 import entities.MaquinaEntity;
-import org.springframework.jdbc.core.JdbcTemplate;
 
 public class DiscoImpl {
 
     Looca looca = new Looca();
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
-    ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
-    JdbcTemplate assistente = new JdbcTemplate(
-            configuracaoBanco.getBancoDeDados());
     DiscosGroup grupoDeDiscos = looca.getGrupoDeDiscos();
     List<Disco> discos = grupoDeDiscos.getDiscos();
     List<Volume> volumes = grupoDeDiscos.getVolumes();

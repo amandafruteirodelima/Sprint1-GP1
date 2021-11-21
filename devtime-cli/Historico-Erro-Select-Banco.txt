@@ -1,0 +1,2890 @@
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/19 12:01:26
+Versão da Aplicação: logging.VersaoApp@3d32e018Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-19T00:45:37Z
+Tempo de atividade: 0 days, 14:15:47
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.UncategorizedSQLException: StatementCallback
+ uncategorized SQLException for SQL [SEEECT * FROM Funcionario where email = 'saokdsa' and senha = 'dsaokdsako']
+ SQL state [S0001]
+ error code [102]
+ Incorrect syntax near '*'.
+ nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '*'.
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/19 13:03:54
+Versão da Aplicação: null
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-19T00:45:37Z
+Tempo de atividade: 0 days, 15:18:15
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.UncategorizedSQLException: StatementCallback
+ uncategorized SQLException for SQL [SEEECT * FROM Funcionario where email = 'dsaikjdsaij' and senha = 'dsaokdsa']
+ SQL state [S0001]
+ error code [102]
+ Incorrect syntax near '*'.
+ nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '*'.
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/19 13:12:16
+Versão da Aplicação: 7.0
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-19T00:45:37Z
+Tempo de atividade: 0 days, 15:26:37
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.UncategorizedSQLException: StatementCallback
+ uncategorized SQLException for SQL [SEEECT * FROM Funcionario where email = 'uhuihiuhiuo' and senha = '16saf1']
+ SQL state [S0001]
+ error code [102]
+ Incorrect syntax near '*'.
+ nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '*'.
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/19 13:17:03
+Versão da Aplicação: 7.0
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-19T00:45:37Z
+Tempo de atividade: 0 days, 15:31:24
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.UncategorizedSQLException: StatementCallback
+ uncategorized SQLException for SQL [SEAECT * FROM Funcionario where email = 'danilo.silva@bandtec.com.br' and senha = 'esqueciminhasenha']
+ SQL state [S0001]
+ error code [102]
+ Incorrect syntax near '*'.
+ nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '*'.
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/19 13:18:04
+Versão da Aplicação: 8.0
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-19T00:45:37Z
+Tempo de atividade: 0 days, 15:32:25
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.UncategorizedSQLException: StatementCallback
+ uncategorized SQLException for SQL [SEAECT * FROM Funcionario where email = 'danilo.silva@bandtec.com.br' and senha = 'seriomanoesquecimsm']
+ SQL state [S0001]
+ error code [102]
+ Incorrect syntax near '*'.
+ nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '*'.
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/19 13:23:47
+Versão da Aplicação: 8.0
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-19T00:45:37Z
+Tempo de atividade: 0 days, 15:38:08
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.UncategorizedSQLException: StatementCallback
+ uncategorized SQLException for SQL [SECECT * FROM Funcionario where email = 'ednaldo.pereira@algoai.com.br' and senha = 'cachorro1234']
+ SQL state [S0001]
+ error code [102]
+ Incorrect syntax near '*'.
+ nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '*'.
+
+
+---------------------------------- ERRO ----------------------------------
+<<<<<<< Updated upstream
+Momento do erro: 2021/11/18 20:39:11
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+=======
+Momento do erro: 2021/11/20 18:55:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:48
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:48
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:48
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:48
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:48
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:48
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:49
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:05
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:50
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:51
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:07
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:52
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:53
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:09
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:10
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:10
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:10
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:10
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:10
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:10
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:55:10
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:00:54
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.beans.BeanInstantiationException: Failed to instantiate [entities.SoftwareEntity]: No default constructor found
+ nested exception is java.lang.NoSuchMethodException: entities.SoftwareEntity.<init>()
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:14
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:58
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:14
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:58
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:14
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:58
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:14
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:58
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:14
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:58
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:14
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:58
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:14
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:58
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:14
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:58
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:14
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:14
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:14
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:03:59
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:15
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+>>>>>>> Stashed changes
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+<<<<<<< Updated upstream
+Momento do erro: 2021/11/18 20:39:33
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+=======
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:00
+Permissões:
+Executando como usuário padrão
+>>>>>>> Stashed changes
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+<<<<<<< Updated upstream
+Momento do erro: 2021/11/18 20:39:50
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7775457280,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:39:50
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7775457280,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:39:55
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7667757056,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:00
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7796252672,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:05
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7733100544,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:10
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7746502656,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:15
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7726587904,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:20
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7719317504,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:25
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7774543872,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:30
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7767830528,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:35
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7755001856,00"
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/18 20:40:40
+MOTIVO DO ERRO: NÃ£o foi possivel realizar o select no banco
+ERRO: java.lang.NumberFormatException: For input string: "7759155200,00"
+=======
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:17
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:02
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:18
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:03
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:04
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:04
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:04
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/20 18:58:19
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 4 days, 04:04:04
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+>>>>>>> Stashed changes
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 16:58:33
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:04:18
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+ nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (O driver não pôde estabelecer uma conexão segura com o SQL Server usando a criptografia SSL. Erro: "Unexpected rethrowing".)
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:12:38
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:18:22
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:18:12
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:23:57
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 17:30:02
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 02:35:46
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:36:08
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 04:41:53
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:41:31
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 04:47:15
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:53:02
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 04:58:46
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:55:16
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:01:01
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 19:59:40
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:05:25
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:04:13
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:09:57
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:06:04
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:11:49
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:06:44
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:12:28
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:15:06
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:20:50
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:23:30
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:29:15
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:29:22
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:35:06
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:29:24
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:35:09
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:29:27
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:35:11
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:29:41
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:35:25
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:30:10
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:35:54
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:30:12
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:35:56
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:30:28
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:36:12
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:30:32
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:36:16
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:31:31
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:37:15
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:32:31
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:38:16
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:32:54
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:38:38
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:34:29
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:40:13
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+

@@ -1,6 +1,7 @@
 package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
+import com.mycompany.devtime.ConfiguracaoBancoMySql;
 import logging.LogErro;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -13,12 +14,17 @@ public class Componente {
     private String infoAdicional;
     private String unidadeDeMedida;
     private Integer fkMaquina;
+    private Integer isAtivo;
 
     LogErro logErro = new LogErro();
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
+
+    ConfiguracaoBancoMySql configuracaoBancoMySql = new ConfiguracaoBancoMySql();
+    JdbcTemplate assistenteMySql = new JdbcTemplate(
+            configuracaoBancoMySql.getBancoDeDadosMySql());
 
     public Componente() {
     }
@@ -35,14 +41,14 @@ public class Componente {
     }
 
     public void insertComponente() {
-        
+
         try {
             assistente.update("INSERT INTO COMPONENTE(nomeComponente, capacidade, "
-                + "descricao, infoAdicional,unidadeDeMedida, fk_Maquina) "
-                + "VALUES(?,?,?,?,?,?)",
-                nomeComponente, capacidade, descricao, infoAdicional,
-                unidadeDeMedida, fkMaquina);
-            
+                    + "descricao, infoAdicional,unidadeDeMedida, fk_Maquina) "
+                    + "VALUES(?,?,?,?,?,?)",
+                    nomeComponente, capacidade, descricao, infoAdicional,
+                    unidadeDeMedida, fkMaquina);
+
         } catch (Exception erro) {
             logErro.mensagemErroInsert(erro);
         }
@@ -56,8 +62,11 @@ public class Componente {
         this.idComponente = idComponente;
     }
 
-    @Override
-    public String toString() {
-        return "Componente{" + "idComponente=" + idComponente + ", nomeComponente=" + nomeComponente + ", capacidade=" + capacidade + ", descricao=" + descricao + ", infoAdicional=" + infoAdicional + ", unidadeDeMedida=" + unidadeDeMedida + ", fkMaquina=" + fkMaquina + ", maquinaInstance=" + maquinaInstance + ", configuracaoBanco=" + configuracaoBanco + ", assistente=" + assistente + '}';
+    public Integer getIsAtivo() {
+        return isAtivo;
+    }
+
+    public void setIsAtivo(Integer isAtivo) {
+        this.isAtivo = isAtivo;
     }
 }
