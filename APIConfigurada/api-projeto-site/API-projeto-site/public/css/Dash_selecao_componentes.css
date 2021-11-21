@@ -110,6 +110,25 @@ h2 {
     overflow-y: auto;
 }
 
+.button_componentes {
+    width: 20%;
+    height: 8%;
+    background-color: #ffffff;
+    color: rgb(251, 134, 255);
+    border-radius: 5px;
+    border-style: none;
+    font-size: 100%;
+    font-family: 'Poppins-Bold';
+    transition: 0.5s;
+    margin-bottom: 4%;
+}
+
+.button_componentes:hover {
+    background-color: rgb(251, 134, 255);
+    color: #ffffff;
+    cursor: pointer;
+}
+
 /* Configurações da barra de rolagem */
 ::-webkit-scrollbar {
     height: 20px;

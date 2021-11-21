@@ -12,11 +12,85 @@
     opacity: 0.4;
     width: 10px;
 }
+.container-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.container-card .card{
+    position: relative;
+    width: 320px;
+    height: 390px;
+    box-shadow: inset 0px 1px 5px #231D36;
+    border-radius: 15px;
+    margin: 30px;
+}
+.container-card .card:hover{
+    box-shadow: inset 0px 1px 5px #faf9fd;
+    color: #777;
+}
 
+.container-card .card .caixa{
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #231D36;
+    box-shadow: 0 10px 20px rgb(173, 173, 173);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.container-card .card:hover .caixa{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px #231D36;
+    background: linear-gradient(170deg,#7e1bcf,#fcde7b);
+    cursor: pointer;
+}
+.container-card .card .caixa .conteudo{
+    padding: 20px;
+    text-align: center;
+}
+.container-card .card .caixa .conteudo figure{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 8em;
+    color: #231D36;
+    transition: 0.5s;
+}
+.container-card .card:hover .caixa .conteudo figure{
+    color: rgba(0,0,0,0.05);
+}
+.container-card .card .caixa .conteudo h3{
+    font-size: 1.8em;
+    color: #8f74f8;
+    z-index: 1;
+    transition: 00.5s;
+    margin-top: -50px;
+}
+.container-card .card:hover .caixa .conteudo h3,
+.container-card .card:hover .caixa .conteudo p{
+    color: #231D36;
+}
+.container-card .card .caixa .conteudo p{
+    font-size: 1em;
+    font-weight: 300;
+    color: #ebebd3;
+    z-index: 1;
+    transition: 0.5s;
+}
 ::-webkit-scrollbar-thumb {
     background-color: #ffffff;
     border-radius: 10px;
 }
+
+
 
 body {
     /* background: linear-gradient(120deg, #987fc4 0%,  rgb(49, 2, 77) 70%), #0000 0%; */
@@ -63,14 +137,17 @@ body {
     transform: scale(1.01);
     transition: 0.5s;
     background-color: #5d04d9;
+    cursor: pointer;
 }
 
 .div2{
     background-color: #002c4d94;
+    cursor: pointer;
 }
 
 .div2:hover{
     background-color: #002c4de3;
+    cursor: pointer;
 }
 
 .div3{

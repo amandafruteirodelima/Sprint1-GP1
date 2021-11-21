@@ -39,7 +39,7 @@
     <h1 class="h1_up">SELECIONE OS COMPONENTES <br>
         QUE DESEJA MONITORAR</h1>
 
-    <!-- Membros online -->
+    <!-- s online -->
     <h2>Escolha a máquina de quem você deseja alterar o monitoramento, <br>
         depois escolha quais componentes deseja que sejam monitorados</h2>
 
@@ -51,7 +51,7 @@
         </div>
 
         <div id="div_componentes_fundo" class="div_componentes_fundo">
-            <div class="div_componentes">
+            <div id="div_componentes" class="div_componentes">
 
             </div>
         </div>
@@ -64,13 +64,9 @@
 <script>
     var idFuncionario = sessionStorage.getItem('idFuncionario');
 
-    var idFuncionarioMembro = sessionStorage.getItem('idFuncionarioMembro');
-
     window.onload = function ativarFunctions() {
 
         trazerFuncionariosOnline();
-
-        trazerComponentes();
 
     }
 
@@ -91,7 +87,7 @@
                     for (let index = 0; index < json.length; index++) {
 
                         div_online.innerHTML +=
-                            `<h1  onclick="trazerComponentes(${json[index].idFuncionario})" class="nome_funcionario">${json[index].nomeFuncionario}</h1>`;
+                            `<h1 onclick="trazerComponentes(${json[index].idFuncionario})" class="nome_funcionario">${json[index].nomeFuncionario}</h1>`;
 
                     }
 
@@ -107,9 +103,9 @@
     }
 
     // será ativada ao clicar no nome do funcionário quando estiver pronta
-    function trazerComponentes(idFuncionarioMembro) {
+    function trazerComponentes(idFuncionario) {
 
-        fetch(`/usuarios/trazerComponentes/${idFuncionarioMembro}`, {
+        fetch(`/usuarios/trazerComponentes/${idFuncionario}`, {
             method: "post"
         }).then(resposta => {
 
@@ -125,6 +121,8 @@
 
                         div_componentes.innerHTML +=
                             `<h1 class="nome_funcionario">${json[index].nomeComponente}</h1>`;
+                        div_componentes.innerHTML +=
+                            `<button onclick="mudarStatusComponente(${json[index].idComponente})" class="button_componentes">Ativo</button>`;
                     }
 
                 });

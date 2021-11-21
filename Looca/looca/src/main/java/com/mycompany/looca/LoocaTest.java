@@ -46,7 +46,9 @@ public class LoocaTest {
 //      Memoria
 //
 //        System.out.println(memoria.getDisponivel());
-//        System.out.println(memoria.getEmUso());
+        System.out.println(memoria.getEmUso());
+        DecimalFormat dec = new DecimalFormat("0.0");
+        dec(memoria.getEmUso());
 //        System.out.println(memoria.getTotal());
 //        System.out.println(memoria.toString());
 //
