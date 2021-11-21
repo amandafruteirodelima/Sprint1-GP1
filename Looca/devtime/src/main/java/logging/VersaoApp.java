@@ -21,7 +21,7 @@ public class VersaoApp {
             versao = reader.read(
                     new InputStreamReader(
                             LogErro.class.getResourceAsStream(
-                                    "Eu nem sei o que essa merda faz"
+                                    "Está criando um meio de leitura de arquivo"
                             )
                     )
             );
@@ -33,4 +33,6 @@ public class VersaoApp {
     // IOException aparece quando ocorre alguma exceção
     // XmlPullParserException aparece em um erro no Xml Pull Parser
     // MavenXpp3Reader 
+//    getResourceAsStream Está tentando localizar recurso da classe LogErro através de um caminho local
+//    e ao encontrar retorna um objeto InputStream.
 }

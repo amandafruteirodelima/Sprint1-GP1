@@ -55,7 +55,18 @@
 
             </div>
         </div>
+
     </div>
+
+    <!-- <div id="div_salvar_fundo" class="div_salvar_fundo">
+        <div id="div_salvar" class="div_salvar">
+
+            <h1 class="frase_salvar">Salve suas alterações antes de sair</h1>
+
+            `<button class="button_salvar" onclick="salvar()">Salvar</button>`
+
+        </div>
+    </div> -->
 
 </body>
 
@@ -63,6 +74,10 @@
 
 <script>
     var idFuncionario = sessionStorage.getItem('idFuncionario');
+
+    function salvar() {
+        location.reload();
+    }
 
     window.onload = function ativarFunctions() {
 
@@ -82,7 +97,7 @@
 
                     console.log(json);
 
-                    //Mostrar cada funcionário na tela
+                    // Mostrar cada funcionário na tela
 
                     for (let index = 0; index < json.length; index++) {
 
@@ -102,7 +117,7 @@
 
     }
 
-    // será ativada ao clicar no nome do funcionário quando estiver pronta
+    // Será ativada ao clicar no nome do funcionário quando estiver pronta
     function trazerComponentes(idFuncionario) {
 
         fetch(`/usuarios/trazerComponentes/${idFuncionario}`, {
@@ -115,20 +130,101 @@
 
                     console.log(json);
 
-                    //Mostrar cada componentes na tela
+                    div_componentes.innerHTML = "";
 
+                    // Mostrar cada componentes na tela
                     for (let index = 0; index < json.length; index++) {
 
                         div_componentes.innerHTML +=
                             `<h1 class="nome_funcionario">${json[index].nomeComponente}</h1>`;
-                        div_componentes.innerHTML +=
-                            `<button onclick="mudarStatusComponente(${json[index].idComponente})" class="button_componentes">Ativo</button>`;
+
+                        // Verifica se o componente está ativo
+                        if (json[index].isAtivo == 1) {
+
+                            div_componentes.innerHTML +=
+                                `<button id="button${json[index].idComponente}" name="${json[index].isAtivo}" onclick="mudarStatusComponente(${json[index].idComponente}, ${json[index].isAtivo})" class="button_componentes">Ativo</button>`;
+
+                        } else {
+
+                            div_componentes.innerHTML +=
+                                `<button id="button${json[index].idComponente}" onclick="mudarStatusComponente(${json[index].idComponente}, ${json[index].isAtivo})" class="button_componentes">Desativo</button>`;
+
+                        }
+
                     }
 
                 });
 
             } else {
+                div_componentes.innerHTML = "";
                 alert('Esse funcionário não possui componentes para monitorar');
+            }
+        });
+
+        return false;
+
+    }
+
+    // Ativa ou desativa o monitoramento de algum componente
+    function mudarStatusComponente(idComponente, isAtivo) {
+
+        if (isAtivo == 1) {
+
+            document.getElementById(`button${idComponente}`).innerHTML = 'Desativo';
+
+            desativarComponenteBD(idComponente);
+
+        } else {
+
+            document.getElementById(`button${idComponente}`).innerHTML = 'Ativo';
+
+            ativarComponenteBD(idComponente);
+
+        }
+
+        return false;
+
+    }
+
+    // Ativa ou desativa o monitoramento de algum componente
+    function desativarComponenteBD(idComponente) {
+
+        fetch(`/usuarios/desativarComponenteBD/${idComponente}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+
+
+                });
+
+            }
+        });
+
+        return false;
+
+    }
+
+    // Ativa ou desativa o monitoramento de algum componente
+    function ativarComponenteBD(idComponente) {
+
+        fetch(`/usuarios/ativarComponenteBD/${idComponente}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+
+
+                });
+
             }
         });
 
