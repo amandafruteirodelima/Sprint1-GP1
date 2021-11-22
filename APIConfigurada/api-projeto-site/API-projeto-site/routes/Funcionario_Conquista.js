@@ -14,7 +14,7 @@ router.post('/recuperar', function(req, res, next) {
 
 	console.log(req.body);
 
-	var idFuncionario = req.body.idFuncionario; // 
+	var idFuncionario = req.body.idFuncionario
 
     
     //Neste select irei trazer todos os dados que desejo relacionando func e conquista
