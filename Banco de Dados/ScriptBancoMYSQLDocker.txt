@@ -1,0 +1,148 @@
+MYSQL DOCKER
+
+------------------- Software -------------------
+
+
+CREATE TABLE Software (
+idSoftware INT PRIMARY KEY AUTO_INCREMENT,
+nomeSoftware VARCHAR(30) NOT NULL
+);
+
+
+------------------- Produto -------------------
+
+CREATE TABLE Produto (
+idProduto INT PRIMARY KEY AUTO_INCREMENT,
+nomeProduto VARCHAR(50) NOT NULL,
+devCoinProduto INT NOT NULL
+);
+
+-----------------Conquista-------------------
+
+
+CREATE TABLE Conquista (
+idConquista INT PRIMARY KEY AUTO_INCREMENT,
+nomeConquista VARCHAR(30) NOT NULL,
+descConquista VARCHAR(100) NOT NULL,
+devCoinConquista INT NOT NULL,
+pontosConquista INT NOT NULL
+);
+
+
+------------------- Empresa ----------------
+
+CREATE TABLE Empresa (
+idEmpresa INT PRIMARY KEY AUTO_INCREMENT,
+nomeEmpresa VARCHAR(30) NOT NULL,
+cnpj VARCHAR(18) NOT NULL
+);
+
+
+------------------- Equipe --------------------
+
+CREATE TABLE Equipe (
+idEquipe INT PRIMARY KEY AUTO_INCREMENT,
+nomeEquipe VARCHAR(45) NOT NULL	
+);
+
+
+------------------- Funcionário ----------------
+
+CREATE TABLE Funcionario(
+idFuncionario INT PRIMARY KEY AUTO_INCREMENT,
+nomeFuncionario VARCHAR(50) NOT NULL,
+cargaHoraria INT NOT NULL,
+email VARCHAR(60) NOT NULL,
+senha VARCHAR(30) NOT NULL,
+devCoinFuncionario INT NOT NULL DEFAULT 0,
+pontosFuncionario INT NULL DEFAULT 0,
+isGestor BOOLEAN DEFAULT 0,
+fk_Chefe INT,
+FOREIGN KEY (fk_Chefe) REFERENCES Funcionario (idFuncionario),
+fk_Empresa INT,
+FOREIGN KEY (fk_Empresa) REFERENCES Empresa (idEmpresa)
+);
+
+
+-------------------------- Maquina ----------------------
+
+CREATE TABLE Maquina (
+idMaquina INT PRIMARY KEY AUTO_INCREMENT,
+sistemaOperacional VARCHAR(45),
+arquiteturaSo VARCHAR (5),
+fabricanteSo VARCHAR(45), 
+fk_Funcionario INT,
+FOREIGN KEY (fk_Funcionario) REFERENCES Funcionario(idFuncionario)
+);
+
+-------------------------- Equipe Funcionario --------------
+
+CREATE TABLE Equipe_Funcionario (
+idEquipeFuncionario INT PRIMARY KEY AUTO_INCREMENT,
+fk_Equipe INT NOT NULL,
+FOREIGN KEY (fk_Equipe) REFERENCES Equipe (idEquipe),
+fk_Funcionario INT NOT NULL,
+FOREIGN KEY (fk_Funcionario) REFERENCES Funcionario (idFuncionario)
+);
+
+
+----------------------- Componente ------------------------
+
+CREATE TABLE Componente(
+idComponente INT PRIMARY KEY AUTO_INCREMENT,
+nomeComponente VARCHAR(25),
+capacidade FLOAT,
+descricao VARCHAR(45),
+infoAdicional VARCHAR(50),
+unidadeDeMedida VARCHAR(5),
+fk_Maquina INT,
+FOREIGN KEY (fk_Maquina) REFERENCES Maquina (idMaquina) 
+);
+
+
+---------------------------- Historico Uso --------------------------
+
+CREATE TABLE Historico_Uso (
+idHistoricoUso INT PRIMARY KEY AUTO_INCREMENT,
+fk_Componente INT,
+FOREIGN KEY (fk_Componente) REFERENCES Componente (idComponente),
+dataHora DATETIME,
+consumo FLOAT
+);
+
+
+
+--------------------------- Funcionario Produto -----------------
+
+CREATE TABLE Funcionario_Produto (
+idFuncionario_Produto INT PRIMARY KEY AUTO_INCREMENT,
+fk_Funcionario INT,
+FOREIGN KEY (fk_Funcionario) REFERENCES Funcionario (idFuncionario),
+fk_Produto INT,
+FOREIGN KEY (fk_Produto) REFERENCES Produto (idProduto),
+checkAdquirido BOOLEAN NOT NULL
+);
+
+
+------------------------- Funcionario Conquista ---------------
+
+CREATE TABLE Funcionario_Conquista (
+idFuncionario_Conquista INT PRIMARY KEY AUTO_INCREMENT,
+fk_Funcionario INT,
+FOREIGN KEY (fk_Funcionario) REFERENCES Funcionario (idFuncionario),
+fk_Conquista INT,
+FOREIGN KEY (fk_Conquista) REFERENCES Conquista (idConquista),
+checkCompleta BOOLEAN NOT NULL
+);
+
+--------------------------Historico Uso Software -----------------
+
+CREATE TABLE Historico_Uso_Software(
+idHistoricoUsoSoftware INT PRIMARY KEY AUTO_INCREMENT,
+dataHora DATETIME,
+consumo FLOAT,
+fk_Software INT,
+FOREIGN KEY (fk_Software) REFERENCES Software (idSoftware),
+fk_Maquina INT,
+FOREIGN KEY (fk_Maquina) REFERENCES Maquina(idMaquina)
+);

@@ -21,7 +21,7 @@ idConquista INT PRIMARY KEY IDENTITY(1,1),
 nomeConquista VARCHAR(30) NOT NULL,
 descConquista VARCHAR(100) NOT NULL,
 devCoinConquista INT NOT NULL,
-pontosConquista INT NOT NULL,
+pontosConquista INT NOT NULL
 );
 
 //Empresa --> OKAY
