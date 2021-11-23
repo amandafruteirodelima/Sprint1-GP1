@@ -52,7 +52,7 @@ public class LogErro {
             String original = erroEstilo()
                     + "\nMomento do erro: " + dataCorreta.format(LocalDateTime.now())
                     + "\nVersão da Aplicação: " + versao.pegarVersaoApp()
-                    + looca.getSistema()
+                    + "\n" + looca.getSistema()
                     + "\nERRO: " + erro + "\n\n";
             String textoCompleto = original.replaceAll(";", "\n");
             escrever.write(textoCompleto);
