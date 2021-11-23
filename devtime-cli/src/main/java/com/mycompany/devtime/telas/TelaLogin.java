@@ -11,7 +11,7 @@ import com.mycompany.devtime.Executor;
  *
  * @author bmath
  */
-public class Login {
+public class TelaLogin {
 
     public static void main(String[] args) {
         Autenticacao autenticacao = new Autenticacao();       
