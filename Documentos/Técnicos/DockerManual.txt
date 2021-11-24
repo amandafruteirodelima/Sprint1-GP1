@@ -1,0 +1,38 @@
+O que é o Docker?
+
+Containers são criados pelo Docker e dentro deles 
+há um ambiente configurado para o software
+conseguir rodar normalmente
+
+-------------------------------------------------------------------
+
+Containers
+
+
+----------------------------------
+Subir um arquivo no docker pela Ec2:
+docker cp monitoramento.jar ContainerJava:/home/monitoramento.jar
+
+Criar um Container:
+1°Baixar imagem 
+
+2°sudo docker run -it -p 8080:8080 --name ConteinerNome openjdk:11-jre-slim
+
+sudo docker run -it -p 8080:8080 --name ConteinerNome nomeDaimagem
+
+
+
+Ligar um container:
+sudo docker start ConteinerBD
+
+Entrar em um Container:
+sudo docker exec -it ConteinerBD bash
+
+Desligar um conteiner:
+sudo docker stop ConteinerBD
+
+Sair de Conteiner:
+exit
+
+Entrar no mysql:
+mysql -u root -p
