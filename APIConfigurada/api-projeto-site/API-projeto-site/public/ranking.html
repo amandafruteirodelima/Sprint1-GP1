@@ -55,21 +55,13 @@
                     </div>  
                 </div>
             </div>
+            <!-- AQUIIIIIIIIIIIIIIII -->
             <div class="div_nome_usuario_perfil">
                 <div class="div_geral_conquistas">
                     <div class="div_titulo_conquista"><b>Conquistas</b></div>
                     <div class="div_conquista_e_div_img div_nome_usuario_perfil">
-                        <div class="div_conquistas">
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="div_conquista_e_div_img div_nome_usuario_perfil">
-                        <div class="div_conquistas">
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
+                        <div id="divListaConquista" class="div_conquistas">
+                           
                         </div>
                     </div>
                 </div>
@@ -222,7 +214,10 @@
 
                 resposta.json().then(json => {
 
-                    alert("Deu bom confia!")
+                    for(i = 0; i < json.length; i++){
+                        divListaConquista.innerHTML += `${json[i].nomeConquista}<br>`
+                        
+                    }
                     console.log(json);
 
                 });

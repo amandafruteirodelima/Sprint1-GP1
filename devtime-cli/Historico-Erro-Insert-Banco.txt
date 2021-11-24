@@ -2963,12 +2963,21 @@ ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtai
 
 
 ---------------------------------- ERRO ----------------------------------
+<<<<<<< HEAD
 Momento do erro: 2021/11/21 20:41:37
 Versão da Aplicação: 8.5Sistema operacional: Windows
 Fabricante: Microsoft
 Arquitetura: 64 bits.
 Inicializado: 2021-11-16T16:54:24Z
 Tempo de atividade: 5 days, 05:47:21
+=======
+Momento do erro: 2021/11/23 14:51:57
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-22T20:39:12Z
+Tempo de atividade: 0 days, 21:12:58
+>>>>>>> 20bf5d9d54ee01e4b920164265ef2bae05cd4b31
 Permissões:
 Executando como usuário padrão
 ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
