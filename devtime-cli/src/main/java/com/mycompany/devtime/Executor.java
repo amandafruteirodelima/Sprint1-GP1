@@ -13,6 +13,7 @@ import implantation.ProcessadorImpl;
 import implantation.RamImpl;
 import implantation.SoftwareImpl;
 import java.util.List;
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 import logging.LogErro;
@@ -53,14 +54,15 @@ public class Executor {
                 maquinaDaVez = maquinaid.get(i);
             }
 
-            if (maquinaDaVez == null) {
+            if (Objects.isNull(maquinaDaVez)) {
                 maquina.findMaquina();
                 disco.findDisco();
                 processador.findProcessador();
                 ram.findRam();
+                software.findSoftware();
             }
-
-            if (maquinaInstance.getIdMaquina() == null) {
+            
+            if (Objects.isNull(maquinaInstance.getIdMaquina())) {
                 maquinaInstance.instanciarMaquina();
             }
 

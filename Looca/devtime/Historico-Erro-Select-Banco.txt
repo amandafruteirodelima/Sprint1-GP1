@@ -2602,3 +2602,55 @@ Executando como usuário padrão
 ERRO: java.lang.NullPointerException
 
 
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/21 20:40:29
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 5 days, 05:46:13
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/24 10:08:53
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 7 days, 19:14:36
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/24 10:09:44
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 7 days, 19:15:26
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/24 10:09:56
+Versão da Aplicação: 8.5
+Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 7 days, 19:15:39
+Permissões:
+Executando como usuário padrão
+ERRO: java.lang.NullPointerException
+
+

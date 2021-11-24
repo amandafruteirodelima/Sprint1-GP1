@@ -13,6 +13,7 @@ import implantation.ProcessadorImpl;
 import implantation.RamImpl;
 import implantation.SoftwareImpl;
 import java.util.List;
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 import logging.LogErro;
@@ -20,7 +21,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class Executor {
-
+    
     Looca looca = new Looca();
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
@@ -39,42 +40,43 @@ public class Executor {
     FuncionarioEntity funcionario = FuncionarioEntity.getInstance();
     Timer timer = new Timer();
     LogErro logErro = new LogErro();
-
+    
     public void Executor() {
-
+        
         try {
-            List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
+            List<MaquinaEntity> maquinaid = assistente.query("Select *"
                     + " from Maquina where fk_Funcionario = '"
                     + funcionario.getIdFuncionario() + "'",
                     new BeanPropertyRowMapper<>(MaquinaEntity.class));
             MaquinaEntity maquinaDaVez = null;
-
+            
             for (int i = 0; i < maquinaid.size(); i++) {
                 maquinaDaVez = maquinaid.get(i);
             }
-
-            if (maquinaDaVez == null) {
+            
+            if (Objects.isNull(maquinaDaVez)) {
                 maquina.findMaquina();
                 disco.findDisco();
                 processador.findProcessador();
                 ram.findRam();
+                software.findSoftware();
             }
-
-            if (maquinaInstance.getIdMaquina() == null) {
+            
+            if (Objects.isNull(maquinaInstance.getIdMaquina())) {
                 maquinaInstance.instanciarMaquina();
             }
-
+            
             coletarLeitura();
-
+            
         } catch (Exception erro) {
             logErro.mensagemErroSelect(erro);
         }
-
+        
     }
-
+    
     public void coletarLeitura() {
         histDisco.findHistoricoDisco();
-
+        
         TimerTask tt = new TimerTask() {
             @Override
             public void run() {

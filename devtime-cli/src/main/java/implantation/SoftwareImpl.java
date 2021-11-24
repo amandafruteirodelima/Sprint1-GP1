@@ -28,6 +28,11 @@ public class SoftwareImpl {
         }
     }
 
+    public void findSoftware(String nome) {
+        SoftwareEntity software = new SoftwareEntity(nome);
+        software.insertSoftware();
+    }
+
     public Boolean isDuplicado(Processo processo) {
 
         List<SoftwareEntity> softwares = assistente.query("Select *"

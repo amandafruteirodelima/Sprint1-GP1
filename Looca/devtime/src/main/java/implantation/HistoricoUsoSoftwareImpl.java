@@ -37,7 +37,7 @@ public class HistoricoUsoSoftwareImpl {
                         new BeanPropertyRowMapper<>(SoftwareEntity.class));
 
                 if (softwareid.isEmpty() || Objects.isNull(softwareid)) {
-                    software.findSoftware();
+                    software.findSoftware(processo.getNome());
                     softwareid = assistente.query(select,
                             new BeanPropertyRowMapper<>(SoftwareEntity.class));
                 }

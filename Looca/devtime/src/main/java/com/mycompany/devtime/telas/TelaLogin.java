@@ -7,6 +7,7 @@ package com.mycompany.devtime.telas;
 import com.mycompany.devtime.ConfiguracaoBanco;
 import entities.FuncionarioEntity;
 import java.util.List;
+import javax.swing.JOptionPane;
 import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -218,10 +219,10 @@ public class TelaLogin extends javax.swing.JFrame {
 
                 logado.setVisible(true);
                 setVisible(false);
-            } 
-            
+            }
 
         } catch (Exception erro) {
+            JOptionPane.showMessageDialog(null,"Falha no Login");
             logErro.mensagemErroSelect(erro);
         }
     }//GEN-LAST:event_btnLogar1ActionPerformed

@@ -2663,3 +2663,33 @@ ERRO: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtai
  nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Could not create connection to database server. Attempted reconnect 3 times. Giving up.)
 
 
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/24 09:53:15
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 7 days, 18:58:58
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback
+ SQL [INSERT INTO HISTORICO_USO(fk_Componente, dataHora, consumo) VALUES(?,?,?)]
+ Error converting data type nvarchar to float.
+ nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Error converting data type nvarchar to float.
+
+
+---------------------------------- ERRO ----------------------------------
+Momento do erro: 2021/11/24 09:53:16
+Versão da Aplicação: 8.5Sistema operacional: Windows
+Fabricante: Microsoft
+Arquitetura: 64 bits.
+Inicializado: 2021-11-16T16:54:24Z
+Tempo de atividade: 7 days, 18:58:58
+Permissões:
+Executando como usuário padrão
+ERRO: org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback
+ SQL [INSERT INTO HISTORICO_USO(fk_Componente, dataHora, consumo) VALUES(?,?,?)]
+ Error converting data type nvarchar to float.
+ nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Error converting data type nvarchar to float.
+
+

@@ -46,8 +46,12 @@ public class LoocaTest {
 //      Memoria
 //
 //        System.out.println(memoria.getDisponivel());
-//        System.out.println(memoria.getEmUso());
-//        DecimalFormat dec = new DecimalFormat("0.0");
+
+        DecimalFormat df = new DecimalFormat("#.###");
+        System.out.println(memoria.getEmUso());
+        System.out.println(df.format((double)memoria.getEmUso()));
+        System.out.println(String.format("%.2f", (double)memoria.getEmUso()));
+
 //        dec(memoria.getEmUso());
 //        System.out.println(memoria.getTotal());
 //        System.out.println(memoria.toString());
@@ -84,7 +88,7 @@ public class LoocaTest {
 //        List<Volume> volumes = grupoDeDiscos.getVolumes();
 //        List<Disco> discos = grupoDeDiscos.getDiscos();
 //        
-//        Integer quantidadeDeDiscos = grupoDeDiscos.getQuantidadeDeDiscos();;
+//        Integer quantidadeDeDiscos = grupoDeDiscos.getQuantidadeDeDiscos();
 //        Integer quantidadeDeVolumes = grupoDeDiscos.getQuantidadeDeVolumes();
 //        Long tamanhoTotal = grupoDeDiscos.getTamanhoTotal();
 //        

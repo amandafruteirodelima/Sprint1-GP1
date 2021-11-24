@@ -1,7 +1,7 @@
-com\mycompany\devtime\Criacao.class
 com\mycompany\devtime\telas\TelaLogin.class
 com\mycompany\devtime\telas\TelaLogin$1.class
 logging\LogErro.class
+slack\IntegracaoSlack.class
 entities\FuncionarioEntity.class
 implantation\HistoricoRamImpl.class
 com\mycompany\devtime\telas\TelaLogin$4.class
@@ -13,6 +13,7 @@ com\mycompany\devtime\ConfiguracaoBanco.class
 entities\HistoricoUsoSoftwareEntity.class
 com\mycompany\devtime\telas\TelaLogado$3.class
 com\mycompany\devtime\Executor$1.class
+slack\IntegracaoSlackApp.class
 entities\SoftwareEntity.class
 implantation\ProcessadorImpl.class
 implantation\HistoricoDiscoImpl.class
