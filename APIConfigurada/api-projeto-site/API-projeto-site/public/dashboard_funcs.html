@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -130,7 +130,7 @@
                 <div>
                     Status pc
                 </div>
-                <span id="statusPC">...</span>
+                <span id="statusPC" class="statusPC">...</span>
             </div>
 
             <div class="divDisplayIndividual">
@@ -151,14 +151,14 @@
                 <div>
                     RAM
                 </div>
-                <span id="statusRam">...</span>
+                <span id="statusRam" class="statusRam">...</span>
             </div>
 
             <div class="divDisplayIndividual">
                 <div>
                     DISCO C:
                 </div>
-                <span id="statusDisco">...</span>
+                <span id="statusDisco" class="statusDisco">...</span>
             </div>
         </div>
         <div class="linha_meio">
@@ -269,23 +269,9 @@
         obterdadosconsumoCPU();
         obterdadosconsumoRAM();
         obterdadosconsumoDISCO();
-
-        statusPcOnline()
+        obterdadosconsumoTempoReal();
 
         setTimeout(atualizacaoPeriodica, 5000);
-    }
-
-    function statusPcOnline() {
-
-        if (statusIsLigado) {
-
-            statusPC.innerHTML = 'ON';
-
-        } else {
-
-            statusPC.innerHTML = 'OFF';
-
-        }
     }
 
     // CPU
@@ -618,7 +604,7 @@
             options: configurarGraficoCPU()
         };
 
-        chartDISCO = new Chart(
+        chartCPU = new Chart(
             document.getElementById('cpu'),
             config
         );
@@ -654,7 +640,7 @@
             options: configurarGraficoDISCO()
         };
 
-        chartCPU = new Chart(
+        chartDISCO = new Chart(
             document.getElementById('disco'),
             config
         );
@@ -686,6 +672,27 @@
 
     }
 
+    function alertarCPU(dados) {
+
+        let cpu = dados.consumo.toFixed(1);
+
+        const max_consumo = 80;
+        const medio_consumo = 60;
+
+        if (cpu >= max_consumo) {
+            statusCpu.style.color = 'red';
+        }
+        if (cpu >= medio_consumo && cpu < max_consumo) {
+            statusCpu.style.color = 'yellow';
+        }
+        if (cpu < medio_consumo) {
+            statusCpu.style.color = 'green';
+        }
+
+        statusCpu.innerHTML = `<b> ${cpu}% </b>`;
+
+    }
+
     function obterdadosconsumoRAM() {
 
         fetch(`/leiturasDaMaquina/ram/${usuarioEmail}`)
@@ -710,6 +717,28 @@
             .catch(function (error) {
                 console.error(`Erro na obtenção dos dados do caminhao p/ gráfico: ${error.message}`);
             });
+
+    }
+
+    function alertarRAM(dados) {
+
+        let capa = parseInt(dados.capacidade);
+        let ram = ((parseInt(dados.consumo) * 100) / capa).toFixed(0);
+
+        const max_consumo = 80;
+        const medio_consumo = 60;
+    
+        if (ram >= max_consumo) {
+            statusRam.style.color = 'red';
+        }
+        if (ram >= medio_consumo && ram < max_consumo) {
+            statusRam.style.color = 'yellow';
+        }
+        if (ram < medio_consumo) {
+            statusRam.style.color = 'green';
+        }
+
+        statusRam.innerHTML = `<b> ${ram}% </b>`;
 
     }
 
@@ -741,110 +770,77 @@
 
     }
 
-    function alertarCPU(dados) {
-        // padrão para meu alerta
-
-        let cpu = dados.consumo.toFixed(1);
-
-        var classe_consumo = '';
-
-        var limites = {
-            max_consumo: 80,
-            medio_consumo: 60
-        };
-
-        // comparando
-        if (cpu >= limites.max_consumo) {
-            classe_consumo = 'red';
-        }
-        if (cpu >= limites.medio_consumo && dados.consumo < limites.max_consumo) {
-            classe_consumo = 'yellow';
-        }
-        if (cpu < limites.medio_consumo) {
-            classe_consumo = 'green';
-        }
-
-        // escolhendo qual alterar
-        var div_consumo_alterar = statusCpu;
-
-        // alterando
-        div_consumo_alterar.className = classe_consumo;
-
-        div_consumo_alterar.innerHTML = `<b> ${cpu}% </b>`;
-
-    }
-
-    function alertarRAM(dados) {
-        // padrão para meu alerta
-
-        let capa = parseInt(dados.capacidade);
-
-        let ram = ((parseInt(dados.consumo) * 100) / capa).toFixed(0);
-
-        var classe_consumo = '';
-
-        var limites = {
-            max_consumo: 80,
-            medio_consumo: 60
-        };
-
-        // comparando
-        if (ram >= limites.max_consumo) {
-            classe_consumo = 'red';
-        }
-        if (ram >= limites.medio_consumo && dados.consumo < limites.max_consumo) {
-            classe_consumo = 'yellow';
-        }
-        if (ram < limites.medio_consumo) {
-            classe_consumo = 'green';
-        }
-
-        // escolhendo qual alterar
-        var div_consumo_alterar = statusRam;
-
-        // alterando
-        div_consumo_alterar.className = classe_consumo;
-
-        div_consumo_alterar.innerHTML = `<b> ${ram}% </b>`;
-
-    }
-
     function alertarDISCO(dados) {
-        // padrão para meu alerta
 
         let capa = parseInt(dados.capacidade);
-
         let disco = ((parseInt(dados.consumo) * 100) / capa).toFixed(0);
 
-        console.log("Disco:");
-        console.log(disco);
+        const max_consumo = 80;
+        const medio_consumo = 60;
 
-        var classe_consumo = '';
-
-        var limites = {
-            max_consumo: 80,
-            medio_consumo: 60
-        };
-
-        // comparando
-        if (disco >= limites.max_consumo) {
-            classe_consumo = 'red';
+        if (disco >= max_consumo) {
+            statusDisco.style.color = 'red';
         }
-        if (disco >= limites.medio_consumo && dados.consumo < limites.max_consumo) {
-            classe_consumo = 'yellow';
+        if (disco >= medio_consumo && disco < max_consumo) {
+            statusDisco.style.color = 'yellow';
         }
-        if (disco < limites.medio_consumo) {
-            classe_consumo = 'green';
+        if (disco < medio_consumo) {
+            statusDisco.style.color = 'green';
         }
 
-        // escolhendo qual alterar
-        var div_consumo_alterar = statusDisco;
+        statusDisco.innerHTML = `<b> ${disco}% </b>`;
 
-        // alterando
-        div_consumo_alterar.className = classe_consumo;
+    }
 
-        div_consumo_alterar.innerHTML = `<b> ${disco}% </b>`;
+    function obterdadosconsumoTempoReal() {
 
+        fetch(`/leiturasDaMaquina/temporeal/${usuarioEmail}`)
+            .then(resposta => {
+
+                if (resposta.ok) {
+                    resposta.json().then(function (resposta) {
+
+                        console.log("Consumo TempoReal");
+                        
+                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+
+                        var dados = {
+                            momento_grafico: resposta.momento_grafico
+                        }
+
+
+                        statusPcOnline(dados);
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                }
+            })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados do caminhao p/ gráfico: ${error.message}`);
+            });
+
+    }
+
+    function statusPcOnline(dados) {
+
+        let data = new Date();
+        let horas = data.getHours() + ':' + data.getMinutes();
+
+        const horaDatabase = dados.momento_grafico;
+
+        console.log(`${horaDatabase} == ${horas}`)
+
+        if (horaDatabase == horas) {
+
+            statusPC.innerHTML = 'ON';
+            statusPC.style.color = 'green';
+
+        } else {
+
+            statusPC.innerHTML = 'OFF';
+            statusPC.style.color = 'red';
+
+        }
     }
 
 </script>

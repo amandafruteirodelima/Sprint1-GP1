@@ -111,25 +111,7 @@ align-items: center;
     font-size: 1.5em;
     justify-content: center;
     align-items: center;
-    color: black;
     font-weight: 700;
-    
-}
-
-#statusPC{
-    color: green;
-}
-
-#statusCpu{
-    color: rgb(238, 30, 2);
-}
-
-#statusRam{
-    color: green;
-}
-
-#statusDisco{
-    color: rgb(251, 255, 13);
 }
 
 .divGraficos {

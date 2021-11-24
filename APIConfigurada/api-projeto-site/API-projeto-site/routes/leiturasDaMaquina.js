@@ -266,17 +266,19 @@ router.get('/discoultimas/:usuarioEmail', function(req, res, next) {
 		order by datahora desc limit ${limite_linhas}`;
     }
     else if (env == 'production') {
-        instrucaoSql = `select top ${limite_linhas}
+        instrucaoSql = `
+		select top ${limite_linhas}
 		idComponente,
-        nomeComponente, 
+        nomeComponente,
+		descricao, 
 		consumo,
 		capacidade,
 		dataHora,
 		FORMAT(dataHora,'%H:%m:%s') as dataFormatada
 		FROM Funcionario
-		JOIN Maquina
+		INNER JOIN Maquina
 		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
-		JOIN Componente
+		INNER JOIN Componente
 		ON (Maquina.idMaquina = Componente.fk_Maquina)
 		INNER JOIN Historico_Uso
         ON (Componente.idComponente = Historico_Uso.fk_componente)
@@ -341,6 +343,62 @@ router.get('/disco/:usuarioEmail', function(req, res, next) {
         ON (Componente.idComponente = Historico_Uso.fk_componente)
         where nomeComponente = 'DISCO' and Funcionario.email = '${usuarioEmail}'
 		order by datahora desc`;
+	} else {
+		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
+	}
+	
+	console.log(instrucaoSql);
+	
+	sequelize.query(instrucaoSql, { type: sequelize.QueryTypes.SELECT })
+	.then(resultado => {
+		res.json(resultado[0]);
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+	});
+});
+
+router.get('/temporeal/:usuarioEmail', function(req, res, next) {
+	console.log('Recuperando tempo Real');
+	var usuarioEmail = req.params.usuarioEmail;
+	
+	let instrucaoSql = "";
+	
+	if (env == 'dev') {
+		instrucaoSql = `
+		select 
+		nomeComponente,
+		consumo,
+		capacidade, 
+		dataHora,
+		DATE_FORMAT(data_leitura,'%H:%i:%s') as momento_grafico, 
+		email
+		FROM Funcionario
+		JOIN Maquina
+		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
+		JOIN Componente
+		ON (Maquina.idMaquina = Componente.fk_Maquina)
+		INNER JOIN Historico_Uso
+        ON (Componente.idComponente = Historico_Uso.fk_componente)
+        where nomeComponente = 'DISCO' and Funcionario.email = '${usuarioEmail}'
+		order by id desc limit 1`;
+	} else if (env == 'production') {
+		instrucaoSql = `
+		select top 1 
+		nomeComponente,
+		consumo, 
+		capacidade,
+		dataHora,
+		FORMAT(dataHora,'%H:%m') as momento_grafico
+		FROM [dbo].[Funcionario]
+		JOIN [dbo].[Maquina]
+		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
+		JOIN [dbo].[Componente]
+		ON (Maquina.idMaquina = Componente.fk_Maquina)
+		INNER JOIN Historico_Uso
+        ON (Componente.idComponente = Historico_Uso.fk_componente)
+        where Funcionario.email = '${usuarioEmail}'
+		order by Convert(DATETIME, dataHora, -10) desc`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}
