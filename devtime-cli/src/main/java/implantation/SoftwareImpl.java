@@ -23,7 +23,7 @@ public class SoftwareImpl {
             if (isDuplicado(processo)) {
                 SoftwareEntity software = new SoftwareEntity(processo.getNome());
                 software.insertSoftware();
-                software.insertSoftwareMySql();
+            //    software.insertSoftwareMySql();
             }
         }
     }

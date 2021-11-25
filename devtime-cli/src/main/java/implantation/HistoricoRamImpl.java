@@ -7,7 +7,7 @@ import entities.Componente;
 import entities.HistoricoUsoEntity;
 import entities.MaquinaEntity;
 import java.util.List;
-import logging.LogErro;
+
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -19,11 +19,11 @@ public class HistoricoRamImpl {
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
-    LogErro logErro = new LogErro();
+ 
     
     public void findHistoricoRam() {
         
-        try {
+        
             List<Componente> componente = assistente.query("SELECT *"
                     + " FROM COMPONENTE WHERE FK_MAQUINA ='"
                     + maquinaInstance.getIdMaquina() + "' AND NOMECOMPONENTE = 'RAM'",
@@ -45,9 +45,7 @@ public class HistoricoRamImpl {
                 historicoRam.insertHistoricoMySql();
             }
             
-        } catch (Exception erro) {
-            logErro.mensagemErroSelect(erro);
-        }
+        
         
     }
 }

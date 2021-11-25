@@ -4,7 +4,6 @@ import com.mycompany.devtime.ConfiguracaoBanco;
 import com.mycompany.devtime.ConfiguracaoBancoMySql;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import logging.LogErro;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class HistoricoUsoSoftwareEntity {
@@ -15,7 +14,7 @@ public class HistoricoUsoSoftwareEntity {
     private Integer fk_Software;
     private Integer fk_Maquina;
 
-    LogErro logErro = new LogErro();
+   
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
@@ -35,28 +34,22 @@ public class HistoricoUsoSoftwareEntity {
 
     public void insertHistoricoUsoSoftware() {
 
-        try {
+        
             assistente.update("INSERT INTO Historico_Uso_Software(dataHora, "
-                    + "consumo, fk_software, fk_maquina) "
+                    + "consumo, fk_Software, fk_Maquina) "
                     + "VALUES(?,?,?,?)",
                     formatter.format(date), consumo, fk_Software, fk_Maquina);
 
-        } catch (Exception erro) {
-            logErro.mensagemErroInsert(erro);
-        }
+        
     }
     
-        public void insertHistoricoUsoSoftwareMySql() {
+     //   public void insertHistoricoUsoSoftwareMySql() {
 
-        try {
-            assistenteMySql.update("INSERT INTO Historico_Uso_Software("
-                    + "dataHora, consumo, fk_software, fk_maquina) "
-                    + "VALUES(?,?,?,?)",
-                    formatter.format(date), consumo, fk_Software, fk_Maquina);
-
-        } catch (Exception erro) {
-            logErro.mensagemErroInsert(erro);
-        }
-    }
+       
+       //     assistenteMySql.update("INSERT INTO Historico_Uso_Software("
+         //           + "dataHora, consumo, fk_Software, fk_Maquina) "
+           //         + "VALUES(?,?,?,?)",
+             //       formatter.format(date), consumo, fk_Software, fk_Maquina);
+    //}
 
 }

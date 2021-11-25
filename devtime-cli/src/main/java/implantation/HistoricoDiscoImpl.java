@@ -9,7 +9,6 @@ import entities.Componente;
 import entities.HistoricoUsoEntity;
 import entities.MaquinaEntity;
 import java.util.List;
-import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -21,7 +20,7 @@ public class HistoricoDiscoImpl {
             configuracaoBanco.getBancoDeDados());
     MaquinaEntity maquina = MaquinaEntity.getInstance();
     DiscosGroup grupoDeDiscos = looca.getGrupoDeDiscos();
-    LogErro logErro = new LogErro();
+   
 
     public void findHistoricoDisco() {
 
@@ -31,7 +30,7 @@ public class HistoricoDiscoImpl {
 
             List<Volume> volumes = grupoDeDiscos.getVolumes();
 
-            try {
+            
                 List<Componente> discoid = assistente.query("Select *"
                         + " from Componente where fk_Maquina = '"
                         + maquina.getIdMaquina() + "' and descricao = '"
@@ -51,10 +50,8 @@ public class HistoricoDiscoImpl {
                     historicoDisco.insertHistorico();
                     historicoDisco.insertHistoricoMySql();
                     j++;
+                
                 }
-            } catch (Exception erro) {
-                logErro.mensagemErroSelect(erro);
-            }
         }
     }
 }
