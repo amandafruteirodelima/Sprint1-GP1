@@ -15,10 +15,14 @@ import org.springframework.jdbc.core.JdbcTemplate;
 public class HistoricoDiscoImpl {
 
     Looca looca = new Looca();
+    
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+    
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
+    
     MaquinaEntity maquina = MaquinaEntity.getInstance();
+    
     DiscosGroup grupoDeDiscos = looca.getGrupoDeDiscos();
    
 

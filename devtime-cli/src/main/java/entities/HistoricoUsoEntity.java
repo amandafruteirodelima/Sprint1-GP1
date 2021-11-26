@@ -13,6 +13,7 @@ public class HistoricoUsoEntity {
     private Double consumo;
 
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
 
@@ -30,17 +31,21 @@ public class HistoricoUsoEntity {
 
     public void insertHistorico() {
 
-        
-            assistente.update("INSERT INTO Historico_Uso(fk_Componente, dataHora, "
-                    + "consumo) VALUES(?,?,?)",
-                    fkComponente, formatter.format(date), consumo);
-    
+        System.out.println("Inserindo os dados do Histórico Uso no SQL");
+        assistente.update("INSERT INTO Historico_Uso(fk_Componente, dataHora, "
+                + "consumo) VALUES(?,?,?)",
+                fkComponente, formatter.format(date), consumo);
+        System.out.println("Inserindo os dados do Histórico Uso no SQL");
+
     }
 
     public void insertHistoricoMySql() {
-
-            assistente.update("INSERT INTO Historico_Uso(fk_Componente, dataHora, "
-                    + "consumo) VALUES(?,?,?)",
-                    fkComponente, formatter.format(date), consumo);
+        System.out.println("Inserindo os dados do Histórico Uso no MySQL");
+         System.out.println(String.format("%d, %d, %s, %.2f", idHistoricoUso,fkComponente,formatter.format(date),consumo));
+        assistenteMySql.update("INSERT INTO Historico_Uso(fk_Componente, dataHora, "
+                + "consumo) VALUES(?,?,?)",
+                fkComponente, formatter.format(date), consumo);
+        System.out.println(String.format("%d, %d, %s, %.2f", idHistoricoUso,fkComponente,formatter.format(date),consumo));
+        System.out.println("Dados inseridos no Histórico Uso no MySQL");
     }
 }

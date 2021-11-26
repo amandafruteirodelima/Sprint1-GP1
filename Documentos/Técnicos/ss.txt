@@ -1,0 +1,3 @@
+sudo docker pull openjdk:11-jre-slim
+
+172.17.0.2

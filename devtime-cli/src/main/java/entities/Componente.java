@@ -21,6 +21,7 @@ public class Componente {
             configuracaoBanco.getBancoDeDados());
 
     ConfiguracaoBancoMySql configuracaoBancoMySql = new ConfiguracaoBancoMySql();
+    
     JdbcTemplate assistenteMySql = new JdbcTemplate(
             configuracaoBancoMySql.getBancoDeDadosMySql());
 
@@ -36,6 +37,7 @@ public class Componente {
         this.infoAdicional = infoAdicional;
         this.unidadeDeMedida = unidadeDeMedida;
         this.fkMaquina = fkMaquina;
+        this.isAtivo = 1;
     }
 
     public void insertComponente() {

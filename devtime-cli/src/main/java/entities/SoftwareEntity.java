@@ -10,10 +10,12 @@ public class SoftwareEntity {
     private String nomeSoftware;
 
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+    
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
 
     ConfiguracaoBancoMySql configuracaoBancoMySql = new ConfiguracaoBancoMySql();
+    
     JdbcTemplate assistenteMySql = new JdbcTemplate(
             configuracaoBancoMySql.getBancoDeDadosMySql());
 
@@ -33,12 +35,12 @@ public class SoftwareEntity {
        
     }
 
-   // public void insertSoftwareMySql() {;
+   public void insertSoftwareMySql() {;
         
-     //       assistenteMySql.update("INSERT INTO Software(nomeSoftware)"
-       //             + " VALUES(?)",
-         //           nomeSoftware);
-    //}
+            assistenteMySql.update("INSERT INTO Software(nomeSoftware)"
+                    + " VALUES(?)",
+                  nomeSoftware);
+    }
 
     public Integer getIdSoftware() {
         return idSoftware;

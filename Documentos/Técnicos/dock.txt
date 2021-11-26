@@ -21,3 +21,26 @@ INSERT INTO Funcionario (nomeFuncionario,cargaHoraria,email,senha,isGestor,fk_Ch
 INSERT INTO Empresa (nomeEmpresa,cnpj) VALUES ('Accenture','96.534.094/0027-97'),
 ('Alpe','28.494.032/0001-00'),
 ('Valemobi','10.535.290/0001-21');
+
+
+
+insert into Maquina (idMaquina,sistemaOperacional,arquiteturaSo,fabricanteSo,fk_Funcionario)
+values (2,'Ubuntu','64','GNU/Linux',7),
+(4,'Windows','64','Microsoft',14),
+(5,'Windows','64','Microsoft',2),
+(8,'Debian GNU/Linux','64','GNU/Linux',12),
+(9,'Debian GNU/Linux','64','GNU/Linux',16),
+(10,'Ubuntu','64','GNU/Linux',8),
+(11,'Ubuntu','64','GNU/Linux',9);
+
+
+insert into Componente (idComponente,nomeComponente,capacidade,descricao,infoAdicional,unidadeDeMedida,fk_Maquina,isAtivo)
+values (3,'DISCO',256060514304,'/dev/nvme0n1','c43232e7-d0f3-4320-8737-a363e398639e','GB',2,1),
+(4,'CPU',2400000000,'11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz','GenuineIntel','Ghz',2,1),
+(5,'RAM',16498855936,null,null,'GB',2,1),
+(6,'DISCO',0,'\\.\PHYSICALDRIVE2','29551e01-56b3-44d9-a0b8-fccd11737823','GB',3,1),
+(7,'DISCO',500105249280,'\\.\PHYSICALDRIVE0','46a1789d-ca10-41a5-aef6-7c8d005f8802','GB',3,1),
+(8,'DISCO',240054796800,'\\.\PHYSICALDRIVE1','4587bff2-3257-11eb-b62b-806e6f6e6963','GB',3,1),
+(9, 'CPU',3293000000,'Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz','GenuineIntel','Ghz',3,1),
+(10,'RAM',8511582208,null,null,'GB',3,1)
+

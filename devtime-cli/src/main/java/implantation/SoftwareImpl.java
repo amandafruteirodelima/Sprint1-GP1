@@ -12,7 +12,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 public class SoftwareImpl {
 
     Looca looca = new Looca();
+    
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+    
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
     ProcessosGroup grupoDeProcessos = looca.getGrupoDeProcessos();

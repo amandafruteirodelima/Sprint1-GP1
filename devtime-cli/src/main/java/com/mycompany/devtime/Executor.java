@@ -74,14 +74,16 @@ public class Executor {
     public void coletarLeitura() {
         histDisco.findHistoricoDisco();
 
-        TimerTask tt = new TimerTask() {
+        TimerTask tt;
+        tt = new TimerTask() {
             @Override
             public void run() {
                 histProcessador.findHistoricoProcessador();
                 histRam.findHistoricoRam();
-                historicoSoftware.findHistoricoSoftware();
+                // historicoSoftware.findHistoricoSoftware();
             }
-        ;
-        }; timer.schedule(tt, 1000, 5000);
+            ;
+        };
+timer.schedule(tt, 1000, 5000);
     }
 }

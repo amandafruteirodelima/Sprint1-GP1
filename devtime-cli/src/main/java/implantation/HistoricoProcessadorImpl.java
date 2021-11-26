@@ -3,6 +3,7 @@ package implantation;
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.processador.Processador;
 import com.mycompany.devtime.ConfiguracaoBanco;
+import com.mycompany.devtime.ConfiguracaoBancoMySql;
 import entities.Componente;
 import entities.HistoricoUsoEntity;
 import entities.MaquinaEntity;
@@ -15,7 +16,11 @@ public class HistoricoProcessadorImpl {
 
     Looca looca = new Looca();
     Processador processador = looca.getProcessador();
+    
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+    
+    ConfiguracaoBancoMySql configuracaoBancoMySql = new ConfiguracaoBancoMySql();
+    
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
@@ -34,6 +39,7 @@ public class HistoricoProcessadorImpl {
             for (int i = 0; i < componente.size(); i++) {
                 componenteDaVez = componente.get(i);
             }
+            
             
             if (componenteDaVez.getIsAtivo().equals(1)) {
                 HistoricoUsoEntity historicoProcessador
