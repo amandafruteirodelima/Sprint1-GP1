@@ -2,7 +2,6 @@ package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
 import com.mycompany.devtime.ConfiguracaoBancoMySql;
-import logging.LogErro;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class Componente {
@@ -16,7 +15,6 @@ public class Componente {
     private Integer fkMaquina;
     private Integer isAtivo;
 
-    LogErro logErro = new LogErro();
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
@@ -41,31 +39,21 @@ public class Componente {
     }
 
     public void insertComponente() {
-
-        try {
-            assistente.update("INSERT INTO COMPONENTE(nomeComponente, capacidade, "
+            assistente.update("INSERT INTO Componente(nomeComponente, capacidade, "
                     + "descricao, infoAdicional,unidadeDeMedida, fk_Maquina) "
                     + "VALUES(?,?,?,?,?,?)",
                     nomeComponente, capacidade, descricao, infoAdicional,
                     unidadeDeMedida, fkMaquina);
 
-        } catch (Exception erro) {
-            logErro.mensagemErroInsert(erro);
-        }
     }
 
-    public void insertComponenteMySql() {
-
-        try {
-            assistenteMySql.update("INSERT INTO COMPONENTE(nomeComponente, "
+    public void insertComponenteMySql() {    
+            assistenteMySql.update("INSERT INTO Componente(nomeComponente, "
                     + "capacidade, descricao, infoAdicional,unidadeDeMedida, "
                     + "fk_Maquina) VALUES(?,?,?,?,?,?)", nomeComponente,
                     capacidade, descricao, infoAdicional, unidadeDeMedida,
                     fkMaquina);
 
-        } catch (Exception erro) {
-            logErro.mensagemErroInsert(erro);
-        }
     }
 
     public Integer getIdComponente() {

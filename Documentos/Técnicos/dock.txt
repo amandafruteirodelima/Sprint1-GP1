@@ -1,0 +1,23 @@
+INSERT INTO Funcionario (nomeFuncionario,cargaHoraria,email,senha,isGestor,fk_Chefe,fk_Empresa) VALUES 
+('Amanda Fruteiro de Lima',8,'amanda.lima@devtime.com.br','1234',1,null,1),
+('Ednaldo Pereira da Silva',8,'ednaldo.pereira@devtime.com.br','1234',0,1,1),
+('Guilherme de Carvalho Costa',8,'guilerme.ccosta@devtime.com.br','1234',1,null,1),
+('Karolline Araújo da Silva',8,'karolline.silva@devtime.com.br','1234',1,null,1),
+('Danilo dos Dantos da Silva',8,'danilo.silva@devtime.com.br','1234',1,null,1),
+('Matheus Magalhães Barbosa',8,'matheus.mbarbosa@devtime.com.br','1234',1,null,2),
+('Rony Alves Sobral',8,'rony.sobral@devtime.com.br','1234',1,null,3),
+('Henrique da Silva',8,'henrique.silva@devtime.com.br','1234',1,null,1),
+('Rogério da Silva',8,'rogerio.silva@devtime.com.br','1234',0,4,2),
+('José Pedro de Mello',8,'jose.mello@devtime.com.br','1234',0,1,2),
+('Paulo de Cuiá da Silva',8,'paulo.cuia@devtime.com.br','1234',0,3,3),
+('Miguel Gameiro de Lima',8,'miguel.gameiro@devtime.com.br','1234',0,1,1),
+('André Pereira',8,'andre.pereira@devtime.com.br','1234',0,3,1),
+('Breno de Freitas',8,'brenofreitas@gmail.com','1234',0,3,2),
+('Álvaro Juste Esquabão',8,'alvaro.juste@devtime.com.br','1234',0,1,1),
+('Leonardo da Silva',8,'leonardo.silva@devtime.com.br','1234',0,1,1);
+
+
+
+INSERT INTO Empresa (nomeEmpresa,cnpj) VALUES ('Accenture','96.534.094/0027-97'),
+('Alpe','28.494.032/0001-00'),
+('Valemobi','10.535.290/0001-21');

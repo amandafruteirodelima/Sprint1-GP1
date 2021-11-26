@@ -9,7 +9,6 @@ import entities.HistoricoUsoSoftwareEntity;
 import entities.SoftwareEntity;
 import java.util.List;
 import java.util.Objects;
-import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -22,13 +21,12 @@ public class HistoricoUsoSoftwareImpl {
     ProcessosGroup grupoDeProcessos = looca.getGrupoDeProcessos();
     SoftwareImpl software = new SoftwareImpl();
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
-    LogErro logErro = new LogErro();
     List<Processo> processos = grupoDeProcessos.getProcessos();
 
     public void findHistoricoSoftware() {
 
         for (Processo processo : processos) {
-            try {
+            
                 String select = "Select *"
                         + " from Software where nomeSoftware = '"
                         + processo.getNome() + "'";
@@ -52,12 +50,10 @@ public class HistoricoUsoSoftwareImpl {
                             maquinaInstance.getIdMaquina()
                     );
                     usoSoftware.insertHistoricoUsoSoftware();
-                    usoSoftware.insertHistoricoUsoSoftwareMySql();
+//                    usoSoftware.insertHistoricoUsoSoftwareMySql();
                 }
 
-            } catch (Exception erro) {
-                logErro.mensagemErroSelect(erro);
-            }
+          
         }
     }
 }

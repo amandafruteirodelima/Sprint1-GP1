@@ -416,19 +416,11 @@
         }
     }
 
-    function abrir_info(name) {
-
-        desempenho_1.style.display = "none";
-        desempenho_2.style.display = "none";
-        desempenho_3.style.display = "none";
-        desempenho_4.style.display = "none";
-        desempenho_5.style.display = "none";
-        desempenho_6.style.display = "none";
-        div_desempenho_pai.style.display = "none";
+    function abrir_info(nomeFuncionario) {
 
         div_desempenho_pai_alternativa.style.display = "block";
 
-        h2_nome.innerHTML = "Amanda";
+        h2_nome.innerHTML = `${nomeFuncionario}`;
 
     }
 
@@ -506,13 +498,13 @@
                         div_online.innerHTML += `<div class="div_online_content">
                         <h3>${json[index].nomeFuncionario}</h3>
                         <div class="circulo" id="circulo${json[index].idFuncionario}"></div>
-                        </div>`
+                        </div>`;
                     }
 
                 });
 
             } else {
-                alert('Você não possui funcionários para monitorar')
+                alert('Você não possui funcionários para monitorar');
             }
         });
 
@@ -536,15 +528,11 @@
 
                     for (let index = 0; index < json.length; index++) {
 
-                        div_desempenho_pai.innerHTML += `<div id="desempenho${json[index].nomeFuncionario}" name="${json[index].nomeFuncionario}" onclick="abrir_info(this.name)" class="div_desempenho_content">
+                        div_desempenho_pai.innerHTML += `<div onclick="abrir_info(this.id)" name="12" id="${json[index].nomeFuncionario}" class="div_desempenho_content">
                         <img id="check_1" class="check" src="img/checked.png" alt="">
                         <img class="person" src="img/userPink.png" alt="userPink.png icon">
                         <h3>${json[index].nomeFuncionario}</h3>
-                        </div>`
-
-                        if (json.length > 3) {
-
-                        }
+                        </div>`;
 
                     }
 

@@ -5,7 +5,6 @@ import com.mycompany.devtime.Executor;
 import entities.FuncionarioEntity;
 import java.util.List;
 import java.util.Scanner;
-import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -15,7 +14,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
  */
 public class Autenticacao {
 
-    LogErro logErro = new LogErro();
     Scanner leitor = new Scanner(System.in);
     Executor executor = new Executor();
 
@@ -37,29 +35,28 @@ public class Autenticacao {
         System.out.println("Digite sua senha");
         senha = leitor.next();
 
-        try {
-            List<FuncionarioEntity> funcionario = assistente.query("SELECT * "
-                    + "FROM Funcionario where email = '" + email + "' and senha = '"
-                    + senha + "'",
-                    new BeanPropertyRowMapper<>(FuncionarioEntity.class));
+        List<FuncionarioEntity> funcionario = assistente.query("SELECT * "
+                + "FROM Funcionario where email = '" + email + "' and senha = '"
+                + senha + "'",
+                new BeanPropertyRowMapper<>(FuncionarioEntity.class));
 
-            FuncionarioEntity funcionarioDaVez = null;
+        FuncionarioEntity funcionarioDaVez = null;
 
-            for (int i = 0; i < funcionario.size(); i++) {
-                funcionarioDaVez = funcionario.get(i);
-            }
+        for (int i = 0; i < funcionario.size(); i++) {
+            funcionarioDaVez = funcionario.get(i);
+        }
 
-            if (funcionarioDaVez.getEmail().equals(email)
-                    && funcionarioDaVez.getSenha().equals(senha)) {
+        if (funcionarioDaVez.getEmail().equals(email)
+                && funcionarioDaVez.getSenha().equals(senha)) {
 
-                funcionarioEntity.setIdFuncionario(funcionarioDaVez.getIdFuncionario());
-                System.out.println("Coleta de dados iniciada");
-                executor.Executor();
-            }
-        } catch (Exception erro) {
-            logErro.mensagemErroSelect(erro);
+            funcionarioEntity.setIdFuncionario(funcionarioDaVez.getIdFuncionario());
+            System.out.println("Coleta de dados iniciada");
+            executor.Executor();
+        } else {
             System.out.println("Falha no Login\n");
             autenticar();
         }
+
     }
+
 }

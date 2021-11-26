@@ -197,7 +197,7 @@ a {
 .linha_divisoria {
 
     height: 15px;
-    width: 990px;
+    width: 80%;
     border-top: 2px solid white;
     margin-left: 130px;
 }
@@ -206,7 +206,7 @@ a {
 .equipe {
     color: white;
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 170px;
 }
 
@@ -241,12 +241,12 @@ a {
     left: 0;
     right: 0;
     height: 90%;
-    width: 27%;
+    width: 28%;
     opacity: 0;
     transition: .3s ease-in-out;
-    background-color: #ffff;
+    background: linear-gradient(170deg,#7e1bcf,#fcde7b);
     border-radius: 50%;
-    margin-left: 60px;
+    margin-left: 57px;
 }
 
 .container_equipe:hover .overlay {
@@ -300,7 +300,7 @@ a {
 .linha_divisoria2 {
     margin-top: 640px;
     height: 15px;
-    width: 990px;
+    width: 80%;
     border-top: 2px solid white;
     margin-left: 130px;
 }

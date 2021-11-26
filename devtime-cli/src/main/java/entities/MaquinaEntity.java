@@ -3,7 +3,6 @@ package entities;
 import com.mycompany.devtime.ConfiguracaoBanco;
 import com.mycompany.devtime.ConfiguracaoBancoMySql;
 import java.util.List;
-import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -15,7 +14,7 @@ public class MaquinaEntity {
     private String fabricanteSO;
     private Integer fkFuncionario;
 
-    LogErro logErro = new LogErro();
+   
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
@@ -44,31 +43,25 @@ public class MaquinaEntity {
     }
 
     public void insertMaquina() {
-        try {
-            assistente.update("INSERT INTO Maquina(sistemaOperacional,arquiteturaSO, "
-                    + "fabricanteSO,fk_Funcionario) VALUES(?,?,?,?)",
+        
+            assistente.update("INSERT INTO Maquina(sistemaOperacional,arquiteturaSO,"
+                    + "fabricanteSO,fk_Funcionario) VALUES (?,?,?,?)",
                     sistemaOperacional, arquiteturaSO,
                     fabricanteSO, fkFuncionario);
 
-        } catch (Exception erro) {
-            logErro.mensagemErroInsert(erro);
-        }
+       
     }
 
     public void insertMaquinaMySql() {
-        try {
+        
             assistenteMySql.update("INSERT INTO Maquina(sistemaOperacional,"
-                    + "arquiteturaSO, fabricanteSO,fk_Funcionario) "
+                    + "arquiteturaSO,fabricanteSO,fk_Funcionario) "
                     + "VALUES(?,?,?,?)",sistemaOperacional, arquiteturaSO,
                     fabricanteSO, fkFuncionario);
-
-        } catch (Exception erro) {
-            logErro.mensagemErroInsert(erro);
-        }
     }
 
     public void instanciarMaquina() {
-        try {
+        
             List<MaquinaEntity> maquinaid = assistente.query("Select *"
                     + " from Maquina where fk_Funcionario = '"
                     + funcionario.getIdFuncionario() + "'",
@@ -81,9 +74,7 @@ public class MaquinaEntity {
             }
             instance.setIdMaquina(maquinaDaVez.getIdMaquina());
 
-        } catch (Exception erro) {
-            logErro.mensagemErroSelect(erro);
-        }
+        
     }
 
     public Integer getIdMaquina() {

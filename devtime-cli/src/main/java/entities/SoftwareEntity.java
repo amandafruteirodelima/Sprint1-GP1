@@ -2,7 +2,6 @@ package entities;
 
 import com.mycompany.devtime.ConfiguracaoBanco;
 import com.mycompany.devtime.ConfiguracaoBancoMySql;
-import logging.LogErro;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class SoftwareEntity {
@@ -10,7 +9,6 @@ public class SoftwareEntity {
     private Integer idSoftware;
     private String nomeSoftware;
 
-    LogErro logErro = new LogErro();
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
@@ -27,26 +25,20 @@ public class SoftwareEntity {
     }
 
     public void insertSoftware() {
-        try {
-            assistente.update("INSERT INTO SOFTWARE(nomeSoftware)"
+        
+            assistente.update("INSERT INTO Software(nomeSoftware)"
                     + " VALUES(?)",
                     nomeSoftware);
 
-        } catch (Exception erro) {
-            logErro.mensagemErroInsert(erro);
-        }
+       
     }
 
-    public void insertSoftwareMySql() {
-        try {
-            assistenteMySql.update("INSERT INTO SOFTWARE(nomeSoftware)"
-                    + " VALUES(?)",
-                    nomeSoftware);
-
-        } catch (Exception erro) {
-            logErro.mensagemErroInsert(erro);
-        }
-    }
+   // public void insertSoftwareMySql() {;
+        
+     //       assistenteMySql.update("INSERT INTO Software(nomeSoftware)"
+       //             + " VALUES(?)",
+         //           nomeSoftware);
+    //}
 
     public Integer getIdSoftware() {
         return idSoftware;

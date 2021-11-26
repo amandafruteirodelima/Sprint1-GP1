@@ -16,7 +16,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
-import logging.LogErro;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -39,11 +38,11 @@ public class Executor {
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
     FuncionarioEntity funcionario = FuncionarioEntity.getInstance();
     Timer timer = new Timer();
-    LogErro logErro = new LogErro();
+    
 
     public void Executor() {
 
-        try {
+        
             List<MaquinaEntity> maquinaid = assistente.query("Select idMaquina"
                     + " from Maquina where fk_Funcionario = '"
                     + funcionario.getIdFuncionario() + "'",
@@ -68,9 +67,7 @@ public class Executor {
 
             coletarLeitura();
 
-        } catch (Exception erro) {
-            logErro.mensagemErroSelect(erro);
-        }
+        
 
     }
 
