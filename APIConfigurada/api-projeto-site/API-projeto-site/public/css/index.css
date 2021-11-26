@@ -245,7 +245,6 @@ width: 0px;
     gap: 70px;
     justify-content: center;
     align-items: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -426,5 +425,36 @@ text-align: center;
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 768px){
 
+    .divImgParceiros{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .slide{
+        width: 768px;
+    }
+    .imgParceiro {
+        width: 115px;
+    }
+    .tituloServico {
+        margin-bottom: -2vh;
+    }
+    .imgServicos {
+        margin-top: 2vh;
+    }
+    .cardServico {
+        height: 31vh;
+    }
+    .divCards {
+        justify-content: center;
+    }
+    .servicosDevTime{
+        padding-top: 5vh;
+    }
+}
 
