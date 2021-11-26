@@ -78,11 +78,13 @@ body{
     transition-duration: 0.4s;
 }
 /* Fim Header */
+.content {
+    margin-bottom: 10px;
+}
 .divForm {
-    padding: 10px 100px 10px 100px;
+    padding: 10px 50px 10px 50px;
     border-radius: 10px;
-
-    background: linear-gradient(180deg, #080808 0%, rgba(126, 111, 212, 0.055) 100%);
+    background: #231D36;
     color: white;
     font-family: 'Poppins-bold';
 }
@@ -124,11 +126,10 @@ body{
 .formButton button {
     height: 30px;
     width: 90px;
-    background-color: #080808;
+    background-color: #686868;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
     color: white;
     font-size: 15px;
     font-family: 'Poppins-Bold';
@@ -150,11 +151,11 @@ body{
     text-decoration: none;
 }
 .card {
-    background-color: #0C0C0C;
+    background-color: #231D36;
     max-width: 452px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(136, 136, 136, 0.25);
+    box-shadow: 0px 4px 4px rgb(30 30 30 / 58%);
     transition: 0.3s ease-in-out;
 }
 .card:hover {
@@ -223,6 +224,13 @@ body{
         width: 180px;
         color: rgb(160, 160, 160);
     }
+    .divForm {
+        padding: 10px 40px 10px 40px;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #080808 0%, rgba(126, 111, 212, 0.055) 100%);
+        color: white;
+        font-family: 'Poppins-bold';
+    }
 }
 .mobileNav {
     display: none;
@@ -232,6 +240,25 @@ body{
 }
 
 @media only screen and (max-width: 555px) {
+    
+    #divNavbar {
+        font-family: 'Poppins-Bold';
+        text-transform: uppercase;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        width: 98vw;
+        padding-top: 10px;
+    }
+
+    #imagemLogo{
+        width: 30vw;
+    }
+
+    .divImagem img {
+        width: 35vw;
+    }
     
     .containerBox {
         max-width: 425px;
@@ -311,8 +338,16 @@ body{
         text-align: center;
     }
 
-
-
+    .divLista {
+        display: none;
+    }
+    #divButtonNavbar {
+        display: none;
+    }
+    #container-navbar {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 375px) {

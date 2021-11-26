@@ -17,11 +17,11 @@
 
     <!-- Header -->
 
-    <div class="divHeader">
+    <div id="divNavbar" class="divHeader">
 
-        <div class="container-header">
+        <div id="container-navbar" class="container-header">
 
-            <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
+            <div  class="divImagem"><img id="imagemLogo" src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
 
             <nav class="divLista">
                 <ul>
@@ -32,7 +32,7 @@
 
             </nav>
 
-            <div class="divButtonHeader"><button><a class="li-comum" href="Login.html">Entrar</a></button></div>
+            <div id="divButtonNavbar" class="divButtonHeader"><button><a class="li-comum" href="Login.html">Entrar</a></button></div>
 
         </div>
 
@@ -41,7 +41,7 @@
                 <div id="myLinks">
                     <a href="#">Home</a>
                     <a href="#">Sobre</a>
-                    <a href="#" style="color: #6253BA;">Contato</a>
+                    <a href="#" style="color: #1e1168;">Contato</a>
                     <a href="#">Entrar</a>
                 </div>
 
@@ -81,22 +81,21 @@
 
                 <form  class="padraoFonte" action="">
 
-                    <label class="padraoFonte" for="name">Seu nome:</label>
-                    <input style="font-family: 'Poppins-Bold'; font-size: small;"  type="text" placeholder="Exemplo de Araújo">
+                    <label class="padraoFonte" for="nome">Seu nome:</label>
+                    <input id="nome" style="font-family: 'Poppins-Bold'; font-size: small;"  type="text" placeholder="Exemplo de Araújo">
 
                     <label class="padraoFonte" for="email">Email:</label>
-                    <input style="font-family: 'Poppins-Bold'; font-size: small;" type="text" placeholder="example@example.com.br">
+                    <input id="email" style="font-family: 'Poppins-Bold'; font-size: small;" type="text" placeholder="example@example.com.br">
 
                     <label style="font-family: 'Poppins-Bold'; font-size: small;"for="typeOfMessage">Tipo de mensagem:</label>
-                    <select style="font-family: 'Poppins-Bold'; font-size: small;"name="" id="">
+                    <select style="font-family: 'Poppins-Bold'; font-size: small;"name="" id="typeOfMessage">
                         <option value="">Selecione uma opção</option>
                         <option value="">Erros ou Bugs</option>
                         <option value="">Desejo obter os serviços DevTime</option>
-                        <option value=""></option>
                     </select>
 
                     <label style="font-family: 'Poppins-Bold'; font-size: small;" for="message">Mensagem:</label>
-                    <textarea style="font-family: 'Poppins-Bold'; font-size: small;" name="" id="" cols="30" rows="10" placeholder="Digite aqui"></textarea>
+                    <textarea style="font-family: 'Poppins-Bold'; font-size: small;" name="" id="message" cols="30" rows="10" placeholder="Digite aqui"></textarea>
 
                 </form>
 
