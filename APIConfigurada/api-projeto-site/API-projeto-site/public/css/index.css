@@ -20,12 +20,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     letter-spacing: 1.2px;
-
-
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 3vh;
+}
+
+.li-select{
+    color: white;
 }
 
 .linha-branca-divisoria{
@@ -41,8 +43,6 @@ body {
     color: white;
     position: absolute;
     top: 30vh;
-
-    
 }
 
 /* BANNER */
@@ -51,8 +51,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
 }
 
 .slide{
@@ -67,12 +65,9 @@ body {
     width: 5120px;
 }
 
-
-
 .image img {
     width: 1024px;
     height: 500px;
-  
 }
 
 #atual {
@@ -81,14 +76,11 @@ body {
 
 .btn {
     position: absolute;
-  
     padding: 10px;
     text-align: center;
-
     display: flex;
     align-items: center;
     justify-content: center;
-   
     transition: all 0.4s;
     margin-top: -5px;
     cursor: pointer;
@@ -99,10 +91,8 @@ body {
     cursor: pointer;
 }
 
-
-
 .img-seta {
-width: 0px;
+    width: 0px;
 }
 
 .img-seta-esq {
@@ -158,17 +148,13 @@ width: 0px;
     align-items: center;
     text-align: center;
     gap: 5vh;
-    
-
     padding-top: 10vh;
     margin-bottom: 60px;
-    
 }
 
 .imgDev {
     width: 270px;
 }
-
 
 .txtProposta{
     color: white;
@@ -185,7 +171,6 @@ width: 0px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-
 }
 
 .card{
@@ -196,7 +181,6 @@ width: 0px;
     background-color: rgb(245, 241, 241);
     margin: 5px;
     padding: 8px;
-    
     box-shadow: 10px -5px #33055e;
     height: 230px;
     width: 300px;
@@ -214,8 +198,6 @@ width: 0px;
     margin-top: 10px;
     border-radius: 60px;
     width: 100px;
-    
-    
 }
 
 
@@ -226,17 +208,13 @@ width: 0px;
     max-width: 50%;
     font-size: 1.3rem;
     text-align: center;
-    
-   
 }
+
 .divParceiros{
     display: flex;
     flex-direction: column;
     gap: 30px;
-
-
     max-width: 80%;
-
 }
 
 .divImgParceiros{
@@ -248,10 +226,8 @@ width: 0px;
     text-align: center;
 }
 
-
 .imgParceiro{
     width: 150px;
-    
 }
 
 .vale{
@@ -269,9 +245,11 @@ width: 0px;
     padding-bottom: 15px;
     filter: grayscale(100%);
 }
+
 .microsoft{
     filter: grayscale(100%);
 }
+
 .alpe{
     filter: grayscale(100%);
     transition: 2s;
@@ -284,16 +262,12 @@ width: 0px;
     filter: none;
 }
 
-
-
-
 /*INICIO CARDS SERVIÇOS DEVTIME*/
 
 .tituloServico{
     color: white;
     font-family: 'Poppins-Bold';
     font-size: 1.3rem;
-
     margin-bottom: 5vh;
 }
 
@@ -303,7 +277,6 @@ width: 0px;
     justify-content: center;
     align-items: center;
     gap: 5vh;
-
     padding-top: 10vh;
 }
 
@@ -340,14 +313,13 @@ width: 0px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
 }
 
 .textoServicos {
-color: #232323;
-font-family: 'Poppins-Bold';
-text-align: center;
-
+    color: #232323;
+    font-family: 'Poppins-Bold';
+    text-align: center;
 }
 
 .tituloServicoFinal{
@@ -363,7 +335,6 @@ text-align: center;
 
 .imgServicoFinal{
     width: 100px;
-
 }
 
 .imgServicoFinal:hover{
@@ -379,7 +350,6 @@ text-align: center;
 .responsiveFooter {
     display: flex;
     flex-direction: column;
-    
 }
 
 .responsiveFooter h3 {
@@ -389,7 +359,6 @@ text-align: center;
 .company {
     text-align: center;
 }
-
 
 .footer {
     background: black;
@@ -425,36 +394,198 @@ text-align: center;
     border-radius: 10px;
 }
 
+/* Tablet */
 @media only screen and (max-width: 768px){
 
-    .divImgParceiros{
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .balls {
+        top: 520px;
+        left: 310px;
     }
+
+    .balls div{
+        padding: 10px;
+        margin-right: 40px;
+    }
+
+    .divProposta{
+        padding-top: 5vh;
+    }
+
+    .divImgParceiros{
+        gap: 25px;
+    }
+
     .slide{
         width: 768px;
     }
+
     .imgParceiro {
         width: 115px;
     }
+
     .tituloServico {
         margin-bottom: -2vh;
     }
+
     .imgServicos {
         margin-top: 2vh;
     }
-    .cardServico {
-        height: 31vh;
+
+    .image img{
+        width: 768px;
     }
+
+    .cardServico {
+        height: 27vh;
+        padding-bottom: 1vh;
+    }
+
     .divCards {
         justify-content: center;
     }
+
     .servicosDevTime{
         padding-top: 5vh;
     }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px){
+
+    .balls {
+        top: 460px;
+        left: 460px;
+    }
+
+    .divProposta{
+        padding-top: 6vh;
+    }
+
+    .imgParceiro {
+        width: 115px;
+    }
+
+    .tituloServico {
+        margin-bottom: -2vh;
+    }
+
+    .imgServicos {
+        margin-top: 2vh;
+    }
+
+    .cardServico {
+        height: 32vh;
+        padding-bottom: 1vh;
+    }
+
+    .divCards {
+        gap: 13px;
+        flex-wrap: nowrap;
+    }
+
+    .servicosDevTime{
+        padding-top: 5vh;
+    }
+}
+
+/* HD */
+@media only screen and (min-width: 1280px){
+
+    .balls {
+        left: 600px;
+    }
+
+    .slide{
+        width: 1280px;
+        height: 47vh;
+    }
+
+    .imgParceiro {
+        width: 115px;
+    }
+
+    .tituloServico {
+        margin-bottom: -2vh;
+    }
+
+    .imgServicos {
+        margin-top: 2vh;
+    }
+
+    .cardServico {
+        padding-bottom: 2vh;
+    }
+
+    .divCards {
+        gap: 30px;
+        flex-wrap: nowrap;
+    }
+
+    .image img{
+        width: 1280px;
+    } 
+
+    .servicosDevTime{
+        padding-top: 5vh;
+    }
+}
+
+/* Laptop Large */
+@media only screen and (min-width: 1440px){
+    .image img{
+        width: 1440px;
+    }
+
+    .slide{
+        width: 1440px;
+    }
+
+    .balls{
+        left: calc(149% - 1440px);
+        top: 650px;
+    }
+
+    .sloganDevTime{
+        top: 34vh;
+    }
+
+}
+
+/* Full HD */
+@media only screen and (min-width: 1920px){
+    .divCards{
+        gap: 50px;
+    }
+
+    .balls{
+        left: calc(149% - 1920px);
+        top: 680px;
+    }
+
+    .cardServico{
+        height: 33vh;
+    }
+
+    .slide{
+        width: 100%;
+        height: 47vh;
+    }
+
+    .slides{
+        width: 1910px;
+    }
+
+    .divProposta{
+        padding: 0;
+    }
+
+    .image img{
+        width: 1920px;
+    }
+
+    .sloganDevTime{
+        top: 35vh;
+    }
+
 }
 

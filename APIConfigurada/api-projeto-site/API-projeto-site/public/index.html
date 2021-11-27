@@ -13,34 +13,34 @@
 
 <body>
 
-   <!--Início Header-->
+    <!--Início Header-->
 
-   <div class="divHeader">
+    <div class="divHeader">
 
-    <div class="container-header">
+        <div class="container-header">
 
-        <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
+            <div class="divImagem"><img src="./img/Logo-Branco.png" alt="Logo DevTime"></div>
 
-        <div>
-        <nav class="divLista">
-            <ul>
-                <li class="li-comum" ><a class="li-select" href="index.html">Home</a></li>
-                <li class="li-comum" ><a class="li-comum" href="sobrepage.html">Sobre</a></li>
-                <li class="li-comum"  ><a class="li-comum" href="contato.html">Contato</a></li>
-            </ul>
+            <div>
+                <nav class="divLista">
+                    <ul>
+                        <li class="li-comum"><a class="li-select" href="index.html">Home</a></li>
+                        <li class="li-comum"><a class="li-comum" href="sobrepage.html">Sobre</a></li>
+                        <li class="li-comum"><a class="li-comum" href="contato.html">Contato</a></li>
+                    </ul>
 
-        </nav>
+                </nav>
+            </div>
+
+            <div class="divButtonHeader"><button><a class="li-comum" href="Login.html">Entrar</a></button></div>
+
+        </div>
+
     </div>
-
-        <div class="divButtonHeader"><button><a class="li-select" href="Login.html">Entrar</a></button></div>
-
-    </div>
-
-</div>
-<!--Fim Header-->
+    <!--Fim Header-->
 
     <!-- Início Banner -->
-    <div class="sloganDevTime">// DevTime: A empresa que vai revolucionar <br>a qualidade do seu trabalho 
+    <div class="sloganDevTime">// DevTime: A empresa que vai revolucionar <br>a qualidade do seu trabalho
         Home <bR> Office
 
     </div>
@@ -117,14 +117,11 @@
                     DevTime isto se tornou algo inexistente em minha vida. Valeuzão!"</i>
             </div>
         </div>
-     
+
 
     </div>
 
     <!-- FIM DEVTIME PROPOSTA -->
-
-   
-
 
     <!-- INICIO CARDS SOBRE SERVIÇOS DEVTIME -->
 
@@ -156,37 +153,33 @@
         <div class="fimServico">
             <div class="tituloServico tituloServicoFinal">Saiba mais
             </div>
-            
+
         </div>
         <img onclick="direcionarSobre()" class="imgServicoFinal" src="./img/seta-dir.png" alt="">
     </div>
 
 
     <!-- FIM CARDS SOBRE SERVIÇOS DEVTIME -->
-     <!-- INICIO DOS PARCEIROS DA DEVTIME -->
-     <div class="linha-branca-divisoria"></div>
-     <div class="txtEmpresas">
+    <!-- INICIO DOS PARCEIROS DA DEVTIME -->
+    <div class="linha-branca-divisoria"></div>
+    <div class="txtEmpresas">
         Empresas que utilizam nossos serviços:
-     </div>
- 
-     <div class="divParceiros">
- 
-         <div class="txtParceiros"></div>
- 
-         <div class="divImgParceiros">
-             <div><img class="imgParceiro accenture" src="./img/accenture.png" alt=""></div>
-             <div><img class="imgParceiro alpe" src="./img/alpe.png" alt=""></div>
-             <div><img class="imgParceiro vale" src="./img/valemobi.webp" alt=""></div>
-             <div><img class="imgParceiro amazon" src="./img/amazon.png" alt=""></div>
-             <div><img class="imgParceiro microsoft" src="./img/microsoft.png" alt=""></div>
-         </div>
-     </div>
-  
- 
- 
- 
- 
-     <!-- FIM DOS PARCEIROS DA DEVTIME -->
+    </div>
+
+    <div class="divParceiros">
+
+        <div class="txtParceiros"></div>
+
+        <div class="divImgParceiros">
+            <div><img class="imgParceiro accenture" src="./img/accenture.png" alt=""></div>
+            <div><img class="imgParceiro alpe" src="./img/alpe.png" alt=""></div>
+            <div><img class="imgParceiro vale" src="./img/valemobi.webp" alt=""></div>
+            <div><img class="imgParceiro amazon" src="./img/amazon.png" alt=""></div>
+            <div><img class="imgParceiro microsoft" src="./img/microsoft.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- FIM DOS PARCEIROS DA DEVTIME -->
 
     <!-- FOOTER -->
 
@@ -257,7 +250,7 @@
             atual = quant.length - 1
         }
         document.querySelector('.imgAtual').classList.remove('imgAtual')
-        imagem.style.marginLeft = -1024 * atual + 'px'
+        imagem.style.marginLeft = -window.screen.availWidth * atual + 'px'
         document.getElementById(atual).classList.add('imgAtual')
     }
 
