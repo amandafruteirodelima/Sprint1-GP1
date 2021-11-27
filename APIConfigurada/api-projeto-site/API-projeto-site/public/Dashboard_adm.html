@@ -512,6 +512,37 @@
 
     }
 
+    function mostrarOnlineOffline() {
+
+fetch(`/usuarios/mostrarOnlineOffline/${idFuncionario}`, {
+    method: "post"
+}).then(resposta => {
+
+    if (resposta.ok) {
+
+        resposta.json().then(json => {
+
+            console.log(json);
+
+            //Mostrar cada funcionário na tela
+
+            for (let index = 0; index < json.length; index++) {
+
+                document.getElementById(`circulo${json[index].idFuncionario}`).style.backgroundColor = "#00FB00";
+
+            }
+
+        });
+
+    } else {
+        alert('Você não possui funcionários para monitorar');
+    }
+});
+
+return false;
+
+}
+
     function trazerFuncionariosOnlineCard() {
 
         fetch(`/usuarios/verOnline/${idFuncionario}`, {

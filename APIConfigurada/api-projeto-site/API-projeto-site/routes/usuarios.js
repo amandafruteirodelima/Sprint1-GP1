@@ -132,6 +132,33 @@ router.post('/verOnline/:idFuncionario', function (req, res, next) {
 	});
 });
 
+/* Mostrar Funcionários Online */
+router.post('/mostrarOnlineOffline/:idFuncionario', function (req, res, next) {
+
+	let idFuncionario = req.params.idFuncionario;
+
+	let instrucaoSql = `from [dbo].[Historico_Uso] HU 
+	join Componente cpt on HU.fk_Componente = cpt.idComponente 
+	join Maquina mka on cpt.fk_Maquina = mka.idMaquina
+	join Funcionario fc on mka.fk_Funcionario = fc.idFuncionario
+	where dataHora between DateADD(minute, -182, Current_TimeStamp) and getDate() and fc.idFuncionario ='${idFuncionario}'`;
+
+	console.log(instrucaoSql);
+
+	sequelize.query(instrucaoSql, {
+		type: sequelize.QueryTypes.SELECT // se não for usar models
+	}).then(resultado => {
+
+		if (resultado.length > 0) {
+			res.json(resultado); // transforma resposta em json
+		}	
+
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+	});
+});
+
 /* Trazer componentes */
 router.post('/trazerComponentes/:idFuncionario', function (req, res, next) {
 
