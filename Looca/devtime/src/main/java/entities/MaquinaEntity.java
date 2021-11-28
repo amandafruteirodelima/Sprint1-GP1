@@ -54,6 +54,14 @@ public class MaquinaEntity {
             logErro.mensagemErroInsert(erro);
         }
     }
+    
+    public void insertMaquinaMySql() {
+        
+            assistenteMySql.update("INSERT INTO Maquina(sistemaOperacional,"
+                    + "arquiteturaSO,fabricanteSO,fk_Funcionario) "
+                    + "VALUES(?,?,?,?)",sistemaOperacional, arquiteturaSO,
+                    fabricanteSO, fkFuncionario);
+    }
 
     public void instanciarMaquina() {
         try {

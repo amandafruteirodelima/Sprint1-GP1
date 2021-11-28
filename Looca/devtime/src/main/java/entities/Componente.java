@@ -17,12 +17,16 @@ public class Componente {
     private Integer isAtivo;
 
     LogErro logErro = new LogErro();
+    
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
+    
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+    
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
 
     ConfiguracaoBancoMySql configuracaoBancoMySql = new ConfiguracaoBancoMySql();
+    
     JdbcTemplate assistenteMySql = new JdbcTemplate(
             configuracaoBancoMySql.getBancoDeDadosMySql());
 
@@ -38,6 +42,7 @@ public class Componente {
         this.infoAdicional = infoAdicional;
         this.unidadeDeMedida = unidadeDeMedida;
         this.fkMaquina = fkMaquina;
+        this.isAtivo = 1;
     }
 
     public void insertComponente() {
@@ -52,6 +57,15 @@ public class Componente {
         } catch (Exception erro) {
             logErro.mensagemErroInsert(erro);
         }
+    }
+    
+        public void insertComponenteMySql() {    
+            assistenteMySql.update("INSERT INTO Componente(nomeComponente, "
+                    + "capacidade, descricao, infoAdicional,unidadeDeMedida, "
+                    + "fk_Maquina) VALUES(?,?,?,?,?,?)", nomeComponente,
+                    capacidade, descricao, infoAdicional, unidadeDeMedida,
+                    fkMaquina);
+
     }
 
     public Integer getIdComponente() {

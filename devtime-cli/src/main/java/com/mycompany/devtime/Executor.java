@@ -22,21 +22,35 @@ import org.springframework.jdbc.core.JdbcTemplate;
 public class Executor {
 
     Looca looca = new Looca();
+    
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+    
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
+    
     MaquinaImpl maquina = new MaquinaImpl();
+    
     DiscoImpl disco = new DiscoImpl();
+    
     ProcessadorImpl processador = new ProcessadorImpl();
+    
     RamImpl ram = new RamImpl();
+    
     HistoricoDiscoImpl histDisco = new HistoricoDiscoImpl();
+    
     HistoricoProcessadorImpl histProcessador
             = new HistoricoProcessadorImpl();
+    
     HistoricoRamImpl histRam = new HistoricoRamImpl();
+    
     HistoricoUsoSoftwareImpl historicoSoftware = new HistoricoUsoSoftwareImpl();
+    
     SoftwareImpl software = new SoftwareImpl();
+    
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
+    
     FuncionarioEntity funcionario = FuncionarioEntity.getInstance();
+    
     Timer timer = new Timer();
     
 

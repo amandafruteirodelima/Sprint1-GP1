@@ -16,7 +16,9 @@ public class Componente {
     private Integer isAtivo;
 
     MaquinaEntity maquinaInstance = MaquinaEntity.getInstance();
+    
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+    
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
 

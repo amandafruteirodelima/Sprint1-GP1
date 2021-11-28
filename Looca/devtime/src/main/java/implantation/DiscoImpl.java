@@ -27,6 +27,7 @@ public class DiscoImpl {
                     volumes.get(i).getUUID(), "GB", maquinaInstance.getIdMaquina());
 
             discoAtual.insertComponente();
+            discoAtual.insertComponenteMySql();
 
             i++;
         }

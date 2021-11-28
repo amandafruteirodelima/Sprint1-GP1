@@ -30,7 +30,8 @@ public class MaquinaImpl {
                 funcionario.getIdFuncionario());
 
         maquina.insertMaquina();
-        
+        maquina.insertMaquinaMySql();
+
         try {
             List<MaquinaEntity> maquinaid = assistente.query("Select *"
                     + " from Maquina where fk_Funcionario = '"

@@ -13,9 +13,12 @@ public class SoftwareImpl {
 
     Looca looca = new Looca();
     ConfiguracaoBanco configuracaoBanco = new ConfiguracaoBanco();
+    
     JdbcTemplate assistente = new JdbcTemplate(
             configuracaoBanco.getBancoDeDados());
+    
     ProcessosGroup grupoDeProcessos = looca.getGrupoDeProcessos();
+    
     List<Processo> processos = grupoDeProcessos.getProcessos();
 
     public void findSoftware() {

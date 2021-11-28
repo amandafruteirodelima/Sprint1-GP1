@@ -50,7 +50,6 @@ public class HistoricoUsoSoftwareImpl {
                             maquinaInstance.getIdMaquina()
                     );
                     usoSoftware.insertHistoricoUsoSoftware();
-//                    usoSoftware.insertHistoricoUsoSoftwareMySql();
                 }
 
           

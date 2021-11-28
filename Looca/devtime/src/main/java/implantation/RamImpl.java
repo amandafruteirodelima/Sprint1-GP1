@@ -16,5 +16,6 @@ public class RamImpl {
         Componente ram = new Componente("RAM", convertido, "", "", "GB", 
                 maquinaInstance.getIdMaquina());
         ram.insertComponente();
+        ram.insertComponenteMySql();
     }
 }
