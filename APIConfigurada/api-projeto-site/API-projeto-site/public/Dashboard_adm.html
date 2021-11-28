@@ -92,148 +92,48 @@
         </div>
 
         <!-- Desempenho equipe (quando clicado) / Tempo Logado -->
-        <div id="div_tempo_logado" class="div_tempo_logado" style="display: none;">
+        <div class="div_options" id="div_tempo_logado" style="display: none;">
 
-            <!-- Divisória -->
-            <div class="div_divisora_alt"></div>
+            <div class="box_horas_usadas_hoje">
 
-            <div class="div_geral_check_lado">
-                <div class="div_check_lado">
-                    <input id="caixa_selecao1" type="checkbox" onclick="caixa_usado_hoje()">
-                    <label class="alt_title3" for="caixa_selecao1">Ver tempo usado hoje:</label>
-                </div>
-                <div class="div_check_lado">
-                    <input id="caixa_selecao2" type="checkbox" onclick="caixa_usado_semana()">
-                    <label class="alt_title3" for="caixa_selecao2">Ver tempo usado na semana:</label>
+                <h2 class="tempo_usado">Tempo usado hoje</h2>
 
-                </div>
-                <div class="div_check_lado">
-                    <input id="caixa_selecao3" type="checkbox" onclick="caixa_usado_quinzena()">
-                    <label class="alt_title3" for="caixa_selecao3">Ver tempo usado na quinzena:</label>
+                <div class="organizadora">
+
+                    <h2 class="tempo_usado2">4</h2>
+                    <h2 class="tempo_usado3">horas</h2>
+
                 </div>
             </div>
 
-            <div class="div_data" id="div_usado_hoje">
-                <h2 class="alt_title3">Tempo usado hoje:</h2>
-                <h2 class="alt_title3">4 horas</h2>
-            </div>
+            <div class="box_horas_usadas_quinze">
 
-            <!-- Divisória -->
-            <div class="div_divisora_alt" id="div_divisora_alt1"></div>
+                <h2 class="tempo_usado">Tempo usado hoje</h2>
 
-            <div class="div_data" id="div_usado_semana">
+                <div class="organizadora_overflow"> 
 
-                <h2 class="alt_title3">Tempo usado na semana:</h2>
+                    <h2 class="tempo_usado4">Ontem: 8 horas</h2>
+                    <h2 class="tempo_usado4">2 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">3 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">4 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">5 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">6 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">7 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">8 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">9 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">10 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">11 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">12 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">13 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">14 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">15 dias atrás: 8 horas</h2>
 
-                <div class="organizadora_alt">
-
-                    <div class="quadrado">
-                        <h4 class="alt_title4">seg</h4>
-                        <h4 class="alt_title4">8h</h4>
-                    </div>
-                    <div class="quadrado">
-                        <h4 class="alt_title4">ter</h4>
-                        <h4 class="alt_title4">8h</h4>
-                    </div>
-                    <div class="quadrado">
-                        <h4 class="alt_title4">qua</h4>
-                        <h4 class="alt_title4">8h</h4>
-                    </div>
-                    <div class="quadrado">
-                        <h4 class="alt_title4">qui</h4>
-                        <h4 class="alt_title4">10h</h4>
-                    </div>
-                    <div class="quadrado">
-                        <h4 class="alt_title4">sex</h4>
-                        <h4 class="alt_title4">8h</h4>
-                    </div>
-                    <div class="quadrado">
-                        <h4 class="alt_title4">sab</h4>
-                        <h4 class="alt_title4">2h</h4>
-                    </div>
-                    <div class="quadrado">
-                        <h4 class="alt_title4">dom</h4>
-                        <h4 class="alt_title4">0h</h4>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Divisória -->
-            <div class="div_divisora_alt" id="div_divisora_alt2"></div>
-
-            <div class="div_data" id="div_usado_quinzena">
-                <h2 class="alt_title3">Tempo usado na quinzena</h2>
-
-                <div class="organizadora_alt">
-
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 1</h4>
-                        <h4 class="alt_title5">8h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 2</h4>
-                        <h4 class="alt_title5">8h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 3</h4>
-                        <h4 class="alt_title5">8h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 4</h4>
-                        <h4 class="alt_title5">8h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 5</h4>
-                        <h4 class="alt_title5">8h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 6</h4>
-                        <h4 class="alt_title5">0h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 7</h4>
-                        <h4 class="alt_title5">0h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 8</h4>
-                        <h4 class="alt_title5">8h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 9</h4>
-                        <h4 class="alt_title5">8h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 10</h4>
-                        <h4 class="alt_title5">8h</h4>
-                    </div>
-
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 11</h4>
-                        <h4 class="alt_title5">10h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 12</h4>
-                        <h4 class="alt_title5">8h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 13</h4>
-                        <h4 class="alt_title5">2h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 14</h4>
-                        <h4 class="alt_title5">0h</h4>
-                    </div>
-                    <div class="quadrado2">
-                        <h4 class="alt_title5">dia 15</h4>
-                        <h4 class="alt_title5">8h</h4>
-                    </div>
                 </div>
             </div>
         </div>
 
-
-
         <!-- Desempenho equipe (quando clicado) / Aplicativos Usados -->
+
         <div id="div_aplicativos_usados" class="div_tempo_logado" style="display: none;">
 
             <!-- Divisória -->
@@ -372,7 +272,7 @@
 
     function tempo_logado() {
         div_options.style.display = "none";
-        div_tempo_logado.style.display = "block";
+        div_tempo_logado.style.display = "flex";
     }
 
     function aplicativos_usados() {
@@ -389,8 +289,6 @@
         trazerFuncionariosOnlineCard();
         isOnline(isOnline);
 
-
-        online_1.style.backgroundColor = "red";
         ok = "img/checked.png";
         notOk = "img/warning.png";
         check_1.src = ok;
@@ -428,51 +326,6 @@
     function go_back() {
         location.reload();
     }
-
-    cont_checkbox_hoje = 1;
-    cont_checkbox_semana = 1;
-    cont_checkbox_quinzena = 1;
-
-    function caixa_usado_hoje() {
-        if (cont_checkbox_hoje == 0) {
-            div_usado_hoje.style.display = "none";
-            div_divisora_alt1.style.display = "none";
-            cont_checkbox_hoje++;
-        } else {
-            div_usado_hoje.style.display = "block";
-            div_divisora_alt1.style.display = "block"
-            cont_checkbox_hoje--;
-        }
-    }
-
-    function caixa_usado_semana() {
-        if (cont_checkbox_semana == 0) {
-            div_usado_semana.style.display = "none";
-            div_divisora_alt2.style.display = "none";
-            cont_checkbox_semana++;
-        } else {
-            div_usado_semana.style.display = "block";
-            div_usado_semana.style.display = "flex";
-            div_divisora_alt2.style.display = "block";
-            cont_checkbox_semana--;
-        }
-    }
-
-    function caixa_usado_quinzena() {
-        if (cont_checkbox_quinzena == 0) {
-            div_usado_quinzena.style.display = "none";
-            div_divisora_alt3.style.display = "none";
-            cont_checkbox_quinzena++;
-        } else {
-            div_usado_quinzena.style.display = "revert";
-            div_usado_quinzena.style.display = "flex";
-            div_divisora_alt3.style.display = "block";
-            cont_checkbox_quinzena--;
-        }
-    }
-
-
-
 
     // NOVAS FUNCTIONS
     function bemvindoNome() {
@@ -514,34 +367,35 @@
 
     function mostrarOnlineOffline() {
 
-fetch(`/usuarios/mostrarOnlineOffline/${idFuncionario}`, {
-    method: "post"
-}).then(resposta => {
+        fetch(`/usuarios/mostrarOnlineOffline/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
 
-    if (resposta.ok) {
+            if (resposta.ok) {
 
-        resposta.json().then(json => {
+                resposta.json().then(json => {
 
-            console.log(json);
+                    console.log(json);
 
-            //Mostrar cada funcionário na tela
+                    //Mostrar cada funcionário na tela
 
-            for (let index = 0; index < json.length; index++) {
+                    for (let index = 0; index < json.length; index++) {
 
-                document.getElementById(`circulo${json[index].idFuncionario}`).style.backgroundColor = "#00FB00";
+                        document.getElementById(`circulo${json[index].idFuncionario}`).style
+                            .backgroundColor = "#00FB00";
 
+                    }
+
+                });
+
+            } else {
+                alert('Você não possui funcionários para monitorar');
             }
-
         });
 
-    } else {
-        alert('Você não possui funcionários para monitorar');
+        return false;
+
     }
-});
-
-return false;
-
-}
 
     function trazerFuncionariosOnlineCard() {
 

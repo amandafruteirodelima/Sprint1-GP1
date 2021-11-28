@@ -108,7 +108,7 @@ h2 {
 }
 
 /* Desempenho equipe */
-.organizadora{
+.organizadora {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -184,8 +184,90 @@ h2 {
     font-family: 'Poppins-Bold';
 }
 
+/* Desempenho equipe (quando clicada) - nova */
+
+.box_horas_usadas_hoje {
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 42%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+.box_horas_usadas_quinze {
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 42%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+.tempo_usado {
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+    margin-top: 2%;
+}
+
+.tempo_usado2 {
+    color: rgb(255, 255, 255);
+    font-size: 500%;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+    margin-top: 70%;
+    margin-right: 5%;
+}
+
+.tempo_usado3 {
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+    margin-top: 110%;
+}
+
+.organizadora_overflow {
+    margin-top: 5%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.tempo_usado4 {
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5%;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
 /* Desempenho equipe (quando clicada) */
-.div_desempenho_pai_alternativa{
+.div_desempenho_pai_alternativa {
     margin: 0;
     border-radius: 20px;
     width: 80%;
@@ -210,7 +292,7 @@ h2 {
     align-items: center;
 }
 
-.desempenho_go_back{
+.desempenho_go_back {
     transform: rotateY(180deg);
     height: 65px;
     cursor: pointer;
@@ -218,7 +300,7 @@ h2 {
     margin: 0;
 }
 
-.desempenho_go_back:hover{
+.desempenho_go_back:hover {
     opacity: 1;
 }
 
@@ -289,7 +371,6 @@ h2 {
     height: 40%;
 }
 
-/* Desempenho equipe (quando clicado) / Tempo Logado */
 .div_tempo_logado {
     margin-top: 20px;
     margin-left: 5%;
@@ -305,9 +386,9 @@ h2 {
     height: 3px;
     width: 100%;
     background-color: rgb(255, 255, 255);
- }
+}
 
- .div_data {
+.div_data {
     height: 25%;
     width: 100%;
     margin-top: 20px;
@@ -317,24 +398,24 @@ h2 {
     text-align: center;
     justify-content: center;
     align-items: center;
- }
+}
 
- .quadrado {
-     margin-top: 10px;
-     height: 40px;
-     width: 40px;
-     border-radius: 5px;
-     border-width: 3px;
-     border-color: rgb(255, 255, 255);
-     border-style: solid;
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-     justify-content: center;
-     align-items: center;
- }
+.quadrado {
+    margin-top: 10px;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
- .quadrado2 {
+.quadrado2 {
     margin-top: 10px;
     height: 30px;
     width: 30px;
@@ -368,16 +449,17 @@ h2 {
     height: 35px;
 }
 
-.organizadora_alt{
+.organizadora_alt {
     width: 80%;
+    height: 40%;
     display: flex;
     flex-direction: row;
+    text-align: center;
     align-items: center;
-    justify-content: space-between;
-    margin: 0;
+    overflow-x: auto;
 }
 
-.organizadora_alt2{
+.organizadora_alt2 {
     width: 80%;
     display: flex;
     flex-direction: row;
