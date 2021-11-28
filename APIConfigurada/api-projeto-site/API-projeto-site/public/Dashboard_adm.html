@@ -108,7 +108,7 @@
 
             <div class="box_horas_usadas_quinze">
 
-                <h2 class="tempo_usado">Tempo usado hoje</h2>
+                <h2 class="tempo_usado">Tempo usado nos últimos quinze dias</h2>
 
                 <div class="organizadora_overflow"> 
 
@@ -324,7 +324,9 @@
 
     // Seta (voltar)
     function go_back() {
-        location.reload();
+        div_options.style.display = "flex";
+        div_tempo_logado.style.display = "none";
+        div_aplicativos_usados.style.display = "none";
     }
 
     // NOVAS FUNCTIONS
