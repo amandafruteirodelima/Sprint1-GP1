@@ -25,7 +25,7 @@
                 <ul>
                     <li><a class="li-comum" href="Dashboard_adm.html">Dashboard</a></li>
                     <li><a class="li-comum" href="Ranking_adm.html">Ranking</a></li>
-                    <li><a class="li-select" href="Cadastro_equipe.html">Cadastro de Equipe</a></li>
+                    <li><a class="li-select" href="Cadastro_equipe.html">Equipes</a></li>
                     <li><a class="li-comum" href="Cadastro.html">Cadastro</a></li>
                     <li><a class="li-comum" href="Dashboard_selecao_componentes.html">Componentes</a></li>
                 </ul>
@@ -41,11 +41,11 @@
 
     <main>
         <div class="div_titulo">
-            <h1>&lt;Crie uma equipe/&gt;</h1>
+            <h1>&lt;Crie ou delete uma equipe/&gt;</h1>
         </div>
         <div class="div-forms">
             <div class="div_first_form">
-                <form id="form_cadastro_equipe" method="post" onsubmit="return criar()">
+                <form id="form_cadastro_equipe" method="post">
 
                     <div class="div-criar">
                         <input id="inp_nome_equipe" name="nome" class="inptPadrao" type="text" placeholder=" " required>
@@ -53,27 +53,35 @@
                         <label class="label label-nome" for="nome">Nome da nova equipe</label>
 
 
-                        <button class="btn-default"><a><b>Criar</b></a></button>
+                        <button class="btn-default" type="submit" onclick="return criar()"><a><b>Criar</b></a></button>
+                        <button class="btn-default" type="submit"
+                            onclick="return deletar()"><a><b>Deletar</b></a></button>
                     </div>
                 </form>
             </div>
-            <h1>&lt;Adicione um funcionario a uma equipe/&gt;</h1>
+            <h1>&lt;Adicione ou remova um funcionario de uma equipe/&gt;</h1>
             <div>
-                <form id="form_adicionar" method="post" onsubmit="return adicionar()">
+                <form id="form_adicionar" method="post">
                     <div class="div-adicionar">
                         <div class="div-selects">
 
-                            <input id="sel_equipe" name="nome_equipe" class="inptPadrao" type="text" placeholder=" " required>
+                            <input id="sel_equipe" name="nome_equipe" class="inptPadrao" type="text" placeholder=" "
+                                required>
                             <label class="label label_nome_equipe" for="nome_equipe">Nome da equipe</label>
 
-                            <input id="sel_funcionario" name="nome_funcionario" class="inptPadrao" type="text" placeholder=" " required>
-                            <label class="label label_nome_funcionario" for="nome_funcionario">Nome do funcionario</label>
+                            <input id="sel_funcionario" name="nome_funcionario" class="inptPadrao" type="text"
+                                placeholder=" " required>
+                            <label class="label label_nome_funcionario" for="nome_funcionario">Nome do
+                                funcionario</label>
 
                         </div>
 
-                        <div>
-                            <button class="btn-default"><a><b>Adicionar</b></a></button>
-                        </div>
+                        <button class="btn-default" type="submit"
+                            onclick="return adicionar()"><a><b>Adicionar</b></a></button>
+
+                        <button class="btn-default" type="submit"
+                            onclick="return remover()"><a><b>Remover</b></a></button>
+
                     </div>
                 </form>
             </div>
@@ -139,7 +147,51 @@
 
             } else {
 
-                alert('Falha na adição do funcionario!');
+                alert('Falha na adição do funcionario');
+
+            }
+        });
+
+        return false;
+    }
+
+    function remover() {
+
+        var formulario_add = new URLSearchParams(new FormData(form_adicionar));
+        fetch("/equipes/remover", {
+            method: "POST",
+            body: formulario_add
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                alert("Funcionario removido com sucesso")
+
+            } else {
+
+                alert('Falha na remoção do funcionario');
+
+            }
+        });
+
+        return false;
+    }
+
+    function deletar() {
+
+        var formulario = new URLSearchParams(new FormData(form_cadastro_equipe));
+        fetch("/equipes/deletar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                alert("Equipe deletada com sucesso")
+
+            } else {
+
+                alert('Falha na deleção');
 
             }
         });
