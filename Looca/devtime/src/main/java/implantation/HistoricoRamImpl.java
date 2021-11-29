@@ -42,7 +42,7 @@ public class HistoricoRamImpl {
                         componenteDaVez.getIdComponente(), emUso);
 
                 historicoRam.insertHistorico();
-                historicoRam.insertHistoricoMySql();
+                historicoRam.insertHistoricoMySql(); //Comentar essa Linha para testes
             }
 
         } catch (Exception erro) {

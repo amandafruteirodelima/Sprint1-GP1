@@ -28,32 +28,33 @@ public class HistoricoUsoSoftwareImpl {
     public void findHistoricoSoftware() {
 
         for (Processo processo : processos) {
+            String select = "Select *"
+                    + " from Software where nomeSoftware = '"
+                    + processo.getNome() + "'";
             try {
-                String select = "Select *"
-                        + " from Software where nomeSoftware = '"
-                        + processo.getNome() + "'";
+                if (processo.getUsoMemoria() > 0.1) {
 
-                List<SoftwareEntity> softwareid = assistente.query(select,
-                        new BeanPropertyRowMapper<>(SoftwareEntity.class));
-
-                if (softwareid.isEmpty() || Objects.isNull(softwareid)) {
-                    software.findSoftware(processo.getNome());
-                    softwareid = assistente.query(select,
+                    List<SoftwareEntity> softwareid = assistente.query(select,
                             new BeanPropertyRowMapper<>(SoftwareEntity.class));
+
+                    if (softwareid.isEmpty() || Objects.isNull(softwareid)) {
+                        software.findSoftware(processo.getNome());
+                        softwareid = assistente.query(select,
+                                new BeanPropertyRowMapper<>(SoftwareEntity.class));
+                    }
+
+                    for (int i = 0; i < softwareid.size(); i++) {
+
+                        SoftwareEntity softwareDaVez = softwareid.get(i);
+
+                        HistoricoUsoSoftwareEntity usoSoftware = new HistoricoUsoSoftwareEntity(
+                                processo.getUsoMemoria(),
+                                softwareDaVez.getIdSoftware(),
+                                maquinaInstance.getIdMaquina()
+                        );
+                        usoSoftware.insertHistoricoUsoSoftware();
+                    }
                 }
-
-                for (int i = 0; i < softwareid.size(); i++) {
-
-                    SoftwareEntity softwareDaVez = softwareid.get(i);
-
-                    HistoricoUsoSoftwareEntity usoSoftware = new HistoricoUsoSoftwareEntity(
-                            processo.getUsoMemoria(),
-                            softwareDaVez.getIdSoftware(),
-                            maquinaInstance.getIdMaquina()
-                    );
-                    usoSoftware.insertHistoricoUsoSoftware();
-                }
-
             } catch (Exception erro) {
                 logErro.mensagemErroSelect(erro);
             }

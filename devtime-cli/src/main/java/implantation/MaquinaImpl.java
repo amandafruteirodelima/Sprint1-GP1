@@ -28,7 +28,7 @@ public class MaquinaImpl {
                 funcionario.getIdFuncionario());
 
         maquina.insertMaquina();
-        maquina.insertMaquinaMySql();
+        maquina.insertMaquinaMySql(); //Comentar essa Linha para testes
         
         
             List<MaquinaEntity> maquinaid = assistente.query("Select *"

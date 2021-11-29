@@ -27,7 +27,7 @@ public class DiscoImpl {
                     volumes.get(i).getUUID(), "GB", maquinaInstance.getIdMaquina());
 
             discoAtual.insertComponente();
-            discoAtual.insertComponenteMySql();
+            discoAtual.insertComponenteMySql(); //Comentar essa Linha para testes
 
             i++;
         }

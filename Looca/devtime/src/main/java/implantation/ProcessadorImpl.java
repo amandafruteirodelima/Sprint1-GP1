@@ -18,6 +18,6 @@ public class ProcessadorImpl {
                 processador.getFabricante(), "Ghz",
                 maquinaInstance.getIdMaquina());
         cpu.insertComponente();
-        cpu.insertComponenteMySql();
+        cpu.insertComponenteMySql(); //Comentar essa Linha para testes
     }
 }
