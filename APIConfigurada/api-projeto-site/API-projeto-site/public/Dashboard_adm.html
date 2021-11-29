@@ -100,7 +100,7 @@
 
                 <div class="organizadora">
 
-                    <h2 class="tempo_usado2">4</h2>
+                    <h2 id="tempo_usado_hoje" class="tempo_usado2">0</h2>
                     <h2 class="tempo_usado3">horas</h2>
 
                 </div>
@@ -110,23 +110,23 @@
 
                 <h2 class="tempo_usado">Tempo usado nos últimos quinze dias</h2>
 
-                <div class="organizadora_overflow"> 
+                <div class="organizadora_overflow">
 
-                    <h2 class="tempo_usado4">Ontem: 8 horas</h2>
-                    <h2 class="tempo_usado4">2 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">3 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">4 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">5 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">6 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">7 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">8 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">9 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">10 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">11 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">12 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">13 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">14 dias atrás: 8 horas</h2>
-                    <h2 class="tempo_usado4">15 dias atrás: 8 horas</h2>
+                    <h2 class="tempo_usado4">Ontem: 0 horas</h2>
+                    <h2 class="tempo_usado4">2 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">3 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">4 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">5 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">6 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">7 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">8 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">9 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">10 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">11 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">12 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">13 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">14 dias atrás: 0 horas</h2>
+                    <h2 class="tempo_usado4">15 dias atrás: 0 horas</h2>
 
                 </div>
             </div>
@@ -283,21 +283,25 @@
     // NOVAS FUNCTIONS
     window.onload = function online() {
 
-
+        // testeOnline();
         bemvindoNome();
         trazerFuncionariosOnline();
         trazerFuncionariosOnlineCard();
-        isOnline(isOnline);
+        mostrarOnlineOffline()
 
-        ok = "img/checked.png";
-        notOk = "img/warning.png";
-        check_1.src = ok;
-        check_2.src = ok;
-        check_3.src = ok;
-        check_4.src = ok;
-        check_5.src = notOk;
-        check_6.src = notOk;
+        // ok = "img/checked.png";
+        // notOk = "img/warning.png";
+        // check_1.src = ok;
+        // check_2.src = ok;
+        // check_3.src = ok;
+        // check_4.src = ok;
+        // check_5.src = notOk;
+        // check_6.src = notOk;
     }
+
+    // function testeOnline(){
+    //     document.getElementById(`circulo13`).style.backgroundColor = "#00FB00";
+    // }
 
     cont = 0;
 
@@ -367,6 +371,34 @@
 
     }
 
+    function mostrarHorasUsadasHoje() {
+
+        fetch(`/usuarios/mostrarHorasUsadasHoje/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+
+                    //Mostrar cada funcionário na tela
+
+                    for (let index = 0; index < json.length; index++) {
+
+                tempo_usado_hoje.innerHTML = `${json[index].idFuncionario}`;
+                    }
+
+                });
+
+            }
+        });
+
+        return false;
+
+    }
+
     function mostrarOnlineOffline() {
 
         fetch(`/usuarios/mostrarOnlineOffline/${idFuncionario}`, {
@@ -390,8 +422,6 @@
 
                 });
 
-            } else {
-                alert('Você não possui funcionários para monitorar');
             }
         });
 

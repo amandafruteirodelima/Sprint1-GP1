@@ -44,7 +44,7 @@ public class HistoricoProcessadorImpl {
                                 processador.getUso());
 
                 historicoProcessador.insertHistorico();
-                historicoProcessador.insertHistoricoMySql();
+                historicoProcessador.insertHistoricoMySql(); //Comentar essa Linha para testes
             }
 
         } catch (Exception erro) {

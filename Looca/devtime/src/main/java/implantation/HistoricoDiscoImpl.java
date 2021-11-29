@@ -49,7 +49,7 @@ public class HistoricoDiscoImpl {
                             discoDaVez.getIdComponente(), convertido);
 
                     historicoDisco.insertHistorico();
-                    historicoDisco.insertHistoricoMySql();
+                    historicoDisco.insertHistoricoMySql(); //Comentar essa Linha para testes
                     j++;
                 }
             } catch (Exception erro) {
