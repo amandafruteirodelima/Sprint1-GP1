@@ -530,6 +530,28 @@ body {
     }
 }
 
+@media only screen and (min-width: 1356px){
+    .image img{
+        width: 1366px;
+    }
+
+    .slide{
+        width: 1356px;
+    }
+
+    .balls{
+        left: calc(149% - 1356px);
+    }
+
+    .sloganDevTime{
+        top: 34vh;
+    }
+
+    .cardServico{
+        height: 40vh;
+    }
+}
+
 /* Laptop Large */
 @media only screen and (min-width: 1440px){
     .image img{
