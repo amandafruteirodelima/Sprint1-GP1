@@ -96,6 +96,16 @@
 
     <!-- Fim do Conteúdo -->
 
+
+    
+
+    <div>
+      <form id="form_excluir" method="post" onsubmit="return excluir()">
+        <input name="nomeFuncionario" id="nomeFuncionarioExcluir" type="text" placeholder="Nome Funcionário:" />
+        <button>Excluir Funcionário</button>
+      </form>
+    </div>
+
     <!-- Início do footer  -->
     <div class="footer">
 
@@ -140,4 +150,21 @@
 
         return false;
     }
+
+    
+  function excluir(){
+    var formulario = new URLSearchParams(new FormData(form_excluir));
+    fetch("/usuarios/excluir", {
+      method: "POST",
+      body: formulario,
+    }).then(function (response) {
+      if (response.ok) {
+        alert("Usuário excluído com sucesso!");
+      } else {
+        alert("Erro de exclusão!");
+      }
+    });
+
+    return false;
+  }
 </script>

@@ -14,11 +14,11 @@ module.exports = {
       }
     },
     pool: { 
-      max: 5,
+      max: 1000,
       min: 1,
       acquire: 5000,
-      idle: 30000,
-      connectTimeout: 5000
+      idle: 3000000,
+      connectTimeout: 500000000
     }
   },
 
