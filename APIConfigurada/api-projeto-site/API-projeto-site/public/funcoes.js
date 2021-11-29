@@ -10,6 +10,9 @@ function verificar_autenticacao() {
     login_usuario = sessionStorage.login_usuario_meuapp;
     nome_usuario = sessionStorage.nome_usuario_meuapp;
     idFuncionario = sessionStorage.idFuncionario;
+    devCoinFuncionario = sessionStorage.devCoinFuncionario;
+    pontosFuncionario = sessionStorage.pontosFuncionario;
+    Funcionario = sessionStorage.nomeFuncionario;
     
     if (login_usuario == undefined)  {
         redirecionar_login();

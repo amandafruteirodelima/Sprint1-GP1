@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
     <link rel="icon" href="img/Yin-Yang-DevTime.png">
+    <link rel="stylesheet" href="./css/perfil_conquista.css">
     <script src="../routes/Funcionario_Conquista.js"></script>
+    <script src="./perfil.js"></script>
     <title>Ranking</title>
+    <script src="funcoes.js"></script>
     
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="css/ranking.css">
@@ -32,10 +35,10 @@
                 <img id="img_perfil_info" src="img/imgUsuario.jpg" alt="">
             </div>
             <div class="div_nome_usuario_perfil">
-                <b class="nome_usuario_perfil"> Ednaldo Pereira</b>
+                <b class="nome_usuario_perfil"><b id="nomeUsuario"></b></b>
             </div>
             <div class="div_nome_usuario_perfil">
-                <b class="nome_usuario_perfil">Nivel: 3</b>
+                <b class="nome_usuario_perfil">Nivel: <b id="nivel_user"></b> </b>
             </div>
             <div class="div_geral_pontos_devicon">
                 <div class="div_pontos_devicon">
@@ -43,7 +46,7 @@
                         <img class="img_pontos_dc" src="img/score.png" alt="">
                     </div>
                     <div class="div_texto_pontos_dc">
-                        <b> Pontos: 48.252</b>
+                        <b>Pontos: <b id="qntdPontos"></b></b>
                     </div>   
                 </div>
                 <div class="div_pontos_devicon">
@@ -51,7 +54,7 @@
                         <img class="img_pontos_dc" src="img/moeda.png" alt="">
                     </div>
                     <div class="div_texto_pontos_dc">
-                        <b> DevCoins: 5.252</b>
+                        <b>DevCoins: <b id="qntdDevCoins"></b></b>
                     </div>  
                 </div>
             </div>
@@ -196,44 +199,7 @@
 </html>
 
 <script>
-    function recuperar() {
-        console.log("idFuncionário:", sessionStorage.idFuncionario)
-        let corpo = {
-            "idFuncionario": sessionStorage.idFuncionario
-        };
-        fetch("/Funcionario_Conquista/recuperar", {
-            method: "POST",
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(corpo)
-        }).then(resposta => {
-
-            if (resposta.ok) {
-
-                resposta.json().then(json => {
-
-                    for(i = 0; i < json.length; i++){
-                        divListaConquista.innerHTML += `${json[i].nomeConquista}<br>`
-                        
-                    }
-                    console.log(json);
-
-                });
-
-            } else {
-
-                console.log('Deu ruim oh nono!');
-                alert('Deu ruim oh nono!')
-
-                resposta.text().then(texto => {
-                    console.error(texto);
-
-                });
-            }
-        });
-
-        return false;
-    }
+function recuperarValoresPontosDevCoins(){
+    
+}
 </script>

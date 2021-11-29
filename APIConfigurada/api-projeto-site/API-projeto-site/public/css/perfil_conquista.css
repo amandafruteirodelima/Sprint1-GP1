@@ -1,0 +1,33 @@
+.div-conquista-usuario {
+    font-size: 1rem;
+    border: solid 2px #7D35B7;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.div_conquistas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+    margin: 5px;
+ 
+   
+
+}
+
+.btn-finalizar{
+    background-color: rgb(34, 211, 34);
+    color: white;
+    width: 50px;
+    height: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+   
+}
+
+.img-conquista{
+    width: 20px;
+    margin: 0;
+    padding: 0;
+}

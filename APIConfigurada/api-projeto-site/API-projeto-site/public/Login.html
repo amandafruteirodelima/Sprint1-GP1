@@ -102,14 +102,22 @@ function entrar() {
                     // MEXIDO PARA DASHBOARD ADM
                     sessionStorage.setItem('idFuncionario', json.idFuncionario)
                     sessionStorage.setItem('nome', json.nomeFuncionario)
+                    //Mexido para conquista
                     sessionStorage.idFuncionario = json.idFuncionario;
+                    sessionStorage.devCoinFuncionario = json.devCoinFuncionario;
+                    sessionStorage.pontosFuncionario = json.pontosFuncionario;
+                    
+                    
                         window.location.href = 'Dashboard_adm.html';
                     }
                     else{
                         sessionStorage.login_usuario_meuapp = json.email;
                         sessionStorage.nome_usuario_meuapp = json.nome;
                         sessionStorage.setItem('idFuncionario', json.idFuncionario);
+                        sessionStorage.setItem('nome', json.nomeFuncionario);
                         sessionStorage.idFuncionario = json.idFuncionario;
+                        sessionStorage.devCoinFuncionario = json.devCoinFuncionario;
+                    sessionStorage.pontosFuncionario = json.pontosFuncionario;
                         window.location.href = 'dashboard_funcs.html';
                     }
                 });
