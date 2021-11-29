@@ -132,16 +132,16 @@ router.post('/verOnline/:idFuncionario', function (req, res, next) {
 	});
 });
 
-/* Mostrar Funcionários Online */
+/* Mostrar Funcionários Online (verifica num intervalo de 10 minutos) */
 router.post('/mostrarOnlineOffline/:idFuncionario', function (req, res, next) {
 
 	let idFuncionario = req.params.idFuncionario;
 
-	let instrucaoSql = `from [dbo].[Historico_Uso] HU 
+	let instrucaoSql = `select * from [dbo].[Historico_Uso] HU 
 	join Componente cpt on HU.fk_Componente = cpt.idComponente 
 	join Maquina mka on cpt.fk_Maquina = mka.idMaquina
 	join Funcionario fc on mka.fk_Funcionario = fc.idFuncionario
-	where dataHora between DateADD(minute, -182, Current_TimeStamp) and getDate() and fc.idFuncionario ='${idFuncionario}'`;
+	where dataHora between DateADD(minute, -10, Current_TimeStamp) and getDate() and fc.idFuncionario =${idFuncionario}`;
 
 	console.log(instrucaoSql);
 
@@ -151,7 +151,9 @@ router.post('/mostrarOnlineOffline/:idFuncionario', function (req, res, next) {
 
 		if (resultado.length > 0) {
 			res.json(resultado); // transforma resposta em json
-		}	
+		} else {
+			console.log("offline");
+		}
 
 	}).catch(erro => {
 		console.error(erro);
@@ -168,7 +170,7 @@ router.post('/mostrarHorasUsadasHoje/:idFuncionario', function (req, res, next) 
 	join Componente cpt on HU.fk_Componente = cpt.idComponente 
 	join Maquina mka on cpt.fk_Maquina = mka.idMaquina
 	join Funcionario fc on mka.fk_Funcionario = fc.idFuncionario
-	where dataHora between DateADDDateADD(minute, -5, Current_TimeStamp) and getDate() and fc.idFuncionario ='${idFuncionario}'`;
+	where dataHora between DateADDDateADD(minute, -10, Current_TimeStamp) and getDate() and fc.idFuncionario ='${idFuncionario}'`;
 
 	console.log(instrucaoSql);
 
