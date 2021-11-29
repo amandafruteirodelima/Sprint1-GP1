@@ -1,0 +1,292 @@
+* pega os minutos usados *
+
+SELECT COUNT(dia) from [dbo].[Tempo_Logado] where dia between DateADD(day, -1, Current_TimeStamp) and getDate() and fk_Funcionario = 6
+
+* envia arquivo para G.U.I *
+
+scp -i CH240921.pem ./devtime-8.5-jar-with-dependencies.jar ubuntu@ec2-54-209-197-87.compute-1.amazonaws.com:/home/ubuntu/devtime-8.5-jar-with-dependencies.jar 
+
+breno 14 - maquina 4 - componentes 12 / 13 / 14
+
+
+
+
+
+<div id="div_aplicativos_usados" class="div_tempo_logado" style="display: none;">
+
+            <!-- Divisória -->
+            <div class="div_divisora_alt" id="div_divisora_alt3"></div>
+
+            <div class="div_data">
+                <h2 class="alt_title3">Aplicativos usados hoje:</h2>
+
+                <div class="organizadora_alt2">
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Apache_NetBeans.png">
+                        <h4 class="alt_title5">2h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/vs-code.png">
+                        <h4 class="alt_title5">4h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/chrome.png">
+                        <h4 class="alt_title5">0.4h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
+                        <h4 class="alt_title5">5h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/spotify.png">
+                        <h4 class="alt_title5">2h</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Divisória -->
+            <div class="div_divisora_alt"></div>
+
+            <div class="div_data">
+
+                <h2 class="alt_title3">Aplicativos usados na semana:</h2>
+
+                <div class="organizadora_alt2">
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Apache_NetBeans.png">
+                        <h4 class="alt_title5">10h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/vs-code.png">
+                        <h4 class="alt_title5">12h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/chrome.png">
+                        <h4 class="alt_title5">4h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/youtube.png">
+                        <h4 class="alt_title5">2h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
+                        <h4 class="alt_title5">25h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/spotify.png">
+                        <h4 class="alt_title5">10h</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Divisória -->
+            <div class="div_divisora_alt"></div>
+
+            <div class="div_data">
+                <h2 class="alt_title3">Aplicativos usados na quinzena</h2>
+
+                <div class="organizadora_alt2">
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Apache_NetBeans.png">
+                        <h4 class="alt_title5">20h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/vs-code.png">
+                        <h4 class="alt_title5">30h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/chrome.png">
+                        <h4 class="alt_title5">8h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/youtube.png">
+                        <h4 class="alt_title5">3h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
+                        <h4 class="alt_title5">45h</h4>
+                    </div>
+
+                    <div class="quadrado3">
+                        <img class="img_quadrado" src="img/spotify.png">
+                        <h4 class="alt_title5">14h</h4>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+.div_tempo_logado {
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.div_divisora_alt {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+ }
+
+ .div_data {
+    height: 25%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .quadrado {
+     margin-top: 10px;
+     height: 40px;
+     width: 120px;
+     border-radius: 5px;
+     border-width: 3px;
+     border-color: rgb(255, 255, 255);
+     border-style: solid;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .quadrado2 {
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 3.75px;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado3 {
+    margin-top: 10px;
+    height: 55px;
+    width: 55px;
+    border-radius: 5px;
+    border-width: 1.5px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_quadrado {
+    height: 35px;
+}
+
+.organizadora_alt{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.organizadora_alt2{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.alt_title4 {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+}
+
+.alt_title5 {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+}
+
+.div_geral_check_lado {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div_check_lado {
+    display: flex;
+    align-items: center;
+}
+
+#div_usado_hoje {
+    display: none;
+}
+
+#div_usado_semana {
+    display: none;
+}
+
+#div_usado_quinzena {
+    display: none;
+}
+
+#div_divisora_alt1 {
+    display: none;
+}
+
+#div_divisora_alt2 {
+    display: none;
+}
+
+#div_divisora_alt3 {
+    display: none;
+}

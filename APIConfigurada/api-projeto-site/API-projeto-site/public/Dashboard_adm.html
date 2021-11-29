@@ -283,11 +283,10 @@
     // NOVAS FUNCTIONS
     window.onload = function online() {
 
-        // testeOnline();
         bemvindoNome();
         trazerFuncionariosOnline();
         trazerFuncionariosOnlineCard();
-        mostrarOnlineOffline()
+        mostrarOnlineOffline();
 
         // ok = "img/checked.png";
         // notOk = "img/warning.png";
@@ -299,9 +298,6 @@
         // check_6.src = notOk;
     }
 
-    // function testeOnline(){
-    //     document.getElementById(`circulo13`).style.backgroundColor = "#00FB00";
-    // }
 
     cont = 0;
 
@@ -415,8 +411,10 @@
 
                     for (let index = 0; index < json.length; index++) {
 
-                        document.getElementById(`circulo${json[index].idFuncionario}`).style
-                            .backgroundColor = "#00FB00";
+                        // document.getElementById(`circulo${json[index].idFuncionario}`).style
+                        //     .backgroundColor = "#00FB00";
+
+                            console.log(`${json[index].idFuncionario} online`);
 
                     }
 
