@@ -354,6 +354,7 @@
                         <h3>${json[index].nomeFuncionario}</h3>
                         <div class="circulo" id="circulo${json[index].idFuncionario}"></div>
                         </div>`;
+
                     }
 
                 });
@@ -367,7 +368,7 @@
 
     }
 
-    function mostrarHorasUsadasHoje() {
+    function mostrarHorasUsadasHoje(idFuncionario) { //idFuncionario vem de trazerFuncionariosOnlineCard()
 
         fetch(`/usuarios/mostrarHorasUsadasHoje/${idFuncionario}`, {
             method: "post"
@@ -377,14 +378,24 @@
 
                 resposta.json().then(json => {
 
-                    console.log(json);
+                    console.log(json.length);
 
-                    //Mostrar cada funcionário na tela
+                    // não precisa de "for", pois o for está na outra function
 
-                    for (let index = 0; index < json.length; index++) {
+                    var minutos = json.length;
 
-                tempo_usado_hoje.innerHTML = `${json[index].idFuncionario}`;
+                    if ((minutos / 60) < 1) {
+                        alert(`${minutos} minutos`);
                     }
+                    else if (minutos / 60 >= 1) {
+                        
+                        var horas = parseInt(minutos / 60);
+                        var minutosRestantes = (minutos % 60);
+
+                        alert(`${horas} horas e ${minutosRestantes} minutos`);
+                    }
+
+                    // tempo_usado_hoje.innerHTML = `${}`;
 
                 });
 
@@ -414,7 +425,7 @@
                         // document.getElementById(`circulo${json[index].idFuncionario}`).style
                         //     .backgroundColor = "#00FB00";
 
-                            console.log(`${json[index].idFuncionario} online`);
+                        console.log(`${json[index].idFuncionario} online`);
 
                     }
 
@@ -449,6 +460,7 @@
                         <h3>${json[index].nomeFuncionario}</h3>
                         </div>`;
 
+                        mostrarHorasUsadasHoje(json[index].idFuncionario);
                     }
 
                 });

@@ -119,8 +119,8 @@ router.post("/excluir", function (req, res, next) {
         .then((componentes) => {
           identificadoresComponentes = [];
           for (i = 0; i < componentes.length; i++) {
-			identificadoresComponentes.push(componentes[i].idComponente)
-		  }
+            identificadoresComponentes.push(componentes[i].idComponente)
+          }
           //TABELA Historico_Uso
           Historico_Uso.destroy({
             where: { fk_Componente: identificadoresComponentes }
@@ -157,7 +157,7 @@ router.post("/excluir", function (req, res, next) {
       sequelize
         .query(instrucaoSql3, { type: QueryTypes.SELECT })
         .then((maquina) => {
-			maquina = maquina[0].idMaquina;
+          maquina = maquina[0].idMaquina;
           //TABELA Historico_Uso_Software
           Historico_Uso_Software.destroy({
             where: { fk_Maquina: maquina },
@@ -289,57 +289,53 @@ router.post("/verOnline/:idFuncionario", function (req, res, next) {
 /* Mostrar Funcionários Online (verifica num intervalo de 10 minutos) */
 router.post('/mostrarOnlineOffline/:idFuncionario', function (req, res, next) {
 
-	let idFuncionario = req.params.idFuncionario;
+  let idFuncionario = req.params.idFuncionario;
 
-	let instrucaoSql = `select * from [dbo].[Historico_Uso] HU 
+  let instrucaoSql = `select * from [dbo].[Historico_Uso] HU 
 	join Componente cpt on HU.fk_Componente = cpt.idComponente 
 	join Maquina mka on cpt.fk_Maquina = mka.idMaquina
 	join Funcionario fc on mka.fk_Funcionario = fc.idFuncionario
 	where dataHora between DateADD(minute, -10, Current_TimeStamp) and getDate() and fc.idFuncionario =${idFuncionario}`;
 
-	console.log(instrucaoSql);
+  console.log(instrucaoSql);
 
-	sequelize.query(instrucaoSql, {
-		type: sequelize.QueryTypes.SELECT // se não for usar models
-	}).then(resultado => {
+  sequelize.query(instrucaoSql, {
+    type: sequelize.QueryTypes.SELECT // se não for usar models
+  }).then(resultado => {
 
-		if (resultado.length > 0) {
-			res.json(resultado); // transforma resposta em json
-		} else {
-			console.log("offline");
-		}
+    if (resultado.length > 0) {
+      res.json(resultado); // transforma resposta em json
+    } else {
+      console.log("offline");
+    }
 
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-	});
+  }).catch(erro => {
+    console.error(erro);
+    res.status(500).send(erro.message);
+  });
 });
 
 /* Mostrar Horas Usadas Hoje*/
-router.post('/mostrarHorasUsadasHoje/:idFuncionario', function (req, res, next) {
+router.post("/mostrarHorasUsadasHoje/:idFuncionario", function (req, res, next) {
 
-	let idFuncionario = req.params.idFuncionario;
+  let idFuncionario = req.params.idFuncionario;
 
-	let instrucaoSql = `from [dbo].[Historico_Uso] HU 
-	join Componente cpt on HU.fk_Componente = cpt.idComponente 
-	join Maquina mka on cpt.fk_Maquina = mka.idMaquina
-	join Funcionario fc on mka.fk_Funcionario = fc.idFuncionario
-	where dataHora between DateADDDateADD(minute, -10, Current_TimeStamp) and getDate() and fc.idFuncionario ='${idFuncionario}'`;
+  let instrucaoSql = `select * from [dbo].[Tempo_Logado] where dia between DateADD(day, -1, Current_TimeStamp) and getDate() and fk_Funcionario = ${idFuncionario}`;
 
-	console.log(instrucaoSql);
+  console.log(instrucaoSql);
 
-	sequelize.query(instrucaoSql, {
-		type: sequelize.QueryTypes.SELECT // se não for usar models
-	}).then(resultado => {
+  sequelize.query(instrucaoSql, {
+    type: sequelize.QueryTypes.SELECT // se não for usar models
+  }).then(resultado => {
 
-		if (resultado.length > 0) {
-			res.json(resultado); // transforma resposta em json
-		}	
+    if (resultado.length > 0) {
+      res.json(resultado); // transforma resposta em json
+    }
 
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-	});
+  }).catch(erro => {
+    console.error(erro);
+    res.status(500).send(erro.message);
+  });
 });
 
 /* Trazer componentes */
