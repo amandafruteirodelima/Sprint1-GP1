@@ -201,50 +201,9 @@
 
 <script>
 
-    // ///////////////////////////////////////////////////////////////////
-    // const databars = {
-    //     labels: ['disc 1', 'disc 2', 'disc 3'],
-    //     datasets: [{
-    //         label: 'Armazenamento',
-    //         data: [65, 59, 85, 81],
-    //         backgroundColor: [
-    //             'red',
-    //             'green',
-    //             'blue',
-    //             'yellow'
-    //         ],
-    //         borderColor: [
-    //             'black',
-    //             'black',
-    //             'black',
-    //             'black'
-    //         ],
-    //         borderWidth: 1
-    //     }]
-    // };
-    // const configbars = {
-    //     type: 'bar',
-    //     data: databars,
-    //     options: {
-    //         scales: {
-    //             y: {
-    //                 beginAtZero: true
-    //             }
-    //         },
-    //         plugins: {
-    //             legend: {
-    //                 display: false
-    //             }
-    //         }
-    //     },
-    // };
-    // var myChart = new Chart(
-    //     document.getElementById('disco'),
-    //     configbars
-    // );
-    /////////////////////////////////////////////////////////////////////
-
     let proximaAtualizacao;
+
+    var idFuncionario = sessionStorage.getItem('idFuncionario');
 
     verificar_autenticacao();
 
@@ -794,7 +753,7 @@
 
     function obterdadosconsumoTempoReal() {
 
-        fetch(`/leiturasDaMaquina/temporeal/${usuarioEmail}`)
+        fetch(`/leiturasDaMaquina/mostrarOnlineOffline/${idFuncionario}`)
             .then(resposta => {
 
                 if (resposta.ok) {

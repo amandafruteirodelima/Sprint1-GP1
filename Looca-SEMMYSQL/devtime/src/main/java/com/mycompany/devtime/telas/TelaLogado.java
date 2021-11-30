@@ -6,6 +6,8 @@ package com.mycompany.devtime.telas;
 
 import com.mycompany.devtime.Executor;
 import com.sun.tools.javac.Main;
+import java.util.Timer;
+import java.util.TimerTask;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -20,6 +22,17 @@ public class TelaLogado extends javax.swing.JFrame {
      */
     public TelaLogado() {
         initComponents();
+        
+        Timer timer = new Timer();
+         Executor exec = new Executor();
+        
+        TimerTask tl = new TimerTask() {
+            @Override
+            public void run() {
+                exec.Executor();
+            }
+        ;
+        }; timer.schedule(tl, 1000);
     }
 
     /**
@@ -38,8 +51,6 @@ public class TelaLogado extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         btnSair = new javax.swing.JButton();
         btnSobre = new javax.swing.JButton();
-        toggleBtn = new javax.swing.JToggleButton();
-        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -76,40 +87,16 @@ public class TelaLogado extends javax.swing.JFrame {
             }
         });
 
-        toggleBtn.setBackground(new java.awt.Color(206, 183, 216));
-        toggleBtn.setForeground(new java.awt.Color(1, 1, 1));
-        toggleBtn.setText("Desligado");
-        toggleBtn.setFocusPainted(false);
-        toggleBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                toggleBtnActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setBackground(new java.awt.Color(254, 254, 254));
-        jLabel3.setForeground(new java.awt.Color(254, 254, 254));
-        jLabel3.setText("Monitoramento:");
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(btnSair, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btnSobre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(toggleBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addGap(5, 5, 5))
+            .addComponent(btnSobre, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3)
-                .addGap(7, 7, 7)
-                .addComponent(toggleBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnSobre, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -157,31 +144,9 @@ public class TelaLogado extends javax.swing.JFrame {
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         // TODO add your handling code here:
         
-        TelaLogin login = new TelaLogin();
+        System.exit(0);
         
-        login.setVisible(true);
-        setVisible(false);
     }//GEN-LAST:event_btnSairActionPerformed
-
-    private void toggleBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_toggleBtnActionPerformed
-        // TODO add your handling code here:
-
-        Executor exec = new Executor();
-        
-
-        if (toggleBtn.isSelected()) {
-
-            toggleBtn.setText("Ligado");
-
-            exec.Executor();
-
-        } else {
-
-            toggleBtn.setText("Desligado");
-           
-        }
-
-    }//GEN-LAST:event_toggleBtnActionPerformed
 
     private void btnSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSobreActionPerformed
         // TODO add your handling code here:
@@ -234,10 +199,8 @@ public class TelaLogado extends javax.swing.JFrame {
     private javax.swing.JButton btnSobre;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JToggleButton toggleBtn;
     // End of variables declaration//GEN-END:variables
 }
