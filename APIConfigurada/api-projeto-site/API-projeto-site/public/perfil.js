@@ -37,7 +37,7 @@ function recuperar() {
                     ${json[i].nomeConquista} <br>
                     Descrição: ${json[i].descConquista} <br>
                     Status: ${TextoFinalizada}
-                    <buttom onclick="finalizarConquista()" class ="btn-finalizar">Finalizar</buttom>
+                    <buttom onclick="finalizarConquista(0)" class ="btn-finalizar">Finalizar</buttom>
                     </div>`
 
                     idDivs++;
@@ -101,9 +101,12 @@ function definirNivel(){
 
 
 function finalizarConquista(fk_Conquista){
+    let corpo = {
+        "fk_Conquista": fk_Conquista
+    };
         fetch("/atualizar", {
             method: "POST",
-            body: {"fk_Conquista": fk_Conquista}
+            body: JSON.stringify(corpo)
         }).then(function (response) {
 
             if (response.ok) {

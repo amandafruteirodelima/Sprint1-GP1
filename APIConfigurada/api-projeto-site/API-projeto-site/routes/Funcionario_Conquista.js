@@ -55,16 +55,28 @@ router.post('/recuperar', function(req, res, next) {
 /* Atualizando checkFinalizado */
 router.post('/atualizar', function(req, res, next) {
 
-Funcionario_Conquista.update(
-	{ title: '1' },
-	{ where: { 'idConquista': fk_Conquista } }
-  )
-	.success(result =>
-	  handleResult(result)
-	)
-	.error(err =>
-	  handleError(err)
-	)
+	fk_Conquista = req.body.fk_Conquista;
+
+	let instrucaoSql5 = `update Funcionario_Conquista set checkCompleta = 1 where fk_Conquista = ${fk_Conquista}`
+
+	sequelize.query(instrucaoSql5, {
+		model: Funcionario_Conquista
+	}).then(resultados => {
+		console.log(`${resultados}`);
+		console.log(`Encontrados: ${resultados.length}`);
+		console.log(`Tentando atualizar: ${resultados.length}`);
+
+		if (resultados.length != null && resultados.length != 0) {
+                res.json(resultados);
+
+		} else {
+			res.status(403).send('Errooooooooo ao tentar atualizar!');
+		}
+
+	}).catch(erro => {
+		console.error(erro);
+		res.status(500).send(erro.message);
+  	});
 
 });
 
