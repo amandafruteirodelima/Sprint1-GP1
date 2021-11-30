@@ -52,6 +52,22 @@ router.post('/recuperar', function(req, res, next) {
 
 
 
+/* Atualizando checkFinalizado */
+router.post('/atualizar', function(req, res, next) {
+
+Funcionario_Conquista.update(
+	{ title: '1' },
+	{ where: { 'idConquista': fk_Conquista } }
+  )
+	.success(result =>
+	  handleResult(result)
+	)
+	.error(err =>
+	  handleError(err)
+	)
+
+});
+
 /* Verificação de usuário */
 router.get('/sessao/:login', function(req, res, next) {
 	let login = req.params.login;

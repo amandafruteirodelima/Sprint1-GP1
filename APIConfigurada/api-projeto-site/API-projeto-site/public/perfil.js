@@ -17,8 +17,9 @@ function recuperar() {
         if (resposta.ok) {
 
             resposta.json().then(json => {
-                qntdPontos.innerHTML = `${sessionStorage.devCoinFuncionario}`
-                qntdDevCoins.innerHTML = `${sessionStorage.pontosFuncionario}` 
+                definirNivel();
+                qntdPontos.innerHTML = `${sessionStorage.pontosFuncionario}`
+                qntdDevCoins.innerHTML =  `${sessionStorage.devCoinFuncionario}`
                 nomeUsuario.innerHTML = `${sessionStorage.nome}`
                 var idDivs = 0;
                 
@@ -36,7 +37,7 @@ function recuperar() {
                     ${json[i].nomeConquista} <br>
                     Descrição: ${json[i].descConquista} <br>
                     Status: ${TextoFinalizada}
-                    <buttom class ="btn-finalizar">Finalizar</buttom>
+                    <buttom onclick="finalizarConquista()" class ="btn-finalizar">Finalizar</buttom>
                     </div>`
 
                     idDivs++;
@@ -59,4 +60,72 @@ function recuperar() {
     });
 
     return false;
+}
+
+
+
+function definirNivel(){
+    if(sessionStorage.pontosFuncionario > 20 && sessionStorage.pontosFuncionario <= 50){
+        nivel_user.innerHTML = '2';
+    }
+    else if(sessionStorage.pontosFuncionario > 50 && sessionStorage.pontosFuncionario <= 100){
+        nivel_user.innerHTML = '3';
+    }
+    else if(sessionStorage.pontosFuncionario > 80 && sessionStorage.pontosFuncionario <= 100){
+        nivel_user.innerHTML = '4';
+    }
+    else if(sessionStorage.pontosFuncionario > 100 && sessionStorage.pontosFuncionario <= 120){
+        nivel_user.innerHTML = '5';
+    }
+    else if(sessionStorage.pontosFuncionario > 120 && sessionStorage.pontosFuncionario <= 100){
+        nivel_user.innerHTML = '6';
+    }
+    else if(sessionStorage.pontosFuncionario > 140 && sessionStorage.pontosFuncionario <= 160){
+        nivel_user.innerHTML = '7';
+    }
+    else if(sessionStorage.pontosFuncionario > 160 && sessionStorage.pontosFuncionario <= 180){
+        nivel_user.innerHTML = '8';
+    }
+    else if(sessionStorage.pontosFuncionario > 180 && sessionStorage.pontosFuncionario <= 200){
+        nivel_user.innerHTML = '9';
+    }
+    else if(sessionStorage.pontosFuncionario > 200){
+        nivel_user.innerHTML = '10';
+    }
+    else{
+        nivel_user.innerHTML = '1'; 
+    }
+
+}
+
+
+
+function finalizarConquista(fk_Conquista){
+        fetch("/atualizar", {
+            method: "POST",
+            body: {"fk_Conquista": fk_Conquista}
+        }).then(function (response) {
+
+            if (response.ok) {
+                alert("Atualização feita com sucesso!")
+
+            } else {
+
+                alert('Erro de atualização!');
+
+            }
+        });
+
+        return false;
+
+}
+
+
+function trocarFoto(){
+
+}
+
+
+function desfazerFinalizacaoConquista(){
+    
 }
