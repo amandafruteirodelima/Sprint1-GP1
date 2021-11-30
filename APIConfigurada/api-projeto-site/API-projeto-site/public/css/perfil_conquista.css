@@ -31,3 +31,19 @@
     margin: 0;
     padding: 0;
 }
+
+.div_conquistas_finalizar{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inpt_conquista_apagar{
+    width: 250px;
+    height: 30px;
+}

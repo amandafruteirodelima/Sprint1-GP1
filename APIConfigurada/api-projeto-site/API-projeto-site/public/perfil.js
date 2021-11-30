@@ -1,3 +1,5 @@
+//Nesta função estamos recuperando as conquistas e os valores de devCoins
+
 function recuperar() {
    
     console.log("idFuncionário:", sessionStorage.idFuncionario)
@@ -22,6 +24,7 @@ function recuperar() {
                 qntdDevCoins.innerHTML =  `${sessionStorage.devCoinFuncionario}`
                 nomeUsuario.innerHTML = `${sessionStorage.nome}`
                 var idDivs = 0;
+                var posicaoConquista = 0;
                 
 
                 for(i = 0; i < json.length; i++){
@@ -34,10 +37,9 @@ function recuperar() {
                     divListaConquista.innerHTML += 
                     `<div idDiv = ${idDivs} class="div-conquista-usuario">
                     <img class="img-conquista" src= "https://cdn-icons-png.flaticon.com/512/1651/1651611.png">
-                    ${json[i].nomeConquista} <br>
+                    Nome: ${json[i].nomeConquista} <br>
                     Descrição: ${json[i].descConquista} <br>
                     Status: ${TextoFinalizada}
-                    <buttom onclick="finalizarConquista(0)" class ="btn-finalizar">Finalizar</buttom>
                     </div>`
 
                     idDivs++;
@@ -100,22 +102,17 @@ function definirNivel(){
 
 
 
-function finalizarConquista(fk_Conquista){
-    let corpo = {
-        "fk_Conquista": fk_Conquista
-    };
-        fetch("/atualizar", {
+function finalizarConquista(){
+    var formulario = new URLSearchParams(new FormData(form_finalizar));
+        fetch("/Funcionario_Conquista/atualizar", {
             method: "POST",
-            body: JSON.stringify(corpo)
+            body: formulario
         }).then(function (response) {
-
             if (response.ok) {
-                alert("Atualização feita com sucesso!")
-
+                alert("Atualização feita com sucesso!");
+                console.log("Atualização feita com sucesso!");
             } else {
-
                 alert('Erro de atualização!');
-
             }
         });
 

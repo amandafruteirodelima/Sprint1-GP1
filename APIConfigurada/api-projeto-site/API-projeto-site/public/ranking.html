@@ -66,6 +66,15 @@
                         <div id="divListaConquista" class="div_conquistas">
                            
                         </div>
+
+                        <div class="div_conquistas_finalizar">
+                            <span>Digite o nome da conquista que deseja finalizar</span>
+                            <form id="form_finalizar" method="post" onsubmit="return finalizarConquista()">
+                            <input class="inpt_conquista_apagar" type="text" name="nomeConquista" id="" placeholder="Nome Conquista">
+                            <button>Finalizar</button>
+                            </form>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -199,7 +208,5 @@
 </html>
 
 <script>
-function recuperarValoresPontosDevCoins(){
-    
-}
+
 </script>

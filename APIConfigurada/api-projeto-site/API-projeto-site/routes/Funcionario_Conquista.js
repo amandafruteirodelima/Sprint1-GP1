@@ -52,12 +52,13 @@ router.post('/recuperar', function(req, res, next) {
 
 
 
-/* Atualizando checkFinalizado */
-router.post('/atualizar', function(req, res, next) {
+/* Finalizar Conquista*/
+router.post('/atualizar', function(req, res) {
 
-	fk_Conquista = req.body.fk_Conquista;
+	nomeConquista = req.body.nomeConquista;
+	
 
-	let instrucaoSql5 = `update Funcionario_Conquista set checkCompleta = 1 where fk_Conquista = ${fk_Conquista}`
+	let instrucaoSql5 = `update Funcionario_Conquista set checkCompleta = 1 where fk_Conquista = (select idConquista from Conquista where nomeConquista = '${nomeConquista}');`
 
 	sequelize.query(instrucaoSql5, {
 		model: Funcionario_Conquista
@@ -66,10 +67,11 @@ router.post('/atualizar', function(req, res, next) {
 		console.log(`Encontrados: ${resultados.length}`);
 		console.log(`Tentando atualizar: ${resultados.length}`);
 
-		if (resultados.length != null && resultados.length != 0) {
-                res.json(resultados);
+		if (resultados.length != null) {
+			res.status(200).send('Deu bom confia!');
 
-		} else {
+		}
+		else {
 			res.status(403).send('Errooooooooo ao tentar atualizar!');
 		}
 
@@ -81,41 +83,41 @@ router.post('/atualizar', function(req, res, next) {
 });
 
 /* Verificação de usuário */
-router.get('/sessao/:login', function(req, res, next) {
-	let login = req.params.login;
-	console.log(`Verificando se o usuário ${login} tem sessão`);
+// router.get('/sessao/:login', function(req, res, next) {
+// 	let login = req.params.login;
+// 	console.log(`Verificando se o usuário ${login} tem sessão`);
 	
-	let tem_sessao = false;
-	for (let u=0; u<sessoes.length; u++) {
-		if (sessoes[u] == login) {
-			tem_sessao = true;
-			break;
-		}
-	}
+// 	let tem_sessao = false;
+// 	for (let u=0; u<sessoes.length; u++) {
+// 		if (sessoes[u] == login) {
+// 			tem_sessao = true;
+// 			break;
+// 		}
+// 	}
 
-	if (tem_sessao) {
-		let mensagem = `Usuário ${login} possui sessão ativa!`;
-		console.log(mensagem);
-		res.send(mensagem);
-	} else {
-		res.sendStatus(403);
-	}
+// 	if (tem_sessao) {
+// 		let mensagem = `Usuário ${login} possui sessão ativa!`;
+// 		console.log(mensagem);
+// 		res.send(mensagem);
+// 	} else {
+// 		res.sendStatus(403);
+// 	}
 	
-});
+// });
 
 
 
 /* Recuperar todos os usuários */
-router.get('/', function(req, res, next) {
-	console.log('Recuperando todos os usuários');
-	Usuario.findAndCountAll().then(resultado => {
-		console.log(`${resultado.count} registros`);
+// router.get('/', function(req, res, next) {
+// 	console.log('Recuperando todos os usuários');
+// 	Usuario.findAndCountAll().then(resultado => {
+// 		console.log(`${resultado.count} registros`);
 
-		res.json(resultado.rows);
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-  	});
-});
+// 		res.json(resultado.rows);
+// 	}).catch(erro => {
+// 		console.error(erro);
+// 		res.status(500).send(erro.message);
+//   	});
+// });
 
-module.exports = router;
+// module.exports = router;
