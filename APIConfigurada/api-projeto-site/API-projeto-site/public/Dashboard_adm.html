@@ -96,12 +96,11 @@
 
             <div class="box_horas_usadas_hoje">
 
-                <h2 class="tempo_usado">Tempo usado hoje</h2>
+                <h2 class="tempo_usado" style="margin-bottom: 15%;">Tempo usado hoje</h2>
 
                 <div class="organizadora">
 
-                    <h2 id="tempo_usado_hoje" class="tempo_usado2">0</h2>
-                    <h2 class="tempo_usado3">horas</h2>
+                    <h2 id="tempo_usado_hoje" class="tempo_usado2">0 horas</h2>
 
                 </div>
             </div>
@@ -368,6 +367,11 @@
 
     }
 
+    function mostrarHorasUsadasHojeGetter(namePego) {
+
+        mostrarHorasUsadasHoje(namePego);
+    }
+
     function mostrarHorasUsadasHoje(idFuncionario) { //idFuncionario vem de trazerFuncionariosOnlineCard()
 
         fetch(`/usuarios/mostrarHorasUsadasHoje/${idFuncionario}`, {
@@ -385,17 +389,16 @@
                     var minutos = json.length;
 
                     if ((minutos / 60) < 1) {
-                        alert(`${minutos} minutos`);
-                    }
-                    else if (minutos / 60 >= 1) {
-                        
+
+                        tempo_usado_hoje.innerHTML = `${minutos} minutos`;
+
+                    } else if (minutos / 60 >= 1) {
+
                         var horas = parseInt(minutos / 60);
                         var minutosRestantes = (minutos % 60);
 
-                        alert(`${horas} horas e ${minutosRestantes} minutos`);
+                        tempo_usado_hoje.innerHTML = `${horas} horas e ${minutosRestantes} minutos`;
                     }
-
-                    // tempo_usado_hoje.innerHTML = `${}`;
 
                 });
 
@@ -454,13 +457,12 @@
 
                     for (let index = 0; index < json.length; index++) {
 
-                        div_desempenho_pai.innerHTML += `<div onclick="abrir_info(this.id)" name="12" id="${json[index].nomeFuncionario}" class="div_desempenho_content">
+                        div_desempenho_pai.innerHTML += `<div onclick="abrir_info(this.id); mostrarHorasUsadasHojeGetter(${json[index].idFuncionario});" id="${json[index].nomeFuncionario}" class="div_desempenho_content">
                         <img id="check_1" class="check" src="img/checked.png" alt="">
                         <img class="person" src="img/userPink.png" alt="userPink.png icon">
                         <h3>${json[index].nomeFuncionario}</h3>
                         </div>`;
 
-                        mostrarHorasUsadasHoje(json[index].idFuncionario);
                     }
 
                 });
