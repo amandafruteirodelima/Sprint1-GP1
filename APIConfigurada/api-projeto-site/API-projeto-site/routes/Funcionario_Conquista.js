@@ -2,8 +2,7 @@ var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
 var Funcionario_Conquista = require('../models').Funcionario_Conquista;
-var Usuario = require('../models').Usuario;
-var Conquista = require('../models').Conquista;
+
 
 let sessoes = [];
 
@@ -53,7 +52,7 @@ router.post('/recuperar', function(req, res, next) {
 
 
 /* Finalizar Conquista*/
-router.post('/atualizar', function(req, res) {
+router.post('/atualizar', function(req, res,next) {
 
 	nomeConquista = req.body.nomeConquista;
 	
@@ -120,4 +119,4 @@ router.post('/atualizar', function(req, res) {
 //   	});
 // });
 
-// module.exports = router;
+module.exports = router;
