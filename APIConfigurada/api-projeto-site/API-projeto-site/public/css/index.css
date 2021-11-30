@@ -54,7 +54,7 @@ body {
 }
 
 .slide{
-    width: 1024px;
+    width: 100%;
     height: 300px;
     overflow: hidden;
     transition: all 0.4s;
@@ -62,7 +62,8 @@ body {
 
 .slides{
     display: flex;
-    width: 5120px;
+    /* width: 5120px; */
+    width: 1024px;
 }
 
 .image img {
@@ -474,7 +475,7 @@ body {
     }
 
     .cardServico {
-        height: 32vh;
+        height: 37vh;
         padding-bottom: 1vh;
     }
 
