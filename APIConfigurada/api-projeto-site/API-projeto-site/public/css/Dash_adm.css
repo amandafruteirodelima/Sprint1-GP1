@@ -248,6 +248,22 @@ h2 {
     border-style: solid;
 }
 
+.tempo_usado_alt {
+    color: rgb(255, 255, 255);
+    font-size: 110%;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5%;
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
 /* Desempenho equipe (quando clicada) */
 .div_desempenho_pai_alternativa {
     margin: 0;
