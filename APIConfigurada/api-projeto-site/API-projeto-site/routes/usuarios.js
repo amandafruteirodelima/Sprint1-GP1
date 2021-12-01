@@ -107,6 +107,22 @@ router.post("/excluir", function (req, res, next) {
           );
         });
 
+        // Tabela tempo Logado
+        TempoLogado.destroy({
+          where: { fk_Funcionario: idFuncionario }
+        })
+          .then((retorno) => {
+            console.log(
+              `Funcionário excluido da tabela Tempo_Logado. Quantidade de registros excluidos: ${retorno}`
+            );
+          })
+          .catch((erro) => {
+            console.error(
+              `Erro ao excluir da tabela Tempo_Logados ${erro}`
+            );
+          });
+
+
       // ----------------------------------------------------------------------------------------
       //TABELA SELECT Componente
       let instrucaoSql2 = `select idComponente from Componente where fk_Maquina = (select idMaquina from Maquina where fk_Funcionario = ${idFuncionario});`;
