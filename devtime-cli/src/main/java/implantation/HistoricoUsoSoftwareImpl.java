@@ -26,11 +26,12 @@ public class HistoricoUsoSoftwareImpl {
     public void findHistoricoSoftware() {
 
         for (Processo processo : processos) {
-            
-                String select = "Select *"
-                        + " from Software where nomeSoftware = '"
-                        + processo.getNome() + "'";
 
+            String select = "Select *"
+                    + " from Software where nomeSoftware = '"
+                    + processo.getNome() + "'";
+
+            if (processo.getUsoMemoria() > 0.3) {
                 List<SoftwareEntity> softwareid = assistente.query(select,
                         new BeanPropertyRowMapper<>(SoftwareEntity.class));
 
@@ -52,7 +53,7 @@ public class HistoricoUsoSoftwareImpl {
                     usoSoftware.insertHistoricoUsoSoftware();
                 }
 
-          
+            }
         }
     }
 }
