@@ -51,3 +51,18 @@
 .finalizada {
     background-color: gray;
 }
+
+
+.btn_Finalizar{
+    background-color:#7D35B7 ;
+    color: white;
+    font-size: 1.05rem;
+    width: 5.2vw;
+    height: 3vh;
+    cursor: pointer;
+}
+
+.btn_Finalizar:hover{
+    font-size: 1.1rem;
+    transition: 0.5s;
+}

@@ -26,7 +26,7 @@ function recuperar() {
 
                 qntdPontos.innerHTML = `${sessionStorage.pontosFuncionario}`
                 qntdDevCoins.innerHTML =  `${sessionStorage.devCoinFuncionario}`
-                nomeUsuario.innerHTML = `${sessionStorage.nome}`
+                b_usuario.innerHTML = `${sessionStorage.nome}`
                 var idDivs = 0;
                 
                 
@@ -84,31 +84,31 @@ function recuperar() {
 
 
 function definirNivel(){
-    if(sessionStorage.pontosFuncionario > 20 && sessionStorage.pontosFuncionario <= 50){
+    if(sessionStorage.pontosFuncionario > 2000 && sessionStorage.pontosFuncionario <= 5000){
         nivel_user.innerHTML = '2';
     }
-    else if(sessionStorage.pontosFuncionario > 50 && sessionStorage.pontosFuncionario <= 100){
+    else if(sessionStorage.pontosFuncionario > 5000 && sessionStorage.pontosFuncionario <= 8000){
         nivel_user.innerHTML = '3';
     }
-    else if(sessionStorage.pontosFuncionario > 80 && sessionStorage.pontosFuncionario <= 100){
+    else if(sessionStorage.pontosFuncionario > 8000 && sessionStorage.pontosFuncionario <= 10000){
         nivel_user.innerHTML = '4';
     }
-    else if(sessionStorage.pontosFuncionario > 100 && sessionStorage.pontosFuncionario <= 120){
+    else if(sessionStorage.pontosFuncionario > 10000 && sessionStorage.pontosFuncionario <= 12000){
         nivel_user.innerHTML = '5';
     }
-    else if(sessionStorage.pontosFuncionario > 120 && sessionStorage.pontosFuncionario <= 100){
+    else if(sessionStorage.pontosFuncionario > 12000 && sessionStorage.pontosFuncionario <= 10000){
         nivel_user.innerHTML = '6';
     }
-    else if(sessionStorage.pontosFuncionario > 140 && sessionStorage.pontosFuncionario <= 160){
+    else if(sessionStorage.pontosFuncionario > 14000 && sessionStorage.pontosFuncionario <= 16000){
         nivel_user.innerHTML = '7';
     }
-    else if(sessionStorage.pontosFuncionario > 160 && sessionStorage.pontosFuncionario <= 180){
+    else if(sessionStorage.pontosFuncionario > 16000 && sessionStorage.pontosFuncionario <= 18000){
         nivel_user.innerHTML = '8';
     }
-    else if(sessionStorage.pontosFuncionario > 180 && sessionStorage.pontosFuncionario <= 200){
+    else if(sessionStorage.pontosFuncionario > 18000 && sessionStorage.pontosFuncionario <= 20000){
         nivel_user.innerHTML = '9';
     }
-    else if(sessionStorage.pontosFuncionario > 200){
+    else if(sessionStorage.pontosFuncionario > 20000){
         nivel_user.innerHTML = '10';
     }
     else{
@@ -154,11 +154,4 @@ function finalizarConquista(){
 
 
 
-function trocarFoto(){
-
-}
-
-
-function desfazerFinalizacaoConquista(){
-    
-}
+z
