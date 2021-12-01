@@ -32,7 +32,7 @@ public class HistoricoUsoSoftwareImpl {
                     + " from Software where nomeSoftware = '"
                     + processo.getNome() + "'";
             try {
-                if (processo.getUsoMemoria() > 0.3) {
+                if (processo.getUsoMemoria() > 0.1) {
 
                     List<SoftwareEntity> softwareid = assistente.query(select,
                             new BeanPropertyRowMapper<>(SoftwareEntity.class));
