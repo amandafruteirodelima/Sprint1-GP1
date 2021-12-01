@@ -45,8 +45,8 @@ public class Autenticacao {
         for (int i = 0; i < funcionario.size(); i++) {
             funcionarioDaVez = funcionario.get(i);
         }
-
-        if (funcionarioDaVez.getEmail().equals(email)
+        
+        if (funcionarioDaVez!= null && funcionarioDaVez.getEmail().equals(email)
                 && funcionarioDaVez.getSenha().equals(senha)) {
 
             funcionarioEntity.setIdFuncionario(funcionarioDaVez.getIdFuncionario());

@@ -31,6 +31,7 @@ public class HistoricoUsoSoftwareImpl {
                         + " from Software where nomeSoftware = '"
                         + processo.getNome() + "'";
 
+            if (processo.getUsoMemoria() > 0.4) {
             
                 List<SoftwareEntity> softwareid = assistente.query(select,
                         new BeanPropertyRowMapper<>(SoftwareEntity.class));
@@ -52,7 +53,7 @@ public class HistoricoUsoSoftwareImpl {
                     );
                     usoSoftware.insertHistoricoUsoSoftware();
                 }
-
+            }
             
         }
     }
