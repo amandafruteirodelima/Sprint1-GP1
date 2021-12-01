@@ -141,7 +141,8 @@ function finalizarConquista(){
             if (response.ok) {
                 alert("Tarefa finaliza!!!Parabéns dev!");
                 console.log("Atualização feita com sucesso!");
-                window.location.href = 'ranking.html';
+                //PAGINA ANTERIOR ESTAVA RANKING.HTML
+                window.location.href = 'dashboard_funcs.html';
             } else {
                 alert('Erro de atualização!');
             }
