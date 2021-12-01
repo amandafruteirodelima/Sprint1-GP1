@@ -422,4 +422,27 @@ function retonarIdFuncionario(nomeFuncionario) {
   );
 }
 
+/* Mostrar Horas Usadas Ontem*/
+router.post("/mostrarHorasUsadasOntem/:idFuncionario", function (req, res, next) {
+
+  let idFuncionario = req.params.idFuncionario;
+
+  let instrucaoSql = `select * from [dbo].[Tempo_Logado] where dia between DateADD(day, -2, Current_TimeStamp) and DateADD(day, -1, Current_TimeStamp) and fk_Funcionario = ${idFuncionario}`;
+
+  console.log(instrucaoSql);
+
+  sequelize.query(instrucaoSql, {
+    type: sequelize.QueryTypes.SELECT // se não for usar models
+  }).then(resultado => {
+
+    if (resultado.length > 0) {
+      res.json(resultado); // transforma resposta em json
+    }
+
+  }).catch(erro => {
+    console.error(erro);
+    res.status(500).send(erro.message);
+  });
+});
+
 module.exports = router;
