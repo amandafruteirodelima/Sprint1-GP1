@@ -9,6 +9,7 @@ var Equipe_Funcionario = require("../models").Equipe_Funcionario;
 var Funcionario_Conquista = require("../models").Funcionario_Conquista;
 var Historico_Uso = require("../models").Historico_Uso;
 var Historico_Uso_Software = require("../models").Historico_Uso_Software;
+var TempoLogado = require("../models").TempoLogado;
 
 let sessoes = [];
 
