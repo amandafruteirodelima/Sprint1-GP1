@@ -285,7 +285,6 @@
         bemvindoNome();
         trazerFuncionariosOnline();
         trazerFuncionariosOnlineCard();
-        mostrarOnlineOffline();
 
         // ok = "img/checked.png";
         // notOk = "img/warning.png";
@@ -331,6 +330,7 @@
     // NOVAS FUNCTIONS
     function bemvindoNome() {
         h1_1.innerHTML = `BEM-VINDO ${sessionStorage.getItem('nome').toUpperCase()}`;
+
     }
 
     function trazerFuncionariosOnline() {
@@ -367,12 +367,37 @@
 
     }
 
+    function onlineVerdeVermelho(idFuncionario) {
+
+        fetch(`/usuarios/onlineVerdeVermelho/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+
+                    document.getElementById(`circulo${idFuncionario}`).style.backgroundColor = "#00FB00";
+
+                });
+
+            } 
+        });
+
+        return false;
+
+    }
+
+    // Mostrar as horas usadas hoje
+
     function mostrarHorasUsadasHojeGetter(namePego) {
 
         mostrarHorasUsadasHoje(namePego);
     }
 
-    function mostrarHorasUsadasHoje(idFuncionario) { //idFuncionario vem de trazerFuncionariosOnlineCard()
+    function mostrarHorasUsadasHoje(idFuncionario) {
 
         fetch(`/usuarios/mostrarHorasUsadasHoje/${idFuncionario}`, {
             method: "post"
@@ -409,38 +434,6 @@
 
     }
 
-    function mostrarOnlineOffline() {
-
-        fetch(`/usuarios/mostrarOnlineOffline/${idFuncionario}`, {
-            method: "post"
-        }).then(resposta => {
-
-            if (resposta.ok) {
-
-                resposta.json().then(json => {
-
-                    console.log(json);
-
-                    //Mostrar cada funcionário na tela
-
-                    for (let index = 0; index < json.length; index++) {
-
-                        // document.getElementById(`circulo${json[index].idFuncionario}`).style
-                        //     .backgroundColor = "#00FB00";
-
-                        console.log(`${json[index].idFuncionario} online`);
-
-                    }
-
-                });
-
-            }
-        });
-
-        return false;
-
-    }
-
     function trazerFuncionariosOnlineCard() {
 
         fetch(`/usuarios/verOnline/${idFuncionario}`, {
@@ -462,6 +455,8 @@
                         <img class="person" src="img/userPink.png" alt="userPink.png icon">
                         <h3>${json[index].nomeFuncionario}</h3>
                         </div>`;
+
+                        onlineVerdeVermelho(json[index].idFuncionario);
 
                     }
 

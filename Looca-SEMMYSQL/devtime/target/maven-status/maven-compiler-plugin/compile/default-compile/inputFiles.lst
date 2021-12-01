@@ -1,24 +1,24 @@
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\com\mycompany\devtime\telas\TelaLogado.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\MaquinaImpl.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\DiscoImpl.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\com\mycompany\devtime\ConfiguracaoBanco.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\FuncionarioEntity.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\slack\IntegracaoSlack.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\Componente.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\ProcessadorImpl.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\SoftwareImpl.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\HistoricoProcessadorImpl.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\com\mycompany\devtime\Executor.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\com\mycompany\devtime\telas\TelaLogin.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\logging\LogErro.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\slack\IntegracaoSlackApp.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\HistoricoUsoSoftwareEntity.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\SoftwareEntity.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\TempoLogado.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\MaquinaEntity.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\HistoricoDiscoImpl.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\HistoricoUsoEntity.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\HistoricoRamImpl.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\logging\VersaoApp.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\HistoricoUsoSoftwareImpl.java
-A:\Bandtec\2° semestre\Pesquisa e inovação\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\RamImpl.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\com\mycompany\devtime\telas\TelaLogado.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\TempoLogado.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\HistoricoUsoEntity.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\HistoricoRamImpl.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\slack\IntegracaoSlackApp.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\HistoricoUsoSoftwareEntity.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\DiscoImpl.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\ProcessadorImpl.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\HistoricoDiscoImpl.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\slack\IntegracaoSlack.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\logging\VersaoApp.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\RamImpl.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\com\mycompany\devtime\Executor.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\SoftwareImpl.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\MaquinaImpl.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\Componente.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\SoftwareEntity.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\com\mycompany\devtime\ConfiguracaoBanco.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\FuncionarioEntity.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\entities\MaquinaEntity.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\HistoricoUsoSoftwareImpl.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\implantation\HistoricoProcessadorImpl.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\com\mycompany\devtime\telas\TelaLogin.java
+D:\Bandtec Stuff\Sprint1-GP1\Looca-SEMMYSQL\devtime\src\main\java\logging\LogErro.java
