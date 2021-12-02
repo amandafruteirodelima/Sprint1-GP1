@@ -158,10 +158,7 @@
                     <h2 id="consumo_usado_ontem" class="tempo_usado_alt">Ontem: <br>
                         Nenhum</h2>
                     <h2 id="consumo_usado_2_dia_atras" class="tempo_usado_alt">2 dias atrás: <br>
-                        VS Code <br>
-                        Apache <br>
-                        Chrome<br>
-                        Outros</h2>
+                        Nenhum</h2>
                     <h2 id="consumo_usado_3_dia_atras" class="tempo_usado_alt">3 dias atrás:<br>
                         Nenhum</h2>
                     <h2 id="consumo_usado_4_dia_atras" class="tempo_usado_alt">4 dias atrás:<br>
@@ -363,6 +360,7 @@
 
     }
 
+    // Softwares usados Hoje --------------------------------------------------------------
     var vt_softwares_usados = [];
 
     function mostrarSoftwaresHoje(idFuncionario) {
@@ -433,6 +431,7 @@
         };
 
     }
+    // -------------------------------------------------------------------------------------
 
     // Softwares usados Ontem --------------------------------------------------------------
     var vt_softwares_usados_ontem = [];
@@ -505,6 +504,79 @@
 
     }
     // -------------------------------------------------------------------------------------
+
+    // Softwares usados 2 Dias Atrás -------------------------------------------------------
+    var vt_softwares_usados_2DiasAtras = [];
+
+    function mostrarSoftwares2DiasAtras(idFuncionario) {
+
+        fetch(`/usuarios/mostrarSoftwares2DiasAtras/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    vt_softwares_usados_2DiasAtras = [];
+
+                    for (let index = 0; index < json.length; index++) {
+
+                        for (let i = 0; i < vt_softwares_registrados.length; i++) {
+
+                            var nomeAtual = vt_softwares_registrados[i];
+
+                            var nomeCerto = vt_softwares_registrados_nomes_certos[i];
+
+                            if (json[index].nomeSoftware == nomeAtual) {
+
+                                if (vt_softwares_usados_2DiasAtras.includes(nomeAtual)) {
+
+                                } else {
+                                    vt_softwares_usados_2DiasAtras.push(nomeAtual);
+
+                                    console.log(nomeCerto);
+                                }
+
+                            } else {
+
+                                if (vt_softwares_usados_2DiasAtras.includes('outros')) {
+
+                                } else {
+                                    vt_softwares_usados_2DiasAtras.push('outros');
+                                }
+                            };
+                        };
+
+                    };
+
+                    softwaresUsadosMostrarTela2DiasAtras();
+
+                });
+            } else {
+
+            }
+
+
+        });
+
+        return false;
+
+    }
+
+    function softwaresUsadosMostrarTela2DiasAtras() {
+
+        consumo_usado_2DiasAtras.innerHTML = `2 dias atrás: `;
+
+        for (let index = 0; index < vt_softwares_usados_2DiasAtras.length; index++) {
+
+            consumo_usado_2DiasAtras.innerHTML += ` <br>${vt_softwares_usados_2DiasAtras[index]}`;
+
+        };
+
+    }
+    // -------------------------------------------------------------------------------------
+
 
     function mostrarHorasUsadasHoje(idFuncionario) {
 
@@ -667,7 +739,10 @@
         mostrarHorasUsadasHoje(namePego);
         mostrarHorasUsadasOntem(namePego);
         mostrarHorasUsadas2DiasAtras(namePego);
+
         mostrarSoftwaresHoje(namePego);
+        mostrarSoftwaresOntem(namePego);
+        mostrarSoftwares2DiasAtras(namePego);
         // mostrarHorasUsadas3DiasAtras(namePego);
         // mostrarHorasUsadas4DiasAtras(namePego);
         // mostrarHorasUsadas5DiasAtras(namePego);

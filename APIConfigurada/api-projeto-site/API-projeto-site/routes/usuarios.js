@@ -1,7 +1,9 @@
 var express = require("express");
 var router = express.Router();
 var sequelize = require("../models").sequelize;
-const { QueryTypes } = require("sequelize");
+const {
+  QueryTypes
+} = require("sequelize");
 var Usuario = require("../models").Usuario;
 var Maquina = require("../models").Maquina;
 var Componente = require("../models").Componente;
@@ -51,13 +53,13 @@ router.post("/cadastrar", function (req, res, next) {
   console.log("Criando um usuário");
 
   Usuario.create({
-    nome: req.body.nome,
-    cargaHoraria: req.body.cargaHoraria,
-    fk_Chefe: req.body.fk_Chefe,
-    fk_Empresa: req.body.fk_Empresa,
-    email: req.body.email,
-    senha: req.body.senha,
-  })
+      nome: req.body.nome,
+      cargaHoraria: req.body.cargaHoraria,
+      fk_Chefe: req.body.fk_Chefe,
+      fk_Empresa: req.body.fk_Empresa,
+      email: req.body.email,
+      senha: req.body.senha,
+    })
     .then((resultado) => {
       console.log(`Registro criado: ${resultado}`);
       res.send(resultado);
@@ -80,8 +82,10 @@ router.post("/excluir", function (req, res, next) {
       //TABELA EQUIPE_FUNCIONARIO
 
       Equipe_Funcionario.destroy({
-        where: { fk_Funcionario: idFuncionario }
-      })
+          where: {
+            fk_Funcionario: idFuncionario
+          }
+        })
         .then((retorno) => {
           console.log(
             `Funcionário excluido da tabela Equipe_Funcionario. Qtd de registros excluidos: ${retorno}`
@@ -95,8 +99,10 @@ router.post("/excluir", function (req, res, next) {
       //TABELA Funcionario_Conquista
 
       Funcionario_Conquista.destroy({
-        where: { fk_Funcionario: idFuncionario }
-      })
+          where: {
+            fk_Funcionario: idFuncionario
+          }
+        })
         .then((retorno) => {
           console.log(
             `Funcionário excluido da tabela Funcionario_Conquista. Quantidade de registros excluidos: ${retorno}`
@@ -108,20 +114,22 @@ router.post("/excluir", function (req, res, next) {
           );
         });
 
-        // Tabela tempo Logado
-        TempoLogado.destroy({
-          where: { fk_Funcionario: idFuncionario }
+      // Tabela tempo Logado
+      TempoLogado.destroy({
+          where: {
+            fk_Funcionario: idFuncionario
+          }
         })
-          .then((retorno) => {
-            console.log(
-              `Funcionário excluido da tabela Tempo_Logado. Quantidade de registros excluidos: ${retorno}`
-            );
-          })
-          .catch((erro) => {
-            console.error(
-              `Erro ao excluir da tabela Tempo_Logados ${erro}`
-            );
-          });
+        .then((retorno) => {
+          console.log(
+            `Funcionário excluido da tabela Tempo_Logado. Quantidade de registros excluidos: ${retorno}`
+          );
+        })
+        .catch((erro) => {
+          console.error(
+            `Erro ao excluir da tabela Tempo_Logados ${erro}`
+          );
+        });
 
 
       // ----------------------------------------------------------------------------------------
@@ -131,7 +139,9 @@ router.post("/excluir", function (req, res, next) {
       console.log(instrucaoSql2);
 
       sequelize
-        .query(instrucaoSql2, { type: QueryTypes.SELECT })
+        .query(instrucaoSql2, {
+          type: QueryTypes.SELECT
+        })
 
         .then((componentes) => {
           identificadoresComponentes = [];
@@ -140,8 +150,10 @@ router.post("/excluir", function (req, res, next) {
           }
           //TABELA Historico_Uso
           Historico_Uso.destroy({
-            where: { fk_Componente: identificadoresComponentes }
-          })
+              where: {
+                fk_Componente: identificadoresComponentes
+              }
+            })
             .then((retorno) => {
               console.log(
                 `Funcionário excluido da tabela Historico_Uso.Quantidade de registros excluídos: ${retorno}`
@@ -152,7 +164,11 @@ router.post("/excluir", function (req, res, next) {
             });
 
           //TABELA Componente
-          Componente.destroy({ where: { idComponente: identificadoresComponentes } })
+          Componente.destroy({
+              where: {
+                idComponente: identificadoresComponentes
+              }
+            })
             .then((retorno) => {
               console.log(
                 `Funcionário excluido da tabela Componente. Quantidade de registros excluídos: ${retorno}`
@@ -172,13 +188,17 @@ router.post("/excluir", function (req, res, next) {
       console.log(instrucaoSql3);
 
       sequelize
-        .query(instrucaoSql3, { type: QueryTypes.SELECT })
+        .query(instrucaoSql3, {
+          type: QueryTypes.SELECT
+        })
         .then((maquina) => {
           maquina = maquina[0].idMaquina;
           //TABELA Historico_Uso_Software
           Historico_Uso_Software.destroy({
-            where: { fk_Maquina: maquina },
-          })
+              where: {
+                fk_Maquina: maquina
+              },
+            })
             .then((retorno) => {
               console.log(
                 `Funcionário excluido da tabela Historico_Uso_Software.Quantidade de registros apagados: ${retorno}`
@@ -186,8 +206,10 @@ router.post("/excluir", function (req, res, next) {
 
               //TABELA Maquina
               Maquina.destroy({
-                where: { fk_Funcionario: idFuncionario },
-              })
+                  where: {
+                    fk_Funcionario: idFuncionario
+                  },
+                })
                 .then((retorno) => {
                   console.log(
                     `Funcionário excluido da tabela Maquina. Quantidade de registros apagados: ${retorno}`
@@ -205,8 +227,10 @@ router.post("/excluir", function (req, res, next) {
 
           setTimeout(() => {
             Usuario.destroy({
-              where: { nomeFuncionario: nomeFuncionario },
-            })
+                where: {
+                  nomeFuncionario: nomeFuncionario
+                },
+              })
               .then((resultado) => {
                 console.log(`Funcionário excluido com sucesso: ${resultado}`);
                 res.status(200).send(resultado.message);
@@ -342,7 +366,31 @@ router.post("/mostrarSoftwaresOntem/:idFuncionario", function (req, res, next) {
       if (resultado.length > 0) {
         res.json(resultado); // transforma resposta em json
       } else {
-        
+
+      }
+    })
+    .catch((erro) => {
+      console.error(erro);
+      res.status(500).send(erro.message);
+    });
+});
+
+/* Softwares Usados 2 Dias Atrás*/
+router.post("/mostrarSoftwares2DiasAtras/:idFuncionario", function (req, res, next) {
+  let idFuncionario = req.params.idFuncionario;
+
+  let instrucaoSql = `select * from [dbo].[Historico_Uso_Software] join [dbo].[Maquina] on fk_Maquina = idMaquina join [dbo].[Software] on fk_Software = idSoftware where fk_funcionario = ${idFuncionario} and dataHora between DateADD(day, -3, Current_TimeStamp) and DateADD(day, -2, Current_TimeStamp)`;
+  console.log(instrucaoSql);
+
+  sequelize
+    .query(instrucaoSql, {
+      type: sequelize.QueryTypes.SELECT, // se não for usar models
+    })
+    .then((resultado) => {
+      if (resultado.length > 0) {
+        res.json(resultado); // transforma resposta em json
+      } else {
+
       }
     })
     .catch((erro) => {
@@ -360,7 +408,7 @@ router.post("/checkStatus/:idFuncionario", function (req, res, next) {
 	join Maquina mka on cpt.fk_Maquina = mka.idMaquina
 	join Funcionario fc on mka.fk_Funcionario = fc.idFuncionario
 	where dataHora between DateADD(day, -3, Current_TimeStamp) and getDate() and fc.idFuncionario =${idFuncionario}`;
-  
+
   console.log(instrucaoSql);
 
   sequelize
@@ -389,7 +437,7 @@ router.post("/onlineVerdeVermelho/:idFuncionario", function (req, res, next) {
 	join Maquina mka on cpt.fk_Maquina = mka.idMaquina
 	join Funcionario fc on mka.fk_Funcionario = fc.idFuncionario
 	where dataHora between DateADD(minute, -190, Current_TimeStamp) and getDate() and fc.idFuncionario =${idFuncionario}`;
-  
+
   console.log(instrucaoSql);
 
   sequelize
@@ -511,8 +559,9 @@ router.post("/ativarComponenteBD/:idComponente", function (req, res, next) {
 
 function retonarIdFuncionario(nomeFuncionario) {
   return sequelize.query(
-    `SELECT idFuncionario from Funcionario where nomeFuncionario = '${nomeFuncionario}'`,
-    { type: QueryTypes.SELECT }
+    `SELECT idFuncionario from Funcionario where nomeFuncionario = '${nomeFuncionario}'`, {
+      type: QueryTypes.SELECT
+    }
   );
 }
 
