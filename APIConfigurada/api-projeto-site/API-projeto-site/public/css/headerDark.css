@@ -118,7 +118,7 @@ body {
 
 .divLista ul {
     list-style: none;
-    width: 35vw;
+    width: 45vw;
     display: flex;
     justify-content: space-around;
 

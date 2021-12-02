@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/Yin-Yang-DevTime.png">
     <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/perfil_conquista.css">
     <link rel="stylesheet" href="./css/dash_funcs.css">
     <script type="text/javascript" src="funcoes.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
         integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./perfil.js"></script>
 
     <title>Dashboard Funcionários</title>
 
@@ -32,9 +34,8 @@
 
 </head>
 
-<body>
-    <div>
-
+<body >
+    <div>        
         <input id="caixa_selecao" type="checkbox">
         <label id="label_img_perfil" for="caixa_selecao">
             <div class="div_img_perfil_icone">
@@ -46,15 +47,15 @@
         <nav>
             <label for="caixa_selecao">
                 <img id="img_x" src="img/marca-x (1).png" alt="">
-            </label>
+            </label>                        
             <div class="div_img_perfil_info">
                 <img id="img_perfil_info" src="img/imgUsuario.jpg" alt="">
             </div>
             <div class="div_nome_usuario_perfil">
-                <b class="nome_usuario_perfil" id="b_usuario"> Ednaldo Pereira</b>
+                <b class="nome_usuario_perfil"><b id="b_usuario"></b></b>
             </div>
             <div class="div_nome_usuario_perfil">
-                <b class="nome_usuario_perfil">Nivel: 3</b>
+                <b class="nome_usuario_perfil">Nivel: <b id="nivel_user"></b> </b>
             </div>
             <div class="div_geral_pontos_devicon">
                 <div class="div_pontos_devicon">
@@ -62,34 +63,35 @@
                         <img class="img_pontos_dc" src="img/score.png" alt="">
                     </div>
                     <div class="div_texto_pontos_dc">
-                        <b> Pontos: 48.252</b>
-                    </div>
+                        <b>Pontos: <b id="qntdPontos"></b></b>
+                    </div>   
                 </div>
                 <div class="div_pontos_devicon">
                     <div>
                         <img class="img_pontos_dc" src="img/moeda.png" alt="">
                     </div>
                     <div class="div_texto_pontos_dc">
-                        <b> DevCoins: 5.252</b>
-                    </div>
+                        <b>DevCoins: <b id="qntdDevCoins"></b></b>
+                    </div>  
                 </div>
             </div>
+            <!-- AQUIIIIIIIIIIIIIIII -->
             <div class="div_nome_usuario_perfil">
                 <div class="div_geral_conquistas">
                     <div class="div_titulo_conquista"><b>Conquistas</b></div>
                     <div class="div_conquista_e_div_img div_nome_usuario_perfil">
-                        <div class="div_conquistas">
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
+                        <div id="divListaConquista" class="div_conquistas">
+                           
                         </div>
-                    </div>
-                    <div class="div_conquista_e_div_img div_nome_usuario_perfil">
-                        <div class="div_conquistas">
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
-                            <div class="div_img_conquistas"> <img src="" alt=""></div>
+
+                        <div class="div_conquistas_finalizar">
+                            <span>Digite o nome da conquista que deseja finalizar</span>
+                            <form id="form_finalizar" method="post" onsubmit="return finalizarConquista()">
+                            <input class="inpt_conquista_apagar" type="text" name="nomeConquista" id="input_nome_conquista" placeholder="Nome Conquista">
+                            <button class="btn_Finalizar">Finalizar</button>
+                            </form>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -98,15 +100,15 @@
     <div class="div_geral_cabecalho">
         <div class="div_a_img">
             <img class="img_logo_dev_time" src="img/Logo-DevTime.png" alt=""></a>
-        </div>
+        </div> 
         <div class="div_a_img">
             <div class="texto_cabecalho">
-                <b class="tela_selecionada"> Dashboard </b>
+                <a href="dashboard_funcs.html" class="a_cabecalho"><b> Dashboard </b></a>
             </div>
-        </div>
+        </div>         
         <div class="div_a_img">
             <div class="texto_cabecalho">
-                <a href="ranking.html" class="a_cabecalho"><b> Ranking </b></a>
+               <b class="tela_selecionada"> Ranking </b>
             </div>
         </div>
         <div class="div_a_img">
@@ -116,9 +118,9 @@
         </div>
         <div class="div_a_img">
             <div class="texto_cabecalho">
-                <a href="Login.html" class="a_cabecalho" onclick="logoff()"><b> Sair </b></a>
+                <a onclick="logoff()" class="a_cabecalho"><b> Sair </b></a>
             </div>
-        </div>
+        </div>        
     </div>
 
 
@@ -214,7 +216,7 @@
 
     console.log(`Usuario logado: ${usuarioEmail}`);
 
-    window.onload = chamargraficos();
+    window.onload = chamargraficos(),recuperar();
 
     function chamargraficos() {
         console.log("executei chamargraficos")

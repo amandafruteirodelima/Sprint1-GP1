@@ -437,7 +437,7 @@ body {
     }
 
     .cardServico {
-        height: 27vh;
+        height: 26vh;
         padding-bottom: 1vh;
     }
 
@@ -454,7 +454,7 @@ body {
 @media only screen and (min-width: 1024px){
 
     .balls {
-        top: 460px;
+        top: 520px;
         left: 460px;
     }
 
@@ -493,6 +493,7 @@ body {
 @media only screen and (min-width: 1280px){
 
     .balls {
+        top: 700px;
         left: 600px;
     }
 
@@ -531,9 +532,19 @@ body {
     }
 }
 
+@media only screen and (min-width: 1304px){
+    .image img{
+        width: 1360px;
+    }
+
+    .slide{
+        width: 1304px;
+    }
+}
+
 @media only screen and (min-width: 1356px){
     .image img{
-        width: 1366px;
+        width: 1356px;
     }
 
     .slide{
@@ -565,11 +576,21 @@ body {
 
     .balls{
         left: calc(149% - 1440px);
-        top: 650px;
     }
 
     .sloganDevTime{
         top: 34vh;
+    }
+
+    .cardServico{
+        height: 30vh;
+    }
+
+    .card{
+        height: 240px;
+    }
+    .card:hover{
+        height: 244px;
     }
 
 }

@@ -26,6 +26,7 @@
                 <ul>
                     <li><a class="li-select" href="Dashboard_adm.html">Dashboard</a></li>
                     <li><a class="li-comum" href="Ranking_adm.html">Ranking</a></li>
+                    <li><a class="li-comum" href="Cadastro_equipe.html">Equipes</a></li>
                     <li><a class="li-comum" href="Cadastro.html">Cadastro</a></li>
                     <li><a class="li-comum" href="Dashboard_selecao_componentes.html">Componentes</a></li>
                 </ul>
@@ -33,6 +34,7 @@
             <div class="divButton"><button><a class="li-comum" href="Login.html">Sair</a></button></div>
         </div>
     </div>
+
     <!--Fim Header-->
 
     <!-- Início da página -->
@@ -96,12 +98,11 @@
 
             <div class="box_horas_usadas_hoje">
 
-                <h2 class="tempo_usado">Tempo usado hoje</h2>
+                <h2 class="tempo_usado" style="margin-bottom: 15%;">Tempo usado hoje</h2>
 
                 <div class="organizadora">
 
-                    <h2 id="tempo_usado_hoje" class="tempo_usado2">0</h2>
-                    <h2 class="tempo_usado3">horas</h2>
+                    <h2 id="tempo_usado_hoje" class="tempo_usado2">0 horas</h2>
 
                 </div>
             </div>
@@ -112,151 +113,87 @@
 
                 <div class="organizadora_overflow">
 
-                    <h2 class="tempo_usado4">Ontem: 0 horas</h2>
-                    <h2 class="tempo_usado4">2 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">3 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">4 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">5 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">6 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">7 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">8 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">9 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">10 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">11 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">12 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">13 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">14 dias atrás: 0 horas</h2>
-                    <h2 class="tempo_usado4">15 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_1_dia_atras" class="tempo_usado4">Ontem: 0 horas</h2>
+                    <h2 id="tempo_usado_2_dia_atras" class="tempo_usado4">2 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_3_dia_atras" class="tempo_usado4">3 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_4_dia_atras" class="tempo_usado4">4 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_5_dia_atras" class="tempo_usado4">5 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_6_dia_atras" class="tempo_usado4">6 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_7_dia_atras" class="tempo_usado4">7 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_8_dia_atras" class="tempo_usado4">8 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_9_dia_atras" class="tempo_usado4">9 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_10_dia_atras" class="tempo_usado4">10 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_11_dia_atras" class="tempo_usado4">11 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_12_dia_atras" class="tempo_usado4">12 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_13_dia_atras" class="tempo_usado4">13 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_14_dia_atras" class="tempo_usado4">14 dias atrás: 0 horas</h2>
+                    <h2 id="tempo_usado_15_dia_atras" class="tempo_usado4">15 dias atrás: 0 horas</h2>
 
                 </div>
             </div>
         </div>
 
         <!-- Desempenho equipe (quando clicado) / Aplicativos Usados -->
+        <div class="div_options" id="div_softwares_usados" style="display: none;">
 
-        <div id="div_aplicativos_usados" class="div_tempo_logado" style="display: none;">
+            <div class="box_horas_usadas_hoje">
 
-            <!-- Divisória -->
-            <div class="div_divisora_alt" id="div_divisora_alt3"></div>
+                <h2 class="tempo_usado" style="margin-bottom: 8%;">Softwares usados hoje</h2>
 
-            <div class="div_data">
-                <h2 class="alt_title3">Aplicativos usados hoje:</h2>
+                <div class="organizadora">
 
-                <div class="organizadora_alt2">
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/Apache_NetBeans.png">
-                        <h4 class="alt_title5">2h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/vs-code.png">
-                        <h4 class="alt_title5">4h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/chrome.png">
-                        <h4 class="alt_title5">0.4h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
-                        <h4 class="alt_title5">5h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/spotify.png">
-                        <h4 class="alt_title5">2h</h4>
-                    </div>
+                    <h2 id="consumo_usado_hoje" class="tempo_usado2">
+                        VS Code <br>
+                        Apache <br>
+                        Chrome<br>
+                        Outros</h2>
 
                 </div>
             </div>
 
-            <!-- Divisória -->
-            <div class="div_divisora_alt"></div>
+            <div class="box_horas_usadas_quinze">
 
-            <div class="div_data">
+                <h2 class="tempo_usado">Softwares usados nos últimos quinze dias</h2>
 
-                <h2 class="alt_title3">Aplicativos usados na semana:</h2>
+                <div class="organizadora_overflow">
 
-                <div class="organizadora_alt2">
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/Apache_NetBeans.png">
-                        <h4 class="alt_title5">10h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/vs-code.png">
-                        <h4 class="alt_title5">12h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/chrome.png">
-                        <h4 class="alt_title5">4h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/youtube.png">
-                        <h4 class="alt_title5">2h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
-                        <h4 class="alt_title5">25h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/spotify.png">
-                        <h4 class="alt_title5">10h</h4>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Divisória -->
-            <div class="div_divisora_alt"></div>
-
-            <div class="div_data">
-                <h2 class="alt_title3">Aplicativos usados na quinzena</h2>
-
-                <div class="organizadora_alt2">
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/Apache_NetBeans.png">
-                        <h4 class="alt_title5">20h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/vs-code.png">
-                        <h4 class="alt_title5">30h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/chrome.png">
-                        <h4 class="alt_title5">8h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/youtube.png">
-                        <h4 class="alt_title5">3h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/Microsoft_Office_Teams.png">
-                        <h4 class="alt_title5">45h</h4>
-                    </div>
-
-                    <div class="quadrado3">
-                        <img class="img_quadrado" src="img/spotify.png">
-                        <h4 class="alt_title5">14h</h4>
-                    </div>
+                    <h2 id="consumo_usado_1_dia_atras" class="tempo_usado_alt">Ontem: <br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_2_dia_atras" class="tempo_usado_alt">2 dias atrás: <br>
+                        VS Code <br>
+                        Apache <br>
+                        Chrome<br>
+                        Outros</h2>
+                    <h2 id="consumo_usado_3_dia_atras" class="tempo_usado_alt">3 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_4_dia_atras" class="tempo_usado_alt">4 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_5_dia_atras" class="tempo_usado_alt">5 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_6_dia_atras" class="tempo_usado_alt">6 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_7_dia_atras" class="tempo_usado_alt">7 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_8_dia_atras" class="tempo_usado_alt">8 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_9_dia_atras" class="tempo_usado_alt">9 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_10_dia_atras" class="tempo_usado_alt">10 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_11_dia_atras" class="tempo_usado_alt">11 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_12_dia_atras" class="tempo_usado_alt">12 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_13_dia_atras" class="tempo_usado_alt">13 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_14_dia_atras" class="tempo_usado_alt">14 dias atrás:<br>
+                        Nenhum</h2>
+                    <h2 id="consumo_usado_15_dia_atras" class="tempo_usado_alt">15 dias atrás:<br>
+                        Nenhum</h2>
 
                 </div>
             </div>
-
         </div>
-
 
     </div>
 
@@ -277,7 +214,7 @@
 
     function aplicativos_usados() {
         div_options.style.display = "none";
-        div_aplicativos_usados.style.display = "block";
+        div_softwares_usados.style.display = "flex";
     }
 
     // NOVAS FUNCTIONS
@@ -286,7 +223,6 @@
         bemvindoNome();
         trazerFuncionariosOnline();
         trazerFuncionariosOnlineCard();
-        mostrarOnlineOffline();
 
         // ok = "img/checked.png";
         // notOk = "img/warning.png";
@@ -332,6 +268,7 @@
     // NOVAS FUNCTIONS
     function bemvindoNome() {
         h1_1.innerHTML = `BEM-VINDO ${sessionStorage.getItem('nome').toUpperCase()}`;
+
     }
 
     function trazerFuncionariosOnline() {
@@ -368,7 +305,65 @@
 
     }
 
-    function mostrarHorasUsadasHoje(idFuncionario) { //idFuncionario vem de trazerFuncionariosOnlineCard()
+    function onlineVerdeVermelho(idFuncionario) {
+
+        fetch(`/usuarios/onlineVerdeVermelho/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+
+                    document.getElementById(`circulo${idFuncionario}`).style.backgroundColor =
+                        "#00FB00";
+
+                });
+
+            } else {
+                document.getElementById(`circulo${idFuncionario}`).style.backgroundColor =
+                    "#fb0000";
+            }
+
+
+        });
+
+        return false;
+
+    }
+
+    function checkOkNotOk() {
+
+        fetch(`/usuarios/checkOkNotOk/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json);
+
+                    document.getElementById(`circulo${idFuncionario}`).style.backgroundColor =
+                        "#00FB00";
+
+                });
+
+            } else {
+                document.getElementById(`circulo${idFuncionario}`).style.backgroundColor =
+                    "#fb0000";
+            }
+
+
+        });
+
+        return false;
+
+    }
+
+    function mostrarHorasUsadasHoje(idFuncionario) {
 
         fetch(`/usuarios/mostrarHorasUsadasHoje/${idFuncionario}`, {
             method: "post"
@@ -385,17 +380,57 @@
                     var minutos = json.length;
 
                     if ((minutos / 60) < 1) {
-                        alert(`${minutos} minutos`);
-                    }
-                    else if (minutos / 60 >= 1) {
-                        
+
+                        tempo_usado_hoje.innerHTML = `${minutos} minutos`;
+
+                    } else if (minutos / 60 >= 1) {
+
                         var horas = parseInt(minutos / 60);
                         var minutosRestantes = (minutos % 60);
 
-                        alert(`${horas} horas e ${minutosRestantes} minutos`);
+                        tempo_usado_hoje.innerHTML = `${horas} hora(s) e ${minutosRestantes} minutos`;
                     }
 
-                    // tempo_usado_hoje.innerHTML = `${}`;
+                });
+
+            } else {
+                tempo_usado_hoje.innerHTML = `0 horas`;
+            }
+        });
+
+        return false;
+
+    }
+
+    // Mostrar as horas usadas ontem
+    function mostrarHorasUsadasOntem(idFuncionario) {
+
+        fetch(`/usuarios/mostrarHorasUsadasOntem/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    console.log(json.length);
+
+                    // não precisa de "for", pois o for está na outra function
+
+                    var minutos = json.length;
+
+                    if ((minutos / 60) < 1) {
+
+                        tempo_usado_1_dia_atras.innerHTML = `Ontem: ${minutos} minutos`;
+
+                    } else if (minutos / 60 >= 1) {
+
+                        var horas = parseInt(minutos / 60);
+                        var minutosRestantes = (minutos % 60);
+
+                        tempo_usado_1_dia_atras.innerHTML =
+                            `Ontem: ${horas} hora(s) e ${minutosRestantes} minutos`;
+                    }
 
                 });
 
@@ -406,9 +441,10 @@
 
     }
 
-    function mostrarOnlineOffline() {
+    // Mostrar as horas usadas 2 dias atrás
+    function mostrarHorasUsadas2DiasAtras(idFuncionario) {
 
-        fetch(`/usuarios/mostrarOnlineOffline/${idFuncionario}`, {
+        fetch(`/usuarios/mostrarHorasUsadas2DiasAtras/${idFuncionario}`, {
             method: "post"
         }).then(resposta => {
 
@@ -416,17 +452,23 @@
 
                 resposta.json().then(json => {
 
-                    console.log(json);
+                    console.log(json.length);
 
-                    //Mostrar cada funcionário na tela
+                    // não precisa de "for", pois o for está na outra function
 
-                    for (let index = 0; index < json.length; index++) {
+                    var minutos = json.length;
 
-                        // document.getElementById(`circulo${json[index].idFuncionario}`).style
-                        //     .backgroundColor = "#00FB00";
+                    if ((minutos / 60) < 1) {
 
-                        console.log(`${json[index].idFuncionario} online`);
+                        tempo_usado_2_dia_atras.innerHTML = `2 dias atrás: ${minutos} minutos`;
 
+                    } else if (minutos / 60 >= 1) {
+
+                        var horas = parseInt(minutos / 60);
+                        var minutosRestantes = (minutos % 60);
+
+                        tempo_usado_2_dia_atras.innerHTML =
+                            `2 dias atrás: ${horas} hora(s) e ${minutosRestantes} minutos`;
                     }
 
                 });
@@ -454,13 +496,14 @@
 
                     for (let index = 0; index < json.length; index++) {
 
-                        div_desempenho_pai.innerHTML += `<div onclick="abrir_info(this.id)" name="12" id="${json[index].nomeFuncionario}" class="div_desempenho_content">
+                        div_desempenho_pai.innerHTML += `<div onclick="abrir_info(this.id); mostrarHorasUsadasHojeGetter(${json[index].idFuncionario});" id="${json[index].nomeFuncionario}" class="div_desempenho_content">
                         <img id="check_1" class="check" src="img/checked.png" alt="">
                         <img class="person" src="img/userPink.png" alt="userPink.png icon">
                         <h3>${json[index].nomeFuncionario}</h3>
                         </div>`;
 
-                        mostrarHorasUsadasHoje(json[index].idFuncionario);
+                        onlineVerdeVermelho(json[index].idFuncionario);
+
                     }
 
                 });
@@ -472,5 +515,27 @@
 
         return false;
 
+    }
+
+    // Ativa as horas usadas
+
+    function mostrarHorasUsadasHojeGetter(namePego) {
+
+        mostrarHorasUsadasHoje(namePego);
+        mostrarHorasUsadasOntem(namePego);
+        mostrarHorasUsadas2DiasAtras(namePego);
+        // mostrarHorasUsadas3DiasAtras(namePego);
+        // mostrarHorasUsadas4DiasAtras(namePego);
+        // mostrarHorasUsadas5DiasAtras(namePego);
+        // mostrarHorasUsadas6DiasAtras(namePego);
+        // mostrarHorasUsadas7DiasAtras(namePego);
+        // mostrarHorasUsadas8DiasAtras(namePego);
+        // mostrarHorasUsadas9DiasAtras(namePego);
+        // mostrarHorasUsadas10DiasAtras(namePego);
+        // mostrarHorasUsadas11DiasAtras(namePego);
+        // mostrarHorasUsadas12DiasAtras(namePego);
+        // mostrarHorasUsadas13DiasAtras(namePego);
+        // mostrarHorasUsadas14DiasAtras(namePego);
+        // mostrarHorasUsadas15DiasAtras(namePego);
     }
 </script>

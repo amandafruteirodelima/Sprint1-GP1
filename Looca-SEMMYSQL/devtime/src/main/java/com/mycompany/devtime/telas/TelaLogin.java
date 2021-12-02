@@ -210,7 +210,7 @@ public class TelaLogin extends javax.swing.JFrame {
                 funcionarioDaVez = funcionario.get(i);
             }
 
-            if (funcionarioDaVez.getEmail().equals(email)
+            if (funcionarioDaVez!= null && funcionarioDaVez.getEmail().equals(email)
                     && funcionarioDaVez.getSenha().equals(senha)) {
                 
                 funcionarioEntity.setIdFuncionario(funcionarioDaVez.getIdFuncionario());

@@ -215,29 +215,11 @@ h2 {
     border-style: solid;
 }
 
-.tempo_usado {
-    color: rgb(255, 255, 255);
-    font-size: 120%;
-    font-family: 'Poppins-Bold';
-    margin: 0;
-    margin-top: 2%;
-}
-
 .tempo_usado2 {
     color: rgb(255, 255, 255);
-    font-size: 500%;
+    font-size: 200%;
     font-family: 'Poppins-Bold';
     margin: 0;
-    margin-top: 70%;
-    margin-right: 5%;
-}
-
-.tempo_usado3 {
-    color: rgb(255, 255, 255);
-    font-size: 120%;
-    font-family: 'Poppins-Bold';
-    margin: 0;
-    margin-top: 110%;
 }
 
 .organizadora_overflow {
@@ -252,14 +234,30 @@ h2 {
 
 .tempo_usado4 {
     color: rgb(255, 255, 255);
-    font-size: 120%;
+    font-size: 110%;
     font-family: 'Poppins-Bold';
     margin: 0;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 5%;
-    width: 250px;
+    width: 350px;
     height: 50px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+}
+
+.tempo_usado_alt {
+    color: rgb(255, 255, 255);
+    font-size: 110%;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5%;
+    width: 350px;
+    height: auto;
     border-radius: 5px;
     border-width: 2px;
     border-color: rgb(255, 255, 255);
@@ -366,7 +364,7 @@ h2 {
 }
 
 .img_option {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 15%;
     height: 40%;
 }
