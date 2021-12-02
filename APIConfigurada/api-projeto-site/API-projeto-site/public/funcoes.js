@@ -8,7 +8,7 @@ function redirecionar_login() {
 
 function verificar_autenticacao() {
     login_usuario = sessionStorage.login_usuario_meuapp;
-    nome_usuario = sessionStorage.nome_usuario_meuapp;
+    nome_usuario = sessionStorage.getItem('nome');
     idFuncionario = sessionStorage.idFuncionario;
     devCoinFuncionario = sessionStorage.devCoinFuncionario;
     pontosFuncionario = sessionStorage.pontosFuncionario;

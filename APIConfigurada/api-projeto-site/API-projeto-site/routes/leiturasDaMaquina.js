@@ -7,17 +7,17 @@ var env = process.env.NODE_ENV || 'development';
 
 // Processador
 
-router.get('/processadorultimas/:usuarioEmail', function(req, res, next) {
-	
-    const limite_linhas = 7;
+router.get('/processadorultimas/:usuarioEmail', function (req, res, next) {
 
-    var usuarioEmail = req.params.usuarioEmail;
+	const limite_linhas = 7;
 
-    console.log(`Recuperando dados do Processador da Maquina: ${usuarioEmail}`);
+	var usuarioEmail = req.params.usuarioEmail;
 
-    let sql = "";
+	console.log(`Recuperando dados do Processador da Maquina: ${usuarioEmail}`);
 
-    if (env == 'dev') {
+	let sql = "";
+
+	if (env == 'dev') {
 		instrucaoSql = `select
         nomeComponente, 
 		consumo, 
@@ -32,9 +32,9 @@ router.get('/processadorultimas/:usuarioEmail', function(req, res, next) {
         ON (Componente.idComponente = Historico_Uso.fk_componente)
         where nomeComponente = 'CPU' and Funcionario.email = '${usuarioEmail}'
 		order by datahora desc limit ${limite_linhas}`;
-    }
-    else if (env == 'production') {
-        instrucaoSql = `select top ${limite_linhas}
+	}
+	else if (env == 'production') {
+		instrucaoSql = `select top ${limite_linhas}
 		funcionario.email,
         Componente.nomeComponente,
         Componente.capacidade, 
@@ -50,32 +50,32 @@ router.get('/processadorultimas/:usuarioEmail', function(req, res, next) {
         ON (Componente.idComponente = Historico_Uso.fk_componente)
         where nomeComponente = 'CPU' and Funcionario.email = '${usuarioEmail}'
 		order by datahora desc`;
-    }
-    else {
-        console.log("Erro ao buscar dados da CPU !!")
-    }
+	}
+	else {
+		console.log("Erro ao buscar dados da CPU !!")
+	}
 
 	sequelize.query(instrucaoSql, {
 		model: Historico_Uso,
-		mapToModel: true 
+		mapToModel: true
 	})
-	.then(resultado => {
-		console.log(`Encontrados: ${resultado.length}`);
-		res.json(resultado);
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-	});
+		.then(resultado => {
+			console.log(`Encontrados: ${resultado.length}`);
+			res.json(resultado);
+		}).catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
 });
 
 
-router.get('/processador/:usuarioEmail', function(req, res, next) {
+router.get('/processador/:usuarioEmail', function (req, res, next) {
 	console.log('Recuperando CPU');
-	
+
 	var usuarioEmail = req.params.usuarioEmail;
-	
+
 	let instrucaoSql = "";
-	
+
 	if (env == 'dev') {
 		instrucaoSql = `
 		select 
@@ -108,31 +108,31 @@ router.get('/processador/:usuarioEmail', function(req, res, next) {
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}
-	
+
 	console.log(instrucaoSql);
-	
+
 	sequelize.query(instrucaoSql, { type: sequelize.QueryTypes.SELECT })
-	.then(resultado => {
-		res.json(resultado[0]);
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-	});
+		.then(resultado => {
+			res.json(resultado[0]);
+		}).catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
 });
 
 // RAM
 
-router.get('/ramultimas/:usuarioEmail', function(req, res, next) {
-	
-    const limite_linhas = 7;
+router.get('/ramultimas/:usuarioEmail', function (req, res, next) {
 
-    var usuarioEmail = req.params.usuarioEmail;
+	const limite_linhas = 7;
 
-    console.log(`Recuperando dados do Processador da Maquina: ${usuarioEmail}`);
+	var usuarioEmail = req.params.usuarioEmail;
 
-    let sql = "";
+	console.log(`Recuperando dados do Processador da Maquina: ${usuarioEmail}`);
 
-    if (env == 'dev') {
+	let sql = "";
+
+	if (env == 'dev') {
 		instrucaoSql = `select
         nomeComponente, 
 		consumo, 
@@ -147,9 +147,9 @@ router.get('/ramultimas/:usuarioEmail', function(req, res, next) {
         ON (Componente.idComponente = Historico_Uso.fk_componente)
         where nomeComponente = 'RAM' and Funcionario.email = '${usuarioEmail}'
 		order by datahora desc limit ${limite_linhas}`;
-    }
-    else if (env == 'production') {
-        instrucaoSql = `select top ${limite_linhas}
+	}
+	else if (env == 'production') {
+		instrucaoSql = `select top ${limite_linhas}
 		email, 
 		nomeComponente, 
 		capacidade, 
@@ -165,31 +165,31 @@ router.get('/ramultimas/:usuarioEmail', function(req, res, next) {
         ON (Componente.idComponente = Historico_Uso.fk_componente)
         where nomeComponente = 'RAM' and Funcionario.email = '${usuarioEmail}'
 		order by datahora desc`;
-    }
-    else {
-        console.log("Erro ao buscar dados da RAM !!")
-    }
+	}
+	else {
+		console.log("Erro ao buscar dados da RAM !!")
+	}
 
 	sequelize.query(instrucaoSql, {
 		model: Historico_Uso,
-		mapToModel: true 
+		mapToModel: true
 	})
-	.then(resultado => {
-		console.log(`Encontrados: ${resultado.length}`);
-		res.json(resultado);
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-	});
+		.then(resultado => {
+			console.log(`Encontrados: ${resultado.length}`);
+			res.json(resultado);
+		}).catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
 });
 
-router.get('/ram/:usuarioEmail', function(req, res, next) {
+router.get('/ram/:usuarioEmail', function (req, res, next) {
 	console.log('Recuperando RAM');
-	
+
 	var usuarioEmail = req.params.usuarioEmail;
-	
+
 	let instrucaoSql = "";
-	
+
 	if (env == 'dev') {
 		instrucaoSql = `
 		select 
@@ -224,194 +224,143 @@ router.get('/ram/:usuarioEmail', function(req, res, next) {
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}
-	
+
 	console.log(instrucaoSql);
-	
+
 	sequelize.query(instrucaoSql, { type: sequelize.QueryTypes.SELECT })
-	.then(resultado => {
-		res.json(resultado[0]);
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-	});
+		.then(resultado => {
+			res.json(resultado[0]);
+		}).catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
 });
 
 
 // DISCO
 
-router.get('/discoultimas/:usuarioEmail', function(req, res, next) {
-	
-    const limite_linhas = 7;
+router.get('/disco/:quantidadeDisco', function (req, res, next) {
+	console.log('Recuperando RAM');
 
-    var usuarioEmail = req.params.usuarioEmail;
+	let quantidadeDisco = req.params.quantidadeDisco;
 
-    console.log(`Recuperando dados do Processador da Maquina: ${usuarioEmail}`);
+	let instrucaoSql = "";
 
-    let sql = "";
-
-    if (env == 'dev') {
-		instrucaoSql = `select
-        nomeComponente, 
-		consumo, 
-		dataHora, 
-		DATE_FORMAT(dataHora,'%H:%i:%s')
-		FROM Funcionario
-		JOIN Maquina
-		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
-		JOIN Componente
-		ON (Maquina.idMaquina = Componente.fk_Maquina)
-		INNER JOIN Historico_Uso
-        ON (Componente.idComponente = Historico_Uso.fk_componente)
-        where nomeComponente = 'RAM' and Funcionario.email = '${usuarioEmail}'
-		order by datahora desc limit ${limite_linhas}`;
-    }
-    else if (env == 'production') {
-        instrucaoSql = `
-		select top ${limite_linhas}
-		idComponente,
-        nomeComponente,
-		descricao, 
-		consumo,
+	if (env == 'dev') {
+		instrucaoSql = ``;
+	} else if (env == 'production') {
+		instrucaoSql = `
+		select top ${quantidadeDisco}
+		nomeComponente,
+		descricao,
 		capacidade,
+		consumo,
 		dataHora,
 		FORMAT(dataHora,'%H:%m:%s') as dataFormatada
 		FROM Funcionario
-		INNER JOIN Maquina
+		JOIN Maquina
 		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
-		INNER JOIN Componente
+		JOIN Componente
 		ON (Maquina.idMaquina = Componente.fk_Maquina)
-		INNER JOIN Historico_Uso
-        ON (Componente.idComponente = Historico_Uso.fk_componente)
-        where nomeComponente = 'DISCO' and Funcionario.email =  '${usuarioEmail}'
-		order by datahora desc`;
-    }
-    else {
-        console.log("Erro ao buscar dados da RAM !!")
-    }
+		JOIN [dbo].[Historico_Uso]
+		on componente.idComponente = historico_uso.fk_Componente
+		where fk_Funcionario = 6 AND nomeComponente='DISCO' 
+		order by dataHora desc`;
+	} else {
+		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
+	}
+
+	console.log(instrucaoSql);
 
 	sequelize.query(instrucaoSql, {
 		model: Historico_Uso,
-		mapToModel: true 
+		mapToModel: true
 	})
-	.then(resultado => {
-		console.log(`Encontrados: ${resultado.length}`);
-		res.json(resultado);
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-	});
+		.then(resultado => {
+			console.log(`Encontrados: ${resultado.length}`);
+			res.json(resultado);
+		}).catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
 });
 
+router.get('/temporeal/:idFuncionario', function (req, res, next) {
 
-router.get('/disco/:usuarioEmail', function(req, res, next) {
-	console.log('Recuperando RAM');
-	 
-	var usuarioEmail = req.params.usuarioEmail;
-	
+	let idFuncionario = req.params.idFuncionario;
+
 	let instrucaoSql = "";
-	
+
 	if (env == 'dev') {
 		instrucaoSql = `
-		select 
-		nomeComponente,
-		consumo,
-		capacidade, 
-		dataHora,
-		DATE_FORMAT(data_leitura,'%H:%i:%s') as momento_grafico, 
-		email
+		select *
+		FROM [dbo].[Funcionario]
+		JOIN [dbo].[Tempo_Logado]
+		ON Funcionario.idFuncionario = [dbo].[Tempo_Logado].fk_Funcionario
+       where dia between DateADD(day, -1, Current_TimeStamp) 
+	   and getDate() and fk_Funcionario = '${idFuncionario}'`;
+	} else if (env == 'production') {
+		instrucaoSql = `
+		select
+		dia,
+		FORMAT(dia,'%H:%m:%s') as dataFormatada
+		FROM [dbo].[Funcionario]
+		JOIN [dbo].[Tempo_Logado]
+		ON Funcionario.idFuncionario = [dbo].[Tempo_Logado].fk_Funcionario
+       where dia between DateADD(minute, -200, Current_TimeStamp) 
+	   and getDate() and fk_Funcionario = ${idFuncionario}`;
+	} else {
+		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
+	}
+
+	console.log(instrucaoSql);
+
+	sequelize.query(instrucaoSql, { type: sequelize.QueryTypes.SELECT })
+		.then(resultado => {
+			res.json(resultado[0]);
+		}).catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
+});
+
+router.get('/qtdcomponentedisco/:idFuncionario', function (req, res, next) {
+
+	let idFuncionario = req.params.idFuncionario;
+
+	let instrucaoSql = "";
+
+	if (env == 'dev') {
+		instrucaoSql = `
+		select COUNT(*) as quantidade
 		FROM Funcionario
 		JOIN Maquina
 		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
 		JOIN Componente
 		ON (Maquina.idMaquina = Componente.fk_Maquina)
-		INNER JOIN Historico_Uso
-        ON (Componente.idComponente = Historico_Uso.fk_componente)
-        where nomeComponente = 'DISCO' and Funcionario.email = '${usuarioEmail}'
-		order by id desc limit 1`;
+		where idFuncionario= ${idFuncionario} and nomeComponente= 'DISCO'`;
 	} else if (env == 'production') {
 		instrucaoSql = `
-		select top 1 
-		nomeComponente,
-		consumo, 
-		capacidade
-		FROM [dbo].[Funcionario]
-		JOIN [dbo].[Maquina]
-		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
-		JOIN [dbo].[Componente]
-		ON (Maquina.idMaquina = Componente.fk_Maquina)
-		INNER JOIN Historico_Uso
-        ON (Componente.idComponente = Historico_Uso.fk_componente)
-        where nomeComponente = 'DISCO' and Funcionario.email = '${usuarioEmail}'
-		order by datahora desc`;
-	} else {
-		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
-	}
-	
-	console.log(instrucaoSql);
-	
-	sequelize.query(instrucaoSql, { type: sequelize.QueryTypes.SELECT })
-	.then(resultado => {
-		res.json(resultado[0]);
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-	});
-});
-
-router.get('/temporeal/:usuarioEmail', function(req, res, next) {
-	console.log('Recuperando tempo Real');
-	var usuarioEmail = req.params.usuarioEmail;
-	
-	let instrucaoSql = "";
-	
-	if (env == 'dev') {
-		instrucaoSql = `
-		select 
-		nomeComponente,
-		consumo,
-		capacidade, 
-		dataHora,
-		DATE_FORMAT(data_leitura,'%H:%i:%s') as momento_grafico, 
-		email
+		select COUNT(*) as quantidade
 		FROM Funcionario
 		JOIN Maquina
 		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
 		JOIN Componente
 		ON (Maquina.idMaquina = Componente.fk_Maquina)
-		INNER JOIN Historico_Uso
-        ON (Componente.idComponente = Historico_Uso.fk_componente)
-        where nomeComponente = 'DISCO' and Funcionario.email = '${usuarioEmail}'
-		order by id desc limit 1`;
-	} else if (env == 'production') {
-		instrucaoSql = `
-		select top 1 
-		nomeComponente,
-		consumo, 
-		capacidade,
-		dataHora,
-		FORMAT(dataHora,'%H:%m') as momento_grafico
-		FROM [dbo].[Funcionario]
-		JOIN [dbo].[Maquina]
-		ON (Funcionario.idFuncionario = Maquina.fk_Funcionario)
-		JOIN [dbo].[Componente]
-		ON (Maquina.idMaquina = Componente.fk_Maquina)
-		INNER JOIN Historico_Uso
-        ON (Componente.idComponente = Historico_Uso.fk_componente)
-        where Funcionario.email = '${usuarioEmail}'
-		order by Convert(DATETIME, dataHora, -10) desc`;
+		where idFuncionario= ${idFuncionario} and nomeComponente= 'DISCO'`;
 	} else {
 		console.log("\n\n\n\nVERIFIQUE O VALOR DE LINHA 1 EM APP.JS!\n\n\n\n")
 	}
-	
+
 	console.log(instrucaoSql);
-	
+
 	sequelize.query(instrucaoSql, { type: sequelize.QueryTypes.SELECT })
-	.then(resultado => {
-		res.json(resultado[0]);
-	}).catch(erro => {
-		console.error(erro);
-		res.status(500).send(erro.message);
-	});
+		.then(resultado => {
+			res.json(resultado[0]);
+		}).catch(erro => {
+			console.error(erro);
+			res.status(500).send(erro.message);
+		});
 });
 
 module.exports = router;
