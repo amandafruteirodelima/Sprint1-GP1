@@ -8,10 +8,21 @@ conseguir rodar normalmente
 
 Containers
 
+Subir assistente:
+
+scp -i CH2210202101211002.pem ./assistenteAplicacaoCli.sh ubuntu@ec2-52-207-248-57.compute-1.amazonaws.com:/home/ubuntu/assistenteAplicacaoCli.sh
+
+scp -i CH2210202101211002.pem ./assistenteJframe.sh ubuntu@ec2-52-207-248-57.compute-1.amazonaws.com:/home/ubuntu/assistenteJframe.sh
+
+scp -i CH2210202101211002.pem ./assistenteJframeSemMySql.sh ubuntu@ec2-52-207-248-57.compute-1.amazonaws.com:/home/ubuntu/assistenteJframeSemMySql.sh
 
 ----------------------------------
+
+Comandos network:
+
+
 Subir um arquivo no docker pela Ec2:
-docker cp monitoramento.jar ContainerJava:/home/monitoramento.jar
+docker cp nomeArquivoQueAssistenteInstalou ContainerJava:/home/nomeArquivoQueAssistenteInstalou 
 
 Criar um Container:
 1°Baixar imagem 
@@ -23,13 +34,14 @@ sudo docker run -it -p 8080:8080 --name ConteinerNome nomeDaimagem
 
 
 Ligar um container:
-sudo docker start ConteinerBD
+sudo docker start ConteinerBD ContainerJava
 
 Entrar em um Container:
 sudo docker exec -it ConteinerBD bash
+sudo docker exec -it ContainerJava bash
 
 Desligar um conteiner:
-sudo docker stop ConteinerBD
+sudo docker stop ConteinerBD ContainerJava
 
 Sair de Conteiner:
 exit
