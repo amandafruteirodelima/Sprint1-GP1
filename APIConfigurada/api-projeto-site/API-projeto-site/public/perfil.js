@@ -150,8 +150,3 @@ function finalizarConquista(){
 
         return false;
 }
-
-
-
-
-z
