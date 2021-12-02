@@ -11,8 +11,8 @@ import logging.LogErro;
 
 public class IntegracaoSlack {
 
-    private String webHooksURL = "https://hooks.slack.com/services/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";
-    private String token = "xoxb-2750374347075-2762998716865-lA34mrnzTeB1RkUma3mP0yU5";
+    private String webHooksURL = "https://hooks.slack.com/services/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";
+    private String token = "xoxb-2750374347075-2762998716865-cQwcWCBDuk6FMP08ey8PMUBV";
     private String canalSlack = "historico-registro";
 
     LogErro erro = new LogErro();
