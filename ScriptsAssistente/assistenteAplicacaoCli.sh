@@ -103,16 +103,13 @@ fi
 
 echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Olá novamente Usuário! Serei seu assistente para instalação da aplicação da DevTime!"
 sleep 1
-echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Vou verificar se voê já possui nossa aplicação! Aguarde um momento porfavor....;"
-cd /home/ubuntu
+echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Você já possui nossa aplicação?(s/n)"
 
-if [ -f /home/ubuntu/devtime-cli-8.5-jar-with-dependencies.jar ]; then echo 'Existe'; else echo 'Não Existe';fi
+read inst10
 
-
-
-if [ $? = 'Não Existe' ]
+if [ \"$inst10\" == \"n\"  ]
     then
-    echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Não encontrei o arquivo em sua máquina."
+    echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Okay, vi que você não possui nossa aplicação."
 
     echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Deseja instalar nossa aplicação?(s/n)" 
 
@@ -143,7 +140,7 @@ if [ $? = 'Não Existe' ]
     cd Sprint1-GP1
 cd MonitoramentoJava
     
-    mv devtime-cli-8.5-jar-with-dependencies /home/ubuntu
+    mv devtime-cli-8.5-jar-with-dependencies.jar /home/ubuntu
     sleep 2
     cd ..
 cd ..

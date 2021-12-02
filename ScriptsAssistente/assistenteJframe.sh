@@ -103,16 +103,14 @@ fi
 
 echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Olá novamente Usuário! Serei seu assistente para instalação da aplicação da DevTime!"
 sleep 1
-echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Vou verificar se você já possui nossa aplicação! Aguarde um momento porfavor....;"
-cd /home/ubuntu
+echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Vou já possui nossa aplicação?(s/n)"
 
-find devtime-8.5-jar-with-dependencies.jar 
+read inst9
 
+if [ \"$inst9\" == \"n\" ]
 
-
-if [ $? != 'devtime-8.5-jar-with-dependencies.jar' ]
     then
-    echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Não encontrei o arquivo em sua máquina."
+    echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Okay, vi que você não possui nossa aplicação."
 
     echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Deseja instalar nossa aplicação?(s/n)" 
 
@@ -152,7 +150,7 @@ if [ $? != 'devtime-8.5-jar-with-dependencies.jar' ]
      else
 
      echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Okay, não irei instalar a nossa aplicação. Até mais Dev!"
-    exit
+   exit
      fi
 
 else
