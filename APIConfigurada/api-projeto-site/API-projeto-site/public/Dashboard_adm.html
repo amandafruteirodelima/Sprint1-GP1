@@ -147,7 +147,6 @@
                         Apache <br>
                         Chrome<br>
                         Outros</h2>
-
                 </div>
             </div>
 
@@ -202,6 +201,16 @@
 </html>
 
 <script>
+    var vt_softwares_registrados = ['chrome', 'netbeans64', 'code', 'git - bash', 'mysqld', 'opera', 'msedge',
+        'notepad++', 'idea64'
+    ];
+
+    var vt_softwares_registrados_nomes_certos = ['Google Chrome', 'Apache NetBeans', 'VS Code', 'Git Bash',
+        'MySQL Workbench',
+        'Opera Browser', 'Microsoft Edge',
+        'Notepad++', 'IntelliJ IDEA'
+    ];
+
     // Código sendo preparado para receber APIs
 
     // NOVAS COISAS
@@ -262,7 +271,7 @@
     function go_back() {
         div_options.style.display = "flex";
         div_tempo_logado.style.display = "none";
-        div_aplicativos_usados.style.display = "none";
+        div_softwares_usados.style.display = "none";
     }
 
     // NOVAS FUNCTIONS
@@ -291,6 +300,8 @@
                         <h3>${json[index].nomeFuncionario}</h3>
                         <div class="circulo" id="circulo${json[index].idFuncionario}"></div>
                         </div>`;
+
+                        var idEnviado = json[index].idFuncionario;
 
                     }
 
@@ -334,9 +345,11 @@
 
     }
 
-    function checkOkNotOk() {
+    var vt_softwares_usados = [];
 
-        fetch(`/usuarios/checkOkNotOk/${idFuncionario}`, {
+    function mostrarSoftwaresHoje(idFuncionario) {
+
+        fetch(`/usuarios/mostrarSoftwaresHoje/${idFuncionario}`, {
             method: "post"
         }).then(resposta => {
 
@@ -344,22 +357,62 @@
 
                 resposta.json().then(json => {
 
-                    console.log(json);
+                    vt_softwares_usados = [];
 
-                    document.getElementById(`circulo${idFuncionario}`).style.backgroundColor =
-                        "#00FB00";
+                    for (let index = 0; index < json.length; index++) {
+
+                        for (let i = 0; i < vt_softwares_registrados.length; i++) {
+
+                            var nomeAtual = vt_softwares_registrados[i];
+
+                            var nomeCerto = vt_softwares_registrados_nomes_certos[i];
+
+                            if (json[index].nomeSoftware == nomeAtual) {
+
+                                if (vt_softwares_usados.includes(nomeAtual)) {
+
+                                } else {
+                                    vt_softwares_usados.push(nomeAtual);
+
+                                    console.log(nomeCerto);
+                                }
+
+                                // console.log(nomeAtual);
+                            } else {
+
+                                if (vt_softwares_usados.includes('outros')) {
+
+                                } else {
+                                    vt_softwares_usados.push('outros');
+                                }
+                            };
+                        };
+
+                    };
+
+                    softwaresUsadosMostrarTela();
 
                 });
-
             } else {
-                document.getElementById(`circulo${idFuncionario}`).style.backgroundColor =
-                    "#fb0000";
+
             }
 
 
         });
 
         return false;
+
+    }
+
+    function softwaresUsadosMostrarTela() {
+
+        consumo_usado_hoje.innerHTML = ``;
+
+        for (let index = 0; index < vt_softwares_usados.length; index++) {
+
+            consumo_usado_hoje.innerHTML += `${vt_softwares_usados[index]} <br>`;
+
+        };
 
     }
 
@@ -524,6 +577,7 @@
         mostrarHorasUsadasHoje(namePego);
         mostrarHorasUsadasOntem(namePego);
         mostrarHorasUsadas2DiasAtras(namePego);
+        mostrarSoftwaresHoje(namePego);
         // mostrarHorasUsadas3DiasAtras(namePego);
         // mostrarHorasUsadas4DiasAtras(namePego);
         // mostrarHorasUsadas5DiasAtras(namePego);
