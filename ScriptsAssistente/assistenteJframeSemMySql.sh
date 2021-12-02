@@ -141,7 +141,7 @@ if [ $? != 'devtime-8.5-jar-with-dependencies.jar' ]
     ubuntu!"
     
     cd Sprint1-GP1
-	cd MonitoramentoJframe
+	cd MonitoramentoJframeSemMysql
     
     mv devtime-8.5-jar-with-dependencies.jar /home/ubuntu
 	cd ..

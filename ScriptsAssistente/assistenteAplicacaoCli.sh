@@ -140,11 +140,13 @@ if [ $? = 'Não Existe' ]
     echo  "$(tput setaf 10)[devBot (^O^)/]:$(tput setaf 7) Agora estarei instalando a aplicação em seu 
     ubuntu!"
     
-    cd /home/ubuntu/Sprint1-GP1/MonitoramentoJava
+    cd Sprint1-GP1
+cd MonitoramentoJava
     
     mv devtime-cli-8.5-jar-with-dependencies /home/ubuntu
     sleep 2
-    cd /home/ubuntu
+    cd ..
+cd ..
     rm -r Sprint1-GP1 -f
 
      else
