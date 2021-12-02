@@ -222,6 +222,13 @@ h2 {
     margin: 0;
 }
 
+.tempo_usado_grande {
+    color: rgb(255, 255, 255);
+    font-size: 220%;
+    font-family: 'Poppins-Bold';
+    margin: 0;
+}
+
 .organizadora_overflow {
     margin-top: 5%;
     height: 70%;

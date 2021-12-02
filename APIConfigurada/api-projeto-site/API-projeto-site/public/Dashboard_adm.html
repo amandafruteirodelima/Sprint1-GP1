@@ -101,7 +101,7 @@
 
                 <div class="organizadora">
 
-                    <h2 id="tempo_usado_hoje" class="tempo_usado2">0 horas</h2>
+                    <h2 id="tempo_usado_hoje" class="tempo_usado_grande">0 horas</h2>
 
                 </div>
             </div>
@@ -155,7 +155,7 @@
 
                 <div class="organizadora_overflow">
 
-                    <h2 id="consumo_usado_1_dia_atras" class="tempo_usado_alt">Ontem: <br>
+                    <h2 id="consumo_usado_ontem" class="tempo_usado_alt">Ontem: <br>
                         Nenhum</h2>
                     <h2 id="consumo_usado_2_dia_atras" class="tempo_usado_alt">2 dias atrás: <br>
                         VS Code <br>
@@ -232,14 +232,6 @@
         trazerFuncionariosOnline();
         trazerFuncionariosOnlineCard();
 
-        // ok = "img/checked.png";
-        // notOk = "img/warning.png";
-        // check_1.src = ok;
-        // check_2.src = ok;
-        // check_3.src = ok;
-        // check_4.src = ok;
-        // check_5.src = notOk;
-        // check_6.src = notOk;
     }
 
 
@@ -309,6 +301,33 @@
             } else {
                 alert('Você não possui funcionários para monitorar');
             }
+        });
+
+        return false;
+
+    }
+
+    function checkStatus(idFuncionario) {
+
+        fetch(`/usuarios/checkStatus/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    document.getElementById(`check${idFuncionario}`).src = "img/checked.png";
+
+                });
+
+            } else {
+
+                document.getElementById(`check${idFuncionario}`).src = "img/notcheck.png";
+
+            }
+
+
         });
 
         return false;
@@ -415,6 +434,78 @@
 
     }
 
+    // Softwares usados Ontem --------------------------------------------------------------
+    var vt_softwares_usados_ontem = [];
+
+    function mostrarSoftwaresOntem(idFuncionario) {
+
+        fetch(`/usuarios/mostrarSoftwaresOntem/${idFuncionario}`, {
+            method: "post"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    vt_softwares_usados_ontem = [];
+
+                    for (let index = 0; index < json.length; index++) {
+
+                        for (let i = 0; i < vt_softwares_registrados.length; i++) {
+
+                            var nomeAtual = vt_softwares_registrados[i];
+
+                            var nomeCerto = vt_softwares_registrados_nomes_certos[i];
+
+                            if (json[index].nomeSoftware == nomeAtual) {
+
+                                if (vt_softwares_usados_ontem.includes(nomeAtual)) {
+
+                                } else {
+                                    vt_softwares_usados_ontem.push(nomeAtual);
+
+                                    console.log(nomeCerto);
+                                }
+
+                            } else {
+
+                                if (vt_softwares_usados_ontem.includes('outros')) {
+
+                                } else {
+                                    vt_softwares_usados_ontem.push('outros');
+                                }
+                            };
+                        };
+
+                    };
+
+                    softwaresUsadosMostrarTelaOntem();
+
+                });
+            } else {
+
+            }
+
+
+        });
+
+        return false;
+
+    }
+
+    function softwaresUsadosMostrarTelaOntem() {
+
+        consumo_usado_ontem.innerHTML = `Ontem: `;
+
+        for (let index = 0; index < vt_softwares_usados_ontem.length; index++) {
+
+            consumo_usado_ontem.innerHTML += ` <br>${vt_softwares_usados_ontem[index]}`;
+
+        };
+
+    }
+    // -------------------------------------------------------------------------------------
+
     function mostrarHorasUsadasHoje(idFuncionario) {
 
         fetch(`/usuarios/mostrarHorasUsadasHoje/${idFuncionario}`, {
@@ -464,8 +555,6 @@
             if (resposta.ok) {
 
                 resposta.json().then(json => {
-
-                    console.log(json.length);
 
                     // não precisa de "for", pois o for está na outra function
 
@@ -549,12 +638,14 @@
                     for (let index = 0; index < json.length; index++) {
 
                         div_desempenho_pai.innerHTML += `<div onclick="abrir_info(this.id); mostrarHorasUsadasHojeGetter(${json[index].idFuncionario});" id="${json[index].nomeFuncionario}" class="div_desempenho_content">
-                        <img id="check_1" class="check" src="img/checked.png" alt="">
+                        <img id="check${json[index].idFuncionario}" class="check" src="img/checked.png" alt="">
                         <img class="person" src="img/userPink.png" alt="userPink.png icon">
                         <h3>${json[index].nomeFuncionario}</h3>
                         </div>`;
 
                         onlineVerdeVermelho(json[index].idFuncionario);
+
+                        checkStatus(json[index].idFuncionario);
 
                     }
 

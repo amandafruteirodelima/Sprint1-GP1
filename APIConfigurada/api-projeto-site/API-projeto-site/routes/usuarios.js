@@ -303,7 +303,7 @@ router.post("/verOnline/:idFuncionario", function (req, res, next) {
     });
 });
 
-/* Softwares Usados */
+/* Softwares Usados Hoje*/
 router.post("/mostrarSoftwaresHoje/:idFuncionario", function (req, res, next) {
   let idFuncionario = req.params.idFuncionario;
 
@@ -319,6 +319,59 @@ router.post("/mostrarSoftwaresHoje/:idFuncionario", function (req, res, next) {
         res.json(resultado); // transforma resposta em json
       } else {
         res.status(403).send("Nenhum dado de softwares encontrado");
+      }
+    })
+    .catch((erro) => {
+      console.error(erro);
+      res.status(500).send(erro.message);
+    });
+});
+
+/* Softwares Usados Ontem*/
+router.post("/mostrarSoftwaresOntem/:idFuncionario", function (req, res, next) {
+  let idFuncionario = req.params.idFuncionario;
+
+  let instrucaoSql = `select * from [dbo].[Historico_Uso_Software] join [dbo].[Maquina] on fk_Maquina = idMaquina join [dbo].[Software] on fk_Software = idSoftware where fk_funcionario = ${idFuncionario} and dataHora between DateADD(day, -2, Current_TimeStamp) and DateADD(day, -1, Current_TimeStamp)`;
+  console.log(instrucaoSql);
+
+  sequelize
+    .query(instrucaoSql, {
+      type: sequelize.QueryTypes.SELECT, // se não for usar models
+    })
+    .then((resultado) => {
+      if (resultado.length > 0) {
+        res.json(resultado); // transforma resposta em json
+      } else {
+        
+      }
+    })
+    .catch((erro) => {
+      console.error(erro);
+      res.status(500).send(erro.message);
+    });
+});
+
+/* Mostrar Status de Cada Funcionário */
+router.post("/checkStatus/:idFuncionario", function (req, res, next) {
+  let idFuncionario = req.params.idFuncionario;
+
+  let instrucaoSql = `select * from [dbo].[Historico_Uso] HU 
+	join Componente cpt on HU.fk_Componente = cpt.idComponente 
+	join Maquina mka on cpt.fk_Maquina = mka.idMaquina
+	join Funcionario fc on mka.fk_Funcionario = fc.idFuncionario
+	where dataHora between DateADD(day, -3, Current_TimeStamp) and getDate() and fc.idFuncionario =${idFuncionario}`;
+  
+  console.log(instrucaoSql);
+
+  sequelize
+    .query(instrucaoSql, {
+      type: sequelize.QueryTypes.SELECT, // se não for usar models
+    })
+    .then((resultado) => {
+      if (resultado.length > 0) {
+        res.json(resultado); // transforma resposta em json
+      } else {
+        res.status(403).send("not ok");
       }
     })
     .catch((erro) => {
