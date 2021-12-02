@@ -166,14 +166,14 @@
         <div class="linha_meio">
 
             <div class="tabela_softwares ">
-                <div class="divGraficos">GRAFICO MONITORAMENTO CPU(HORA)</div>
+                <div class="divGraficos">GRAFICO MONITORAMENTO CPU</div>
                 <div class="grafico grafico_geral">
                     <canvas id="cpu"></canvas>
                 </div>
             </div>
 
             <div class="tabela_softwares ">
-                <div class="divGraficos">GRAFICO MONITORAMENTO RAM(HORA)</div>
+                <div class="divGraficos">GRAFICO MONITORAMENTO RAM</div>
                 <div class="grafico grafico_geral">
                     <canvas id="ram"></canvas>
                 </div>
@@ -202,16 +202,17 @@
 </html>
 
 <script>
-
     let proximaAtualizacao;
-
-    var idFuncionario = sessionStorage.getItem('idFuncionario');
 
     verificar_autenticacao();
 
     var statusIsLigado = false;
 
     var usuarioEmail = sessionStorage.login_usuario_meuapp;
+
+    console.log(idFuncionario)
+
+    var quantidadeDisco = 0;
 
     console.log(`Usuario logado: ${usuarioEmail}`);
 
@@ -222,6 +223,7 @@
         obterDadosGraficoPrimeiraVezCPU()
         obterDadosGraficoPrimeiraVezRAM()
         obterDadosGraficoPrimeiraVezDISCO()
+        obterdadosQuantidadeDisco()
 
         atualizacaoPeriodica()
     }
@@ -231,6 +233,8 @@
         obterdadosconsumoRAM();
         obterdadosconsumoDISCO();
         obterdadosconsumoTempoReal();
+
+        console.log(`Funcionario: ${idFuncionario}\nQuantidade Disco: ${quantidadeDisco}`)
 
         setTimeout(atualizacaoPeriodica, 5000);
     }
@@ -251,7 +255,30 @@
 
         return configuracoes;
     }
+    
+    function obterdadosQuantidadeDisco() {
+        fetch(`/leiturasDaMaquina/qtdcomponentedisco/${idFuncionario}`)
+            .then(resposta => {
 
+                
+
+                if (resposta.ok) {
+                    resposta.json().then(function (resposta) {
+
+                        console.log(JSON.stringify(resposta))
+
+                        quantidadeDisco = resposta.quantidade
+
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                }
+            })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados do caminhao p/ gráfico: ${error.message}`);
+            });
+
+    }
 
     function obterDadosGraficoPrimeiraVezCPU() {
         console.log("executei obterDadosGraficoPrimeiraVez")
@@ -398,11 +425,11 @@
             clearTimeout(proximaAtualizacao);
         }
 
-        fetch(`/leiturasDaMaquina/discoultimas/${usuarioEmail}`, { cache: 'no-store' }).then(function (response) {
+        fetch(`/leiturasDaMaquina/disco/${quantidadeDisco}`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
                 response.json().then(function (resposta) {
-                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
 
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta.consumo)}`);
 
                     var dados = {
                         labels: [],
@@ -420,19 +447,20 @@
                         ]
                     };
 
-                    let primeira = JSON.stringify(resposta);
+                   console.log(`resposta.length > 0 ` + resposta.length > 0)
 
-                    for (i = 0; i < resposta.length; i++) {
-                        var registro = resposta[i];
+                    
 
-                        let ultima = JSON.stringify(resposta[i].consumo);
-                        let valor = ultima.toString().slice(0, 5);
+                        for (i = 0; i < resposta.length; i++) {
+                            var registro = resposta[i];
 
-                        dados.labels.push(registro.nomeComponente);
-                        dados.datasets[0].data.push(valor);
+                            let ultima = JSON.stringify(resposta[i].consumo);
+                            let valor = ultima.toString().slice(0, 5);
 
-                    }
+                            dados.labels.push(registro.nomeComponente);
+                            dados.datasets[0].data.push(valor);
 
+                        }
 
                     console.log(JSON.stringify(dados));
 
@@ -515,31 +543,31 @@
 
     function atualizarGraficoDISCO(dados) {
         console.log("executei atualizarGraficoDISCO")
-        fetch(`/leiturasDaMaquina/disco/${usuarioEmail}`, { cache: 'no-store' })
+        fetch(`/leiturasDaMaquina/disco/${quantidadeDisco}`, { cache: 'no-store' })
             .then(function (response) {
 
-                console.log("Estou tentando pegar usuarioEmail = ", usuarioEmail)
+                console.log("Estou tentando pegar quantidadeDisco = ", quantidadeDisco)
 
                 if (response.ok) {
                     response.json().then(function (novoRegistro) {
 
 
-                        console.log(`Dados recebidos: ${JSON.stringify(novoRegistro.consumo)}`);
+                        console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
 
+                       
+                            for (i = 0; i < novoRegistro.length; i++) {
 
-                        for (i = 0; i < novoRegistro.length; i++) {
-                            var registro = novoRegistro[i];
+                                let ultima = JSON.stringify(novoRegistro[i].consumo);
+                                let valor = ultima.toString().slice(0, 4);
 
-                            let ultima = JSON.stringify(registro.consumo);
-                            let valor = ultima.toString().slice(0, 4);
+                                // tirando e colocando valores no gráfico
+                                dados.labels.shift(); // apagar o primeiro
+                                dados.labels.push(novoRegistro[i].nomeComponente); // incluir um novo momento
+                                dados.datasets[i].data.shift();
+                                dados.datasets.data.push(valor); // incluir uma nova leitura 
 
-                            // tirando e colocando valores no gráfico
-                            dados.labels.shift(); // apagar o primeiro
-                            dados.labels.push(novoRegistro[i].nomeComponente); // incluir um novo momento
-                            dados.datasets[i].data.shift();  // apagar o primeiro
-                            dados.datasets[i].data.push(valor); // incluir uma nova leitura 
-
-                        }
+                            }
+                        
 
                         chartDISCO.update();
 
@@ -608,7 +636,6 @@
 
         atualizarGraficoDISCO(dados);
     }
-
 
     function obterdadosconsumoCPU() {
         fetch(`/leiturasDaMaquina/processador/${usuarioEmail}`)
@@ -688,7 +715,7 @@
 
         const max_consumo = 80;
         const medio_consumo = 60;
-    
+
         if (ram >= max_consumo) {
             statusRam.style.color = 'red';
         }
@@ -705,7 +732,7 @@
 
     function obterdadosconsumoDISCO() {
 
-        fetch(`/leiturasDaMaquina/disco/${usuarioEmail}`)
+        fetch(`/leiturasDaMaquina/disco/${quantidadeDisco}`)
             .then(resposta => {
 
                 if (resposta.ok) {
@@ -736,6 +763,9 @@
         let capa = parseInt(dados.capacidade);
         let disco = ((parseInt(dados.consumo) * 100) / capa).toFixed(0);
 
+        console.log(capa)
+        console.log(dados.consumo)
+
         const max_consumo = 80;
         const medio_consumo = 60;
 
@@ -753,55 +783,56 @@
 
     }
 
-    function obterdadosconsumoTempoReal() {
+    // function obterdadosconsumoTempoReal() {
 
-        fetch(`/leiturasDaMaquina/mostrarOnlineOffline/${idFuncionario}`)
-            .then(resposta => {
+    //     fetch(`/leiturasDaMaquina/temporeal/${idFuncionario}`)
+    //         .then(resposta => {
 
-                if (resposta.ok) {
-                    resposta.json().then(function (resposta) {
+    //             if (resposta.ok) {
+    //                 resposta.json().then(function (resposta) {
 
-                        console.log("Consumo TempoReal");
-                        
-                        console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+    //                     console.log("Consumo TempoReal");
 
-                        var dados = {
-                            momento_grafico: resposta.momento_grafico
-                        }
+    //                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
 
 
-                        statusPcOnline(dados);
-                    });
-                } else {
-                    console.error('Nenhum dado encontrado ou erro na API');
-                }
-            })
-            .catch(function (error) {
-                console.error(`Erro na obtenção dos dados do caminhao p/ gráfico: ${error.message}`);
-            });
+    //                     var dados = {
+    //                         dataFormatada: resposta.dataFormatada
+    //                     }
 
-    }
+    //                     statusPcOnline(dados);
+    //                 });
+    //             } else {
+    //                 console.error('Nenhum dado encontrado ou erro na API');
+    //                 return null;
+    //             }
+    //         })
+    //         .catch(function (error) {
+    //             console.error(`Erro na obtenção dos dados do caminhao p/ gráfico: ${error.message}`);
+    //         });
 
-    function statusPcOnline(dados) {
+    // }
 
-        let data = new Date();
-        let horas = data.getHours() + ':' + data.getMinutes();
+    // function statusPcOnline(dados) {
 
-        const horaDatabase = dados.momento_grafico;
+    //     let data = new Date();
+    //     let horas = data.getHours() + ':' + data.getMinutes();
 
-        console.log(`${horaDatabase} == ${horas}`)
+    //     const horaDatabase = dados.dataFormatada;
 
-        if (horaDatabase == horas) {
+    //     console.log(`${horaDatabase} == ${horas}`)
 
-            statusPC.innerHTML = 'ON';
-            statusPC.style.color = 'green';
+    //     if (horaDatabase != null) {
 
-        } else {
+    //         statusPC.innerHTML = 'ON';
+    //         statusPC.style.color = 'green';
 
-            statusPC.innerHTML = 'OFF';
-            statusPC.style.color = 'red';
+    //     } else {
 
-        }
-    }
+    //         statusPC.innerHTML = 'OFF';
+    //         statusPC.style.color = 'red';
+
+    //     }
+    // }
 
 </script>

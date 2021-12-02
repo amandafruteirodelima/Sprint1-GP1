@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import logging.LogErro;
 import org.springframework.jdbc.core.JdbcTemplate;
+import slack.IntegracaoSlack;
 
 public class HistoricoUsoEntity {
 
@@ -21,7 +22,9 @@ public class HistoricoUsoEntity {
     ConfiguracaoBancoMySql configuracaoBancoMySql = new ConfiguracaoBancoMySql();
     JdbcTemplate assistenteMySql = new JdbcTemplate(
             configuracaoBancoMySql.getBancoDeDadosMySql());
-
+    
+    IntegracaoSlack integracao = new IntegracaoSlack();
+    
     SimpleDateFormat formatter = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
     Date date = new Date();
 
@@ -37,6 +40,9 @@ public class HistoricoUsoEntity {
                     + "consumo) VALUES(?,?,?)",
                     fkComponente, formatter.format(date), consumo);
             System.out.println("Inserindo os dados do Histórico Uso no SQL");
+            
+            integracao.pegarDadosDisco(consumo, fkComponente);
+            
         } catch (Exception erro) {
             logErro.mensagemErroInsert(erro);
         }
@@ -51,4 +57,7 @@ public class HistoricoUsoEntity {
         System.out.println("Dados inseridos no Histórico Uso no MySQL");
     }
 
+    public Double getConsumo() {
+        return consumo;
+    }
 }
