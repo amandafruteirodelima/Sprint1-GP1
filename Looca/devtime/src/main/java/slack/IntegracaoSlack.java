@@ -11,8 +11,8 @@ import logging.LogErro;
 
 public class IntegracaoSlack {
 
-    private String webHooksURL = "https://hooks.slack.com/services/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";
-    private String token = "xoxb-2750374347075-2762998716865-vkrVCArFlolcBDG1n9iGTUrw";
+    private String webHooksURL = "https://hooks.slack.com/services/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";
+    private String token = "xoxb-2750374347075-2762998716865-lA34mrnzTeB1RkUma3mP0yU5";
     private String canalSlack = "historico-registro";
 
     LogErro erro = new LogErro();
@@ -65,7 +65,7 @@ public class IntegracaoSlack {
             String numCapacidadeCortado = capacidade.substring(0, 3);
             capacidadeTotal = (Double.parseDouble(numCapacidadeCortado) * 100) / consumo;
 
-            if (capacidadeTotal >= 1.0) {
+            if (capacidadeTotal >= 70.0) {
                 String infoSlack = String.format("\n\nALERTA \nFuncionário %s "
                         + "\nO componente ( %s ) está sendo muito utilizado. "
                         + "\nEstá sendo usado %.1f%% do limite total. "
