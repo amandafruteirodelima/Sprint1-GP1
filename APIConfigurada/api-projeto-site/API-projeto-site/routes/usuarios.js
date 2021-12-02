@@ -303,6 +303,30 @@ router.post("/verOnline/:idFuncionario", function (req, res, next) {
     });
 });
 
+/* Softwares Usados */
+router.post("/mostrarSoftwaresHoje/:idFuncionario", function (req, res, next) {
+  let idFuncionario = req.params.idFuncionario;
+
+  let instrucaoSql = `select * from [dbo].[Historico_Uso_Software] join [dbo].[Maquina] on fk_Maquina = idMaquina join [dbo].[Software] on fk_Software = idSoftware where fk_funcionario = ${idFuncionario} and dataHora between DateADD(day, -1, Current_TimeStamp) and getDate()`;
+  console.log(instrucaoSql);
+
+  sequelize
+    .query(instrucaoSql, {
+      type: sequelize.QueryTypes.SELECT, // se não for usar models
+    })
+    .then((resultado) => {
+      if (resultado.length > 0) {
+        res.json(resultado); // transforma resposta em json
+      } else {
+        res.status(403).send("Nenhum dado de softwares encontrado");
+      }
+    })
+    .catch((erro) => {
+      console.error(erro);
+      res.status(500).send(erro.message);
+    });
+});
+
 /* Mostrar Funcionários Online (verifica num intervalo de 10 minutos) */
 router.post("/onlineVerdeVermelho/:idFuncionario", function (req, res, next) {
   let idFuncionario = req.params.idFuncionario;
