@@ -94,7 +94,7 @@ main{
 
 .inptPadrao:focus+label,
 .inptPadrao:not(:placeholder-shown)+label {
-    transform: translate(-0.2em) translateY(-1.0em) scale(0.8);
+    transform: translate(-0.1em) translateY(-0.7em) scale(0.8);
 }
 
 .btn-default {
@@ -118,8 +118,8 @@ main{
 
 label {
     position: absolute;
-    left: 27vw;
-    top: 49.3vh;
+    left: 21.5vw;
+    top: 49.5vh;
     color: #686868;
     transform-origin: 0 0;
     transition: transform 0.2s ease-in-out;

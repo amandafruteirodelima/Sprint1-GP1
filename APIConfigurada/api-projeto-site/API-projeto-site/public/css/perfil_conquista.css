@@ -56,13 +56,14 @@
 .btn_Finalizar{
     background-color:#7D35B7 ;
     color: white;
-    font-size: 1.05rem;
+    font-size: 1.0rem;
     width: 5.2vw;
     height: 3vh;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .btn_Finalizar:hover{
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     transition: 0.5s;
 }
